@@ -16,7 +16,6 @@
     <Alias Alias="HasTypeDefinition">i=40</Alias>
     <Alias Alias="HasSubtype">i=45</Alias>
     <Alias Alias="HasProperty">i=46</Alias>
-    <Alias Alias="BaseObjectType">i=58</Alias>
     <Alias Alias="BaseDataVariableType">i=63</Alias>
     <Alias Alias="PropertyType">i=68</Alias>
     <Alias Alias="EUInformation">i=887</Alias>
@@ -29,7 +28,7 @@
     <Description Locale="en">MinLib Abstract base type for all MinLib Object</Description>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=1001</Reference>
-      <Reference ReferenceType="HasSubtype" IsForward="false">BaseObjectType</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=1003" BrowseName="1:CtrlElementType" SymbolicName="ctrl_element_type">
@@ -305,4 +304,5 @@
       </uax:ExtensionObject>
     </Value>
   </UAVariable>
+
 </UANodeSet>
