@@ -1,0 +1,3637 @@
+@prefix base: <https://industryfusion.github.io/contexts/ontology/v0/base/> .
+@prefix opcua: <http://opcfoundation.org/UA/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix packml: <http://opcfoundation.org/UA/PackML/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+packml: a owl:Ontology ;
+    owl:imports <file:///home/gregor/DigitalTwin/semantic-model/opcua/core.ttl>,
+        <https://industryfusion.github.io/contexts/staging/ontology/v0/base.ttl> ;
+    owl:versionInfo 1e-01 .
+
+packml:Invalid a packml:ProductionMaintenanceModeEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "Invalid" ;
+    base:hasValueNode base:_N872055c663da4ad8939c5312d630d7bd .
+
+packml:Maintenance a packml:ProductionMaintenanceModeEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "Maintenance" ;
+    base:hasValueNode base:_Ncafc99601ebd4a46a62bdde4971da7aa .
+
+packml:Manual a packml:ProductionMaintenanceModeEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "Manual" ;
+    base:hasValueNode base:_N812473c231d84efb8a4b4e8dc15de0c6 .
+
+packml:Produce a packml:ProductionMaintenanceModeEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "Produce" ;
+    base:hasValueNode base:_N761ba24df6a24ec7bb93c031f71875e2 .
+
+packml:hasAbort rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasAborted rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasAbortedToCleared rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasAborting rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasAbortingToAborted rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasAccTimeSinceReset rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasAdmin rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasAlarm rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasAlarmExtent rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasAlarmHistory rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasAlarmHistoryExtent rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasBaseStateMachine rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasClear rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasCleared rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasClearedToAborting rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasClearing rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasClearingToStopped rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasComplete rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasCompleteToResetting rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasCompleting rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasCompletingToComplete rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasCurMachSpeed rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasEquipmentBlocked rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasEquipmentStarved rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasExecute rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasExecuteState rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasExecuteToCompleting rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasExecuteToHolding rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasExecuteToSuspending rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasHeld rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasHeldToUnholding rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasHold rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasHolding rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasHoldingToHeld rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasIdle rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasIdleToStarting rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasMachDesignSpeed rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasMachSpeed rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasMachineState rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasMaterialInterlock rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasMaterialInterlocked rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasModeCumulativeTime rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasModeCurrentTime rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasPackMLAlarmDataType rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasPackMLCountDataType rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasPackMLDescriptorDataType rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasPackMLIngredientsDataType rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasPackMLProductDataType rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasPackMLRemoteInterfaceDataType rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasPackMLVersion rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasParameter rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasProdConsumedCount rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasProdDefectiveCount rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasProdProcessedCount rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasProduct rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasRemoteCommand rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasRemoteParameter rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasReset rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasResetting rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasResettingToIdle rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasRunning rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasRunningToStopping rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasSetInterlock rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasSetMachSpeed rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasSetParameter rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasSetProduct rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasSetUnitMode rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasStart rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasStarting rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasStartingToExecute rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasStartingToHolding rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasStateChangeInProcess rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasStateCumulativeTime rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasStateCurrentTime rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasStateRequested rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasStatus rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasStop rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasStopReason rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasStopReasonExtent rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasStopped rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasStoppedToRunning rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasStopping rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasStoppingToStopped rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasSuspend rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasSuspended rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasSuspendedToHolding rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasSuspendedToUnsuspending rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasSuspending rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasSuspendingToHolding rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasSuspendingToSuspended rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasTagID rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasToComplete rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasTypeDictionary rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasUnhold rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasUnholding rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasUnholdingToExecute rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasUnholdingToHolding rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasUnitModeChangeInProcess rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasUnitModeCurrent rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasUnitModeRequested rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasUnitSupportedModes rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasUnsuspend rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasUnsuspending rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasUnsuspendingToExecute rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasUnsuspendingToHolding rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasWarning rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:hasWarningExtent rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+<http://opcfoundation.org/UA/PackML/hashttp%3A//opcfoundation.org/UA/PackML/> rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+packml:nodei1 a opcua:ObjectTypeNodeClass ;
+    opcua:HasComponent packml:nodei100,
+        packml:nodei101,
+        packml:nodei102,
+        packml:nodei103,
+        packml:nodei125,
+        packml:nodei126,
+        packml:nodei27,
+        packml:nodei28,
+        packml:nodei29,
+        packml:nodei30,
+        packml:nodei31,
+        packml:nodei32,
+        packml:nodei33,
+        packml:nodei34,
+        packml:nodei35,
+        packml:nodei36,
+        packml:nodei361,
+        packml:nodei365,
+        packml:nodei366,
+        packml:nodei367,
+        packml:nodei368,
+        packml:nodei369,
+        packml:nodei37,
+        packml:nodei372,
+        packml:nodei38,
+        packml:nodei39,
+        packml:nodei40,
+        packml:nodei41,
+        packml:nodei42,
+        packml:nodei43,
+        packml:nodei44,
+        packml:nodei45,
+        packml:nodei46,
+        packml:nodei47,
+        packml:nodei48,
+        packml:nodei49,
+        packml:nodei50,
+        packml:nodei51,
+        packml:nodei52,
+        packml:nodei99 ;
+    packml:hasComplete packml:nodei38 ;
+    packml:hasCompleteToResetting packml:nodei51 ;
+    packml:hasCompleting packml:nodei37 ;
+    packml:hasCompletingToComplete packml:nodei50 ;
+    packml:hasExecute packml:nodei36 ;
+    packml:hasExecuteToCompleting packml:nodei49 ;
+    packml:hasExecuteToHolding packml:nodei45 ;
+    packml:hasExecuteToSuspending packml:nodei42 ;
+    packml:hasHeld packml:nodei34 ;
+    packml:hasHeldToUnholding packml:nodei47 ;
+    packml:hasHold packml:nodei366 ;
+    packml:hasHolding packml:nodei33 ;
+    packml:hasHoldingToHeld packml:nodei46 ;
+    packml:hasIdle packml:nodei28 ;
+    packml:hasIdleToStarting packml:nodei40 ;
+    packml:hasReset packml:nodei361 ;
+    packml:hasResetting packml:nodei27 ;
+    packml:hasResettingToIdle packml:nodei39 ;
+    packml:hasStart packml:nodei369 ;
+    packml:hasStarting packml:nodei29 ;
+    packml:hasStartingToExecute packml:nodei41 ;
+    packml:hasStartingToHolding packml:nodei99 ;
+    packml:hasSuspend packml:nodei367 ;
+    packml:hasSuspended packml:nodei31 ;
+    packml:hasSuspendedToHolding packml:nodei101 ;
+    packml:hasSuspendedToUnsuspending packml:nodei52 ;
+    packml:hasSuspending packml:nodei30 ;
+    packml:hasSuspendingToHolding packml:nodei102 ;
+    packml:hasSuspendingToSuspended packml:nodei43 ;
+    packml:hasToComplete packml:nodei365 ;
+    packml:hasUnhold packml:nodei368 ;
+    packml:hasUnholding packml:nodei35 ;
+    packml:hasUnholdingToExecute packml:nodei48 ;
+    packml:hasUnholdingToHolding packml:nodei103 ;
+    packml:hasUnsuspend packml:nodei372 ;
+    packml:hasUnsuspending packml:nodei32 ;
+    packml:hasUnsuspendingToExecute packml:nodei44 ;
+    packml:hasUnsuspendingToHolding packml:nodei100 ;
+    opcua:hasAvailableStates packml:nodei125 ;
+    opcua:hasAvailableTransitions packml:nodei126 ;
+    base:definesType packml:PackMLExecuteStateMachineType ;
+    base:hasBrowseName "PackMLExecuteStateMachineType" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "PackMLExecuteStateMachineType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "1" .
+
+packml:nodei11 a opcua:DataTypeNodeClass ;
+    opcua:HasProperty packml:nodei194 ;
+    opcua:hasEnumValues packml:nodei194 ;
+    base:definesType packml:ProductionMaintenanceModeEnum ;
+    base:hasBrowseName "ProductionMaintenanceModeEnum" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "ProductionMaintenanceModeEnum" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "11" .
+
+packml:nodei14 a opcua:DataTypeNodeClass ;
+    opcua:HasEncoding packml:nodei69,
+        packml:nodei70 ;
+    base:definesType packml:PackMLCountDataType ;
+    base:hasBrowseName "PackMLCountDataType" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "PackMLCountDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "14" .
+
+packml:nodei15 a opcua:DataTypeNodeClass ;
+    opcua:HasEncoding packml:nodei74,
+        packml:nodei76 ;
+    base:definesType packml:PackMLAlarmDataType ;
+    base:hasBrowseName "PackMLAlarmDataType" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "PackMLAlarmDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "15" .
+
+packml:nodei16 a opcua:DataTypeNodeClass ;
+    opcua:HasEncoding packml:nodei77,
+        packml:nodei78 ;
+    base:definesType packml:PackMLDescriptorDataType ;
+    base:hasBrowseName "PackMLDescriptorDataType" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "PackMLDescriptorDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "16" .
+
+packml:nodei17 a opcua:DataTypeNodeClass ;
+    opcua:HasEncoding packml:nodei79,
+        packml:nodei80 ;
+    base:definesType packml:PackMLIngredientsDataType ;
+    base:hasBrowseName "PackMLIngredientsDataType" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "PackMLIngredientsDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "17" .
+
+packml:nodei18 a opcua:DataTypeNodeClass ;
+    opcua:HasEncoding packml:nodei81,
+        packml:nodei82 ;
+    base:definesType packml:PackMLProductDataType ;
+    base:hasBrowseName "PackMLProductDataType" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "PackMLProductDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "18" .
+
+packml:nodei19 a opcua:DataTypeNodeClass ;
+    opcua:HasEncoding packml:nodei83,
+        packml:nodei84 ;
+    base:definesType packml:PackMLRemoteInterfaceDataType ;
+    base:hasBrowseName "PackMLRemoteInterfaceDataType" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "PackMLRemoteInterfaceDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "19" .
+
+packml:nodei2 a opcua:ObjectTypeNodeClass ;
+    opcua:HasComponent packml:nodei153,
+        packml:nodei154,
+        packml:nodei375,
+        packml:nodei376,
+        packml:nodei53,
+        packml:nodei54,
+        packml:nodei55,
+        packml:nodei56,
+        packml:nodei57,
+        packml:nodei58,
+        packml:nodei59,
+        packml:nodei60,
+        packml:nodei75 ;
+    packml:hasClearing packml:nodei55 ;
+    packml:hasClearingToStopped packml:nodei58 ;
+    packml:hasExecuteState packml:nodei56 ;
+    packml:hasReset packml:nodei376 ;
+    packml:hasRunning packml:nodei75 ;
+    packml:hasRunningToStopping packml:nodei60 ;
+    packml:hasStop packml:nodei375 ;
+    packml:hasStopped packml:nodei53 ;
+    packml:hasStoppedToRunning packml:nodei59 ;
+    packml:hasStopping packml:nodei54 ;
+    packml:hasStoppingToStopped packml:nodei57 ;
+    opcua:hasAvailableStates packml:nodei153 ;
+    opcua:hasAvailableTransitions packml:nodei154 ;
+    base:definesType packml:PackMLMachineStateMachineType ;
+    base:hasBrowseName "PackMLMachineStateMachineType" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "PackMLMachineStateMachineType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "2" .
+
+packml:nodei21 a opcua:ReferenceTypeNodeClass ;
+    base:definesType packml:HasInterlock ;
+    base:hasBrowseName "HasInterlock" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "HasInterlock" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "21" .
+
+packml:nodei22 a opcua:ReferenceTypeNodeClass ;
+    base:definesType packml:HasAlarm ;
+    base:hasBrowseName "HasAlarm" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "HasAlarm" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "22" .
+
+packml:nodei23 a opcua:ReferenceTypeNodeClass ;
+    base:definesType packml:HasAlarmHistory ;
+    base:hasBrowseName "HasAlarmHistory" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "HasAlarmHistory" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "23" .
+
+packml:nodei24 a opcua:ReferenceTypeNodeClass ;
+    base:definesType packml:HasWarning ;
+    base:hasBrowseName "HasWarning" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "HasWarning" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "24" .
+
+packml:nodei25 a opcua:ReferenceTypeNodeClass ;
+    base:definesType packml:HasStopReason ;
+    base:hasBrowseName "HasStopReason" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "HasStopReason" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "25" .
+
+packml:nodei3 a opcua:ObjectTypeNodeClass ;
+    opcua:HasComponent packml:nodei158,
+        packml:nodei167,
+        packml:nodei363,
+        packml:nodei364,
+        packml:nodei61,
+        packml:nodei62,
+        packml:nodei64,
+        packml:nodei65,
+        packml:nodei66,
+        packml:nodei67,
+        packml:nodei71 ;
+    packml:hasAbort packml:nodei364 ;
+    packml:hasAborted packml:nodei62 ;
+    packml:hasAbortedToCleared packml:nodei65 ;
+    packml:hasAborting packml:nodei61 ;
+    packml:hasAbortingToAborted packml:nodei66 ;
+    packml:hasClear packml:nodei363 ;
+    packml:hasCleared packml:nodei71 ;
+    packml:hasClearedToAborting packml:nodei67 ;
+    packml:hasMachineState packml:nodei64 ;
+    opcua:hasAvailableStates packml:nodei167 ;
+    opcua:hasAvailableTransitions packml:nodei158 ;
+    base:definesType packml:PackMLBaseStateMachineType ;
+    base:hasBrowseName "PackMLBaseStateMachineType" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "PackMLBaseStateMachineType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "3" .
+
+packml:nodei4 a opcua:ObjectTypeNodeClass ;
+    opcua:HasComponent packml:nodei121,
+        packml:nodei122,
+        packml:nodei123,
+        packml:nodei192,
+        packml:nodei200,
+        packml:nodei201,
+        packml:nodei209,
+        packml:nodei210,
+        packml:nodei211,
+        packml:nodei219,
+        packml:nodei224,
+        packml:nodei232,
+        packml:nodei236 ;
+    opcua:HasProperty packml:nodei193 ;
+    packml:HasInterlock packml:nodei237 ;
+    packml:hasCurMachSpeed packml:nodei232 ;
+    packml:hasEquipmentBlocked packml:nodei211 ;
+    packml:hasEquipmentStarved packml:nodei224 ;
+    packml:hasMachSpeed packml:nodei219 ;
+    packml:hasMaterialInterlock packml:nodei237 ;
+    packml:hasMaterialInterlocked packml:nodei236 ;
+    packml:hasParameter packml:nodei121 ;
+    packml:hasProduct packml:nodei122 ;
+    packml:hasRemoteParameter packml:nodei123 ;
+    packml:hasStateChangeInProcess packml:nodei210 ;
+    packml:hasStateRequested packml:nodei209 ;
+    packml:hasUnitModeChangeInProcess packml:nodei201 ;
+    packml:hasUnitModeCurrent packml:nodei200 ;
+    packml:hasUnitModeRequested packml:nodei192 ;
+    packml:hasUnitSupportedModes packml:nodei193 ;
+    base:definesType packml:PackMLStatusObjectType ;
+    base:hasBrowseName "PackMLStatusObjectType" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "PackMLStatusObjectType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "4" .
+
+packml:nodei5 a opcua:ObjectTypeNodeClass ;
+    opcua:HasComponent packml:nodei119,
+        packml:nodei120,
+        packml:nodei124,
+        packml:nodei239,
+        packml:nodei241,
+        packml:nodei243,
+        packml:nodei245,
+        packml:nodei246,
+        packml:nodei247,
+        packml:nodei248,
+        packml:nodei249,
+        packml:nodei252,
+        packml:nodei253,
+        packml:nodei276 ;
+    packml:HasAlarm packml:nodei238 ;
+    packml:HasAlarmHistory packml:nodei240 ;
+    packml:HasStopReason packml:nodei244 ;
+    packml:HasWarning packml:nodei242 ;
+    packml:hasAccTimeSinceReset packml:nodei252 ;
+    packml:hasAlarm packml:nodei238 ;
+    packml:hasAlarmExtent packml:nodei239 ;
+    packml:hasAlarmHistory packml:nodei240 ;
+    packml:hasAlarmHistoryExtent packml:nodei241 ;
+    packml:hasMachDesignSpeed packml:nodei253 ;
+    packml:hasModeCumulativeTime packml:nodei247 ;
+    packml:hasModeCurrentTime packml:nodei246 ;
+    packml:hasParameter packml:nodei276 ;
+    packml:hasProdConsumedCount packml:nodei124 ;
+    packml:hasProdDefectiveCount packml:nodei119 ;
+    packml:hasProdProcessedCount packml:nodei120 ;
+    packml:hasStateCumulativeTime packml:nodei249 ;
+    packml:hasStateCurrentTime packml:nodei248 ;
+    packml:hasStopReason packml:nodei244 ;
+    packml:hasStopReasonExtent packml:nodei245 ;
+    packml:hasWarning packml:nodei242 ;
+    packml:hasWarningExtent packml:nodei243 ;
+    base:definesType packml:PackMLAdminObjectType ;
+    base:hasBrowseName "PackMLAdminObjectType" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "PackMLAdminObjectType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "5" .
+
+packml:nodei6 a opcua:ObjectTypeNodeClass ;
+    opcua:HasComponent packml:nodei362,
+        packml:nodei400,
+        packml:nodei401,
+        packml:nodei402,
+        packml:nodei403,
+        packml:nodei404,
+        packml:nodei73,
+        packml:nodei87,
+        packml:nodei88 ;
+    opcua:HasProperty packml:nodei218,
+        packml:nodei221 ;
+    packml:hasAdmin packml:nodei73 ;
+    packml:hasBaseStateMachine packml:nodei88 ;
+    packml:hasPackMLVersion packml:nodei221 ;
+    packml:hasRemoteCommand packml:nodei403 ;
+    packml:hasSetInterlock packml:nodei404 ;
+    packml:hasSetMachSpeed packml:nodei400 ;
+    packml:hasSetParameter packml:nodei402 ;
+    packml:hasSetProduct packml:nodei401 ;
+    packml:hasSetUnitMode packml:nodei362 ;
+    packml:hasStatus packml:nodei87 ;
+    packml:hasTagID packml:nodei218 ;
+    base:definesType packml:PackMLBaseObjectType ;
+    base:hasBrowseName "PackMLBaseObjectType" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "PackMLBaseObjectType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "6" .
+
+opcua:nodei11715 opcua:HasComponent packml:nodei117 ;
+    <http://opcfoundation.org/UA/PackML/hashttp%3A//opcfoundation.org/UA/PackML/> packml:nodei117 .
+
+opcua:nodei85 opcua:Organizes packml:nodei72 .
+
+opcua:nodei92 opcua:HasComponent packml:nodei197 ;
+    packml:hasTypeDictionary packml:nodei197 .
+
+opcua:nodei93 opcua:HasComponent packml:nodei195 ;
+    packml:hasTypeDictionary packml:nodei195 .
+
+packml:AccCount a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype opcua:Int32 ;
+    base:hasFieldName "AccCount" .
+
+packml:AckDateTime a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype opcua:UtcTime ;
+    base:hasFieldName "AckDateTime" .
+
+packml:Category a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype opcua:Int32 ;
+    base:hasFieldName "Category" .
+
+packml:CmdValue a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype opcua:Int32 ;
+    base:hasFieldName "CmdValue" .
+
+packml:ControlCmdNumber a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype opcua:Int32 ;
+    base:hasFieldName "ControlCmdNumber" .
+
+packml:Count a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype opcua:Int32 ;
+    base:hasFieldName "Count" .
+
+packml:DateTime a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype opcua:UtcTime ;
+    base:hasFieldName "DateTime" .
+
+packml:HasAlarm a owl:ObjectProperty ;
+    rdfs:subPropertyOf opcua:HasComponent .
+
+packml:HasAlarmHistory a owl:ObjectProperty ;
+    rdfs:subPropertyOf opcua:HasComponent .
+
+packml:HasInterlock a owl:ObjectProperty ;
+    rdfs:subPropertyOf opcua:HasComponent .
+
+packml:HasStopReason a owl:ObjectProperty ;
+    rdfs:subPropertyOf opcua:HasComponent .
+
+packml:HasWarning a owl:ObjectProperty ;
+    rdfs:subPropertyOf opcua:HasComponent .
+
+packml:IngredientID a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype opcua:Int32 ;
+    base:hasFieldName "IngredientID" .
+
+packml:Ingredients a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype packml:PackMLIngredientsDataType ;
+    base:hasFieldName "Ingredients" .
+
+packml:Message a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype opcua:String ;
+    base:hasFieldName "Message" .
+
+packml:Number a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype opcua:Int32 ;
+    base:hasFieldName "Number" .
+
+packml:PackMLBaseObjectType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+packml:ProcessVariables a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype packml:PackMLDescriptorDataType ;
+    base:hasFieldName "ProcessVariables" .
+
+packml:ProductID a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype opcua:Int32 ;
+    base:hasFieldName "ProductID" .
+
+packml:Trigger a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype opcua:Boolean ;
+    base:hasFieldName "Trigger" .
+
+packml:nodei69 a opcua:DataTypeEncodingType,
+        opcua:ObjectNodeClass ;
+    opcua:HasDescription packml:nodei180 ;
+    base:hasBrowseName "Default Binary" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Default Binary" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "69" ;
+    base:hasSymbolicName "DefaultBinary" .
+
+packml:nodei70 a opcua:DataTypeEncodingType,
+        opcua:ObjectNodeClass ;
+    opcua:HasDescription packml:nodei181 ;
+    base:hasBrowseName "Default XML" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Default XML" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "70" ;
+    base:hasSymbolicName "DefaultXml" .
+
+packml:nodei72 a opcua:FolderType,
+        opcua:ObjectNodeClass ;
+    base:hasBrowseName "PackMLObjects" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "PackMLObjects" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "72" .
+
+packml:nodei74 a opcua:DataTypeEncodingType,
+        opcua:ObjectNodeClass ;
+    opcua:HasDescription packml:nodei182 ;
+    base:hasBrowseName "Default Binary" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Default Binary" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "74" ;
+    base:hasSymbolicName "DefaultBinary" .
+
+packml:nodei76 a opcua:DataTypeEncodingType,
+        opcua:ObjectNodeClass ;
+    opcua:HasDescription packml:nodei183 ;
+    base:hasBrowseName "Default XML" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Default XML" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "76" ;
+    base:hasSymbolicName "DefaultXml" .
+
+packml:nodei77 a opcua:DataTypeEncodingType,
+        opcua:ObjectNodeClass ;
+    opcua:HasDescription packml:nodei184 ;
+    base:hasBrowseName "Default Binary" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Default Binary" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "77" ;
+    base:hasSymbolicName "DefaultBinary" .
+
+packml:nodei78 a opcua:DataTypeEncodingType,
+        opcua:ObjectNodeClass ;
+    opcua:HasDescription packml:nodei185 ;
+    base:hasBrowseName "Default XML" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Default XML" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "78" ;
+    base:hasSymbolicName "DefaultXml" .
+
+packml:nodei79 a opcua:DataTypeEncodingType,
+        opcua:ObjectNodeClass ;
+    opcua:HasDescription packml:nodei186 ;
+    base:hasBrowseName "Default Binary" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Default Binary" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "79" ;
+    base:hasSymbolicName "DefaultBinary" .
+
+packml:nodei80 a opcua:DataTypeEncodingType,
+        opcua:ObjectNodeClass ;
+    opcua:HasDescription packml:nodei189 ;
+    base:hasBrowseName "Default XML" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Default XML" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "80" ;
+    base:hasSymbolicName "DefaultXml" .
+
+packml:nodei81 a opcua:DataTypeEncodingType,
+        opcua:ObjectNodeClass ;
+    opcua:HasDescription packml:nodei190 ;
+    base:hasBrowseName "Default Binary" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Default Binary" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "81" ;
+    base:hasSymbolicName "DefaultBinary" .
+
+packml:nodei82 a opcua:DataTypeEncodingType,
+        opcua:ObjectNodeClass ;
+    opcua:HasDescription packml:nodei191 ;
+    base:hasBrowseName "Default XML" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Default XML" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "82" ;
+    base:hasSymbolicName "DefaultXml" .
+
+packml:nodei83 a opcua:DataTypeEncodingType,
+        opcua:ObjectNodeClass ;
+    opcua:HasDescription packml:nodei187 ;
+    base:hasBrowseName "Default Binary" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Default Binary" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "83" ;
+    base:hasSymbolicName "DefaultBinary" .
+
+packml:nodei84 a opcua:DataTypeEncodingType,
+        opcua:ObjectNodeClass ;
+    opcua:HasDescription packml:nodei188 ;
+    base:hasBrowseName "Default XML" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Default XML" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "84" ;
+    base:hasSymbolicName "DefaultXml" .
+
+base:_N761ba24df6a24ec7bb93c031f71875e2 a base:ValueNode ;
+    base:hasEnumValue 1 ;
+    base:hasValueClass packml:ProductionMaintenanceModeEnum .
+
+base:_N812473c231d84efb8a4b4e8dc15de0c6 a base:ValueNode ;
+    base:hasEnumValue 3 ;
+    base:hasValueClass packml:ProductionMaintenanceModeEnum .
+
+base:_N872055c663da4ad8939c5312d630d7bd a base:ValueNode ;
+    base:hasEnumValue 0 ;
+    base:hasValueClass packml:ProductionMaintenanceModeEnum .
+
+base:_Ncafc99601ebd4a46a62bdde4971da7aa a base:ValueNode ;
+    base:hasEnumValue 2 ;
+    base:hasValueClass packml:ProductionMaintenanceModeEnum .
+
+packml:Name a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype opcua:String ;
+    base:hasFieldName "Name" .
+
+packml:PackMLAdminObjectType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+packml:PackMLBaseStateMachineType a owl:Class ;
+    rdfs:subClassOf opcua:FiniteStateMachineType .
+
+packml:PackMLIngredientsDataType a owl:Class ;
+    rdfs:subClassOf opcua:Structure ;
+    base:hasField packml:IngredientID,
+        packml:Parameter .
+
+packml:PackMLProductDataType a owl:Class ;
+    rdfs:subClassOf opcua:Structure ;
+    base:hasField packml:Ingredients,
+        packml:ProcessVariables,
+        packml:ProductID .
+
+packml:PackMLRemoteInterfaceDataType a owl:Class ;
+    rdfs:subClassOf opcua:Structure ;
+    base:hasField packml:CmdValue,
+        packml:ControlCmdNumber,
+        packml:Number,
+        packml:Parameter .
+
+packml:PackMLStatusObjectType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+packml:Parameter a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype packml:PackMLDescriptorDataType ;
+    base:hasFieldName "Parameter" .
+
+packml:Unit a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype opcua:EUInformation ;
+    base:hasFieldName "Unit" .
+
+packml:Value a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype opcua:Float,
+        opcua:Int32 ;
+    base:hasFieldName "Value" .
+
+packml:nodei100 a opcua:ObjectNodeClass,
+        opcua:TransitionType ;
+    opcua:FromState packml:nodei32 ;
+    opcua:HasCause packml:nodei366 ;
+    opcua:HasProperty packml:nodei208 ;
+    opcua:ToState packml:nodei33 ;
+    opcua:hasTransitionNumber packml:nodei208 ;
+    base:hasBrowseName "UnsuspendingToHolding" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "UnsuspendingToHolding" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "100" .
+
+packml:nodei101 a opcua:ObjectNodeClass,
+        opcua:TransitionType ;
+    opcua:FromState packml:nodei31 ;
+    opcua:HasCause packml:nodei366 ;
+    opcua:HasProperty packml:nodei215 ;
+    opcua:ToState packml:nodei33 ;
+    opcua:hasTransitionNumber packml:nodei215 ;
+    base:hasBrowseName "SuspendedToHolding" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "SuspendedToHolding" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "101" .
+
+packml:nodei102 a opcua:ObjectNodeClass,
+        opcua:TransitionType ;
+    opcua:FromState packml:nodei30 ;
+    opcua:HasCause packml:nodei366 ;
+    opcua:HasProperty packml:nodei216 ;
+    opcua:ToState packml:nodei33 ;
+    opcua:hasTransitionNumber packml:nodei216 ;
+    base:hasBrowseName "SuspendingToHolding" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "SuspendingToHolding" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "102" .
+
+packml:nodei103 a opcua:ObjectNodeClass,
+        opcua:TransitionType ;
+    opcua:FromState packml:nodei35 ;
+    opcua:HasCause packml:nodei366 ;
+    opcua:HasProperty packml:nodei217 ;
+    opcua:ToState packml:nodei33 ;
+    opcua:hasTransitionNumber packml:nodei217 ;
+    base:hasBrowseName "UnholdingToHolding" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "UnholdingToHolding" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "103" .
+
+packml:nodei117 a opcua:NamespaceMetadataType,
+        opcua:ObjectNodeClass ;
+    opcua:HasProperty packml:nodei354,
+        packml:nodei355,
+        packml:nodei356,
+        packml:nodei357,
+        packml:nodei358,
+        packml:nodei359,
+        packml:nodei360 ;
+    opcua:hasIsNamespaceSubset packml:nodei354 ;
+    opcua:hasNamespacePublicationDate packml:nodei355 ;
+    opcua:hasNamespaceUri packml:nodei356 ;
+    opcua:hasNamespaceVersion packml:nodei357 ;
+    opcua:hasStaticNodeIdTypes packml:nodei358 ;
+    opcua:hasStaticNumericNodeIdRange packml:nodei359 ;
+    opcua:hasStaticStringNodeIdPattern packml:nodei360 ;
+    base:hasBrowseName "http://opcfoundation.org/UA/PackML/" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "http://opcfoundation.org/UA/PackML/" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "117" ;
+    base:hasSymbolicName "http___opcfoundation_org_UA_PackML_" .
+
+packml:nodei118 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasArrayDimensions ( 1 ) ;
+    base:hasBrowseName "InputArguments" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Argument ;
+    base:hasDisplayName "InputArguments" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "118" ;
+    base:hasValueList ( "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=297\"}, \"xsd:Body\": {\"xsd:Argument\": {\"xsd:Name\": \"RequestedMode\", \"xsd:DataType\": {\"xsd:Identifier\": \"i=6\"}, \"xsd:ValueRank\": -1, \"xsd:ArrayDimensions\": null, \"xsd:Description\": {\"xsd:Text\": \"The requested mode from the list of available modes in the enumeration from ModeSelection \"}}}}"^^rdf:JSON ) ;
+    base:hasValueRank 1 .
+
+packml:nodei119 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "ProdDefectiveCount" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype packml:PackMLCountDataType ;
+    base:hasDisplayName "ProdDefectiveCount" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "119" ;
+    base:hasValueRank 1 .
+
+packml:nodei120 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "ProdProcessedCount" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype packml:PackMLCountDataType ;
+    base:hasDisplayName "ProdProcessedCount" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "120" ;
+    base:hasValueRank 1 .
+
+packml:nodei121 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "Parameter" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype packml:PackMLDescriptorDataType ;
+    base:hasDisplayName "Parameter" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "121" ;
+    base:hasValueRank 1 .
+
+packml:nodei122 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "Product" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype packml:PackMLProductDataType ;
+    base:hasDisplayName "Product" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "122" ;
+    base:hasValueRank 1 .
+
+packml:nodei123 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "RemoteParameter" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype packml:PackMLRemoteInterfaceDataType ;
+    base:hasDisplayName "RemoteParameter" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "123" ;
+    base:hasValueRank 1 .
+
+packml:nodei124 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "ProdConsumedCount" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype packml:PackMLCountDataType ;
+    base:hasDisplayName "ProdConsumedCount" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "124" ;
+    base:hasValueRank 1 .
+
+packml:nodei125 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "AvailableStates" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "AvailableStates" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "125" ;
+    base:hasValueRank 1 .
+
+packml:nodei126 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "AvailableTransitions" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "AvailableTransitions" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "126" ;
+    base:hasValueRank 1 .
+
+packml:nodei127 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "StateNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "StateNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "127" ;
+    base:hasValue 15 .
+
+packml:nodei128 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "StateNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "StateNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "128" ;
+    base:hasValue 4 .
+
+packml:nodei129 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "StateNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "StateNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "129" ;
+    base:hasValue 3 .
+
+packml:nodei130 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "StateNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "StateNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "130" ;
+    base:hasValue 13 .
+
+packml:nodei131 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "StateNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "StateNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "131" ;
+    base:hasValue 5 .
+
+packml:nodei132 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "StateNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "StateNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "132" ;
+    base:hasValue 14 .
+
+packml:nodei133 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "StateNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "StateNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "133" ;
+    base:hasValue 10 .
+
+packml:nodei134 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "StateNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "StateNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "134" ;
+    base:hasValue 11 .
+
+packml:nodei135 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "StateNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "StateNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "135" ;
+    base:hasValue 12 .
+
+packml:nodei136 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "StateNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "StateNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "136" ;
+    base:hasValue 6 .
+
+packml:nodei137 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "StateNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "StateNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "137" ;
+    base:hasValue 16 .
+
+packml:nodei138 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "StateNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "StateNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "138" ;
+    base:hasValue 17 .
+
+packml:nodei139 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "TransitionNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "TransitionNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "139" .
+
+packml:nodei140 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "TransitionNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "TransitionNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "140" .
+
+packml:nodei141 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "TransitionNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "TransitionNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "141" .
+
+packml:nodei142 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "TransitionNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "TransitionNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "142" .
+
+packml:nodei143 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "TransitionNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "TransitionNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "143" .
+
+packml:nodei144 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "TransitionNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "TransitionNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "144" .
+
+packml:nodei145 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "TransitionNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "TransitionNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "145" .
+
+packml:nodei146 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "TransitionNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "TransitionNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "146" .
+
+packml:nodei147 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "TransitionNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "TransitionNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "147" .
+
+packml:nodei148 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "TransitionNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "TransitionNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "148" .
+
+packml:nodei149 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "TransitionNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "TransitionNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "149" .
+
+packml:nodei150 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "TransitionNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "TransitionNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "150" .
+
+packml:nodei151 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "TransitionNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "TransitionNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "151" .
+
+packml:nodei152 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "TransitionNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "TransitionNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "152" .
+
+packml:nodei153 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "AvailableStates" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "AvailableStates" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "153" ;
+    base:hasValueRank 1 .
+
+packml:nodei154 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "AvailableTransitions" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "AvailableTransitions" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "154" ;
+    base:hasValueRank 1 .
+
+packml:nodei155 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "StateNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "StateNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "155" ;
+    base:hasValue 2 .
+
+packml:nodei156 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "StateNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "StateNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "156" ;
+    base:hasValue 7 .
+
+packml:nodei157 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "StateNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "StateNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "157" ;
+    base:hasValue 1 .
+
+packml:nodei158 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "AvailableTransitions" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "AvailableTransitions" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "158" ;
+    base:hasValueRank 1 .
+
+packml:nodei160 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "AvailableTransitions" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "AvailableTransitions" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "160" ;
+    base:hasValueRank 1 .
+
+packml:nodei161 a opcua:FiniteStateVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    opcua:HasProperty packml:nodei162 ;
+    opcua:hasId packml:nodei162 ;
+    base:hasBrowseName "CurrentState" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDisplayName "CurrentState" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "161" .
+
+packml:nodei162 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "Id" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "Id" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "162" .
+
+packml:nodei163 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "TransitionNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "TransitionNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "163" .
+
+packml:nodei164 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "TransitionNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "TransitionNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "164" .
+
+packml:nodei165 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "TransitionNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "TransitionNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "165" .
+
+packml:nodei166 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "TransitionNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "TransitionNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "166" .
+
+packml:nodei167 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "AvailableStates" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "AvailableStates" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "167" ;
+    base:hasValueRank 1 .
+
+packml:nodei168 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "StateNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "StateNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "168" ;
+    base:hasValue 8 .
+
+packml:nodei169 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "StateNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "StateNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "169" ;
+    base:hasValue 9 .
+
+packml:nodei171 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "StateNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "StateNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "171" ;
+    base:hasValue 18 .
+
+packml:nodei172 a opcua:FiniteStateVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    opcua:HasProperty packml:nodei173 ;
+    opcua:hasId packml:nodei173 ;
+    base:hasBrowseName "CurrentState" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDisplayName "CurrentState" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "172" .
+
+packml:nodei173 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "Id" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "Id" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "173" .
+
+packml:nodei174 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "TransitionNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "TransitionNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "174" .
+
+packml:nodei175 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "TransitionNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "TransitionNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "175" .
+
+packml:nodei176 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "TransitionNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "TransitionNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "176" .
+
+packml:nodei177 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "AvailableStates" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "AvailableStates" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "177" ;
+    base:hasValueRank 1 .
+
+packml:nodei178 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "StateNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "StateNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "178" ;
+    base:hasValue 19 .
+
+packml:nodei179 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "TransitionNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "TransitionNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "179" .
+
+packml:nodei192 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasBrowseName "UnitModeRequested" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:Boolean ;
+    base:hasDisplayName "UnitModeRequested" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "192" .
+
+packml:nodei193 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "UnitSupportedModes" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "UnitSupportedModes" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "193" .
+
+packml:nodei194 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasArrayDimensions ( 4 ) ;
+    base:hasBrowseName "EnumValues" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:EnumValueType ;
+    base:hasDisplayName "EnumValues" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "194" ;
+    base:hasValueList ( "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 0, \"xsd:DisplayName\": {\"xsd:Text\": \"Invalid\"}, \"xsd:Description\": {\"xsd:Text\": \"This is an invalid mode\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 1, \"xsd:DisplayName\": {\"xsd:Text\": \"Produce\"}, \"xsd:Description\": {\"xsd:Text\": \"Machine is in production mode\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 2, \"xsd:DisplayName\": {\"xsd:Text\": \"Maintenance\"}, \"xsd:Description\": {\"xsd:Text\": \"Machine is in maintenance mode\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 3, \"xsd:DisplayName\": {\"xsd:Text\": \"Manual\"}, \"xsd:Description\": {\"xsd:Text\": \"Machine is in manual mode\"}}}}"^^rdf:JSON ) ;
+    base:hasValueRank 1 .
+
+packml:nodei195 a opcua:DataTypeDictionaryType,
+        opcua:VariableNodeClass ;
+    opcua:HasComponent packml:nodei180,
+        packml:nodei182,
+        packml:nodei184,
+        packml:nodei186,
+        packml:nodei187,
+        packml:nodei190 ;
+    opcua:HasProperty packml:nodei196 ;
+    packml:hasPackMLAlarmDataType packml:nodei182 ;
+    packml:hasPackMLCountDataType packml:nodei180 ;
+    packml:hasPackMLDescriptorDataType packml:nodei184 ;
+    packml:hasPackMLIngredientsDataType packml:nodei186 ;
+    packml:hasPackMLProductDataType packml:nodei190 ;
+    packml:hasPackMLRemoteInterfaceDataType packml:nodei187 ;
+    opcua:hasNamespaceUri packml:nodei196 ;
+    base:hasBrowseName "TypeDictionary" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:ByteString ;
+    base:hasDescription "Collects the data type descriptions of http://opcfoundation.org/UA/PackML" ;
+    base:hasDisplayName "TypeDictionary" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "195" ;
+    base:hasSymbolicName "TypeDictionary_BinarySchema" ;
+    base:hasValue "PG9wYzpUeXBlRGljdGlvbmFyeSB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4bWxuczp0bnM9Imh0dHA6Ly9vcGNmb3VuZGF0aW9uLm9yZy9VQS9QYWNrTUwvIiBEZWZhdWx0Qnl0ZU9yZGVyPSJMaXR0bGVFbmRpYW4iIHhtbG5zOm9wYz0iaHR0cDovL29wY2ZvdW5kYXRpb24ub3JnL0JpbmFyeVNjaGVtYS8iIHhtbG5zOnVhPSJodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvIiBUYXJnZXROYW1lc3BhY2U9Imh0dHA6Ly9vcGNmb3VuZGF0aW9uLm9yZy9VQS9QYWNrTUwvIj4KIDxvcGM6SW1wb3J0IE5hbWVzcGFjZT0iaHR0cDovL29wY2ZvdW5kYXRpb24ub3JnL1VBLyIvPgogPG9wYzpTdHJ1Y3R1cmVkVHlwZSBCYXNlVHlwZT0idWE6RXh0ZW5zaW9uT2JqZWN0IiBOYW1lPSJQYWNrTUxBbGFybURhdGFUeXBlIj4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6SW50MzIiIE5hbWU9IklEIi8+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOkludDMyIiBOYW1lPSJWYWx1ZSIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpDaGFyQXJyYXkiIE5hbWU9Ik1lc3NhZ2UiLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6SW50MzIiIE5hbWU9IkNhdGVnb3J5Ii8+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOkRhdGVUaW1lIiBOYW1lPSJEYXRlVGltZSIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpEYXRlVGltZSIgTmFtZT0iQWNrRGF0ZVRpbWUiLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6Qm9vbGVhbiIgTmFtZT0iVHJpZ2dlciIvPgogPC9vcGM6U3RydWN0dXJlZFR5cGU+CiA8b3BjOlN0cnVjdHVyZWRUeXBlIEJhc2VUeXBlPSJ1YTpFeHRlbnNpb25PYmplY3QiIE5hbWU9IlBhY2tNTENvdW50RGF0YVR5cGUiPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpJbnQzMiIgTmFtZT0iSUQiLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6Q2hhckFycmF5IiBOYW1lPSJOYW1lIi8+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0idWE6RVVJbmZvcm1hdGlvbiIgTmFtZT0iVW5pdCIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpJbnQzMiIgTmFtZT0iQ291bnQiLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6SW50MzIiIE5hbWU9IkFjY0NvdW50Ii8+CiA8L29wYzpTdHJ1Y3R1cmVkVHlwZT4KIDxvcGM6U3RydWN0dXJlZFR5cGUgQmFzZVR5cGU9InVhOkV4dGVuc2lvbk9iamVjdCIgTmFtZT0iUGFja01MRGVzY3JpcHRvckRhdGFUeXBlIj4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6SW50MzIiIE5hbWU9IklEIi8+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOkNoYXJBcnJheSIgTmFtZT0iTmFtZSIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9InVhOkVVSW5mb3JtYXRpb24iIE5hbWU9IlVuaXQiLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6RmxvYXQiIE5hbWU9IlZhbHVlIi8+CiA8L29wYzpTdHJ1Y3R1cmVkVHlwZT4KIDxvcGM6U3RydWN0dXJlZFR5cGUgQmFzZVR5cGU9InVhOkV4dGVuc2lvbk9iamVjdCIgTmFtZT0iUGFja01MSW5ncmVkaWVudHNEYXRhVHlwZSI+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOkludDMyIiBOYW1lPSJJbmdyZWRpZW50SUQiLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6SW50MzIiIE5hbWU9Ik5vT2ZQYXJhbWV0ZXIiLz4KICA8b3BjOkZpZWxkIExlbmd0aEZpZWxkPSJOb09mUGFyYW1ldGVyIiBUeXBlTmFtZT0idG5zOlBhY2tNTERlc2NyaXB0b3JEYXRhVHlwZSIgTmFtZT0iUGFyYW1ldGVyIi8+CiA8L29wYzpTdHJ1Y3R1cmVkVHlwZT4KIDxvcGM6U3RydWN0dXJlZFR5cGUgQmFzZVR5cGU9InVhOkV4dGVuc2lvbk9iamVjdCIgTmFtZT0iUGFja01MUHJvZHVjdERhdGFUeXBlIj4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6SW50MzIiIE5hbWU9IlByb2R1Y3RJRCIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpJbnQzMiIgTmFtZT0iTm9PZlByb2Nlc3NWYXJpYWJsZXMiLz4KICA8b3BjOkZpZWxkIExlbmd0aEZpZWxkPSJOb09mUHJvY2Vzc1ZhcmlhYmxlcyIgVHlwZU5hbWU9InRuczpQYWNrTUxEZXNjcmlwdG9yRGF0YVR5cGUiIE5hbWU9IlByb2Nlc3NWYXJpYWJsZXMiLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6SW50MzIiIE5hbWU9Ik5vT2ZJbmdyZWRpZW50cyIvPgogIDxvcGM6RmllbGQgTGVuZ3RoRmllbGQ9Ik5vT2ZJbmdyZWRpZW50cyIgVHlwZU5hbWU9InRuczpQYWNrTUxJbmdyZWRpZW50c0RhdGFUeXBlIiBOYW1lPSJJbmdyZWRpZW50cyIvPgogPC9vcGM6U3RydWN0dXJlZFR5cGU+CiA8b3BjOlN0cnVjdHVyZWRUeXBlIEJhc2VUeXBlPSJ1YTpFeHRlbnNpb25PYmplY3QiIE5hbWU9IlBhY2tNTFJlbW90ZUludGVyZmFjZURhdGFUeXBlIj4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6SW50MzIiIE5hbWU9Ik51bWJlciIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpJbnQzMiIgTmFtZT0iQ29udHJvbENtZE51bWJlciIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpJbnQzMiIgTmFtZT0iQ21kVmFsdWUiLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6SW50MzIiIE5hbWU9Ik5vT2ZQYXJhbWV0ZXIiLz4KICA8b3BjOkZpZWxkIExlbmd0aEZpZWxkPSJOb09mUGFyYW1ldGVyIiBUeXBlTmFtZT0idG5zOlBhY2tNTERlc2NyaXB0b3JEYXRhVHlwZSIgTmFtZT0iUGFyYW1ldGVyIi8+CiA8L29wYzpTdHJ1Y3R1cmVkVHlwZT4KIDxvcGM6RW51bWVyYXRlZFR5cGUgTGVuZ3RoSW5CaXRzPSIzMiIgTmFtZT0iUHJvZHVjdGlvbk1haW50ZW5hbmNlTW9kZUVudW0iPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkludmFsaWQiIFZhbHVlPSIwIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iUHJvZHVjZSIgVmFsdWU9IjEiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNYWludGVuYW5jZSIgVmFsdWU9IjIiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNYW51YWwiIFZhbHVlPSIzIi8+CiA8L29wYzpFbnVtZXJhdGVkVHlwZT4KPC9vcGM6VHlwZURpY3Rpb25hcnk+Cg==" .
+
+packml:nodei196 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "NamespaceUri" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDescription "A URI that uniquely identifies the dictionary." ;
+    base:hasDisplayName "NamespaceUri" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "196" ;
+    base:hasValue "http://opcfoundation.org/UA/PackML/" .
+
+packml:nodei197 a opcua:DataTypeDictionaryType,
+        opcua:VariableNodeClass ;
+    opcua:HasComponent packml:nodei181,
+        packml:nodei183,
+        packml:nodei185,
+        packml:nodei188,
+        packml:nodei189,
+        packml:nodei191 ;
+    opcua:HasProperty packml:nodei198 ;
+    packml:hasPackMLAlarmDataType packml:nodei183 ;
+    packml:hasPackMLCountDataType packml:nodei181 ;
+    packml:hasPackMLDescriptorDataType packml:nodei185 ;
+    packml:hasPackMLIngredientsDataType packml:nodei189 ;
+    packml:hasPackMLProductDataType packml:nodei191 ;
+    packml:hasPackMLRemoteInterfaceDataType packml:nodei188 ;
+    opcua:hasNamespaceUri packml:nodei198 ;
+    base:hasBrowseName "TypeDictionary" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:ByteString ;
+    base:hasDescription "Collects the data type descriptions of http://opcfoundation.org/UA/PackML" ;
+    base:hasDisplayName "TypeDictionary" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "197" ;
+    base:hasSymbolicName "TypeDictionary_XmlSchema" ;
+    base:hasValue "PHhzOnNjaGVtYSBlbGVtZW50Rm9ybURlZmF1bHQ9InF1YWxpZmllZCIgdGFyZ2V0TmFtZXNwYWNlPSJodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvUGFja01ML1R5cGVzLnhzZCIgeG1sbnM6dG5zPSJodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvUGFja01ML1R5cGVzLnhzZCIgeG1sbnM6dWE9Imh0dHA6Ly9vcGNmb3VuZGF0aW9uLm9yZy9VQS8yMDA4LzAyL1R5cGVzLnhzZCIgeG1sbnM6eHM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIj4KIDx4czppbXBvcnQgbmFtZXNwYWNlPSJodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvMjAwOC8wMi9UeXBlcy54c2QiLz4KIDx4czpzaW1wbGVUeXBlIG5hbWU9IlByb2R1Y3Rpb25NYWludGVuYW5jZU1vZGVFbnVtIj4KICA8eHM6cmVzdHJpY3Rpb24gYmFzZT0ieHM6c3RyaW5nIj4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJJbnZhbGlkXzAiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJQcm9kdWNlXzEiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJNYWludGVuYW5jZV8yIi8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iTWFudWFsXzMiLz4KICA8L3hzOnJlc3RyaWN0aW9uPgogPC94czpzaW1wbGVUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOlByb2R1Y3Rpb25NYWludGVuYW5jZU1vZGVFbnVtIiBuYW1lPSJQcm9kdWN0aW9uTWFpbnRlbmFuY2VNb2RlRW51bSIvPgogPHhzOmNvbXBsZXhUeXBlIG5hbWU9Ikxpc3RPZlByb2R1Y3Rpb25NYWludGVuYW5jZU1vZGVFbnVtIj4KICA8eHM6c2VxdWVuY2U+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSJ1bmJvdW5kZWQiIHR5cGU9InRuczpQcm9kdWN0aW9uTWFpbnRlbmFuY2VNb2RlRW51bSIgbmFtZT0iUHJvZHVjdGlvbk1haW50ZW5hbmNlTW9kZUVudW0iIG5pbGxhYmxlPSJ0cnVlIi8+CiAgPC94czpzZXF1ZW5jZT4KIDwveHM6Y29tcGxleFR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6TGlzdE9mUHJvZHVjdGlvbk1haW50ZW5hbmNlTW9kZUVudW0iIG5hbWU9Ikxpc3RPZlByb2R1Y3Rpb25NYWludGVuYW5jZU1vZGVFbnVtIiBuaWxsYWJsZT0idHJ1ZSIvPgogPHhzOmNvbXBsZXhUeXBlIG5hbWU9IlBhY2tNTEFsYXJtRGF0YVR5cGUiPgogIDx4czpzZXF1ZW5jZT4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InhzOmludCIgbmFtZT0iSUQiLz4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InhzOmludCIgbmFtZT0iVmFsdWUiLz4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InhzOnN0cmluZyIgbmFtZT0iTWVzc2FnZSIvPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0ieHM6aW50IiBuYW1lPSJDYXRlZ29yeSIvPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0ieHM6ZGF0ZVRpbWUiIG5hbWU9IkRhdGVUaW1lIi8+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ4czpkYXRlVGltZSIgbmFtZT0iQWNrRGF0ZVRpbWUiLz4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InhzOmJvb2xlYW4iIG5hbWU9IlRyaWdnZXIiLz4KICA8L3hzOnNlcXVlbmNlPgogPC94czpjb21wbGV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuczpQYWNrTUxBbGFybURhdGFUeXBlIiBuYW1lPSJQYWNrTUxBbGFybURhdGFUeXBlIi8+CiA8eHM6Y29tcGxleFR5cGUgbmFtZT0iTGlzdE9mUGFja01MQWxhcm1EYXRhVHlwZSI+CiAgPHhzOnNlcXVlbmNlPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0idW5ib3VuZGVkIiB0eXBlPSJ0bnM6UGFja01MQWxhcm1EYXRhVHlwZSIgbmFtZT0iUGFja01MQWxhcm1EYXRhVHlwZSIgbmlsbGFibGU9InRydWUiLz4KICA8L3hzOnNlcXVlbmNlPgogPC94czpjb21wbGV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuczpMaXN0T2ZQYWNrTUxBbGFybURhdGFUeXBlIiBuYW1lPSJMaXN0T2ZQYWNrTUxBbGFybURhdGFUeXBlIiBuaWxsYWJsZT0idHJ1ZSIvPgogPHhzOmNvbXBsZXhUeXBlIG5hbWU9IlBhY2tNTENvdW50RGF0YVR5cGUiPgogIDx4czpzZXF1ZW5jZT4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InhzOmludCIgbmFtZT0iSUQiLz4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InhzOnN0cmluZyIgbmFtZT0iTmFtZSIvPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0idWE6RVVJbmZvcm1hdGlvbiIgbmFtZT0iVW5pdCIvPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0ieHM6aW50IiBuYW1lPSJDb3VudCIvPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0ieHM6aW50IiBuYW1lPSJBY2NDb3VudCIvPgogIDwveHM6c2VxdWVuY2U+CiA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOlBhY2tNTENvdW50RGF0YVR5cGUiIG5hbWU9IlBhY2tNTENvdW50RGF0YVR5cGUiLz4KIDx4czpjb21wbGV4VHlwZSBuYW1lPSJMaXN0T2ZQYWNrTUxDb3VudERhdGFUeXBlIj4KICA8eHM6c2VxdWVuY2U+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSJ1bmJvdW5kZWQiIHR5cGU9InRuczpQYWNrTUxDb3VudERhdGFUeXBlIiBuYW1lPSJQYWNrTUxDb3VudERhdGFUeXBlIiBuaWxsYWJsZT0idHJ1ZSIvPgogIDwveHM6c2VxdWVuY2U+CiA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOkxpc3RPZlBhY2tNTENvdW50RGF0YVR5cGUiIG5hbWU9Ikxpc3RPZlBhY2tNTENvdW50RGF0YVR5cGUiIG5pbGxhYmxlPSJ0cnVlIi8+CiA8eHM6Y29tcGxleFR5cGUgbmFtZT0iUGFja01MRGVzY3JpcHRvckRhdGFUeXBlIj4KICA8eHM6c2VxdWVuY2U+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ4czppbnQiIG5hbWU9IklEIi8+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ4czpzdHJpbmciIG5hbWU9Ik5hbWUiLz4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InVhOkVVSW5mb3JtYXRpb24iIG5hbWU9IlVuaXQiLz4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InhzOmZsb2F0IiBuYW1lPSJWYWx1ZSIvPgogIDwveHM6c2VxdWVuY2U+CiA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOlBhY2tNTERlc2NyaXB0b3JEYXRhVHlwZSIgbmFtZT0iUGFja01MRGVzY3JpcHRvckRhdGFUeXBlIi8+CiA8eHM6Y29tcGxleFR5cGUgbmFtZT0iTGlzdE9mUGFja01MRGVzY3JpcHRvckRhdGFUeXBlIj4KICA8eHM6c2VxdWVuY2U+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSJ1bmJvdW5kZWQiIHR5cGU9InRuczpQYWNrTUxEZXNjcmlwdG9yRGF0YVR5cGUiIG5hbWU9IlBhY2tNTERlc2NyaXB0b3JEYXRhVHlwZSIgbmlsbGFibGU9InRydWUiLz4KICA8L3hzOnNlcXVlbmNlPgogPC94czpjb21wbGV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuczpMaXN0T2ZQYWNrTUxEZXNjcmlwdG9yRGF0YVR5cGUiIG5hbWU9Ikxpc3RPZlBhY2tNTERlc2NyaXB0b3JEYXRhVHlwZSIgbmlsbGFibGU9InRydWUiLz4KIDx4czpjb21wbGV4VHlwZSBuYW1lPSJQYWNrTUxJbmdyZWRpZW50c0RhdGFUeXBlIj4KICA8eHM6c2VxdWVuY2U+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ4czppbnQiIG5hbWU9IkluZ3JlZGllbnRJRCIvPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0idG5zOkxpc3RPZlBhY2tNTERlc2NyaXB0b3JEYXRhVHlwZSIgbmFtZT0iUGFyYW1ldGVyIi8+CiAgPC94czpzZXF1ZW5jZT4KIDwveHM6Y29tcGxleFR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6UGFja01MSW5ncmVkaWVudHNEYXRhVHlwZSIgbmFtZT0iUGFja01MSW5ncmVkaWVudHNEYXRhVHlwZSIvPgogPHhzOmNvbXBsZXhUeXBlIG5hbWU9Ikxpc3RPZlBhY2tNTEluZ3JlZGllbnRzRGF0YVR5cGUiPgogIDx4czpzZXF1ZW5jZT4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9InVuYm91bmRlZCIgdHlwZT0idG5zOlBhY2tNTEluZ3JlZGllbnRzRGF0YVR5cGUiIG5hbWU9IlBhY2tNTEluZ3JlZGllbnRzRGF0YVR5cGUiIG5pbGxhYmxlPSJ0cnVlIi8+CiAgPC94czpzZXF1ZW5jZT4KIDwveHM6Y29tcGxleFR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6TGlzdE9mUGFja01MSW5ncmVkaWVudHNEYXRhVHlwZSIgbmFtZT0iTGlzdE9mUGFja01MSW5ncmVkaWVudHNEYXRhVHlwZSIgbmlsbGFibGU9InRydWUiLz4KIDx4czpjb21wbGV4VHlwZSBuYW1lPSJQYWNrTUxQcm9kdWN0RGF0YVR5cGUiPgogIDx4czpzZXF1ZW5jZT4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InhzOmludCIgbmFtZT0iUHJvZHVjdElEIi8+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ0bnM6TGlzdE9mUGFja01MRGVzY3JpcHRvckRhdGFUeXBlIiBuYW1lPSJQcm9jZXNzVmFyaWFibGVzIi8+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ0bnM6TGlzdE9mUGFja01MSW5ncmVkaWVudHNEYXRhVHlwZSIgbmFtZT0iSW5ncmVkaWVudHMiLz4KICA8L3hzOnNlcXVlbmNlPgogPC94czpjb21wbGV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuczpQYWNrTUxQcm9kdWN0RGF0YVR5cGUiIG5hbWU9IlBhY2tNTFByb2R1Y3REYXRhVHlwZSIvPgogPHhzOmNvbXBsZXhUeXBlIG5hbWU9Ikxpc3RPZlBhY2tNTFByb2R1Y3REYXRhVHlwZSI+CiAgPHhzOnNlcXVlbmNlPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0idW5ib3VuZGVkIiB0eXBlPSJ0bnM6UGFja01MUHJvZHVjdERhdGFUeXBlIiBuYW1lPSJQYWNrTUxQcm9kdWN0RGF0YVR5cGUiIG5pbGxhYmxlPSJ0cnVlIi8+CiAgPC94czpzZXF1ZW5jZT4KIDwveHM6Y29tcGxleFR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6TGlzdE9mUGFja01MUHJvZHVjdERhdGFUeXBlIiBuYW1lPSJMaXN0T2ZQYWNrTUxQcm9kdWN0RGF0YVR5cGUiIG5pbGxhYmxlPSJ0cnVlIi8+CiA8eHM6Y29tcGxleFR5cGUgbmFtZT0iUGFja01MUmVtb3RlSW50ZXJmYWNlRGF0YVR5cGUiPgogIDx4czpzZXF1ZW5jZT4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InhzOmludCIgbmFtZT0iTnVtYmVyIi8+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ4czppbnQiIG5hbWU9IkNvbnRyb2xDbWROdW1iZXIiLz4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InhzOmludCIgbmFtZT0iQ21kVmFsdWUiLz4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InRuczpMaXN0T2ZQYWNrTUxEZXNjcmlwdG9yRGF0YVR5cGUiIG5hbWU9IlBhcmFtZXRlciIvPgogIDwveHM6c2VxdWVuY2U+CiA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOlBhY2tNTFJlbW90ZUludGVyZmFjZURhdGFUeXBlIiBuYW1lPSJQYWNrTUxSZW1vdGVJbnRlcmZhY2VEYXRhVHlwZSIvPgogPHhzOmNvbXBsZXhUeXBlIG5hbWU9Ikxpc3RPZlBhY2tNTFJlbW90ZUludGVyZmFjZURhdGFUeXBlIj4KICA8eHM6c2VxdWVuY2U+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSJ1bmJvdW5kZWQiIHR5cGU9InRuczpQYWNrTUxSZW1vdGVJbnRlcmZhY2VEYXRhVHlwZSIgbmFtZT0iUGFja01MUmVtb3RlSW50ZXJmYWNlRGF0YVR5cGUiIG5pbGxhYmxlPSJ0cnVlIi8+CiAgPC94czpzZXF1ZW5jZT4KIDwveHM6Y29tcGxleFR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6TGlzdE9mUGFja01MUmVtb3RlSW50ZXJmYWNlRGF0YVR5cGUiIG5hbWU9Ikxpc3RPZlBhY2tNTFJlbW90ZUludGVyZmFjZURhdGFUeXBlIiBuaWxsYWJsZT0idHJ1ZSIvPgo8L3hzOnNjaGVtYT4K" .
+
+packml:nodei198 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "NamespaceUri" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDescription "A URI that uniquely identifies the dictionary." ;
+    base:hasDisplayName "NamespaceUri" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "198" ;
+    base:hasValue "http://opcfoundation.org/UA/PackML/Types.xsd" .
+
+packml:nodei200 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "UnitModeCurrent" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:Enumeration ;
+    base:hasDisplayName "UnitModeCurrent" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "200" .
+
+packml:nodei201 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasBrowseName "UnitModeChangeInProcess" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:Boolean ;
+    base:hasDisplayName "UnitModeChangeInProcess" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "201" .
+
+packml:nodei202 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "AvailableTransitions" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "AvailableTransitions" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "202" ;
+    base:hasValueRank 1 .
+
+packml:nodei204 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "AvailableTransitions" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "AvailableTransitions" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "204" ;
+    base:hasValueRank 1 .
+
+packml:nodei208 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "TransitionNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "TransitionNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "208" .
+
+packml:nodei209 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasBrowseName "StateRequested" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:Int32 ;
+    base:hasDisplayName "StateRequested" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "209" .
+
+packml:nodei210 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasBrowseName "StateChangeInProcess" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:Boolean ;
+    base:hasDisplayName "StateChangeInProcess" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "210" .
+
+packml:nodei211 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "EquipmentBlocked" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:Boolean ;
+    base:hasDisplayName "EquipmentBlocked" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "211" .
+
+packml:nodei212 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "AvailableStates" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "AvailableStates" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "212" ;
+    base:hasValueRank 1 .
+
+packml:nodei213 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "AvailableTransitions" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "AvailableTransitions" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "213" ;
+    base:hasValueRank 1 .
+
+packml:nodei214 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "AvailableStates" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "AvailableStates" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "214" ;
+    base:hasValueRank 1 .
+
+packml:nodei215 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "TransitionNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "TransitionNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "215" .
+
+packml:nodei216 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "TransitionNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "TransitionNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "216" .
+
+packml:nodei217 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "TransitionNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "TransitionNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "217" .
+
+packml:nodei218 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasBrowseName "TagID" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "TagID" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "218" .
+
+packml:nodei219 a opcua:AnalogItemType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    opcua:HasProperty packml:nodei220 ;
+    opcua:hasEURange packml:nodei220 ;
+    base:hasBrowseName "MachSpeed" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:Float ;
+    base:hasDisplayName "MachSpeed" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "219" .
+
+packml:nodei220 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "EURange" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Range ;
+    base:hasDisplayName "EURange" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "220" .
+
+packml:nodei221 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasBrowseName "PackMLVersion" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "PackMLVersion" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "221" ;
+    base:hasValue "TR88.00.02-2015" .
+
+packml:nodei222 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "AvailableTransitions" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "AvailableTransitions" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "222" ;
+    base:hasValueRank 1 .
+
+packml:nodei223 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "AvailableStates" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "AvailableStates" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "223" ;
+    base:hasValueRank 1 .
+
+packml:nodei224 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "EquipmentStarved" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:Boolean ;
+    base:hasDisplayName "EquipmentStarved" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "224" .
+
+packml:nodei225 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "UnitModeCurrent" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:Enumeration ;
+    base:hasDisplayName "UnitModeCurrent" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "225" .
+
+packml:nodei227 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "Id" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "Id" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "227" .
+
+packml:nodei232 a opcua:AnalogItemType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    opcua:HasProperty packml:nodei233 ;
+    opcua:hasEURange packml:nodei233 ;
+    base:hasBrowseName "CurMachSpeed" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:Float ;
+    base:hasDisplayName "CurMachSpeed" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "232" .
+
+packml:nodei233 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "EURange" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Range ;
+    base:hasDisplayName "EURange" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "233" .
+
+packml:nodei236 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasBrowseName "MaterialInterlocked" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:Boolean ;
+    base:hasDisplayName "MaterialInterlocked" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "236" .
+
+packml:nodei237 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "MaterialInterlock" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:Boolean ;
+    base:hasDisplayName "MaterialInterlock" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "237" ;
+    base:hasValueRank 1 .
+
+packml:nodei238 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "Alarm" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype packml:PackMLAlarmDataType ;
+    base:hasDisplayName "Alarm" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "238" ;
+    base:hasValueRank 1 .
+
+packml:nodei239 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasBrowseName "AlarmExtent" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:Int32 ;
+    base:hasDisplayName "AlarmExtent" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "239" .
+
+packml:nodei240 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "AlarmHistory" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype packml:PackMLAlarmDataType ;
+    base:hasDisplayName "AlarmHistory" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "240" ;
+    base:hasValueRank 1 .
+
+packml:nodei241 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasBrowseName "AlarmHistoryExtent" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:Int32 ;
+    base:hasDisplayName "AlarmHistoryExtent" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "241" .
+
+packml:nodei242 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "Warning" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype packml:PackMLAlarmDataType ;
+    base:hasDisplayName "Warning" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "242" ;
+    base:hasValueRank 1 .
+
+packml:nodei243 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasBrowseName "WarningExtent" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:Int32 ;
+    base:hasDisplayName "WarningExtent" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "243" .
+
+packml:nodei244 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasBrowseName "StopReason" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype packml:PackMLAlarmDataType ;
+    base:hasDisplayName "StopReason" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "244" .
+
+packml:nodei245 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasBrowseName "StopReasonExtent" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:Int32 ;
+    base:hasDisplayName "StopReasonExtent" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "245" .
+
+packml:nodei246 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "ModeCurrentTime" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:Int32 ;
+    base:hasDisplayName "ModeCurrentTime" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "246" ;
+    base:hasValueRank 1 .
+
+packml:nodei247 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "ModeCumulativeTime" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:Int32 ;
+    base:hasDisplayName "ModeCumulativeTime" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "247" ;
+    base:hasValueRank 1 .
+
+packml:nodei248 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasArrayDimensions ( 0 0 ) ;
+    base:hasBrowseName "StateCurrentTime" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:Int32 ;
+    base:hasDisplayName "StateCurrentTime" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "248" ;
+    base:hasValueRank 2 .
+
+packml:nodei249 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasArrayDimensions ( 0 0 ) ;
+    base:hasBrowseName "StateCumulativeTime" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:Int32 ;
+    base:hasDisplayName "StateCumulativeTime" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "249" ;
+    base:hasValueRank 2 .
+
+packml:nodei252 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasBrowseName "AccTimeSinceReset" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:Int32 ;
+    base:hasDisplayName "AccTimeSinceReset" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "252" .
+
+packml:nodei253 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasBrowseName "MachDesignSpeed" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:Float ;
+    base:hasDisplayName "MachDesignSpeed" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "253" .
+
+packml:nodei255 a opcua:AnalogItemType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    opcua:HasProperty packml:nodei256 ;
+    opcua:hasEURange packml:nodei256 ;
+    base:hasBrowseName "CurMachSpeed" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:Float ;
+    base:hasDisplayName "CurMachSpeed" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "255" .
+
+packml:nodei256 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "EURange" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Range ;
+    base:hasDisplayName "EURange" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "256" .
+
+packml:nodei257 a opcua:AnalogItemType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    opcua:HasProperty packml:nodei258 ;
+    opcua:hasEURange packml:nodei258 ;
+    base:hasBrowseName "MachSpeed" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:Float ;
+    base:hasDisplayName "MachSpeed" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "257" .
+
+packml:nodei258 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "EURange" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Range ;
+    base:hasDisplayName "EURange" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "258" .
+
+packml:nodei259 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "AvailableStates" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "AvailableStates" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "259" ;
+    base:hasValueRank 1 .
+
+packml:nodei262 a opcua:FiniteStateVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    opcua:HasProperty packml:nodei263 ;
+    opcua:hasId packml:nodei263 ;
+    base:hasBrowseName "CurrentState" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDisplayName "CurrentState" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "262" .
+
+packml:nodei263 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "Id" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "Id" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "263" .
+
+packml:nodei266 a opcua:FiniteStateVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    opcua:HasProperty packml:nodei227 ;
+    opcua:hasId packml:nodei227 ;
+    base:hasBrowseName "CurrentState" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDisplayName "CurrentState" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "266" .
+
+packml:nodei272 a opcua:FiniteStateVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    opcua:HasProperty packml:nodei273 ;
+    opcua:hasId packml:nodei273 ;
+    base:hasBrowseName "CurrentState" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDisplayName "CurrentState" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "272" .
+
+packml:nodei273 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "Id" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "Id" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "273" .
+
+packml:nodei274 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "EquipmentBlocked" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:Boolean ;
+    base:hasDisplayName "EquipmentBlocked" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "274" .
+
+packml:nodei275 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "EquipmentStarved" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:Boolean ;
+    base:hasDisplayName "EquipmentStarved" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "275" .
+
+packml:nodei276 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "Parameter" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype packml:PackMLDescriptorDataType ;
+    base:hasDisplayName "Parameter" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "276" ;
+    base:hasValueRank 1 .
+
+packml:nodei290 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "UnitSupportedModes" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "UnitSupportedModes" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "290" .
+
+packml:nodei342 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasArrayDimensions ( 1 ) ;
+    base:hasBrowseName "InputArguments" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Argument ;
+    base:hasDisplayName "InputArguments" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "342" ;
+    base:hasValueList ( "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=297\"}, \"xsd:Body\": {\"xsd:Argument\": {\"xsd:Name\": \"Parameter\", \"xsd:DataType\": {\"xsd:Identifier\": \"ns=1;i=16\"}, \"xsd:ValueRank\": 1, \"xsd:ArrayDimensions\": {\"xsd:UInt32\": [0]}, \"xsd:Description\": {\"xsd:Text\": \"The array of parameter that can be used by the method\"}}}}"^^rdf:JSON ) ;
+    base:hasValueRank 1 .
+
+packml:nodei348 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasArrayDimensions ( 1 ) ;
+    base:hasBrowseName "InputArguments" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Argument ;
+    base:hasDisplayName "InputArguments" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "348" ;
+    base:hasValueList ( "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=297\"}, \"xsd:Body\": {\"xsd:Argument\": {\"xsd:Name\": \"RequestedMachineSpeed\", \"xsd:DataType\": {\"xsd:Identifier\": \"i=10\"}, \"xsd:ValueRank\": -1, \"xsd:ArrayDimensions\": null, \"xsd:Description\": {\"xsd:Text\": \"The target machine speed\"}}}}"^^rdf:JSON ) ;
+    base:hasValueRank 1 .
+
+packml:nodei349 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasArrayDimensions ( 1 ) ;
+    base:hasBrowseName "InputArguments" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Argument ;
+    base:hasDisplayName "InputArguments" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "349" ;
+    base:hasValueList ( "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=297\"}, \"xsd:Body\": {\"xsd:Argument\": {\"xsd:Name\": \"Product\", \"xsd:DataType\": {\"xsd:Identifier\": \"ns=1;i=18\"}, \"xsd:ValueRank\": 1, \"xsd:ArrayDimensions\": {\"xsd:UInt32\": [0]}, \"xsd:Description\": {\"xsd:Text\": \"This structure is an array of product definition, which includes the ProductId, ProcessVariables array and Ingredient array.\"}}}}"^^rdf:JSON ) ;
+    base:hasValueRank 1 .
+
+packml:nodei350 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasArrayDimensions ( 1 ) ;
+    base:hasBrowseName "InputArguments" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Argument ;
+    base:hasDisplayName "InputArguments" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "350" ;
+    base:hasValueList ( "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=297\"}, \"xsd:Body\": {\"xsd:Argument\": {\"xsd:Name\": \"RemoteInterface\", \"xsd:DataType\": {\"xsd:Identifier\": \"ns=1;i=19\"}, \"xsd:ValueRank\": 1, \"xsd:ArrayDimensions\": {\"xsd:UInt32\": [0]}, \"xsd:Description\": {\"xsd:Text\": \"This structure is an array of remote interface information which include Number, ControlCmdNumber, CmdValue and Parameter.\"}}}}"^^rdf:JSON ) ;
+    base:hasValueRank 1 .
+
+packml:nodei351 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasArrayDimensions ( 2 ) ;
+    base:hasBrowseName "InputArguments" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Argument ;
+    base:hasDisplayName "InputArguments" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "351" ;
+    base:hasValueList ( "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=297\"}, \"xsd:Body\": {\"xsd:Argument\": {\"xsd:Name\": \"InterlockId\", \"xsd:DataType\": {\"xsd:Identifier\": \"i=6\"}, \"xsd:ValueRank\": -1, \"xsd:ArrayDimensions\": null, \"xsd:Description\": {\"xsd:Text\": \"The NodeId of the interlock to set or reset.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=297\"}, \"xsd:Body\": {\"xsd:Argument\": {\"xsd:Name\": \"State\", \"xsd:DataType\": {\"xsd:Identifier\": \"i=1\"}, \"xsd:ValueRank\": -1, \"xsd:ArrayDimensions\": null, \"xsd:Description\": {\"xsd:Text\": \"The state that the targeted interlock should be set to.  True is set to interlocked, false is not interlocked.\"}}}}"^^rdf:JSON ) ;
+    base:hasValueRank 1 .
+
+packml:nodei352 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasArrayDimensions ( 1 ) ;
+    base:hasBrowseName "InputArguments" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Argument ;
+    base:hasDisplayName "InputArguments" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "352" ;
+    base:hasValueList ( "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=297\"}, \"xsd:Body\": {\"xsd:Argument\": {\"xsd:Name\": \"Parameter\", \"xsd:DataType\": {\"xsd:Identifier\": \"ns=1;i=16\"}, \"xsd:ValueRank\": 1, \"xsd:ArrayDimensions\": {\"xsd:UInt32\": [0]}, \"xsd:Description\": {\"xsd:Text\": \"The array of parameter that can be used by the method\"}}}}"^^rdf:JSON ) ;
+    base:hasValueRank 1 .
+
+packml:nodei354 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "IsNamespaceSubset" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Boolean ;
+    base:hasDisplayName "IsNamespaceSubset" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "354" ;
+    base:hasValue false .
+
+packml:nodei355 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "NamespacePublicationDate" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:DateTime ;
+    base:hasDisplayName "NamespacePublicationDate" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "355" ;
+    base:hasValue "2020-10-08T11:08:00Z" .
+
+packml:nodei356 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "NamespaceUri" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "NamespaceUri" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "356" ;
+    base:hasValue "http://opcfoundation.org/UA/PackML/" .
+
+packml:nodei357 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "NamespaceVersion" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "NamespaceVersion" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "357" ;
+    base:hasValue "1.01" .
+
+packml:nodei358 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "StaticNodeIdTypes" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:IdType ;
+    base:hasDisplayName "StaticNodeIdTypes" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "358" ;
+    base:hasValueRank 1 .
+
+packml:nodei359 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "StaticNumericNodeIdRange" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NumericRange ;
+    base:hasDisplayName "StaticNumericNodeIdRange" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "359" ;
+    base:hasValueRank 1 .
+
+packml:nodei360 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "StaticStringNodeIdPattern" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "StaticStringNodeIdPattern" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "360" .
+
+packml:nodei362 a opcua:MethodNodeClass ;
+    opcua:HasProperty packml:nodei118 ;
+    opcua:hasInputArguments packml:nodei118 ;
+    base:hasBrowseName "SetUnitMode" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "SetUnitMode" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "362" .
+
+packml:nodei39 a opcua:ObjectNodeClass,
+        opcua:TransitionType ;
+    opcua:FromState packml:nodei27 ;
+    opcua:HasProperty packml:nodei139 ;
+    opcua:ToState packml:nodei28 ;
+    opcua:hasTransitionNumber packml:nodei139 ;
+    base:hasBrowseName "ResettingToIdle" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "ResettingToIdle" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "39" .
+
+packml:nodei40 a opcua:ObjectNodeClass,
+        opcua:TransitionType ;
+    opcua:FromState packml:nodei28 ;
+    opcua:HasCause packml:nodei369 ;
+    opcua:HasProperty packml:nodei140 ;
+    opcua:ToState packml:nodei29 ;
+    opcua:hasTransitionNumber packml:nodei140 ;
+    base:hasBrowseName "IdleToStarting" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "IdleToStarting" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "40" .
+
+packml:nodei400 a opcua:MethodNodeClass ;
+    opcua:HasProperty packml:nodei348 ;
+    opcua:hasInputArguments packml:nodei348 ;
+    base:hasBrowseName "SetMachSpeed" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "SetMachSpeed" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "400" .
+
+packml:nodei401 a opcua:MethodNodeClass ;
+    opcua:HasProperty packml:nodei349 ;
+    opcua:hasInputArguments packml:nodei349 ;
+    base:hasBrowseName "SetProduct" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "SetProduct" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "401" .
+
+packml:nodei402 a opcua:MethodNodeClass ;
+    opcua:HasProperty packml:nodei352 ;
+    opcua:hasInputArguments packml:nodei352 ;
+    base:hasBrowseName "SetParameter" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "SetParameter" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "402" .
+
+packml:nodei403 a opcua:MethodNodeClass ;
+    opcua:HasProperty packml:nodei350 ;
+    opcua:hasInputArguments packml:nodei350 ;
+    base:hasBrowseName "RemoteCommand" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "RemoteCommand" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "403" .
+
+packml:nodei404 a opcua:MethodNodeClass ;
+    opcua:HasProperty packml:nodei351 ;
+    opcua:hasInputArguments packml:nodei351 ;
+    base:hasBrowseName "SetInterlock" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "SetInterlock" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "404" .
+
+packml:nodei41 a opcua:ObjectNodeClass,
+        opcua:TransitionType ;
+    opcua:FromState packml:nodei29 ;
+    opcua:HasProperty packml:nodei141 ;
+    opcua:ToState packml:nodei36 ;
+    opcua:hasTransitionNumber packml:nodei141 ;
+    base:hasBrowseName "StartingToExecute" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "StartingToExecute" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "41" .
+
+packml:nodei42 a opcua:ObjectNodeClass,
+        opcua:TransitionType ;
+    opcua:FromState packml:nodei36 ;
+    opcua:HasCause packml:nodei367 ;
+    opcua:HasProperty packml:nodei142 ;
+    opcua:ToState packml:nodei30 ;
+    opcua:hasTransitionNumber packml:nodei142 ;
+    base:hasBrowseName "ExecuteToSuspending" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "ExecuteToSuspending" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "42" .
+
+packml:nodei43 a opcua:ObjectNodeClass,
+        opcua:TransitionType ;
+    opcua:FromState packml:nodei30 ;
+    opcua:HasProperty packml:nodei143 ;
+    opcua:ToState packml:nodei31 ;
+    opcua:hasTransitionNumber packml:nodei143 ;
+    base:hasBrowseName "SuspendingToSuspended" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "SuspendingToSuspended" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "43" .
+
+packml:nodei44 a opcua:ObjectNodeClass,
+        opcua:TransitionType ;
+    opcua:FromState packml:nodei32 ;
+    opcua:HasProperty packml:nodei144 ;
+    opcua:ToState packml:nodei36 ;
+    opcua:hasTransitionNumber packml:nodei144 ;
+    base:hasBrowseName "UnsuspendingToExecute" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "UnsuspendingToExecute" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "44" .
+
+packml:nodei45 a opcua:ObjectNodeClass,
+        opcua:TransitionType ;
+    opcua:FromState packml:nodei36 ;
+    opcua:HasCause packml:nodei366 ;
+    opcua:HasProperty packml:nodei145 ;
+    opcua:ToState packml:nodei33 ;
+    opcua:hasTransitionNumber packml:nodei145 ;
+    base:hasBrowseName "ExecuteToHolding" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "ExecuteToHolding" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "45" .
+
+packml:nodei46 a opcua:ObjectNodeClass,
+        opcua:TransitionType ;
+    opcua:FromState packml:nodei33 ;
+    opcua:HasProperty packml:nodei146 ;
+    opcua:ToState packml:nodei34 ;
+    opcua:hasTransitionNumber packml:nodei146 ;
+    base:hasBrowseName "HoldingToHeld" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "HoldingToHeld" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "46" .
+
+packml:nodei47 a opcua:ObjectNodeClass,
+        opcua:TransitionType ;
+    opcua:FromState packml:nodei34 ;
+    opcua:HasCause packml:nodei368 ;
+    opcua:HasProperty packml:nodei147 ;
+    opcua:ToState packml:nodei35 ;
+    opcua:hasTransitionNumber packml:nodei147 ;
+    base:hasBrowseName "HeldToUnholding" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "HeldToUnholding" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "47" .
+
+packml:nodei48 a opcua:ObjectNodeClass,
+        opcua:TransitionType ;
+    opcua:FromState packml:nodei35 ;
+    opcua:HasProperty packml:nodei148 ;
+    opcua:ToState packml:nodei36 ;
+    opcua:hasTransitionNumber packml:nodei148 ;
+    base:hasBrowseName "UnholdingToExecute" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "UnholdingToExecute" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "48" .
+
+packml:nodei49 a opcua:ObjectNodeClass,
+        opcua:TransitionType ;
+    opcua:FromState packml:nodei36 ;
+    opcua:HasCause packml:nodei365 ;
+    opcua:HasProperty packml:nodei149 ;
+    opcua:ToState packml:nodei37 ;
+    opcua:hasTransitionNumber packml:nodei149 ;
+    base:hasBrowseName "ExecuteToCompleting" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "ExecuteToCompleting" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "49" .
+
+packml:nodei50 a opcua:ObjectNodeClass,
+        opcua:TransitionType ;
+    opcua:FromState packml:nodei37 ;
+    opcua:HasProperty packml:nodei150 ;
+    opcua:ToState packml:nodei38 ;
+    opcua:hasTransitionNumber packml:nodei150 ;
+    base:hasBrowseName "CompletingToComplete" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "CompletingToComplete" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "50" .
+
+packml:nodei51 a opcua:ObjectNodeClass,
+        opcua:TransitionType ;
+    opcua:FromState packml:nodei38 ;
+    opcua:HasCause packml:nodei361 ;
+    opcua:HasProperty packml:nodei151 ;
+    opcua:ToState packml:nodei27 ;
+    opcua:hasTransitionNumber packml:nodei151 ;
+    base:hasBrowseName "CompleteToResetting" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "CompleteToResetting" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "51" .
+
+packml:nodei52 a opcua:ObjectNodeClass,
+        opcua:TransitionType ;
+    opcua:FromState packml:nodei31 ;
+    opcua:HasCause packml:nodei372 ;
+    opcua:HasProperty packml:nodei152 ;
+    opcua:ToState packml:nodei32 ;
+    opcua:hasTransitionNumber packml:nodei152 ;
+    base:hasBrowseName "SuspendedToUnsuspending" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "SuspendedToUnsuspending" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "52" .
+
+packml:nodei57 a opcua:ObjectNodeClass,
+        opcua:TransitionType ;
+    opcua:FromState packml:nodei54 ;
+    opcua:HasProperty packml:nodei163 ;
+    opcua:ToState packml:nodei53 ;
+    opcua:hasTransitionNumber packml:nodei163 ;
+    base:hasBrowseName "StoppingToStopped" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "StoppingToStopped" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "57" .
+
+packml:nodei58 a opcua:ObjectNodeClass,
+        opcua:TransitionType ;
+    opcua:FromState packml:nodei55 ;
+    opcua:HasProperty packml:nodei164 ;
+    opcua:ToState packml:nodei53 ;
+    opcua:hasTransitionNumber packml:nodei164 ;
+    base:hasBrowseName "ClearingToStopped" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "ClearingToStopped" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "58" .
+
+packml:nodei59 a opcua:ObjectNodeClass,
+        opcua:TransitionType ;
+    opcua:FromState packml:nodei53 ;
+    opcua:HasCause packml:nodei376 ;
+    opcua:HasProperty packml:nodei165 ;
+    opcua:ToState packml:nodei75 ;
+    opcua:hasTransitionNumber packml:nodei165 ;
+    base:hasBrowseName "StoppedToRunning" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "StoppedToRunning" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "59" .
+
+packml:nodei60 a opcua:ObjectNodeClass,
+        opcua:TransitionType ;
+    opcua:FromState packml:nodei75 ;
+    opcua:HasCause packml:nodei375 ;
+    opcua:HasProperty packml:nodei166 ;
+    opcua:ToState packml:nodei54 ;
+    opcua:hasTransitionNumber packml:nodei166 ;
+    base:hasBrowseName "RunningToStopping" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "RunningToStopping" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "60" .
+
+packml:nodei65 a opcua:ObjectNodeClass,
+        opcua:TransitionType ;
+    opcua:FromState packml:nodei62 ;
+    opcua:HasCause packml:nodei363 ;
+    opcua:HasProperty packml:nodei174 ;
+    opcua:ToState packml:nodei71 ;
+    opcua:hasTransitionNumber packml:nodei174 ;
+    base:hasBrowseName "AbortedToCleared" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "AbortedToCleared" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "65" .
+
+packml:nodei66 a opcua:ObjectNodeClass,
+        opcua:TransitionType ;
+    opcua:FromState packml:nodei61 ;
+    opcua:HasProperty packml:nodei175 ;
+    opcua:ToState packml:nodei62 ;
+    opcua:hasTransitionNumber packml:nodei175 ;
+    base:hasBrowseName "AbortingToAborted" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "AbortingToAborted" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "66" .
+
+packml:nodei67 a opcua:ObjectNodeClass,
+        opcua:TransitionType ;
+    opcua:FromState packml:nodei71 ;
+    opcua:HasCause packml:nodei364 ;
+    opcua:HasProperty packml:nodei176 ;
+    opcua:ToState packml:nodei61 ;
+    opcua:hasTransitionNumber packml:nodei176 ;
+    base:hasBrowseName "ClearedToAborting" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "ClearedToAborting" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "67" .
+
+packml:nodei73 a opcua:ObjectNodeClass,
+        packml:PackMLAdminObjectType ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "Admin" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "Admin" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "73" .
+
+packml:nodei87 a opcua:ObjectNodeClass,
+        packml:PackMLStatusObjectType ;
+    opcua:HasComponent packml:nodei225,
+        packml:nodei255,
+        packml:nodei257,
+        packml:nodei274,
+        packml:nodei275 ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    opcua:HasProperty packml:nodei290 ;
+    packml:hasCurMachSpeed packml:nodei255 ;
+    packml:hasEquipmentBlocked packml:nodei274 ;
+    packml:hasEquipmentStarved packml:nodei275 ;
+    packml:hasMachSpeed packml:nodei257 ;
+    packml:hasUnitModeCurrent packml:nodei225 ;
+    packml:hasUnitSupportedModes packml:nodei290 ;
+    base:hasBrowseName "Status" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "Status" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "87" .
+
+packml:nodei88 a opcua:ObjectNodeClass,
+        packml:PackMLBaseStateMachineType ;
+    opcua:HasComponent packml:nodei202,
+        packml:nodei259,
+        packml:nodei272,
+        packml:nodei89 ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    packml:hasMachineState packml:nodei89 ;
+    opcua:hasAvailableStates packml:nodei259 ;
+    opcua:hasAvailableTransitions packml:nodei202 ;
+    opcua:hasCurrentState packml:nodei272 ;
+    base:hasBrowseName "BaseStateMachine" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "BaseStateMachine" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "88" .
+
+packml:nodei89 a opcua:ObjectNodeClass,
+        packml:PackMLMachineStateMachineType ;
+    opcua:HasComponent packml:nodei213,
+        packml:nodei214,
+        packml:nodei262,
+        packml:nodei90 ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    packml:hasExecuteState packml:nodei90 ;
+    opcua:hasAvailableStates packml:nodei214 ;
+    opcua:hasAvailableTransitions packml:nodei213 ;
+    opcua:hasCurrentState packml:nodei262 ;
+    base:hasBrowseName "MachineState" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "MachineState" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "89" .
+
+packml:nodei90 a opcua:ObjectNodeClass,
+        packml:PackMLExecuteStateMachineType ;
+    opcua:HasComponent packml:nodei222,
+        packml:nodei223,
+        packml:nodei266 ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    opcua:hasAvailableStates packml:nodei223 ;
+    opcua:hasAvailableTransitions packml:nodei222 ;
+    opcua:hasCurrentState packml:nodei266 ;
+    base:hasBrowseName "ExecuteState" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDescription "StateMachine that provides additional sube" ;
+    base:hasDisplayName "ExecuteState" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "90" .
+
+packml:nodei99 a opcua:ObjectNodeClass,
+        opcua:TransitionType ;
+    opcua:FromState packml:nodei29 ;
+    opcua:HasCause packml:nodei366 ;
+    opcua:HasProperty packml:nodei179 ;
+    opcua:ToState packml:nodei33 ;
+    opcua:hasTransitionNumber packml:nodei179 ;
+    base:hasBrowseName "StartingToHolding" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "StartingToHolding" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "99" .
+
+packml:ID a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype opcua:Int32 ;
+    base:hasFieldName "ID" .
+
+packml:PackMLExecuteStateMachineType a owl:Class ;
+    rdfs:subClassOf opcua:FiniteStateMachineType .
+
+packml:PackMLMachineStateMachineType a owl:Class ;
+    rdfs:subClassOf opcua:FiniteStateMachineType .
+
+packml:nodei180 a opcua:DataTypeDescriptionType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "PackMLCountDataType" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "PackMLCountDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "180" ;
+    base:hasValue "PackMLCountDataType" .
+
+packml:nodei181 a opcua:DataTypeDescriptionType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "PackMLCountDataType" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "PackMLCountDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "181" ;
+    base:hasValue "//xs:element[@name='PackMLCountDataType']" .
+
+packml:nodei182 a opcua:DataTypeDescriptionType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "PackMLAlarmDataType" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "PackMLAlarmDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "182" ;
+    base:hasValue "PackMLAlarmDataType" .
+
+packml:nodei183 a opcua:DataTypeDescriptionType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "PackMLAlarmDataType" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "PackMLAlarmDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "183" ;
+    base:hasValue "//xs:element[@name='PackMLAlarmDataType']" .
+
+packml:nodei184 a opcua:DataTypeDescriptionType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "PackMLDescriptorDataType" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "PackMLDescriptorDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "184" ;
+    base:hasValue "PackMLDescriptorDataType" .
+
+packml:nodei185 a opcua:DataTypeDescriptionType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "PackMLDescriptorDataType" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "PackMLDescriptorDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "185" ;
+    base:hasValue "//xs:element[@name='PackMLDescriptorDataType']" .
+
+packml:nodei186 a opcua:DataTypeDescriptionType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "PackMLIngredientsDataType" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "PackMLIngredientsDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "186" ;
+    base:hasValue "PackMLIngredientsDataType" .
+
+packml:nodei187 a opcua:DataTypeDescriptionType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "PackMLRemoteInterfaceDataType" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "PackMLRemoteInterfaceDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "187" ;
+    base:hasValue "PackMLRemoteInterfaceDataType" .
+
+packml:nodei188 a opcua:DataTypeDescriptionType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "PackMLRemoteInterfaceDataType" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "PackMLRemoteInterfaceDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "188" ;
+    base:hasValue "//xs:element[@name='PackMLRemoteInterfaceDataType']" .
+
+packml:nodei189 a opcua:DataTypeDescriptionType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "PackMLIngredientsDataType" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "PackMLIngredientsDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "189" ;
+    base:hasValue "//xs:element[@name='PackMLIngredientsDataType']" .
+
+packml:nodei190 a opcua:DataTypeDescriptionType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "PackMLProductDataType" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "PackMLProductDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "190" ;
+    base:hasValue "PackMLProductDataType" .
+
+packml:nodei191 a opcua:DataTypeDescriptionType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "PackMLProductDataType" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "PackMLProductDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "191" ;
+    base:hasValue "//xs:element[@name='PackMLProductDataType']" .
+
+packml:nodei361 a opcua:MethodNodeClass ;
+    base:hasBrowseName "Reset" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "Reset" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "361" .
+
+packml:nodei363 a opcua:MethodNodeClass ;
+    base:hasBrowseName "Clear" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "Clear" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "363" .
+
+packml:nodei364 a opcua:MethodNodeClass ;
+    base:hasBrowseName "Abort" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "Abort" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "364" .
+
+packml:nodei365 a opcua:MethodNodeClass ;
+    base:hasBrowseName "ToComplete" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "ToComplete" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "365" .
+
+packml:nodei367 a opcua:MethodNodeClass ;
+    base:hasBrowseName "Suspend" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "Suspend" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "367" .
+
+packml:nodei368 a opcua:MethodNodeClass ;
+    base:hasBrowseName "Unhold" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "Unhold" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "368" .
+
+packml:nodei369 a opcua:MethodNodeClass ;
+    opcua:HasProperty packml:nodei342 ;
+    opcua:hasInputArguments packml:nodei342 ;
+    base:hasBrowseName "Start" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "Start" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "369" .
+
+packml:nodei372 a opcua:MethodNodeClass ;
+    base:hasBrowseName "Unsuspend" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "Unsuspend" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "372" .
+
+packml:nodei375 a opcua:MethodNodeClass ;
+    base:hasBrowseName "Stop" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "Stop" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "375" .
+
+packml:nodei376 a opcua:MethodNodeClass ;
+    base:hasBrowseName "Reset" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "Reset" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "376" .
+
+packml:nodei55 a opcua:ObjectNodeClass,
+        opcua:StateType ;
+    opcua:HasProperty packml:nodei157 ;
+    opcua:hasStateNumber packml:nodei157 ;
+    base:hasBrowseName "Clearing" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDescription "Initiated by a state command to clear faults that may have occurred when ABORTING, and are present in the ABORTED state." ;
+    base:hasDisplayName "Clearing" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "55" .
+
+packml:nodei56 a opcua:ObjectNodeClass,
+        packml:PackMLExecuteStateMachineType ;
+    opcua:HasComponent packml:nodei160,
+        packml:nodei161,
+        packml:nodei177 ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    opcua:hasAvailableStates packml:nodei177 ;
+    opcua:hasAvailableTransitions packml:nodei160 ;
+    opcua:hasCurrentState packml:nodei161 ;
+    base:hasBrowseName "ExecuteState" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDescription "StateMachine that provides additional sube" ;
+    base:hasDisplayName "ExecuteState" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "56" .
+
+packml:nodei64 a opcua:ObjectNodeClass,
+        packml:PackMLMachineStateMachineType ;
+    opcua:HasComponent packml:nodei172,
+        packml:nodei204,
+        packml:nodei212 ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    opcua:hasAvailableStates packml:nodei212 ;
+    opcua:hasAvailableTransitions packml:nodei204 ;
+    opcua:hasCurrentState packml:nodei172 ;
+    base:hasBrowseName "MachineState" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "MachineState" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "64" .
+
+packml:PackMLCountDataType a owl:Class ;
+    rdfs:subClassOf opcua:Structure ;
+    base:hasField packml:AccCount,
+        packml:Count,
+        packml:ID,
+        packml:Name,
+        packml:Unit .
+
+packml:nodei27 a opcua:ObjectNodeClass,
+        opcua:StateType ;
+    opcua:HasProperty packml:nodei127 ;
+    opcua:hasStateNumber packml:nodei127 ;
+    base:hasBrowseName "Resetting" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDescription "will typically cause a machine to sound a horn and place the machine in a state where components are energized awaiting a START command" ;
+    base:hasDisplayName "Resetting" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "27" .
+
+packml:nodei28 a opcua:ObjectNodeClass,
+        opcua:StateType ;
+    opcua:HasProperty packml:nodei128 ;
+    opcua:hasStateNumber packml:nodei128 ;
+    base:hasBrowseName "Idle" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDescription "This is a state which indicates that RESETTING is complete. This state maintains the machine conditions which were achieved during the RESETTING state, and performs operations required when the machine is in IDLE." ;
+    base:hasDisplayName "Idle" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "28" .
+
+packml:nodei34 a opcua:ObjectNodeClass,
+        opcua:StateType ;
+    opcua:HasProperty packml:nodei134 ;
+    opcua:hasStateNumber packml:nodei134 ;
+    base:hasBrowseName "Held" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDescription "The HELD state holds the machine's operation while material blockages are cleared, or to stop throughput while a downstream problem is resolved, or enable the safe correction of an equipment fault before the production may be resumed." ;
+    base:hasDisplayName "Held" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "34" .
+
+packml:nodei37 a opcua:ObjectNodeClass,
+        opcua:StateType ;
+    opcua:HasProperty packml:nodei137 ;
+    opcua:hasStateNumber packml:nodei137 ;
+    base:hasBrowseName "Completing" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDescription "Normal operation has run to completion (i.e., processing of material at the infeed will stop)." ;
+    base:hasDisplayName "Completing" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "37" .
+
+packml:nodei38 a opcua:ObjectNodeClass,
+        opcua:StateType ;
+    opcua:HasProperty packml:nodei138 ;
+    opcua:hasStateNumber packml:nodei138 ;
+    base:hasBrowseName "Complete" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDescription "The machine has finished the COMPLETING state and is now waiting for a Reset command before transitioning to the RESETTING state" ;
+    base:hasDisplayName "Complete" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "38" .
+
+packml:nodei54 a opcua:ObjectNodeClass,
+        opcua:StateType ;
+    opcua:HasProperty packml:nodei156 ;
+    opcua:hasStateNumber packml:nodei156 ;
+    base:hasBrowseName "Stopping" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDescription "This state executes the logic which brings the machine to a controlled stop as reflected by the STOPPED state." ;
+    base:hasDisplayName "Stopping" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "54" .
+
+packml:nodei61 a opcua:ObjectNodeClass,
+        opcua:StateType ;
+    opcua:HasProperty packml:nodei168 ;
+    opcua:hasStateNumber packml:nodei168 ;
+    base:hasBrowseName "Aborting" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "Aborting" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "61" .
+
+packml:nodei62 a opcua:ObjectNodeClass,
+        opcua:StateType ;
+    opcua:HasProperty packml:nodei169 ;
+    opcua:hasStateNumber packml:nodei169 ;
+    base:hasBrowseName "Aborted" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "Aborted" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "62" .
+
+packml:nodei71 a opcua:ObjectNodeClass,
+        opcua:StateType ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    opcua:HasProperty packml:nodei178 ;
+    opcua:HasSubStateMachine packml:nodei64 ;
+    opcua:hasStateNumber packml:nodei178 ;
+    base:hasBrowseName "Cleared" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "Cleared" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "71" .
+
+packml:nodei75 a opcua:ObjectNodeClass,
+        opcua:StateType ;
+    opcua:HasProperty packml:nodei171 ;
+    opcua:HasSubStateMachine packml:nodei56 ;
+    opcua:hasStateNumber packml:nodei171 ;
+    base:hasBrowseName "Running" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "Running" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "75" .
+
+packml:PackMLAlarmDataType a owl:Class ;
+    rdfs:subClassOf opcua:Structure ;
+    base:hasField packml:AckDateTime,
+        packml:Category,
+        packml:DateTime,
+        packml:ID,
+        packml:Message,
+        packml:Trigger,
+        packml:Value .
+
+packml:PackMLDescriptorDataType a owl:Class ;
+    rdfs:subClassOf opcua:Structure ;
+    base:hasField packml:ID,
+        packml:Name,
+        packml:Unit,
+        packml:Value .
+
+packml:nodei29 a opcua:ObjectNodeClass,
+        opcua:StateType ;
+    opcua:HasProperty packml:nodei129 ;
+    opcua:hasStateNumber packml:nodei129 ;
+    base:hasBrowseName "Starting" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDescription "This state provides the steps needed to start the machine and is a result of a starting type command (local or remote). Following this command, the machine will begin to Execute" ;
+    base:hasDisplayName "Starting" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "29" .
+
+packml:nodei30 a opcua:ObjectNodeClass,
+        opcua:StateType ;
+    opcua:HasProperty packml:nodei130 ;
+    opcua:hasStateNumber packml:nodei130 ;
+    base:hasBrowseName "Suspending" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDescription "This state is a result of a change in monitored conditions due to process conditions or factors. The trigger event will cause a temporary suspension of the EXECUTE state. SUSPENDING is typically the result of starvation of upstream material in-feeds (i.e., container feed, beverage feed, crown feed, lubricant feed, etc.) that is outside the dynamic speed control range or a downstream out-feed blockage that prevents the machine from EXECUTING continued steady production" ;
+    base:hasDisplayName "Suspending" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "30" .
+
+packml:nodei31 a opcua:ObjectNodeClass,
+        opcua:StateType ;
+    opcua:HasProperty packml:nodei131 ;
+    opcua:hasStateNumber packml:nodei131 ;
+    base:hasBrowseName "Suspended" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDescription "The machine may be running at a relevant set point speed, but there is no product being produced while the machine is waiting for external process conditions to return to normal." ;
+    base:hasDisplayName "Suspended" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "31" .
+
+packml:nodei32 a opcua:ObjectNodeClass,
+        opcua:StateType ;
+    opcua:HasProperty packml:nodei132 ;
+    opcua:hasStateNumber packml:nodei132 ;
+    base:hasBrowseName "Unsuspending" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDescription "This state is a result of a machine generated request from SUSPENDED state to go back to the EXECUTE state. The actions of this state may include ramping up speeds, turning on vacuums, and the re-engagement of clutches." ;
+    base:hasDisplayName "Unsuspending" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "32" .
+
+packml:nodei35 a opcua:ObjectNodeClass,
+        opcua:StateType ;
+    opcua:HasProperty packml:nodei135 ;
+    opcua:hasStateNumber packml:nodei135 ;
+    base:hasBrowseName "Unholding" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDescription "The UNHOLDING state is a response to an operator command to resume the EXECUTE state. Issuing the Unhold command will retrieve the saved set-points and return the status conditions to prepare the machine to re-enter the normal EXECUTE state" ;
+    base:hasDisplayName "Unholding" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "35" .
+
+packml:nodei53 a opcua:ObjectNodeClass,
+        opcua:StateType ;
+    opcua:HasProperty packml:nodei155 ;
+    opcua:hasStateNumber packml:nodei155 ;
+    base:hasBrowseName "Stopped" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDescription "The machine is powered and stationary after completing the STOPPING state. All communications with other systems are functioning (if applicable)." ;
+    base:hasDisplayName "Stopped" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "53" .
+
+packml:nodei36 a opcua:ObjectNodeClass,
+        opcua:StateType ;
+    opcua:HasProperty packml:nodei136 ;
+    opcua:hasStateNumber packml:nodei136 ;
+    base:hasBrowseName "Execute" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDescription "Once the machine is processing materials it is deemed to be executing or in the EXECUTE state." ;
+    base:hasDisplayName "Execute" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "36" .
+
+packml:nodei366 a opcua:MethodNodeClass ;
+    base:hasBrowseName "Hold" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDisplayName "Hold" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "366" .
+
+packml:ProductionMaintenanceModeEnum a owl:Class ;
+    rdfs:subClassOf opcua:Enumeration .
+
+packml:nodei33 a opcua:ObjectNodeClass,
+        opcua:StateType ;
+    opcua:HasProperty packml:nodei133 ;
+    opcua:hasStateNumber packml:nodei133 ;
+    base:hasBrowseName "Holding" ;
+    base:hasBrowseNameNamespace packml:PACKMLNamespace ;
+    base:hasDescription "Issuing the Unhold command will retrieve the saved set-points and return the status conditions to prepare the machine to re-enter the normal EXECUTE state" ;
+    base:hasDisplayName "Holding" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace packml:PACKMLNamespace ;
+    base:hasNodeId "33" .
+
+packml:PACKMLNamespace a base:Namespace ;
+    base:hasPrefix "packml" ;
+    base:hasUri "http://opcfoundation.org/UA/PackML/" .
+

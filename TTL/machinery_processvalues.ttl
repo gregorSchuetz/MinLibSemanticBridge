@@ -1,0 +1,1928 @@
+@prefix base: <https://industryfusion.github.io/contexts/ontology/v0/base/> .
+@prefix machinery_processvalues: <http://opcfoundation.org/UA/Machinery/ProcessValues/> .
+@prefix opcua: <http://opcfoundation.org/UA/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix padim: <http://opcfoundation.org/UA/PADIM/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+machinery_processvalues: a owl:Ontology ;
+    owl:imports <file:///home/gregor/DigitalTwin/semantic-model/opcua/core.ttl>,
+        <file:///home/gregor/DigitalTwin/semantic-model/opcua/padim.ttl>,
+        <https://industryfusion.github.io/contexts/staging/ontology/v0/base.ttl> ;
+    owl:versionIRI <http://example.com/v0.1/Machinery/ProcessValues> ;
+    owl:versionInfo 1e-01 .
+
+machinery_processvalues:hasAlarmSuppression rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machinery_processvalues:hasAutoDeviationAdjustment rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machinery_processvalues:hasDeviationAlarm rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machinery_processvalues:hasDeviationSensitivity rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machinery_processvalues:hasHighDeviation rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machinery_processvalues:hasHighHighDeviation rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machinery_processvalues:hasHighHighLimit rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machinery_processvalues:hasHighLimit rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machinery_processvalues:hasLimitAlarm rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machinery_processvalues:hasLowDeviation rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machinery_processvalues:hasLowLimit rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machinery_processvalues:hasLowLowDeviation rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machinery_processvalues:hasLowLowLimit rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machinery_processvalues:hasPercentageValue rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machinery_processvalues:hasProcessValueSetpoint rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machinery_processvalues:hasStatus rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machinery_processvalues:hasSubstituteValue rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machinery_processvalues:hasZeroPointAdjustmentResult rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+<http://opcfoundation.org/UA/Machinery/ProcessValues/hashttp%3A//opcfoundation.org/UA/Machinery/ProcessValues/> rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machinery_processvalues:nodei1003 a opcua:ObjectTypeNodeClass ;
+    opcua:HasComponent machinery_processvalues:nodei5002,
+        machinery_processvalues:nodei5004,
+        machinery_processvalues:nodei6033,
+        machinery_processvalues:nodei6036,
+        machinery_processvalues:nodei6105,
+        machinery_processvalues:nodei6108,
+        machinery_processvalues:nodei7001 ;
+    machinery_processvalues:hasAlarmSuppression machinery_processvalues:nodei6108 ;
+    machinery_processvalues:hasDeviationAlarm machinery_processvalues:nodei5002 ;
+    machinery_processvalues:hasLimitAlarm machinery_processvalues:nodei5004 ;
+    machinery_processvalues:hasProcessValueSetpoint machinery_processvalues:nodei6036 ;
+    machinery_processvalues:hasStatus machinery_processvalues:nodei6105 ;
+    padim:hasAnalogSignal machinery_processvalues:nodei6033 ;
+    padim:hasZeroPointAdjustment machinery_processvalues:nodei7001 ;
+    base:definesType machinery_processvalues:ProcessValueType ;
+    base:hasBrowseName "ProcessValueType" ;
+    base:hasBrowseNameNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasDescription "Represents a process value" ;
+    base:hasDisplayName "ProcessValueType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "1003" .
+
+machinery_processvalues:nodei2002 a opcua:VariableTypeNodeClass ;
+    opcua:HasComponent machinery_processvalues:nodei6008,
+        machinery_processvalues:nodei6011,
+        machinery_processvalues:nodei6013,
+        machinery_processvalues:nodei6015,
+        machinery_processvalues:nodei6017 ;
+    machinery_processvalues:hasHighHighLimit machinery_processvalues:nodei6017 ;
+    machinery_processvalues:hasHighLimit machinery_processvalues:nodei6015 ;
+    machinery_processvalues:hasLowLimit machinery_processvalues:nodei6013 ;
+    machinery_processvalues:hasLowLowLimit machinery_processvalues:nodei6011 ;
+    machinery_processvalues:hasPercentageValue machinery_processvalues:nodei6008 ;
+    base:definesType machinery_processvalues:ProcessValueVariableType ;
+    base:hasBrowseName "ProcessValueVariableType" ;
+    base:hasBrowseNameNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasDatatype opcua:Number ;
+    base:hasDescription "Provides a process value and additional meta data" ;
+    base:hasDisplayName "ProcessValueVariableType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "2002" ;
+    base:hasValueRank -2 .
+
+machinery_processvalues:nodei2003 a opcua:VariableTypeNodeClass ;
+    opcua:HasComponent machinery_processvalues:nodei6019,
+        machinery_processvalues:nodei6021,
+        machinery_processvalues:nodei6023,
+        machinery_processvalues:nodei6025,
+        machinery_processvalues:nodei6028,
+        machinery_processvalues:nodei6031 ;
+    opcua:HasProperty machinery_processvalues:nodei6027 ;
+    machinery_processvalues:hasAutoDeviationAdjustment machinery_processvalues:nodei6027 ;
+    machinery_processvalues:hasDeviationSensitivity machinery_processvalues:nodei6028 ;
+    machinery_processvalues:hasHighDeviation machinery_processvalues:nodei6023 ;
+    machinery_processvalues:hasHighHighDeviation machinery_processvalues:nodei6025 ;
+    machinery_processvalues:hasLowDeviation machinery_processvalues:nodei6021 ;
+    machinery_processvalues:hasLowLowDeviation machinery_processvalues:nodei6019 ;
+    machinery_processvalues:hasSubstituteValue machinery_processvalues:nodei6031 ;
+    base:definesType machinery_processvalues:ProcessValueSetpointVariableType ;
+    base:hasBrowseName "ProcessValueSetpointVariableType" ;
+    base:hasBrowseNameNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasDatatype opcua:Number ;
+    base:hasDescription "Define the desired value of the Variable it belongs to." ;
+    base:hasDisplayName "ProcessValueSetpointVariableType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "2003" ;
+    base:hasValueRank -2 .
+
+padim:hasZeroPointAdjustment rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+opcua:nodei11715 opcua:HasComponent machinery_processvalues:nodei5001 ;
+    <http://opcfoundation.org/UA/Machinery/ProcessValues/hashttp%3A//opcfoundation.org/UA/Machinery/ProcessValues/> machinery_processvalues:nodei5001 .
+
+machinery_processvalues:ProcessValueType a owl:Class ;
+    rdfs:subClassOf padim:AnalogSignalType .
+
+machinery_processvalues:ProcessValueVariableType a owl:Class ;
+    rdfs:subClassOf padim:AnalogSignalVariableType .
+
+machinery_processvalues:ZeroPointAdjustmentEventType a owl:Class ;
+    rdfs:subClassOf opcua:BaseEventType ;
+    base:isAbstract "true" .
+
+machinery_processvalues:nodei1002 a opcua:ObjectTypeNodeClass ;
+    opcua:HasProperty machinery_processvalues:nodei6032 ;
+    machinery_processvalues:hasZeroPointAdjustmentResult machinery_processvalues:nodei6032 ;
+    base:definesType machinery_processvalues:ZeroPointAdjustmentEventType ;
+    base:hasBrowseName "ZeroPointAdjustmentEventType" ;
+    base:hasBrowseNameNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasDescription "Provides information, that a zero-point adjustment took place" ;
+    base:hasDisplayName "ZeroPointAdjustmentEventType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "1002" .
+
+machinery_processvalues:ProcessValueSetpointVariableType a owl:Class ;
+    rdfs:subClassOf opcua:AnalogUnitRangeType .
+
+machinery_processvalues:nodei5001 a opcua:NamespaceMetadataType,
+        opcua:ObjectNodeClass ;
+    opcua:HasProperty machinery_processvalues:nodei6001,
+        machinery_processvalues:nodei6002,
+        machinery_processvalues:nodei6003,
+        machinery_processvalues:nodei6004,
+        machinery_processvalues:nodei6005,
+        machinery_processvalues:nodei6006,
+        machinery_processvalues:nodei6007 ;
+    opcua:hasIsNamespaceSubset machinery_processvalues:nodei6001 ;
+    opcua:hasNamespacePublicationDate machinery_processvalues:nodei6002 ;
+    opcua:hasNamespaceUri machinery_processvalues:nodei6003 ;
+    opcua:hasNamespaceVersion machinery_processvalues:nodei6004 ;
+    opcua:hasStaticNodeIdTypes machinery_processvalues:nodei6005 ;
+    opcua:hasStaticNumericNodeIdRange machinery_processvalues:nodei6006 ;
+    opcua:hasStaticStringNodeIdPattern machinery_processvalues:nodei6007 ;
+    base:hasBrowseName "http://opcfoundation.org/UA/Machinery/ProcessValues/" ;
+    base:hasBrowseNameNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasDisplayName "http://opcfoundation.org/UA/Machinery/ProcessValues/" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "5001" ;
+    base:hasSymbolicName "http___opcfoundation_org_UA_Machinery_ProcessValues_" .
+
+machinery_processvalues:nodei5002 a opcua:ExclusiveDeviationAlarmType,
+        opcua:ObjectNodeClass ;
+    opcua:HasComponent machinery_processvalues:nodei5003,
+        machinery_processvalues:nodei6040,
+        machinery_processvalues:nodei6044,
+        machinery_processvalues:nodei6048,
+        machinery_processvalues:nodei6054,
+        machinery_processvalues:nodei6059,
+        machinery_processvalues:nodei6061,
+        machinery_processvalues:nodei7002,
+        machinery_processvalues:nodei7003,
+        machinery_processvalues:nodei7004,
+        machinery_processvalues:nodei7005 ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    opcua:HasProperty machinery_processvalues:nodei6039,
+        machinery_processvalues:nodei6046,
+        machinery_processvalues:nodei6047,
+        machinery_processvalues:nodei6052,
+        machinery_processvalues:nodei6053,
+        machinery_processvalues:nodei6056,
+        machinery_processvalues:nodei6057,
+        machinery_processvalues:nodei6058,
+        machinery_processvalues:nodei6063,
+        machinery_processvalues:nodei6064,
+        machinery_processvalues:nodei6065,
+        machinery_processvalues:nodei6066,
+        machinery_processvalues:nodei6067,
+        machinery_processvalues:nodei6068,
+        machinery_processvalues:nodei6069,
+        machinery_processvalues:nodei6070,
+        machinery_processvalues:nodei6071 ;
+    opcua:hasAckedState machinery_processvalues:nodei6048 ;
+    opcua:hasAcknowledge machinery_processvalues:nodei7002 ;
+    opcua:hasActiveState machinery_processvalues:nodei6040 ;
+    opcua:hasAddComment machinery_processvalues:nodei7003 ;
+    opcua:hasBranchId machinery_processvalues:nodei6052 ;
+    opcua:hasClientUserId machinery_processvalues:nodei6053 ;
+    opcua:hasComment machinery_processvalues:nodei6054 ;
+    opcua:hasConditionClassId machinery_processvalues:nodei6056 ;
+    opcua:hasConditionClassName machinery_processvalues:nodei6057 ;
+    opcua:hasConditionName machinery_processvalues:nodei6058 ;
+    opcua:hasDisable machinery_processvalues:nodei7004 ;
+    opcua:hasEnable machinery_processvalues:nodei7005 ;
+    opcua:hasEnabledState machinery_processvalues:nodei6044 ;
+    opcua:hasEventId machinery_processvalues:nodei6064 ;
+    opcua:hasEventType machinery_processvalues:nodei6065 ;
+    opcua:hasInputNode machinery_processvalues:nodei6046 ;
+    opcua:hasLastSeverity machinery_processvalues:nodei6059 ;
+    opcua:hasLimitState machinery_processvalues:nodei5003 ;
+    opcua:hasMessage machinery_processvalues:nodei6066 ;
+    opcua:hasQuality machinery_processvalues:nodei6061 ;
+    opcua:hasReceiveTime machinery_processvalues:nodei6067 ;
+    opcua:hasRetain machinery_processvalues:nodei6063 ;
+    opcua:hasSetpointNode machinery_processvalues:nodei6039 ;
+    opcua:hasSeverity machinery_processvalues:nodei6068 ;
+    opcua:hasSourceName machinery_processvalues:nodei6069 ;
+    opcua:hasSourceNode machinery_processvalues:nodei6070 ;
+    opcua:hasSuppressedOrShelved machinery_processvalues:nodei6047 ;
+    opcua:hasTime machinery_processvalues:nodei6071 ;
+    base:hasBrowseName "DeviationAlarm" ;
+    base:hasBrowseNameNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasDescription "Becomes active, when the process values derivates from the ProcessValueSetpoint." ;
+    base:hasDisplayName "DeviationAlarm" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "5002" .
+
+machinery_processvalues:nodei5004 a opcua:ExclusiveLimitAlarmType,
+        opcua:ObjectNodeClass ;
+    opcua:HasComponent machinery_processvalues:nodei5005,
+        machinery_processvalues:nodei6072,
+        machinery_processvalues:nodei6076,
+        machinery_processvalues:nodei6080,
+        machinery_processvalues:nodei6086,
+        machinery_processvalues:nodei6091,
+        machinery_processvalues:nodei6093,
+        machinery_processvalues:nodei7006,
+        machinery_processvalues:nodei7007,
+        machinery_processvalues:nodei7008,
+        machinery_processvalues:nodei7009 ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    opcua:HasProperty machinery_processvalues:nodei6078,
+        machinery_processvalues:nodei6079,
+        machinery_processvalues:nodei6084,
+        machinery_processvalues:nodei6085,
+        machinery_processvalues:nodei6088,
+        machinery_processvalues:nodei6089,
+        machinery_processvalues:nodei6090,
+        machinery_processvalues:nodei6095,
+        machinery_processvalues:nodei6096,
+        machinery_processvalues:nodei6097,
+        machinery_processvalues:nodei6098,
+        machinery_processvalues:nodei6099,
+        machinery_processvalues:nodei6100,
+        machinery_processvalues:nodei6101,
+        machinery_processvalues:nodei6102,
+        machinery_processvalues:nodei6103 ;
+    opcua:hasAckedState machinery_processvalues:nodei6080 ;
+    opcua:hasAcknowledge machinery_processvalues:nodei7006 ;
+    opcua:hasActiveState machinery_processvalues:nodei6072 ;
+    opcua:hasAddComment machinery_processvalues:nodei7007 ;
+    opcua:hasBranchId machinery_processvalues:nodei6084 ;
+    opcua:hasClientUserId machinery_processvalues:nodei6085 ;
+    opcua:hasComment machinery_processvalues:nodei6086 ;
+    opcua:hasConditionClassId machinery_processvalues:nodei6088 ;
+    opcua:hasConditionClassName machinery_processvalues:nodei6089 ;
+    opcua:hasConditionName machinery_processvalues:nodei6090 ;
+    opcua:hasDisable machinery_processvalues:nodei7008 ;
+    opcua:hasEnable machinery_processvalues:nodei7009 ;
+    opcua:hasEnabledState machinery_processvalues:nodei6076 ;
+    opcua:hasEventId machinery_processvalues:nodei6096 ;
+    opcua:hasEventType machinery_processvalues:nodei6097 ;
+    opcua:hasInputNode machinery_processvalues:nodei6078 ;
+    opcua:hasLastSeverity machinery_processvalues:nodei6091 ;
+    opcua:hasLimitState machinery_processvalues:nodei5005 ;
+    opcua:hasMessage machinery_processvalues:nodei6098 ;
+    opcua:hasQuality machinery_processvalues:nodei6093 ;
+    opcua:hasReceiveTime machinery_processvalues:nodei6099 ;
+    opcua:hasRetain machinery_processvalues:nodei6095 ;
+    opcua:hasSeverity machinery_processvalues:nodei6100 ;
+    opcua:hasSourceName machinery_processvalues:nodei6101 ;
+    opcua:hasSourceNode machinery_processvalues:nodei6102 ;
+    opcua:hasSuppressedOrShelved machinery_processvalues:nodei6079 ;
+    opcua:hasTime machinery_processvalues:nodei6103 ;
+    base:hasBrowseName "LimitAlarm" ;
+    base:hasBrowseNameNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasDescription "Becomes active, when absolute limits are reached." ;
+    base:hasDisplayName "LimitAlarm" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "5004" .
+
+machinery_processvalues:nodei5005 a opcua:ExclusiveLimitStateMachineType,
+        opcua:ObjectNodeClass ;
+    opcua:HasComponent machinery_processvalues:nodei6074 ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    opcua:hasCurrentState machinery_processvalues:nodei6074 ;
+    base:hasBrowseName "LimitState" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "LimitState" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "5005" .
+
+machinery_processvalues:nodei6001 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "IsNamespaceSubset" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Boolean ;
+    base:hasDisplayName "IsNamespaceSubset" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6001" ;
+    base:hasValue false .
+
+machinery_processvalues:nodei6002 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "NamespacePublicationDate" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:DateTime ;
+    base:hasDisplayName "NamespacePublicationDate" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6002" ;
+    base:hasValue "2023-05-01T00:00:00Z" .
+
+machinery_processvalues:nodei6003 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "NamespaceUri" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "NamespaceUri" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6003" ;
+    base:hasValue "http://opcfoundation.org/UA/Machinery/ProcessValues/" .
+
+machinery_processvalues:nodei6004 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "NamespaceVersion" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "NamespaceVersion" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6004" ;
+    base:hasValue "1.00.0" .
+
+machinery_processvalues:nodei6005 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "StaticNodeIdTypes" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:IdType ;
+    base:hasDisplayName "StaticNodeIdTypes" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6005" ;
+    base:hasValueList ( 0 ) ;
+    base:hasValueRank 1 .
+
+machinery_processvalues:nodei6006 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "StaticNumericNodeIdRange" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NumericRange ;
+    base:hasDisplayName "StaticNumericNodeIdRange" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6006" ;
+    base:hasValueRank 1 .
+
+machinery_processvalues:nodei6007 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "StaticStringNodeIdPattern" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "StaticStringNodeIdPattern" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6007" .
+
+machinery_processvalues:nodei6008 a opcua:AnalogUnitRangeType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    opcua:HasProperty machinery_processvalues:nodei6009,
+        machinery_processvalues:nodei6010 ;
+    opcua:hasEURange machinery_processvalues:nodei6010 ;
+    opcua:hasEngineeringUnits machinery_processvalues:nodei6009 ;
+    base:hasAccessLevel opcua:CurrentRead,
+        opcua:CurrentWrite ;
+    base:hasBrowseName "PercentageValue" ;
+    base:hasBrowseNameNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasDatatype opcua:Double ;
+    base:hasDescription "Provides the process value in percentage." ;
+    base:hasDisplayName "PercentageValue" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6008" .
+
+machinery_processvalues:nodei6009 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "EngineeringUnits" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:EUInformation ;
+    base:hasDisplayName "EngineeringUnits" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6009" ;
+    base:hasValue "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=888\"}, \"xsd:Body\": {\"xsd:EUInformation\": {\"xsd:NamespaceUri\": \"http://www.opcfoundation.org/UA/units/un/cefact\", \"xsd:UnitId\": 20529, \"xsd:DisplayName\": {\"xsd:Text\": \"%\"}, \"xsd:Description\": {\"xsd:Text\": \"percent\"}}}}"^^rdf:JSON .
+
+machinery_processvalues:nodei6010 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "EURange" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Range ;
+    base:hasDisplayName "EURange" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6010" ;
+    base:hasValue "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=885\"}, \"xsd:Body\": {\"xsd:Range\": {\"xsd:Low\": 0.0, \"xsd:High\": 100.0}}}"^^rdf:JSON .
+
+machinery_processvalues:nodei6011 a opcua:AnalogUnitType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    opcua:HasProperty machinery_processvalues:nodei6012 ;
+    opcua:hasEngineeringUnits machinery_processvalues:nodei6012 ;
+    base:hasAccessLevel opcua:CurrentRead,
+        opcua:CurrentWrite ;
+    base:hasBrowseName "LowLowLimit" ;
+    base:hasBrowseNameNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasDatatype opcua:Number ;
+    base:hasDescription "Defines the absolute low low limit" ;
+    base:hasDisplayName "LowLowLimit" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6011" .
+
+machinery_processvalues:nodei6012 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "EngineeringUnits" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:EUInformation ;
+    base:hasDisplayName "EngineeringUnits" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6012" .
+
+machinery_processvalues:nodei6013 a opcua:AnalogUnitType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    opcua:HasProperty machinery_processvalues:nodei6014 ;
+    opcua:hasEngineeringUnits machinery_processvalues:nodei6014 ;
+    base:hasAccessLevel opcua:CurrentRead,
+        opcua:CurrentWrite ;
+    base:hasBrowseName "LowLimit" ;
+    base:hasBrowseNameNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasDatatype opcua:Number ;
+    base:hasDescription "Defines the absolute low limit" ;
+    base:hasDisplayName "LowLimit" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6013" .
+
+machinery_processvalues:nodei6014 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "EngineeringUnits" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:EUInformation ;
+    base:hasDisplayName "EngineeringUnits" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6014" .
+
+machinery_processvalues:nodei6015 a opcua:AnalogUnitType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    opcua:HasProperty machinery_processvalues:nodei6016 ;
+    opcua:hasEngineeringUnits machinery_processvalues:nodei6016 ;
+    base:hasAccessLevel opcua:CurrentRead,
+        opcua:CurrentWrite ;
+    base:hasBrowseName "HighLimit" ;
+    base:hasBrowseNameNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasDatatype opcua:Number ;
+    base:hasDescription "Defines the absolute high limit" ;
+    base:hasDisplayName "HighLimit" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6015" .
+
+machinery_processvalues:nodei6016 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "EngineeringUnits" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:EUInformation ;
+    base:hasDisplayName "EngineeringUnits" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6016" .
+
+machinery_processvalues:nodei6017 a opcua:AnalogUnitType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    opcua:HasProperty machinery_processvalues:nodei6018 ;
+    opcua:hasEngineeringUnits machinery_processvalues:nodei6018 ;
+    base:hasAccessLevel opcua:CurrentRead,
+        opcua:CurrentWrite ;
+    base:hasBrowseName "HighHighLimit" ;
+    base:hasBrowseNameNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasDatatype opcua:Number ;
+    base:hasDescription "Defines the absolute high high limit" ;
+    base:hasDisplayName "HighHighLimit" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6017" .
+
+machinery_processvalues:nodei6018 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "EngineeringUnits" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:EUInformation ;
+    base:hasDisplayName "EngineeringUnits" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6018" .
+
+machinery_processvalues:nodei6019 a opcua:AnalogUnitType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    opcua:HasProperty machinery_processvalues:nodei6020 ;
+    opcua:hasEngineeringUnits machinery_processvalues:nodei6020 ;
+    base:hasAccessLevel opcua:CurrentRead,
+        opcua:CurrentWrite ;
+    base:hasBrowseName "LowLowDeviation" ;
+    base:hasBrowseNameNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasDatatype opcua:Number ;
+    base:hasDescription "Defines the low low limit for deviation, relative to the process value setpoint." ;
+    base:hasDisplayName "LowLowDeviation" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6019" .
+
+machinery_processvalues:nodei6020 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "EngineeringUnits" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:EUInformation ;
+    base:hasDisplayName "EngineeringUnits" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6020" .
+
+machinery_processvalues:nodei6021 a opcua:AnalogUnitType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    opcua:HasProperty machinery_processvalues:nodei6022 ;
+    opcua:hasEngineeringUnits machinery_processvalues:nodei6022 ;
+    base:hasAccessLevel opcua:CurrentRead,
+        opcua:CurrentWrite ;
+    base:hasBrowseName "LowDeviation" ;
+    base:hasBrowseNameNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasDatatype opcua:Number ;
+    base:hasDescription "Defines the low limit for deviation, relative to the process value setpoint." ;
+    base:hasDisplayName "LowDeviation" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6021" .
+
+machinery_processvalues:nodei6022 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "EngineeringUnits" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:EUInformation ;
+    base:hasDisplayName "EngineeringUnits" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6022" .
+
+machinery_processvalues:nodei6023 a opcua:AnalogUnitType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    opcua:HasProperty machinery_processvalues:nodei6024 ;
+    opcua:hasEngineeringUnits machinery_processvalues:nodei6024 ;
+    base:hasAccessLevel opcua:CurrentRead,
+        opcua:CurrentWrite ;
+    base:hasBrowseName "HighDeviation" ;
+    base:hasBrowseNameNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasDatatype opcua:Number ;
+    base:hasDescription "Defines the high limit for deviation, relative to the process value setpoint." ;
+    base:hasDisplayName "HighDeviation" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6023" .
+
+machinery_processvalues:nodei6024 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "EngineeringUnits" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:EUInformation ;
+    base:hasDisplayName "EngineeringUnits" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6024" .
+
+machinery_processvalues:nodei6025 a opcua:AnalogUnitType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    opcua:HasProperty machinery_processvalues:nodei6026 ;
+    opcua:hasEngineeringUnits machinery_processvalues:nodei6026 ;
+    base:hasAccessLevel opcua:CurrentRead,
+        opcua:CurrentWrite ;
+    base:hasBrowseName "HighHighDeviation" ;
+    base:hasBrowseNameNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasDatatype opcua:Number ;
+    base:hasDescription "Defines the high high limit for deviation, relative to the process value setpoint." ;
+    base:hasDisplayName "HighHighDeviation" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6025" .
+
+machinery_processvalues:nodei6026 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "EngineeringUnits" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:EUInformation ;
+    base:hasDisplayName "EngineeringUnits" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6026" .
+
+machinery_processvalues:nodei6027 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasAccessLevel opcua:CurrentRead,
+        opcua:CurrentWrite ;
+    base:hasBrowseName "AutoDeviationAdjustment" ;
+    base:hasBrowseNameNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasDatatype opcua:Boolean ;
+    base:hasDescription "Defines if the deviation variables are automatically adjusted." ;
+    base:hasDisplayName "AutoDeviationAdjustment" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6027" .
+
+machinery_processvalues:nodei6028 a opcua:MultiStateValueDiscreteType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    opcua:HasProperty machinery_processvalues:nodei6029,
+        machinery_processvalues:nodei6030 ;
+    opcua:hasEnumValues machinery_processvalues:nodei6029 ;
+    opcua:hasValueAsText machinery_processvalues:nodei6030 ;
+    base:hasAccessLevel opcua:CurrentRead,
+        opcua:CurrentWrite ;
+    base:hasBrowseName "DeviationSensitivity" ;
+    base:hasBrowseNameNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasDatatype opcua:UInt16 ;
+    base:hasDescription "Indicates the sensitivity of the deviation variables when automatically set." ;
+    base:hasDisplayName "DeviationSensitivity" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6028" .
+
+machinery_processvalues:nodei6029 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "EnumValues" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:EnumValueType ;
+    base:hasDisplayName "EnumValues" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6029" ;
+    base:hasValueList ( "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 0, \"xsd:DisplayName\": {\"xsd:Text\": \"FINE\"}, \"xsd:Description\": {\"xsd:Text\": \"tight tolerances\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 1, \"xsd:DisplayName\": {\"xsd:Text\": \"MIDDLE\"}, \"xsd:Description\": {\"xsd:Text\": \"mean tolerances\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 2, \"xsd:DisplayName\": {\"xsd:Text\": \"ROUGH\"}, \"xsd:Description\": {\"xsd:Text\": \"large tolerances\"}}}}"^^rdf:JSON ) ;
+    base:hasValueRank 1 .
+
+machinery_processvalues:nodei6030 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "ValueAsText" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDisplayName "ValueAsText" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6030" .
+
+machinery_processvalues:nodei6031 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasAccessLevel opcua:CurrentRead,
+        opcua:CurrentWrite ;
+    base:hasBrowseName "SubstituteValue" ;
+    base:hasBrowseNameNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasDatatype opcua:Number ;
+    base:hasDescription "Value that should be used when the process value setpoint cannot be controlled anymore." ;
+    base:hasDisplayName "SubstituteValue" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6031" ;
+    base:hasValueRank -2 .
+
+machinery_processvalues:nodei6032 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasAccessLevel opcua:CurrentRead,
+        opcua:CurrentWrite ;
+    base:hasBrowseName "ZeroPointAdjustmentResult" ;
+    base:hasBrowseNameNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasDatatype opcua:StatusCode ;
+    base:hasDisplayName "ZeroPointAdjustmentResult" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6032" .
+
+machinery_processvalues:nodei6033 a padim:AnalogSignalVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasComponent machinery_processvalues:nodei6104,
+        machinery_processvalues:nodei6113,
+        machinery_processvalues:nodei6115,
+        machinery_processvalues:nodei6117,
+        machinery_processvalues:nodei6119 ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    opcua:HasProperty machinery_processvalues:nodei6034,
+        machinery_processvalues:nodei6035 ;
+    machinery_processvalues:hasHighHighLimit machinery_processvalues:nodei6119 ;
+    machinery_processvalues:hasHighLimit machinery_processvalues:nodei6117 ;
+    machinery_processvalues:hasLowLimit machinery_processvalues:nodei6115 ;
+    machinery_processvalues:hasLowLowLimit machinery_processvalues:nodei6113 ;
+    machinery_processvalues:hasPercentageValue machinery_processvalues:nodei6104 ;
+    opcua:hasEURange machinery_processvalues:nodei6035 ;
+    opcua:hasEngineeringUnits machinery_processvalues:nodei6034 ;
+    base:hasAccessLevel opcua:CurrentRead,
+        opcua:CurrentWrite ;
+    base:hasBrowseName "AnalogSignal" ;
+    base:hasBrowseNameNamespace padim:PADIMNamespace ;
+    base:hasDatatype opcua:Number ;
+    base:hasDescription "The process value." ;
+    base:hasDisplayName "AnalogSignal" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6033" ;
+    base:hasValueRank -2 .
+
+machinery_processvalues:nodei6034 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "EngineeringUnits" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:EUInformation ;
+    base:hasDisplayName "EngineeringUnits" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6034" .
+
+machinery_processvalues:nodei6035 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "EURange" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Range ;
+    base:hasDisplayName "EURange" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6035" .
+
+machinery_processvalues:nodei6036 a machinery_processvalues:ProcessValueSetpointVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    opcua:HasProperty machinery_processvalues:nodei6037,
+        machinery_processvalues:nodei6038 ;
+    opcua:hasEURange machinery_processvalues:nodei6038 ;
+    opcua:hasEngineeringUnits machinery_processvalues:nodei6037 ;
+    base:hasAccessLevel opcua:CurrentRead,
+        opcua:CurrentWrite ;
+    base:hasBrowseName "ProcessValueSetpoint" ;
+    base:hasBrowseNameNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasDatatype opcua:Number ;
+    base:hasDescription "The desired value, may or may not be controlled by the server." ;
+    base:hasDisplayName "ProcessValueSetpoint" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6036" ;
+    base:hasValueRank -2 .
+
+machinery_processvalues:nodei6037 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "EngineeringUnits" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:EUInformation ;
+    base:hasDisplayName "EngineeringUnits" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6037" .
+
+machinery_processvalues:nodei6038 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "EURange" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Range ;
+    base:hasDisplayName "EURange" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6038" .
+
+machinery_processvalues:nodei6039 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "SetpointNode" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "SetpointNode" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6039" .
+
+machinery_processvalues:nodei6041 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "Id" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Boolean ;
+    base:hasDisplayName "Id" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6041" .
+
+machinery_processvalues:nodei6042 a opcua:FiniteStateVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    opcua:HasProperty machinery_processvalues:nodei6043 ;
+    opcua:hasId machinery_processvalues:nodei6043 ;
+    base:hasBrowseName "CurrentState" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDisplayName "CurrentState" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6042" .
+
+machinery_processvalues:nodei6043 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "Id" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "Id" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6043" .
+
+machinery_processvalues:nodei6044 a opcua:TwoStateVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    opcua:HasProperty machinery_processvalues:nodei6045 ;
+    opcua:HasTrueSubState machinery_processvalues:nodei6040 ;
+    opcua:hasId machinery_processvalues:nodei6045 ;
+    base:hasBrowseName "EnabledState" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDisplayName "EnabledState" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6044" .
+
+machinery_processvalues:nodei6045 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "Id" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Boolean ;
+    base:hasDisplayName "Id" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6045" .
+
+machinery_processvalues:nodei6046 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "InputNode" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "InputNode" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6046" .
+
+machinery_processvalues:nodei6047 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "SuppressedOrShelved" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Boolean ;
+    base:hasDisplayName "SuppressedOrShelved" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6047" .
+
+machinery_processvalues:nodei6048 a opcua:TwoStateVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    opcua:HasProperty machinery_processvalues:nodei6049 ;
+    opcua:hasId machinery_processvalues:nodei6049 ;
+    base:hasBrowseName "AckedState" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDisplayName "AckedState" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6048" .
+
+machinery_processvalues:nodei6049 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "Id" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Boolean ;
+    base:hasDisplayName "Id" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6049" .
+
+machinery_processvalues:nodei6050 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "InputArguments" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Argument ;
+    base:hasDisplayName "InputArguments" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6050" ;
+    base:hasValueList ( "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=297\"}, \"xsd:Body\": {\"xsd:Argument\": {\"xsd:Name\": \"EventId\", \"xsd:DataType\": {\"xsd:Identifier\": \"i=15\"}, \"xsd:ValueRank\": -1, \"xsd:ArrayDimensions\": null, \"xsd:Description\": {\"xsd:Text\": \"The identifier for the event to comment.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=297\"}, \"xsd:Body\": {\"xsd:Argument\": {\"xsd:Name\": \"Comment\", \"xsd:DataType\": {\"xsd:Identifier\": \"i=21\"}, \"xsd:ValueRank\": -1, \"xsd:ArrayDimensions\": null, \"xsd:Description\": {\"xsd:Text\": \"The comment to add to the condition.\"}}}}"^^rdf:JSON ) ;
+    base:hasValueRank 1 .
+
+machinery_processvalues:nodei6051 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "InputArguments" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Argument ;
+    base:hasDisplayName "InputArguments" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6051" ;
+    base:hasValueList ( "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=297\"}, \"xsd:Body\": {\"xsd:Argument\": {\"xsd:Name\": \"EventId\", \"xsd:DataType\": {\"xsd:Identifier\": \"i=15\"}, \"xsd:ValueRank\": -1, \"xsd:ArrayDimensions\": null, \"xsd:Description\": {\"xsd:Text\": \"The identifier for the event to comment.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=297\"}, \"xsd:Body\": {\"xsd:Argument\": {\"xsd:Name\": \"Comment\", \"xsd:DataType\": {\"xsd:Identifier\": \"i=21\"}, \"xsd:ValueRank\": -1, \"xsd:ArrayDimensions\": null, \"xsd:Description\": {\"xsd:Text\": \"The comment to add to the condition.\"}}}}"^^rdf:JSON ) ;
+    base:hasValueRank 1 .
+
+machinery_processvalues:nodei6052 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "BranchId" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "BranchId" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6052" .
+
+machinery_processvalues:nodei6053 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "ClientUserId" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "ClientUserId" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6053" .
+
+machinery_processvalues:nodei6054 a opcua:ConditionVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    opcua:HasProperty machinery_processvalues:nodei6055 ;
+    opcua:hasSourceTimestamp machinery_processvalues:nodei6055 ;
+    base:hasBrowseName "Comment" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDisplayName "Comment" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6054" .
+
+machinery_processvalues:nodei6055 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "SourceTimestamp" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UtcTime ;
+    base:hasDisplayName "SourceTimestamp" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6055" .
+
+machinery_processvalues:nodei6056 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "ConditionClassId" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "ConditionClassId" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6056" .
+
+machinery_processvalues:nodei6057 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "ConditionClassName" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDisplayName "ConditionClassName" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6057" .
+
+machinery_processvalues:nodei6058 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "ConditionName" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "ConditionName" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6058" .
+
+machinery_processvalues:nodei6059 a opcua:ConditionVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    opcua:HasProperty machinery_processvalues:nodei6060 ;
+    opcua:hasSourceTimestamp machinery_processvalues:nodei6060 ;
+    base:hasBrowseName "LastSeverity" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt16 ;
+    base:hasDisplayName "LastSeverity" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6059" .
+
+machinery_processvalues:nodei6060 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "SourceTimestamp" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UtcTime ;
+    base:hasDisplayName "SourceTimestamp" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6060" .
+
+machinery_processvalues:nodei6061 a opcua:ConditionVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    opcua:HasProperty machinery_processvalues:nodei6062 ;
+    opcua:hasSourceTimestamp machinery_processvalues:nodei6062 ;
+    base:hasBrowseName "Quality" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:StatusCode ;
+    base:hasDisplayName "Quality" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6061" .
+
+machinery_processvalues:nodei6062 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "SourceTimestamp" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UtcTime ;
+    base:hasDisplayName "SourceTimestamp" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6062" .
+
+machinery_processvalues:nodei6063 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "Retain" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Boolean ;
+    base:hasDisplayName "Retain" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6063" .
+
+machinery_processvalues:nodei6064 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "EventId" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:ByteString ;
+    base:hasDisplayName "EventId" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6064" .
+
+machinery_processvalues:nodei6065 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "EventType" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "EventType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6065" .
+
+machinery_processvalues:nodei6066 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "Message" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDisplayName "Message" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6066" .
+
+machinery_processvalues:nodei6067 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "ReceiveTime" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UtcTime ;
+    base:hasDisplayName "ReceiveTime" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6067" .
+
+machinery_processvalues:nodei6068 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "Severity" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt16 ;
+    base:hasDisplayName "Severity" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6068" .
+
+machinery_processvalues:nodei6069 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "SourceName" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "SourceName" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6069" .
+
+machinery_processvalues:nodei6070 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "SourceNode" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "SourceNode" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6070" .
+
+machinery_processvalues:nodei6071 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "Time" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UtcTime ;
+    base:hasDisplayName "Time" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6071" .
+
+machinery_processvalues:nodei6072 a opcua:TwoStateVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    opcua:HasProperty machinery_processvalues:nodei6073 ;
+    opcua:hasId machinery_processvalues:nodei6073 ;
+    base:hasBrowseName "ActiveState" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDisplayName "ActiveState" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6072" .
+
+machinery_processvalues:nodei6073 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "Id" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Boolean ;
+    base:hasDisplayName "Id" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6073" .
+
+machinery_processvalues:nodei6074 a opcua:FiniteStateVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    opcua:HasProperty machinery_processvalues:nodei6075 ;
+    opcua:hasId machinery_processvalues:nodei6075 ;
+    base:hasBrowseName "CurrentState" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDisplayName "CurrentState" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6074" .
+
+machinery_processvalues:nodei6075 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "Id" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "Id" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6075" .
+
+machinery_processvalues:nodei6076 a opcua:TwoStateVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    opcua:HasProperty machinery_processvalues:nodei6077 ;
+    opcua:hasId machinery_processvalues:nodei6077 ;
+    base:hasBrowseName "EnabledState" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDisplayName "EnabledState" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6076" .
+
+machinery_processvalues:nodei6077 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "Id" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Boolean ;
+    base:hasDisplayName "Id" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6077" .
+
+machinery_processvalues:nodei6078 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "InputNode" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "InputNode" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6078" .
+
+machinery_processvalues:nodei6079 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "SuppressedOrShelved" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Boolean ;
+    base:hasDisplayName "SuppressedOrShelved" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6079" .
+
+machinery_processvalues:nodei6080 a opcua:TwoStateVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    opcua:HasProperty machinery_processvalues:nodei6081 ;
+    opcua:hasId machinery_processvalues:nodei6081 ;
+    base:hasBrowseName "AckedState" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDisplayName "AckedState" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6080" .
+
+machinery_processvalues:nodei6081 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "Id" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Boolean ;
+    base:hasDisplayName "Id" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6081" .
+
+machinery_processvalues:nodei6082 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "InputArguments" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Argument ;
+    base:hasDisplayName "InputArguments" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6082" ;
+    base:hasValueList ( "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=297\"}, \"xsd:Body\": {\"xsd:Argument\": {\"xsd:Name\": \"EventId\", \"xsd:DataType\": {\"xsd:Identifier\": \"i=15\"}, \"xsd:ValueRank\": -1, \"xsd:ArrayDimensions\": null, \"xsd:Description\": {\"xsd:Text\": \"The identifier for the event to comment.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=297\"}, \"xsd:Body\": {\"xsd:Argument\": {\"xsd:Name\": \"Comment\", \"xsd:DataType\": {\"xsd:Identifier\": \"i=21\"}, \"xsd:ValueRank\": -1, \"xsd:ArrayDimensions\": null, \"xsd:Description\": {\"xsd:Text\": \"The comment to add to the condition.\"}}}}"^^rdf:JSON ) ;
+    base:hasValueRank 1 .
+
+machinery_processvalues:nodei6083 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "InputArguments" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Argument ;
+    base:hasDisplayName "InputArguments" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6083" ;
+    base:hasValueList ( "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=297\"}, \"xsd:Body\": {\"xsd:Argument\": {\"xsd:Name\": \"EventId\", \"xsd:DataType\": {\"xsd:Identifier\": \"i=15\"}, \"xsd:ValueRank\": -1, \"xsd:ArrayDimensions\": null, \"xsd:Description\": {\"xsd:Text\": \"The identifier for the event to comment.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=297\"}, \"xsd:Body\": {\"xsd:Argument\": {\"xsd:Name\": \"Comment\", \"xsd:DataType\": {\"xsd:Identifier\": \"i=21\"}, \"xsd:ValueRank\": -1, \"xsd:ArrayDimensions\": null, \"xsd:Description\": {\"xsd:Text\": \"The comment to add to the condition.\"}}}}"^^rdf:JSON ) ;
+    base:hasValueRank 1 .
+
+machinery_processvalues:nodei6084 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "BranchId" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "BranchId" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6084" .
+
+machinery_processvalues:nodei6085 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "ClientUserId" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "ClientUserId" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6085" .
+
+machinery_processvalues:nodei6086 a opcua:ConditionVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    opcua:HasProperty machinery_processvalues:nodei6087 ;
+    opcua:hasSourceTimestamp machinery_processvalues:nodei6087 ;
+    base:hasBrowseName "Comment" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDisplayName "Comment" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6086" .
+
+machinery_processvalues:nodei6087 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "SourceTimestamp" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UtcTime ;
+    base:hasDisplayName "SourceTimestamp" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6087" .
+
+machinery_processvalues:nodei6088 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "ConditionClassId" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "ConditionClassId" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6088" .
+
+machinery_processvalues:nodei6089 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "ConditionClassName" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDisplayName "ConditionClassName" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6089" .
+
+machinery_processvalues:nodei6090 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "ConditionName" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "ConditionName" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6090" .
+
+machinery_processvalues:nodei6091 a opcua:ConditionVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    opcua:HasProperty machinery_processvalues:nodei6092 ;
+    opcua:hasSourceTimestamp machinery_processvalues:nodei6092 ;
+    base:hasBrowseName "LastSeverity" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt16 ;
+    base:hasDisplayName "LastSeverity" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6091" .
+
+machinery_processvalues:nodei6092 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "SourceTimestamp" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UtcTime ;
+    base:hasDisplayName "SourceTimestamp" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6092" .
+
+machinery_processvalues:nodei6093 a opcua:ConditionVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    opcua:HasProperty machinery_processvalues:nodei6094 ;
+    opcua:hasSourceTimestamp machinery_processvalues:nodei6094 ;
+    base:hasBrowseName "Quality" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:StatusCode ;
+    base:hasDisplayName "Quality" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6093" .
+
+machinery_processvalues:nodei6094 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "SourceTimestamp" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UtcTime ;
+    base:hasDisplayName "SourceTimestamp" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6094" .
+
+machinery_processvalues:nodei6095 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "Retain" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Boolean ;
+    base:hasDisplayName "Retain" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6095" .
+
+machinery_processvalues:nodei6096 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "EventId" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:ByteString ;
+    base:hasDisplayName "EventId" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6096" .
+
+machinery_processvalues:nodei6097 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "EventType" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "EventType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6097" .
+
+machinery_processvalues:nodei6098 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "Message" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDisplayName "Message" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6098" .
+
+machinery_processvalues:nodei6099 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "ReceiveTime" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UtcTime ;
+    base:hasDisplayName "ReceiveTime" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6099" .
+
+machinery_processvalues:nodei6100 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "Severity" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt16 ;
+    base:hasDisplayName "Severity" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6100" .
+
+machinery_processvalues:nodei6101 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "SourceName" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "SourceName" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6101" .
+
+machinery_processvalues:nodei6102 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "SourceNode" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "SourceNode" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6102" .
+
+machinery_processvalues:nodei6103 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "Time" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UtcTime ;
+    base:hasDisplayName "Time" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6103" .
+
+machinery_processvalues:nodei6104 a opcua:AnalogUnitRangeType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    opcua:HasProperty machinery_processvalues:nodei6111,
+        machinery_processvalues:nodei6112 ;
+    opcua:hasEURange machinery_processvalues:nodei6112 ;
+    opcua:hasEngineeringUnits machinery_processvalues:nodei6111 ;
+    base:hasAccessLevel opcua:CurrentRead,
+        opcua:CurrentWrite ;
+    base:hasBrowseName "PercentageValue" ;
+    base:hasBrowseNameNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasDatatype opcua:Double ;
+    base:hasDescription "Provides the process value in percentage." ;
+    base:hasDisplayName "PercentageValue" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6104" .
+
+machinery_processvalues:nodei6105 a opcua:MultiStateValueDiscreteType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    opcua:HasProperty machinery_processvalues:nodei6106,
+        machinery_processvalues:nodei6107 ;
+    opcua:hasEnumValues machinery_processvalues:nodei6106 ;
+    opcua:hasValueAsText machinery_processvalues:nodei6107 ;
+    base:hasAccessLevel opcua:CurrentRead,
+        opcua:CurrentWrite ;
+    base:hasBrowseName "Status" ;
+    base:hasBrowseNameNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasDatatype opcua:UInt16 ;
+    base:hasDescription "Indicates if a limit has been reached." ;
+    base:hasDisplayName "Status" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6105" .
+
+machinery_processvalues:nodei6106 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "EnumValues" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:EnumValueType ;
+    base:hasDisplayName "EnumValues" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6106" ;
+    base:hasValueList ( "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 0, \"xsd:DisplayName\": {\"xsd:Text\": \"NONE\"}, \"xsd:Description\": {\"xsd:Text\": \"Not monitoring\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 1, \"xsd:DisplayName\": {\"xsd:Text\": \"UNKNOWN\"}, \"xsd:Description\": {\"xsd:Text\": \"Status not known\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 2, \"xsd:DisplayName\": {\"xsd:Text\": \"BELOW_LOWLOW_LIMIT\"}, \"xsd:Description\": {\"xsd:Text\": \"Value is below LowLowLimit\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 3, \"xsd:DisplayName\": {\"xsd:Text\": \"BELOW_LOW_LIMIT\"}, \"xsd:Description\": {\"xsd:Text\": \"Value is below LowLimit\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 4, \"xsd:DisplayName\": {\"xsd:Text\": \"BELOW_LOWLOW_DEVIATION\"}, \"xsd:Description\": {\"xsd:Text\": \"Value is below LowLowDeviation\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 5, \"xsd:DisplayName\": {\"xsd:Text\": \"BELOW_LOW_DEVIATION\"}, \"xsd:Description\": {\"xsd:Text\": \"Value is below LowDeviation\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 6, \"xsd:DisplayName\": {\"xsd:Text\": \"WITHIN_TOLERANCE\"}, \"xsd:Description\": {\"xsd:Text\": \"Value is in tolerance\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 7, \"xsd:DisplayName\": {\"xsd:Text\": \"ABOVE_HIGH_DEVIATION\"}, \"xsd:Description\": {\"xsd:Text\": \"Value is above HighDeviation\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 8, \"xsd:DisplayName\": {\"xsd:Text\": \"ABOVE_HIGHHIGH_DEVIATION\"}, \"xsd:Description\": {\"xsd:Text\": \"Value is above HighHighDeviation\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 9, \"xsd:DisplayName\": {\"xsd:Text\": \"ABOVE_HIGH_LIMIT\"}, \"xsd:Description\": {\"xsd:Text\": \"Value is above HighLimit\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 10, \"xsd:DisplayName\": {\"xsd:Text\": \"ABOVE_HIGHHIGH_LIMIT\"}, \"xsd:Description\": {\"xsd:Text\": \"Value is above HighHighLimit\"}}}}"^^rdf:JSON ) ;
+    base:hasValueRank 1 .
+
+machinery_processvalues:nodei6107 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "ValueAsText" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDisplayName "ValueAsText" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6107" .
+
+machinery_processvalues:nodei6108 a opcua:MultiStateValueDiscreteType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    opcua:HasProperty machinery_processvalues:nodei6109,
+        machinery_processvalues:nodei6110 ;
+    opcua:hasEnumValues machinery_processvalues:nodei6109 ;
+    opcua:hasValueAsText machinery_processvalues:nodei6110 ;
+    base:hasAccessLevel opcua:CurrentRead,
+        opcua:CurrentWrite ;
+    base:hasBrowseName "AlarmSuppression" ;
+    base:hasBrowseNameNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasDatatype opcua:UInt16 ;
+    base:hasDescription "Indicates if alarms based on the Status shall be suppressed." ;
+    base:hasDisplayName "AlarmSuppression" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6108" .
+
+machinery_processvalues:nodei6109 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "EnumValues" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:EnumValueType ;
+    base:hasDisplayName "EnumValues" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6109" ;
+    base:hasValueList ( "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 0, \"xsd:DisplayName\": {\"xsd:Text\": \"OFF\"}, \"xsd:Description\": {\"xsd:Text\": \"no alarm suppression\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 1, \"xsd:DisplayName\": {\"xsd:Text\": \"HORN\"}, \"xsd:Description\": {\"xsd:Text\": \"suppressess only horn\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 2, \"xsd:DisplayName\": {\"xsd:Text\": \"COMPLETE\"}, \"xsd:Description\": {\"xsd:Text\": \"all alarms are suppressed\"}}}}"^^rdf:JSON ) ;
+    base:hasValueRank 1 .
+
+machinery_processvalues:nodei6110 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "ValueAsText" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDisplayName "ValueAsText" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6110" .
+
+machinery_processvalues:nodei6111 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "EngineeringUnits" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:EUInformation ;
+    base:hasDisplayName "EngineeringUnits" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6111" ;
+    base:hasValue "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=888\"}, \"xsd:Body\": {\"xsd:EUInformation\": {\"xsd:NamespaceUri\": \"http://www.opcfoundation.org/UA/units/un/cefact\", \"xsd:UnitId\": 20529, \"xsd:DisplayName\": {\"xsd:Text\": \"%\"}, \"xsd:Description\": {\"xsd:Text\": \"percent\"}}}}"^^rdf:JSON .
+
+machinery_processvalues:nodei6112 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "EURange" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Range ;
+    base:hasDisplayName "EURange" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6112" ;
+    base:hasValue "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=885\"}, \"xsd:Body\": {\"xsd:Range\": {\"xsd:Low\": 0.0, \"xsd:High\": 100.0}}}"^^rdf:JSON .
+
+machinery_processvalues:nodei6113 a opcua:AnalogUnitType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    opcua:HasProperty machinery_processvalues:nodei6114 ;
+    opcua:hasEngineeringUnits machinery_processvalues:nodei6114 ;
+    base:hasAccessLevel opcua:CurrentRead,
+        opcua:CurrentWrite ;
+    base:hasBrowseName "LowLowLimit" ;
+    base:hasBrowseNameNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasDatatype opcua:Number ;
+    base:hasDescription "Defines the absolute low low limit" ;
+    base:hasDisplayName "LowLowLimit" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6113" .
+
+machinery_processvalues:nodei6114 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "EngineeringUnits" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:EUInformation ;
+    base:hasDisplayName "EngineeringUnits" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6114" .
+
+machinery_processvalues:nodei6115 a opcua:AnalogUnitType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    opcua:HasProperty machinery_processvalues:nodei6116 ;
+    opcua:hasEngineeringUnits machinery_processvalues:nodei6116 ;
+    base:hasAccessLevel opcua:CurrentRead,
+        opcua:CurrentWrite ;
+    base:hasBrowseName "LowLimit" ;
+    base:hasBrowseNameNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasDatatype opcua:Number ;
+    base:hasDescription "Defines the absolute low limit" ;
+    base:hasDisplayName "LowLimit" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6115" .
+
+machinery_processvalues:nodei6116 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "EngineeringUnits" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:EUInformation ;
+    base:hasDisplayName "EngineeringUnits" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6116" .
+
+machinery_processvalues:nodei6117 a opcua:AnalogUnitType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    opcua:HasProperty machinery_processvalues:nodei6118 ;
+    opcua:hasEngineeringUnits machinery_processvalues:nodei6118 ;
+    base:hasAccessLevel opcua:CurrentRead,
+        opcua:CurrentWrite ;
+    base:hasBrowseName "HighLimit" ;
+    base:hasBrowseNameNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasDatatype opcua:Number ;
+    base:hasDescription "Defines the absolute high limit" ;
+    base:hasDisplayName "HighLimit" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6117" .
+
+machinery_processvalues:nodei6118 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "EngineeringUnits" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:EUInformation ;
+    base:hasDisplayName "EngineeringUnits" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6118" .
+
+machinery_processvalues:nodei6119 a opcua:AnalogUnitType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    opcua:HasProperty machinery_processvalues:nodei6120 ;
+    opcua:hasEngineeringUnits machinery_processvalues:nodei6120 ;
+    base:hasAccessLevel opcua:CurrentRead,
+        opcua:CurrentWrite ;
+    base:hasBrowseName "HighHighLimit" ;
+    base:hasBrowseNameNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasDatatype opcua:Number ;
+    base:hasDescription "Defines the absolute high high limit" ;
+    base:hasDisplayName "HighHighLimit" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6119" .
+
+machinery_processvalues:nodei6120 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "EngineeringUnits" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:EUInformation ;
+    base:hasDisplayName "EngineeringUnits" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6120" .
+
+machinery_processvalues:nodei7001 a opcua:MethodNodeClass ;
+    opcua:GeneratesEvent machinery_processvalues:nodei1002 ;
+    base:hasBrowseName "ZeroPointAdjustment" ;
+    base:hasBrowseNameNamespace padim:PADIMNamespace ;
+    base:hasDisplayName "Zero point adjustment" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "7001" .
+
+machinery_processvalues:nodei7002 a opcua:MethodNodeClass ;
+    opcua:HasProperty machinery_processvalues:nodei6050 ;
+    opcua:hasInputArguments machinery_processvalues:nodei6050 ;
+    base:hasBrowseName "Acknowledge" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Acknowledge" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "7002" .
+
+machinery_processvalues:nodei7003 a opcua:MethodNodeClass ;
+    opcua:HasProperty machinery_processvalues:nodei6051 ;
+    opcua:hasInputArguments machinery_processvalues:nodei6051 ;
+    base:hasBrowseName "AddComment" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "AddComment" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "7003" .
+
+machinery_processvalues:nodei7004 a opcua:MethodNodeClass ;
+    base:hasBrowseName "Disable" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Disable" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "7004" .
+
+machinery_processvalues:nodei7005 a opcua:MethodNodeClass ;
+    base:hasBrowseName "Enable" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Enable" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "7005" .
+
+machinery_processvalues:nodei7006 a opcua:MethodNodeClass ;
+    opcua:HasProperty machinery_processvalues:nodei6082 ;
+    opcua:hasInputArguments machinery_processvalues:nodei6082 ;
+    base:hasBrowseName "Acknowledge" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Acknowledge" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "7006" .
+
+machinery_processvalues:nodei7007 a opcua:MethodNodeClass ;
+    opcua:HasProperty machinery_processvalues:nodei6083 ;
+    opcua:hasInputArguments machinery_processvalues:nodei6083 ;
+    base:hasBrowseName "AddComment" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "AddComment" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "7007" .
+
+machinery_processvalues:nodei7008 a opcua:MethodNodeClass ;
+    base:hasBrowseName "Disable" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Disable" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "7008" .
+
+machinery_processvalues:nodei7009 a opcua:MethodNodeClass ;
+    base:hasBrowseName "Enable" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Enable" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "7009" .
+
+machinery_processvalues:nodei5003 a opcua:ExclusiveLimitStateMachineType,
+        opcua:ObjectNodeClass ;
+    opcua:HasComponent machinery_processvalues:nodei6042 ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    opcua:hasCurrentState machinery_processvalues:nodei6042 ;
+    base:hasBrowseName "LimitState" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "LimitState" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "5003" .
+
+machinery_processvalues:nodei6040 a opcua:TwoStateVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    opcua:HasProperty machinery_processvalues:nodei6041 ;
+    opcua:HasTrueSubState machinery_processvalues:nodei5003 ;
+    opcua:hasId machinery_processvalues:nodei6041 ;
+    base:hasBrowseName "ActiveState" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDisplayName "ActiveState" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_processvalues:MACHINERY_PROCESSVALUESNamespace ;
+    base:hasNodeId "6040" .
+
+machinery_processvalues:MACHINERY_PROCESSVALUESNamespace a base:Namespace ;
+    base:hasPrefix "machinery_processvalues" ;
+    base:hasUri "http://opcfoundation.org/UA/Machinery/ProcessValues/" .
+

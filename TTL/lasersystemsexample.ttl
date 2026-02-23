@@ -1,0 +1,1197 @@
+@prefix base: <https://industryfusion.github.io/contexts/ontology/v0/base/> .
+@prefix devices: <http://opcfoundation.org/UA/DI/> .
+@prefix ia: <http://opcfoundation.org/UA/IA/> .
+@prefix lasersystems: <http://opcfoundation.org/UA/LaserSystems/> .
+@prefix lasersystemsexample: <http://vdma.org/UA/LaserSystem-Example/> .
+@prefix machinery: <http://opcfoundation.org/UA/Machinery/> .
+@prefix machinetool: <http://opcfoundation.org/UA/MachineTool/> .
+@prefix opcua: <http://opcfoundation.org/UA/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+machinery:nodei1001 opcua:Organizes lasersystemsexample:nodei5003 .
+
+opcua:nodei11715 opcua:HasComponent lasersystemsexample:nodei5027 ;
+    <http://vdma.org/UA/LaserSystem-Example/hashttp%3A//vdma.org/UA/LaserSystem-Example/> lasersystemsexample:nodei5027 .
+
+lasersystemsexample: a owl:Ontology ;
+    owl:imports <file:///home/gregor/DigitalTwin/semantic-model/opcua/core.ttl>,
+        <file:///home/gregor/DigitalTwin/semantic-model/opcua/devices.ttl>,
+        <file:///home/gregor/DigitalTwin/semantic-model/opcua/ia.ttl>,
+        <file:///home/gregor/DigitalTwin/semantic-model/opcua/lasersystems.ttl>,
+        <file:///home/gregor/DigitalTwin/semantic-model/opcua/machinery.ttl>,
+        <file:///home/gregor/DigitalTwin/semantic-model/opcua/machinetool.ttl>,
+        <https://industryfusion.github.io/contexts/staging/ontology/v0/base.ttl> ;
+    owl:versionIRI <http://example.com/v0.1/LaserSystems/> ;
+    owl:versionInfo 1e-01 .
+
+lasersystemsexample:hasCoolantPresetTemperatureChange rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+lasersystemsexample:hasCoolantWaterLevel rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+lasersystemsexample:hasGasUsage rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+lasersystemsexample:hasLaserSystemMaintenancePrognosis rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+lasersystemsexample:hasLaserSystemUtilityPrognosis rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+lasersystemsexample:hasLight01 rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+lasersystemsexample:hasRecipe1 rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+<http://vdma.org/UA/LaserSystem-Example/hashttp%3A//vdma.org/UA/LaserSystem-Example/> rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+lasersystemsexample:nodei5003 a lasersystems:LaserSystemType,
+        opcua:ObjectNodeClass ;
+    devices:hasIdentification lasersystemsexample:nodei5004 ;
+    opcua:HasAddIn lasersystemsexample:nodei5004 ;
+    opcua:HasComponent lasersystemsexample:nodei5005,
+        lasersystemsexample:nodei5006,
+        lasersystemsexample:nodei5013,
+        lasersystemsexample:nodei5014 ;
+    lasersystems:hasMonitoring lasersystemsexample:nodei5006 ;
+    lasersystems:hasProduction lasersystemsexample:nodei5014 ;
+    machinetool:hasNotification lasersystemsexample:nodei5013 ;
+    machinery:hasMachineryBuildingBlocks lasersystemsexample:nodei5005 ;
+    base:hasBrowseName "LaserSystem-Example" ;
+    base:hasBrowseNameNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasDisplayName "LaserSystem-Example" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "5003" ;
+    base:hasSymbolicName "LaserSystem_Example" .
+
+lasersystemsexample:nodei5001 a opcua:ObjectNodeClass,
+        opcua:OrderedListType ;
+    opcua:HasOrderedComponent lasersystemsexample:nodei5028 ;
+    lasersystemsexample:hasCoolantPresetTemperatureChange lasersystemsexample:nodei5028 ;
+    base:hasBrowseName "ActivityData" ;
+    base:hasBrowseNameNamespace lasersystems:LASERSYSTEMSNamespace ;
+    base:hasDisplayName "ActivityData" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "5001" .
+
+lasersystemsexample:nodei5002 a opcua:FolderType,
+        opcua:ObjectNodeClass ;
+    opcua:HasComponent lasersystemsexample:nodei5024 ;
+    lasersystemsexample:hasCoolantWaterLevel lasersystemsexample:nodei5024 ;
+    base:hasBrowseName "ConditionData" ;
+    base:hasBrowseNameNamespace lasersystems:LASERSYSTEMSNamespace ;
+    base:hasDisplayName "ConditionData" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "5002" .
+
+lasersystemsexample:nodei5005 a opcua:FolderType,
+        opcua:ObjectNodeClass ;
+    devices:hasIdentification lasersystemsexample:nodei5004 ;
+    devices:hasOperationCounters lasersystemsexample:nodei5012 ;
+    opcua:HasAddIn lasersystemsexample:nodei5004,
+        lasersystemsexample:nodei5009,
+        lasersystemsexample:nodei5010,
+        lasersystemsexample:nodei5012 ;
+    machinery:hasMachineryItemState lasersystemsexample:nodei5009 ;
+    machinery:hasMachineryOperationMode lasersystemsexample:nodei5010 ;
+    base:hasBrowseName "MachineryBuildingBlocks" ;
+    base:hasBrowseNameNamespace machinery:MACHINERYNamespace ;
+    base:hasDisplayName "MachineryBuildingBlocks" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "5005" .
+
+lasersystemsexample:nodei5006 a lasersystems:LaserSystemMonitoringType,
+        opcua:ObjectNodeClass ;
+    opcua:HasComponent lasersystemsexample:nodei5001,
+        lasersystemsexample:nodei5002,
+        lasersystemsexample:nodei5007,
+        lasersystemsexample:nodei5015,
+        lasersystemsexample:nodei5016 ;
+    lasersystems:hasActivityData lasersystemsexample:nodei5001 ;
+    lasersystems:hasConditionData lasersystemsexample:nodei5002 ;
+    lasersystems:hasConsumptionData lasersystemsexample:nodei5015 ;
+    lasersystems:hasLaserSystemStatus lasersystemsexample:nodei5007 ;
+    lasersystems:hasStacklight lasersystemsexample:nodei5016 ;
+    base:hasBrowseName "Monitoring" ;
+    base:hasBrowseNameNamespace lasersystems:LASERSYSTEMSNamespace ;
+    base:hasDisplayName "Monitoring" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "5006" .
+
+lasersystemsexample:nodei5007 a lasersystems:LaserSystemStatusType,
+        opcua:ObjectNodeClass ;
+    devices:hasOperationCounters lasersystemsexample:nodei5012 ;
+    opcua:HasAddIn lasersystemsexample:nodei5009,
+        lasersystemsexample:nodei5010,
+        lasersystemsexample:nodei5012 ;
+    opcua:HasComponent lasersystemsexample:nodei5008,
+        lasersystemsexample:nodei5011 ;
+    lasersystems:hasLaserSystemState lasersystemsexample:nodei5008 ;
+    lasersystems:hasMachineToolsLaserStatus lasersystemsexample:nodei5011 ;
+    machinery:hasMachineryItemState lasersystemsexample:nodei5009 ;
+    machinery:hasMachineryOperationMode lasersystemsexample:nodei5010 ;
+    base:hasBrowseName "LaserSystemStatus" ;
+    base:hasBrowseNameNamespace lasersystems:LASERSYSTEMSNamespace ;
+    base:hasDisplayName "LaserSystemStatus" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "5007" .
+
+lasersystemsexample:nodei5008 a lasersystems:LaserSystemState_StateMachineType,
+        opcua:ObjectNodeClass ;
+    opcua:HasComponent lasersystemsexample:nodei6003 ;
+    opcua:hasCurrentState lasersystemsexample:nodei6003 ;
+    base:hasBrowseName "LaserSystemState" ;
+    base:hasBrowseNameNamespace lasersystems:LASERSYSTEMSNamespace ;
+    base:hasDisplayName "LaserSystemState" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "5008" .
+
+lasersystemsexample:nodei5011 a machinetool:LaserMonitoringType,
+        opcua:ObjectNodeClass ;
+    opcua:HasComponent lasersystemsexample:nodei6009,
+        lasersystemsexample:nodei6010 ;
+    opcua:HasProperty lasersystemsexample:nodei6011 ;
+    machinetool:hasControllerIsOn lasersystemsexample:nodei6009 ;
+    machinetool:hasLaserState lasersystemsexample:nodei6010 ;
+    machinetool:hasName lasersystemsexample:nodei6011 ;
+    base:hasBrowseName "MachineToolsLaserStatus" ;
+    base:hasBrowseNameNamespace lasersystems:LASERSYSTEMSNamespace ;
+    base:hasDisplayName "MachineToolsLaserStatus" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "5011" .
+
+lasersystemsexample:nodei5013 a machinetool:NotificationType,
+        opcua:ObjectNodeClass ;
+    opcua:HasComponent lasersystemsexample:nodei5018,
+        lasersystemsexample:nodei5019 ;
+    machinetool:hasMessages lasersystemsexample:nodei5018 ;
+    machinetool:hasPrognoses lasersystemsexample:nodei5019 ;
+    base:hasBrowseName "Notification" ;
+    base:hasBrowseNameNamespace machinetool:MACHINETOOLNamespace ;
+    base:hasDisplayName "Notification" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "5013" .
+
+lasersystemsexample:nodei5014 a lasersystems:LaserSystemProductionType,
+        opcua:ObjectNodeClass ;
+    opcua:HasComponent lasersystemsexample:nodei5017 ;
+    lasersystems:hasRecipeSettingsAndOverviews lasersystemsexample:nodei5017 ;
+    base:hasBrowseName "Production" ;
+    base:hasBrowseNameNamespace lasersystems:LASERSYSTEMSNamespace ;
+    base:hasDisplayName "Production" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "5014" .
+
+lasersystemsexample:nodei5015 a opcua:FolderType,
+        opcua:ObjectNodeClass ;
+    opcua:HasComponent lasersystemsexample:nodei5026 ;
+    lasersystemsexample:hasGasUsage lasersystemsexample:nodei5026 ;
+    base:hasBrowseName "ConsumptionData" ;
+    base:hasBrowseNameNamespace lasersystems:LASERSYSTEMSNamespace ;
+    base:hasDisplayName "ConsumptionData" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "5015" .
+
+lasersystemsexample:nodei5016 a ia:BasicStacklightType,
+        opcua:ObjectNodeClass ;
+    opcua:HasOrderedComponent lasersystemsexample:nodei5022 ;
+    opcua:HasProperty lasersystemsexample:nodei6014 ;
+    ia:hasStacklightMode lasersystemsexample:nodei6014 ;
+    lasersystemsexample:hasLight01 lasersystemsexample:nodei5022 ;
+    base:hasBrowseName "Stacklight" ;
+    base:hasBrowseNameNamespace lasersystems:LASERSYSTEMSNamespace ;
+    base:hasDisplayName "Stacklight" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "5016" ;
+    base:hasSymbolicName "BasicStacklight" .
+
+lasersystemsexample:nodei5017 a opcua:FolderType,
+        opcua:ObjectNodeClass ;
+    opcua:HasComponent lasersystemsexample:nodei5025 ;
+    lasersystemsexample:hasRecipe1 lasersystemsexample:nodei5025 ;
+    base:hasBrowseName "RecipeSettingsAndOverviews" ;
+    base:hasBrowseNameNamespace lasersystems:LASERSYSTEMSNamespace ;
+    base:hasDisplayName "RecipeSettingsAndOverviews" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "5017" .
+
+lasersystemsexample:nodei5018 a machinetool:MessagesType,
+        opcua:ObjectNodeClass ;
+    base:hasBrowseName "Messages" ;
+    base:hasBrowseNameNamespace machinetool:MACHINETOOLNamespace ;
+    base:hasDisplayName "Messages" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "5018" .
+
+lasersystemsexample:nodei5019 a machinetool:PrognosisListType,
+        opcua:ObjectNodeClass ;
+    opcua:HasComponent lasersystemsexample:nodei5020,
+        lasersystemsexample:nodei5021 ;
+    lasersystemsexample:hasLaserSystemMaintenancePrognosis lasersystemsexample:nodei5020 ;
+    lasersystemsexample:hasLaserSystemUtilityPrognosis lasersystemsexample:nodei5021 ;
+    base:hasBrowseName "Prognoses" ;
+    base:hasBrowseNameNamespace machinetool:MACHINETOOLNamespace ;
+    base:hasDisplayName "Prognoses" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "5019" .
+
+lasersystemsexample:nodei5020 a lasersystems:LaserSystemMaintenancePrognosisType,
+        opcua:ObjectNodeClass ;
+    opcua:HasComponent lasersystemsexample:nodei6015 ;
+    opcua:HasProperty lasersystemsexample:nodei6017 ;
+    lasersystems:hasDescription lasersystemsexample:nodei6015 ;
+    machinetool:hasPredictedTime lasersystemsexample:nodei6017 ;
+    base:hasBrowseName "LaserSystemMaintenancePrognosis" ;
+    base:hasBrowseNameNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasDisplayName "LaserSystemMaintenancePrognosis" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "5020" .
+
+lasersystemsexample:nodei5021 a lasersystems:LaserSystemUtilityChangePrognosisType,
+        opcua:ObjectNodeClass ;
+    opcua:HasComponent lasersystemsexample:nodei6018 ;
+    opcua:HasProperty lasersystemsexample:nodei6020 ;
+    lasersystems:hasDescription lasersystemsexample:nodei6018 ;
+    machinetool:hasPredictedTime lasersystemsexample:nodei6020 ;
+    base:hasBrowseName "LaserSystemUtilityPrognosis" ;
+    base:hasBrowseNameNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasDisplayName "LaserSystemUtilityPrognosis" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "5021" .
+
+lasersystemsexample:nodei5022 a ia:StackElementLightType,
+        opcua:ObjectNodeClass ;
+    opcua:HasComponent lasersystemsexample:nodei6022,
+        lasersystemsexample:nodei6023 ;
+    opcua:HasProperty lasersystemsexample:nodei6021,
+        lasersystemsexample:nodei6024 ;
+    ia:hasSignalColor lasersystemsexample:nodei6022 ;
+    ia:hasSignalMode lasersystemsexample:nodei6023 ;
+    ia:hasSignalOn lasersystemsexample:nodei6024 ;
+    opcua:hasNumberInList lasersystemsexample:nodei6021 ;
+    base:hasBrowseName "Light01" ;
+    base:hasBrowseNameNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasDescription "Represents a lamp element in a stacklight." ;
+    base:hasDisplayName "Light01" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "5022" .
+
+lasersystemsexample:nodei5024 a lasersystems:ConditionDataMonitoringType,
+        opcua:ObjectNodeClass ;
+    opcua:HasComponent lasersystemsexample:nodei6036,
+        lasersystemsexample:nodei6039,
+        lasersystemsexample:nodei6040,
+        lasersystemsexample:nodei6042,
+        lasersystemsexample:nodei6044,
+        lasersystemsexample:nodei6046 ;
+    opcua:HasProperty lasersystemsexample:nodei6035,
+        lasersystemsexample:nodei6038 ;
+    lasersystems:hasConditionParameterIdentifier lasersystemsexample:nodei6035 ;
+    lasersystems:hasDescription lasersystemsexample:nodei6039 ;
+    lasersystems:hasLowerErrorLevel lasersystemsexample:nodei6040 ;
+    lasersystems:hasLowerWarningLevel lasersystemsexample:nodei6042 ;
+    lasersystems:hasUpperErrorLevel lasersystemsexample:nodei6044 ;
+    lasersystems:hasUpperWarningLevel lasersystemsexample:nodei6046 ;
+    lasersystems:hasValue lasersystemsexample:nodei6036 ;
+    machinetool:hasName lasersystemsexample:nodei6038 ;
+    base:hasBrowseName "CoolantWaterLevel" ;
+    base:hasBrowseNameNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasDisplayName "CoolantWaterLevel" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "5024" .
+
+lasersystemsexample:nodei5025 a lasersystems:RecipeSettingsAndOverviewType,
+        opcua:ObjectNodeClass ;
+    opcua:HasComponent lasersystemsexample:nodei6055 ;
+    opcua:HasProperty lasersystemsexample:nodei6037,
+        lasersystemsexample:nodei6048,
+        lasersystemsexample:nodei6049,
+        lasersystemsexample:nodei6056,
+        lasersystemsexample:nodei6057,
+        lasersystemsexample:nodei6058 ;
+    lasersystems:hasCreationDate lasersystemsexample:nodei6056 ;
+    lasersystems:hasLastModification lasersystemsexample:nodei6037 ;
+    lasersystems:hasLastUsage lasersystemsexample:nodei6048 ;
+    lasersystems:hasRecipeIdentifier lasersystemsexample:nodei6049 ;
+    lasersystems:hasRecipeName lasersystemsexample:nodei6057 ;
+    lasersystems:hasRecipeRevision lasersystemsexample:nodei6058 ;
+    lasersystems:hasRunsCompleted lasersystemsexample:nodei6055 ;
+    base:hasBrowseName "Recipe1" ;
+    base:hasBrowseNameNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasDisplayName "Recipe1" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "5025" .
+
+lasersystemsexample:nodei5026 a lasersystems:ConsumptionDataMonitoringType,
+        opcua:ObjectNodeClass ;
+    opcua:HasComponent lasersystemsexample:nodei6052 ;
+    opcua:HasProperty lasersystemsexample:nodei6051,
+        lasersystemsexample:nodei6054 ;
+    lasersystems:hasConsumableIdentifier lasersystemsexample:nodei6051 ;
+    lasersystems:hasValue lasersystemsexample:nodei6052 ;
+    machinetool:hasName lasersystemsexample:nodei6054 ;
+    base:hasBrowseName "GasUsage" ;
+    base:hasBrowseNameNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasDisplayName "GasUsage" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "5026" .
+
+lasersystemsexample:nodei5027 a opcua:NamespaceMetadataType,
+        opcua:ObjectNodeClass ;
+    opcua:HasProperty lasersystemsexample:nodei6059,
+        lasersystemsexample:nodei6060,
+        lasersystemsexample:nodei6061,
+        lasersystemsexample:nodei6062,
+        lasersystemsexample:nodei6063,
+        lasersystemsexample:nodei6064,
+        lasersystemsexample:nodei6065 ;
+    opcua:hasIsNamespaceSubset lasersystemsexample:nodei6059 ;
+    opcua:hasNamespacePublicationDate lasersystemsexample:nodei6060 ;
+    opcua:hasNamespaceUri lasersystemsexample:nodei6061 ;
+    opcua:hasNamespaceVersion lasersystemsexample:nodei6062 ;
+    opcua:hasStaticNodeIdTypes lasersystemsexample:nodei6063 ;
+    opcua:hasStaticNumericNodeIdRange lasersystemsexample:nodei6064 ;
+    opcua:hasStaticStringNodeIdPattern lasersystemsexample:nodei6065 ;
+    base:hasBrowseName "http://vdma.org/UA/LaserSystem-Example/" ;
+    base:hasBrowseNameNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasDisplayName "http://vdma.org/UA/LaserSystem-Example/" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "5027" ;
+    base:hasSymbolicName "http___vdma_org_UA_LaserSystem_Example_" .
+
+lasersystemsexample:nodei5028 a lasersystems:ActivityDataMonitoringType,
+        opcua:ObjectNodeClass ;
+    opcua:HasComponent lasersystemsexample:nodei6067,
+        lasersystemsexample:nodei6072 ;
+    opcua:HasProperty lasersystemsexample:nodei6069,
+        lasersystemsexample:nodei6070,
+        lasersystemsexample:nodei6071 ;
+    lasersystems:hasCurrentValue lasersystemsexample:nodei6067 ;
+    lasersystems:hasParameterIdentifier lasersystemsexample:nodei6070 ;
+    lasersystems:hasPreviousValue lasersystemsexample:nodei6072 ;
+    machinetool:hasName lasersystemsexample:nodei6071 ;
+    opcua:hasNumberInList lasersystemsexample:nodei6069 ;
+    base:hasBrowseName "CoolantPresetTemperatureChange" ;
+    base:hasBrowseNameNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasDisplayName "CoolantPresetTemperatureChange" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "5028" .
+
+lasersystemsexample:nodei6001 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "Manufacturer" ;
+    base:hasBrowseNameNamespace devices:DEVICESNamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDescription "A human-readable, localized name of the manufacturer of the MachineryItem." ;
+    base:hasDisplayName "Manufacturer" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6001" ;
+    base:hasValue "VDMA e.V."@en .
+
+lasersystemsexample:nodei6002 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "SerialNumber" ;
+    base:hasBrowseNameNamespace devices:DEVICESNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDescription "A string containing a unique production number of the manufacturer of the MachineryItem. The global uniqueness of the serial number is only given in the context of the manufacturer, and potentially the model. The value shall not change during the life-cycle of the MachineryItem." ;
+    base:hasDisplayName "SerialNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6002" ;
+    base:hasValue "0815-4711" .
+
+lasersystemsexample:nodei6003 a opcua:FiniteStateVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasProperty lasersystemsexample:nodei6004 ;
+    opcua:hasId lasersystemsexample:nodei6004 ;
+    base:hasBrowseName "CurrentState" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDisplayName "CurrentState" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6003" ;
+    base:hasValue "LaserReady"@en .
+
+lasersystemsexample:nodei6004 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "Id" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "Id" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6004" ;
+    base:hasValue lasersystems:nodei5032 .
+
+lasersystemsexample:nodei6005 a opcua:FiniteStateVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasProperty lasersystemsexample:nodei6006 ;
+    opcua:hasId lasersystemsexample:nodei6006 ;
+    base:hasBrowseName "CurrentState" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDisplayName "CurrentState" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6005" ;
+    base:hasValue "Executing"@en .
+
+lasersystemsexample:nodei6006 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "Id" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "Id" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6006" ;
+    base:hasValue machinery:nodei5006 .
+
+lasersystemsexample:nodei6007 a opcua:FiniteStateVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasProperty lasersystemsexample:nodei6008 ;
+    opcua:hasId lasersystemsexample:nodei6008 ;
+    base:hasBrowseName "CurrentState" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDisplayName "CurrentState" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6007" ;
+    base:hasValue "Processing"@en .
+
+lasersystemsexample:nodei6008 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "Id" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "Id" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6008" ;
+    base:hasValue machinery:nodei5026 .
+
+lasersystemsexample:nodei6009 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "ControllerIsOn" ;
+    base:hasBrowseNameNamespace machinetool:MACHINETOOLNamespace ;
+    base:hasDatatype opcua:Boolean ;
+    base:hasDisplayName "ControllerIsOn" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6009" ;
+    base:hasValue true .
+
+lasersystemsexample:nodei6010 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "LaserState" ;
+    base:hasBrowseNameNamespace machinetool:MACHINETOOLNamespace ;
+    base:hasDatatype machinetool:LaserState ;
+    base:hasDisplayName "LaserState" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6010" ;
+    base:hasValue 1 .
+
+lasersystemsexample:nodei6011 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "Name" ;
+    base:hasBrowseNameNamespace machinetool:MACHINETOOLNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "Name" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6011" ;
+    base:hasValue "Sample LaserSystem" .
+
+lasersystemsexample:nodei6012 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "OperationDuration" ;
+    base:hasBrowseNameNamespace devices:DEVICESNamespace ;
+    base:hasDatatype opcua:Duration ;
+    base:hasDisplayName "OperationDuration" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6012" ;
+    base:hasValue 7.2e+06 .
+
+lasersystemsexample:nodei6013 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "PowerOnDuration" ;
+    base:hasBrowseNameNamespace devices:DEVICESNamespace ;
+    base:hasDatatype opcua:Duration ;
+    base:hasDisplayName "PowerOnDuration" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6013" ;
+    base:hasValue 4.428e+08 .
+
+lasersystemsexample:nodei6014 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "StacklightMode" ;
+    base:hasBrowseNameNamespace ia:IANamespace ;
+    base:hasDatatype ia:StacklightOperationMode ;
+    base:hasDescription "Shows in what way (stack of individual lights, level meter, running light) the stacklight unit is used." ;
+    base:hasDisplayName "StacklightMode" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6014" ;
+    base:hasValue 0 .
+
+lasersystemsexample:nodei6015 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "Description" ;
+    base:hasBrowseNameNamespace lasersystems:LASERSYSTEMSNamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDisplayName "Description" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6015" ;
+    base:hasValue "Check up of the main coolant loop for leaks and pressure."@en .
+
+lasersystemsexample:nodei6017 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "PredictedTime" ;
+    base:hasBrowseNameNamespace machinetool:MACHINETOOLNamespace ;
+    base:hasDatatype opcua:UtcTime ;
+    base:hasDisplayName "PredictedTime" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6017" ;
+    base:hasValue "2023-09-21T18:01:00Z" .
+
+lasersystemsexample:nodei6018 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "Description" ;
+    base:hasBrowseNameNamespace lasersystems:LASERSYSTEMSNamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDisplayName "Description" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6018" ;
+    base:hasValue "Please exchange the cooling water filter"@en .
+
+lasersystemsexample:nodei6020 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "PredictedTime" ;
+    base:hasBrowseNameNamespace machinetool:MACHINETOOLNamespace ;
+    base:hasDatatype opcua:UtcTime ;
+    base:hasDisplayName "PredictedTime" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6020" ;
+    base:hasValue "2023-12-28T08:00:00Z" .
+
+lasersystemsexample:nodei6021 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "NumberInList" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt16 ;
+    base:hasDescription "Enumerate the stacklight elements counting upwards beginning from the base of the stacklight." ;
+    base:hasDisplayName "NumberInList" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6021" ;
+    base:hasValue 0 .
+
+lasersystemsexample:nodei6022 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "SignalColor" ;
+    base:hasBrowseNameNamespace ia:IANamespace ;
+    base:hasDatatype ia:SignalColor ;
+    base:hasDescription "Indicates the colour the lamp element has when switched on." ;
+    base:hasDisplayName "SignalColor" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6022" ;
+    base:hasValue 2 .
+
+lasersystemsexample:nodei6023 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "SignalMode" ;
+    base:hasBrowseNameNamespace ia:IANamespace ;
+    base:hasDatatype ia:SignalModeLight ;
+    base:hasDescription "Shows in what way the lamp is used (continuous light, flashing, blinking) when switched on." ;
+    base:hasDisplayName "SignalMode" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6023" ;
+    base:hasValue 0 .
+
+lasersystemsexample:nodei6024 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "SignalOn" ;
+    base:hasBrowseNameNamespace ia:IANamespace ;
+    base:hasDatatype opcua:Boolean ;
+    base:hasDescription "Indicates if the signal emitted by the stack element is currently switched on or not." ;
+    base:hasDisplayName "SignalOn" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6024" ;
+    base:hasValue true .
+
+lasersystemsexample:nodei6025 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "Model" ;
+    base:hasBrowseNameNamespace devices:DEVICESNamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDescription "A human-readable, localized name of the model of the MachineryItem." ;
+    base:hasDisplayName "Model" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6025" ;
+    base:hasValue "Sample Laser System"@en .
+
+lasersystemsexample:nodei6026 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "ProductInstanceUri" ;
+    base:hasBrowseNameNamespace devices:DEVICESNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDescription "A globally unique resource identifier provided by the manufacturer of the MachineryItem." ;
+    base:hasDisplayName "ProductInstanceUri" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6026" ;
+    base:hasValue "http://vdma.org/UA/LaserSystem-Example/0815-4711" .
+
+lasersystemsexample:nodei6027 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "YearOfConstruction" ;
+    base:hasBrowseNameNamespace machinery:MACHINERYNamespace ;
+    base:hasDatatype opcua:UInt16 ;
+    base:hasDescription "The year (Gregorian calendar) in which the manufacturing process of the MachineryItem has been completed. It shall be a four-digit number and never change during the life-cycle of a MachineryItem." ;
+    base:hasDisplayName "YearOfConstruction" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6027" ;
+    base:hasValue 2023 .
+
+lasersystemsexample:nodei6028 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "Location" ;
+    base:hasBrowseNameNamespace machinery:MACHINERYNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "Location" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6028" ;
+    base:hasValue "EMO 9 F24" .
+
+lasersystemsexample:nodei6035 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "ConditionParameterIdentifier" ;
+    base:hasBrowseNameNamespace lasersystems:LASERSYSTEMSNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "ConditionParameterIdentifier" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6035" ;
+    base:hasValue "ID123" .
+
+lasersystemsexample:nodei6036 a opcua:AnalogUnitType,
+        opcua:VariableNodeClass ;
+    opcua:HasProperty lasersystemsexample:nodei6050 ;
+    opcua:hasEngineeringUnits lasersystemsexample:nodei6050 ;
+    base:hasBrowseName "Value" ;
+    base:hasBrowseNameNamespace lasersystems:LASERSYSTEMSNamespace ;
+    base:hasDatatype opcua:Double ;
+    base:hasDisplayName "Value" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6036" ;
+    base:hasValue 9e+01 .
+
+lasersystemsexample:nodei6037 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "LastModification" ;
+    base:hasBrowseNameNamespace lasersystems:LASERSYSTEMSNamespace ;
+    base:hasDatatype opcua:UtcTime ;
+    base:hasDisplayName "LastModification" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6037" ;
+    base:hasValue "2023-08-01T14:44:00Z" .
+
+lasersystemsexample:nodei6038 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "Name" ;
+    base:hasBrowseNameNamespace machinetool:MACHINETOOLNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "Name" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6038" ;
+    base:hasValue "Waterlevel" .
+
+lasersystemsexample:nodei6039 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "Description" ;
+    base:hasBrowseNameNamespace lasersystems:LASERSYSTEMSNamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDisplayName "Description" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6039" ;
+    base:hasValue "Coolant Water Level"@en .
+
+lasersystemsexample:nodei6040 a opcua:AnalogUnitType,
+        opcua:VariableNodeClass ;
+    opcua:HasProperty lasersystemsexample:nodei6041 ;
+    opcua:hasEngineeringUnits lasersystemsexample:nodei6041 ;
+    base:hasBrowseName "LowerErrorLevel" ;
+    base:hasBrowseNameNamespace lasersystems:LASERSYSTEMSNamespace ;
+    base:hasDatatype opcua:Double ;
+    base:hasDisplayName "LowerErrorLevel" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6040" ;
+    base:hasValue 5e+00 .
+
+lasersystemsexample:nodei6041 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "EngineeringUnits" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:EUInformation ;
+    base:hasDisplayName "EngineeringUnits" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6041" ;
+    base:hasValue "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=888\"}, \"xsd:Body\": {\"xsd:EUInformation\": {\"xsd:NamespaceUri\": \"http://www.opcfoundation.org/UA/units/un/cefact\", \"xsd:UnitId\": 20529, \"xsd:DisplayName\": {\"xsd:Text\": \"%\"}, \"xsd:Description\": {\"xsd:Text\": \"percent\"}}}}"^^rdf:JSON .
+
+lasersystemsexample:nodei6042 a opcua:AnalogUnitType,
+        opcua:VariableNodeClass ;
+    opcua:HasProperty lasersystemsexample:nodei6043 ;
+    opcua:hasEngineeringUnits lasersystemsexample:nodei6043 ;
+    base:hasBrowseName "LowerWarningLevel" ;
+    base:hasBrowseNameNamespace lasersystems:LASERSYSTEMSNamespace ;
+    base:hasDatatype opcua:Double ;
+    base:hasDisplayName "LowerWarningLevel" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6042" ;
+    base:hasValue 1.5e+01 .
+
+lasersystemsexample:nodei6043 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "EngineeringUnits" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:EUInformation ;
+    base:hasDisplayName "EngineeringUnits" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6043" ;
+    base:hasValue "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=888\"}, \"xsd:Body\": {\"xsd:EUInformation\": {\"xsd:NamespaceUri\": \"http://www.opcfoundation.org/UA/units/un/cefact\", \"xsd:UnitId\": 20529, \"xsd:DisplayName\": {\"xsd:Text\": \"%\"}, \"xsd:Description\": {\"xsd:Text\": \"percent\"}}}}"^^rdf:JSON .
+
+lasersystemsexample:nodei6044 a opcua:AnalogUnitType,
+        opcua:VariableNodeClass ;
+    opcua:HasProperty lasersystemsexample:nodei6045 ;
+    opcua:hasEngineeringUnits lasersystemsexample:nodei6045 ;
+    base:hasBrowseName "UpperErrorLevel" ;
+    base:hasBrowseNameNamespace lasersystems:LASERSYSTEMSNamespace ;
+    base:hasDatatype opcua:Double ;
+    base:hasDisplayName "UpperErrorLevel" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6044" ;
+    base:hasValue 1e+02 .
+
+lasersystemsexample:nodei6045 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "EngineeringUnits" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:EUInformation ;
+    base:hasDisplayName "EngineeringUnits" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6045" ;
+    base:hasValue "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=888\"}, \"xsd:Body\": {\"xsd:EUInformation\": {\"xsd:NamespaceUri\": \"http://www.opcfoundation.org/UA/units/un/cefact\", \"xsd:UnitId\": 20529, \"xsd:DisplayName\": {\"xsd:Text\": \"%\"}, \"xsd:Description\": {\"xsd:Text\": \"percent\"}}}}"^^rdf:JSON .
+
+lasersystemsexample:nodei6046 a opcua:AnalogUnitType,
+        opcua:VariableNodeClass ;
+    opcua:HasProperty lasersystemsexample:nodei6047 ;
+    opcua:hasEngineeringUnits lasersystemsexample:nodei6047 ;
+    base:hasBrowseName "UpperWarningLevel" ;
+    base:hasBrowseNameNamespace lasersystems:LASERSYSTEMSNamespace ;
+    base:hasDatatype opcua:Double ;
+    base:hasDisplayName "UpperWarningLevel" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6046" ;
+    base:hasValue 9.5e+01 .
+
+lasersystemsexample:nodei6047 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "EngineeringUnits" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:EUInformation ;
+    base:hasDisplayName "EngineeringUnits" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6047" ;
+    base:hasValue "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=888\"}, \"xsd:Body\": {\"xsd:EUInformation\": {\"xsd:NamespaceUri\": \"http://www.opcfoundation.org/UA/units/un/cefact\", \"xsd:UnitId\": 20529, \"xsd:DisplayName\": {\"xsd:Text\": \"%\"}, \"xsd:Description\": {\"xsd:Text\": \"percent\"}}}}"^^rdf:JSON .
+
+lasersystemsexample:nodei6048 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "LastUsage" ;
+    base:hasBrowseNameNamespace lasersystems:LASERSYSTEMSNamespace ;
+    base:hasDatatype opcua:UtcTime ;
+    base:hasDisplayName "LastUsage" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6048" ;
+    base:hasValue "2023-08-01T14:44:00Z" .
+
+lasersystemsexample:nodei6049 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "RecipeIdentifier" ;
+    base:hasBrowseNameNamespace lasersystems:LASERSYSTEMSNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "RecipeIdentifier" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6049" ;
+    base:hasValue "0001" .
+
+lasersystemsexample:nodei6050 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "EngineeringUnits" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:EUInformation ;
+    base:hasDisplayName "EngineeringUnits" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6050" ;
+    base:hasValue "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=888\"}, \"xsd:Body\": {\"xsd:EUInformation\": {\"xsd:NamespaceUri\": \"http://www.opcfoundation.org/UA/units/un/cefact\", \"xsd:UnitId\": 20529, \"xsd:DisplayName\": {\"xsd:Text\": \"%\"}, \"xsd:Description\": {\"xsd:Text\": \"percent\"}}}}"^^rdf:JSON .
+
+lasersystemsexample:nodei6051 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "ConsumableIdentifier" ;
+    base:hasBrowseNameNamespace lasersystems:LASERSYSTEMSNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "ConsumableIdentifier" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6051" ;
+    base:hasValue "13" .
+
+lasersystemsexample:nodei6052 a opcua:AnalogUnitType,
+        opcua:VariableNodeClass ;
+    opcua:HasProperty lasersystemsexample:nodei6053 ;
+    opcua:hasEngineeringUnits lasersystemsexample:nodei6053 ;
+    base:hasBrowseName "Value" ;
+    base:hasBrowseNameNamespace lasersystems:LASERSYSTEMSNamespace ;
+    base:hasDatatype opcua:Double ;
+    base:hasDisplayName "Value" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6052" ;
+    base:hasValue 1e+01 .
+
+lasersystemsexample:nodei6053 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "EngineeringUnits" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:EUInformation ;
+    base:hasDisplayName "EngineeringUnits" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6053" ;
+    base:hasValue "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=888\"}, \"xsd:Body\": {\"xsd:EUInformation\": {\"xsd:NamespaceUri\": \"http://www.opcfoundation.org/UA/units/un/cefact\", \"xsd:UnitId\": 19506, \"xsd:DisplayName\": {\"xsd:Text\": \"l/min\"}, \"xsd:Description\": {\"xsd:Text\": \"litre per minute\"}}}}"^^rdf:JSON .
+
+lasersystemsexample:nodei6054 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "Name" ;
+    base:hasBrowseNameNamespace machinetool:MACHINETOOLNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "Name" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6054" ;
+    base:hasValue "Nitrogen" .
+
+lasersystemsexample:nodei6055 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "RunsCompleted" ;
+    base:hasBrowseNameNamespace lasersystems:LASERSYSTEMSNamespace ;
+    base:hasDatatype opcua:UInt64 ;
+    base:hasDisplayName "RunsCompleted" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6055" ;
+    base:hasValue 1 .
+
+lasersystemsexample:nodei6056 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "CreationDate" ;
+    base:hasBrowseNameNamespace lasersystems:LASERSYSTEMSNamespace ;
+    base:hasDatatype opcua:UtcTime ;
+    base:hasDisplayName "CreationDate" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6056" ;
+    base:hasValue "2023-07-01T08:00:00Z" .
+
+lasersystemsexample:nodei6057 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "RecipeName" ;
+    base:hasBrowseNameNamespace lasersystems:LASERSYSTEMSNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "RecipeName" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6057" ;
+    base:hasValue "Welding Programm 0815" .
+
+lasersystemsexample:nodei6058 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "RecipeRevision" ;
+    base:hasBrowseNameNamespace lasersystems:LASERSYSTEMSNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "RecipeRevision" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6058" ;
+    base:hasValue "01" .
+
+lasersystemsexample:nodei6059 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "IsNamespaceSubset" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Boolean ;
+    base:hasDisplayName "IsNamespaceSubset" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6059" ;
+    base:hasValue false .
+
+lasersystemsexample:nodei6060 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "NamespacePublicationDate" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:DateTime ;
+    base:hasDisplayName "NamespacePublicationDate" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6060" ;
+    base:hasValue "2023-12-01T00:00:00Z" .
+
+lasersystemsexample:nodei6061 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "NamespaceUri" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "NamespaceUri" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6061" ;
+    base:hasValue "http://vdma.org/UA/LaserSystem-Example/" .
+
+lasersystemsexample:nodei6062 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "NamespaceVersion" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "NamespaceVersion" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6062" ;
+    base:hasValue "1.0.0" .
+
+lasersystemsexample:nodei6063 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "StaticNodeIdTypes" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:IdType ;
+    base:hasDisplayName "StaticNodeIdTypes" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6063" ;
+    base:hasValueRank 1 .
+
+lasersystemsexample:nodei6064 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "StaticNumericNodeIdRange" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NumericRange ;
+    base:hasDisplayName "StaticNumericNodeIdRange" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6064" ;
+    base:hasValueRank 1 .
+
+lasersystemsexample:nodei6065 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "StaticStringNodeIdPattern" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "StaticStringNodeIdPattern" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6065" .
+
+lasersystemsexample:nodei6067 a opcua:AnalogUnitType,
+        opcua:VariableNodeClass ;
+    opcua:HasProperty lasersystemsexample:nodei6068 ;
+    opcua:hasEngineeringUnits lasersystemsexample:nodei6068 ;
+    base:hasBrowseName "CurrentValue" ;
+    base:hasBrowseNameNamespace lasersystems:LASERSYSTEMSNamespace ;
+    base:hasDatatype opcua:Double ;
+    base:hasDisplayName "CurrentValue" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6067" ;
+    base:hasValue 2e+01 .
+
+lasersystemsexample:nodei6068 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "EngineeringUnits" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:EUInformation ;
+    base:hasDisplayName "EngineeringUnits" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6068" ;
+    base:hasValue "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=888\"}, \"xsd:Body\": {\"xsd:EUInformation\": {\"xsd:NamespaceUri\": \"http://www.opcfoundation.org/UA/units/un/cefact\", \"xsd:UnitId\": 4408652, \"xsd:DisplayName\": {\"xsd:Text\": \"\\u00b0C\"}, \"xsd:Description\": {\"xsd:Text\": \"degree Celsius\"}}}}"^^rdf:JSON .
+
+lasersystemsexample:nodei6069 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "NumberInList" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt16 ;
+    base:hasDisplayName "NumberInList" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6069" ;
+    base:hasValue 0 .
+
+lasersystemsexample:nodei6070 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "ParameterIdentifier" ;
+    base:hasBrowseNameNamespace lasersystems:LASERSYSTEMSNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "ParameterIdentifier" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6070" ;
+    base:hasValue "ID987" .
+
+lasersystemsexample:nodei6071 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "Name" ;
+    base:hasBrowseNameNamespace machinetool:MACHINETOOLNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "Name" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6071" ;
+    base:hasValue "Coolant Temperature" .
+
+lasersystemsexample:nodei6072 a opcua:AnalogUnitType,
+        opcua:VariableNodeClass ;
+    opcua:HasProperty lasersystemsexample:nodei6073 ;
+    opcua:hasEngineeringUnits lasersystemsexample:nodei6073 ;
+    base:hasBrowseName "PreviousValue" ;
+    base:hasBrowseNameNamespace lasersystems:LASERSYSTEMSNamespace ;
+    base:hasDatatype opcua:Double ;
+    base:hasDisplayName "PreviousValue" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6072" ;
+    base:hasValue 1.9e+01 .
+
+lasersystemsexample:nodei6073 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "EngineeringUnits" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:EUInformation ;
+    base:hasDisplayName "EngineeringUnits" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "6073" ;
+    base:hasValue "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=888\"}, \"xsd:Body\": {\"xsd:EUInformation\": {\"xsd:NamespaceUri\": \"http://www.opcfoundation.org/UA/units/un/cefact\", \"xsd:UnitId\": 4408652, \"xsd:DisplayName\": {\"xsd:Text\": \"\\u00b0C\"}, \"xsd:Description\": {\"xsd:Text\": \"degree Celsius\"}}}}"^^rdf:JSON .
+
+lasersystemsexample:nodei5004 a machinery:MachineryComponentIdentificationType,
+        opcua:ObjectNodeClass ;
+    devices:hasManufacturer lasersystemsexample:nodei6001 ;
+    devices:hasModel lasersystemsexample:nodei6025 ;
+    devices:hasProductInstanceUri lasersystemsexample:nodei6026 ;
+    devices:hasSerialNumber lasersystemsexample:nodei6002 ;
+    opcua:HasProperty lasersystemsexample:nodei6001,
+        lasersystemsexample:nodei6002,
+        lasersystemsexample:nodei6025,
+        lasersystemsexample:nodei6026,
+        lasersystemsexample:nodei6027,
+        lasersystemsexample:nodei6028 ;
+    machinery:hasLocation lasersystemsexample:nodei6028 ;
+    machinery:hasYearOfConstruction lasersystemsexample:nodei6027 ;
+    base:hasBrowseName "Identification" ;
+    base:hasBrowseNameNamespace devices:DEVICESNamespace ;
+    base:hasDisplayName "Identification" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "5004" .
+
+lasersystemsexample:nodei5009 a machinery:MachineryItemState_StateMachineType,
+        opcua:ObjectNodeClass ;
+    opcua:HasComponent lasersystemsexample:nodei6005 ;
+    opcua:hasCurrentState lasersystemsexample:nodei6005 ;
+    base:hasBrowseName "MachineryItemState" ;
+    base:hasBrowseNameNamespace machinery:MACHINERYNamespace ;
+    base:hasDisplayName "MachineryItemState" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "5009" .
+
+lasersystemsexample:nodei5010 a machinery:MachineryOperationModeStateMachineType,
+        opcua:ObjectNodeClass ;
+    opcua:HasComponent lasersystemsexample:nodei6007 ;
+    opcua:hasCurrentState lasersystemsexample:nodei6007 ;
+    base:hasBrowseName "MachineryOperationMode" ;
+    base:hasBrowseNameNamespace machinery:MACHINERYNamespace ;
+    base:hasDisplayName "MachineryOperationMode" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "5010" .
+
+lasersystemsexample:nodei5012 a lasersystems:LaserSystemOperationCounterType,
+        opcua:ObjectNodeClass ;
+    devices:hasOperationDuration lasersystemsexample:nodei6012 ;
+    devices:hasPowerOnDuration lasersystemsexample:nodei6013 ;
+    opcua:HasProperty lasersystemsexample:nodei6012,
+        lasersystemsexample:nodei6013 ;
+    base:hasBrowseName "OperationCounters" ;
+    base:hasBrowseNameNamespace devices:DEVICESNamespace ;
+    base:hasDisplayName "OperationCounters" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace lasersystemsexample:LASERSYSTEMSEXAMPLENamespace ;
+    base:hasNodeId "5012" .
+
+lasersystemsexample:LASERSYSTEMSEXAMPLENamespace a base:Namespace ;
+    base:hasPrefix "lasersystemsexample" ;
+    base:hasUri "http://vdma.org/UA/LaserSystem-Example/" .
+

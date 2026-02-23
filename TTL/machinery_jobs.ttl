@@ -1,0 +1,1718 @@
+@prefix base: <https://industryfusion.github.io/contexts/ontology/v0/base/> .
+@prefix machinery_jobs: <http://opcfoundation.org/UA/ISA95-JOBCONTROL/> .
+@prefix ns1: <http://opcfoundation.org/UA/ISA95-JOBCONTROL/hashttp%3A//opcfoundation.org/UA/> .
+@prefix opcua: <http://opcfoundation.org/UA/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+machinery_jobs: a owl:Ontology ;
+    owl:imports <file:///home/gregor/DigitalTwin/semantic-model/opcua/core.ttl>,
+        <https://industryfusion.github.io/contexts/staging/ontology/v0/base.ttl> ;
+    owl:versionIRI <http://example.com/v0.1/Machinery/Jobs> ;
+    owl:versionInfo 1e-01 .
+
+machinery_jobs:Aborted a machinery_jobs:ISA95JobOrderStateEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "Aborted" ;
+    base:hasValueNode base:_Na7c09cfc63424ff5bc9dd79583f181c0 .
+
+machinery_jobs:Cancel a machinery_jobs:ISA95JobOrderCommandEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "Cancel" ;
+    base:hasValueNode base:_N1df82c0adf704050931a60bfc9f0d90e .
+
+machinery_jobs:Clear a machinery_jobs:ISA95JobOrderCommandEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "Clear" ;
+    base:hasValueNode base:_N6d37ea2c95674357b5d3bf1b52655906 .
+
+machinery_jobs:Closed a machinery_jobs:ISA95JobOrderStateEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "Closed" ;
+    base:hasValueNode base:_N78ddf20a915c418387c2c549a00d796e .
+
+machinery_jobs:Completed a machinery_jobs:ISA95JobOrderStateEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "Completed" ;
+    base:hasValueNode base:_N34a649c7f9dd47d198a7fe33a3c6e104 .
+
+machinery_jobs:Error a machinery_jobs:ISA95JobOrderStateEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "Error" ;
+    base:hasValueNode base:_N6b24d5b5d7ce4e0d97f6cb3fe1da50f7 .
+
+machinery_jobs:Held a machinery_jobs:ISA95JobOrderStateEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "Held" ;
+    base:hasValueNode base:_N933c30647aca4ddc8dd1fffc057b3b7b .
+
+machinery_jobs:InvalidJobOrderID a machinery_jobs:ISA95ReturnEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "InvalidJobOrderID" ;
+    base:hasValueNode base:_N5a77245df25a47a2bc95ae0cc9c9afa2 .
+
+machinery_jobs:Loaded a machinery_jobs:ISA95JobOrderStateEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "Loaded" ;
+    base:hasValueNode base:_Nae20164eb1c4484d9abdf9e71aa5ffa2 .
+
+machinery_jobs:NoError a machinery_jobs:ISA95ReturnEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "NoError" ;
+    base:hasValueNode base:_N2532561b06224b05adc76cd16d4de2af .
+
+machinery_jobs:Ready a machinery_jobs:ISA95JobOrderStateEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "Ready" ;
+    base:hasValueNode base:_N719e7fcc5f8d468b8ed7f0008695d0f0 .
+
+machinery_jobs:Running a machinery_jobs:ISA95JobOrderStateEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "Running" ;
+    base:hasValueNode base:_N33648a000a0e4a58a89d6081ce790c47 .
+
+machinery_jobs:Start a machinery_jobs:ISA95JobOrderCommandEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "Start" ;
+    base:hasValueNode base:_Nb8bd35c17d8b485098bb85ebfa62cf66 .
+
+machinery_jobs:Stop a machinery_jobs:ISA95JobOrderCommandEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "Stop" ;
+    base:hasValueNode base:_N0d65f3a42aee40ebb81258f376a58e12 .
+
+machinery_jobs:Store a machinery_jobs:ISA95JobOrderCommandEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "Store" ;
+    base:hasValueNode base:_Nd9b35653be3d483282e323d57fc6e454 .
+
+machinery_jobs:StoreAndStart a machinery_jobs:ISA95JobOrderCommandEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "StoreAndStart" ;
+    base:hasValueNode base:_N0f00621643734db8aad4b84e5b490290 .
+
+machinery_jobs:Suspended a machinery_jobs:ISA95JobOrderStateEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "Suspended" ;
+    base:hasValueNode base:_N7d973de98e3f4d76a9879d577045830b .
+
+machinery_jobs:UnableToAcceptJobOrder a machinery_jobs:ISA95ReturnEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "UnableToAcceptJobOrder" ;
+    base:hasValueNode base:_N6d6b40f95f7a4a898480caec48e9de72 .
+
+machinery_jobs:UnableToAcceptJobOrderCommand a machinery_jobs:ISA95ReturnEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "UnableToAcceptJobOrderCommand" ;
+    base:hasValueNode base:_Nee34201c20504381802d103a77594b52 .
+
+machinery_jobs:UnableToReturnJobResponse a machinery_jobs:ISA95ReturnEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "UnableToReturnJobResponse" ;
+    base:hasValueNode base:_Nd1c9d587ead04ff5b957544ccb49d161 .
+
+machinery_jobs:Undefined a machinery_jobs:ISA95JobOrderCommandEnum,
+        machinery_jobs:ISA95JobOrderStateEnum,
+        machinery_jobs:ISA95ReturnEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "Undefined" ;
+    base:hasValueNode base:_N2e1745c5918f4692aadce1d6f37ef67f,
+        base:_N6e0d1b066efa4696830e3448c3943915,
+        base:_N95b2b35ee92f493ea0d17ac94712f95a .
+
+machinery_jobs:Update a machinery_jobs:ISA95JobOrderCommandEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "Update" ;
+    base:hasValueNode base:_N723f72d95abd4a2f968a9ce52938c91e .
+
+machinery_jobs:Value a machinery_jobs:ISA95ParameterDataType,
+        machinery_jobs:ISA95PropertyDataType,
+        owl:NamedIndividual ;
+    base:hasFieldName "Value" .
+
+machinery_jobs:Waiting a machinery_jobs:ISA95JobOrderStateEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "Waiting" ;
+    base:hasValueNode base:_N60a160b7fd1e443e89af00631602673a .
+
+machinery_jobs:hasEquipmentID rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machinery_jobs:hasISA95EquipmentDataType rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machinery_jobs:hasISA95JobOrderDataType rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machinery_jobs:hasISA95JobResponseDataType rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machinery_jobs:hasISA95MaterialDataType rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machinery_jobs:hasISA95ParameterDataType rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machinery_jobs:hasISA95PersonnelDataType rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machinery_jobs:hasISA95PhysicalAssetDataType rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machinery_jobs:hasISA95PropertyDataType rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machinery_jobs:hasISA95WorkMasterDataType rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machinery_jobs:hasJobOrderList rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machinery_jobs:hasMaterialClassID rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machinery_jobs:hasMaterialDefinitionID rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machinery_jobs:hasPersonnelID rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machinery_jobs:hasPhysicalAssetID rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machinery_jobs:hasReceiveJobOrder rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machinery_jobs:hasReceiveJobResponse rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machinery_jobs:hasRequestJobResponse rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machinery_jobs:hasTypeDictionary rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machinery_jobs:hasWorkMaster rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+ns1:ISA95-JOBCONTROL rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machinery_jobs:nodei1002 a opcua:ObjectTypeNodeClass ;
+    opcua:HasComponent machinery_jobs:nodei6033,
+        machinery_jobs:nodei6034,
+        machinery_jobs:nodei6035,
+        machinery_jobs:nodei6036,
+        machinery_jobs:nodei6037,
+        machinery_jobs:nodei6038,
+        machinery_jobs:nodei6039,
+        machinery_jobs:nodei7001 ;
+    machinery_jobs:hasEquipmentID machinery_jobs:nodei6037 ;
+    machinery_jobs:hasJobOrderList machinery_jobs:nodei6033 ;
+    machinery_jobs:hasMaterialClassID machinery_jobs:nodei6035 ;
+    machinery_jobs:hasMaterialDefinitionID machinery_jobs:nodei6036 ;
+    machinery_jobs:hasPersonnelID machinery_jobs:nodei6039 ;
+    machinery_jobs:hasPhysicalAssetID machinery_jobs:nodei6038 ;
+    machinery_jobs:hasReceiveJobOrder machinery_jobs:nodei7001 ;
+    machinery_jobs:hasWorkMaster machinery_jobs:nodei6034 ;
+    base:definesType machinery_jobs:ISA95JobOrderReceiverObjectType ;
+    base:hasBrowseName "ISA95JobOrderReceiverObjectType" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDescription "The OPENSCSJobOrderReciverObjectType contains a method to receive job order commands and optional definitions of allowable job order information" ;
+    base:hasDisplayName "ISA95JobOrderReceiverObjectType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "1002" .
+
+machinery_jobs:nodei1003 a opcua:ObjectTypeNodeClass ;
+    opcua:HasComponent machinery_jobs:nodei7002 ;
+    machinery_jobs:hasRequestJobResponse machinery_jobs:nodei7002 ;
+    base:definesType machinery_jobs:ISA95JobResponseProviderObjectType ;
+    base:hasBrowseName "ISA95JobResponseProviderObjectType" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDescription "The OPENSCSJobResponseProviderObjectType contains a method to receive unsolicited job response requests." ;
+    base:hasDisplayName "ISA95JobResponseProviderObjectType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "1003" .
+
+machinery_jobs:nodei1004 a opcua:ObjectTypeNodeClass ;
+    opcua:HasComponent machinery_jobs:nodei7003 ;
+    machinery_jobs:hasReceiveJobResponse machinery_jobs:nodei7003 ;
+    base:definesType machinery_jobs:ISA95JobResponseReceiverObjectType ;
+    base:hasBrowseName "ISA95JobResponseReceiverObjectType" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDescription "A Job Response Receiver receives unsolicited Job Responses, usually as the result of completion of a job, or at intermediate points within the job." ;
+    base:hasDisplayName "ISA95JobResponseReceiverObjectType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "1004" .
+
+machinery_jobs:nodei3002 a opcua:DataTypeNodeClass ;
+    opcua:HasEncoding machinery_jobs:nodei5002,
+        machinery_jobs:nodei5003,
+        machinery_jobs:nodei5004 ;
+    base:definesType machinery_jobs:ISA95PropertyDataType ;
+    base:hasBrowseName "ISA95PropertyDataType" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDescription "A subtype of OPC UA Structure that defines two linked data items: an ID, which is a unique identifier for a property within the scope of the associated resource, and the value, which is the data for the property." ;
+    base:hasDisplayName "ISA95PropertyDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "3002" .
+
+machinery_jobs:nodei3003 a opcua:DataTypeNodeClass ;
+    opcua:HasEncoding machinery_jobs:nodei5005,
+        machinery_jobs:nodei5006,
+        machinery_jobs:nodei5007 ;
+    base:definesType machinery_jobs:ISA95ParameterDataType ;
+    base:hasBrowseName "ISA95ParameterDataType" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDescription "A subtype of OPC UA Structure that defines three linked data items: the ID, which is a unique identifier for a property, the value, which is the data that is identified, and an optional description of the parameter." ;
+    base:hasDisplayName "ISA95ParameterDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "3003" .
+
+machinery_jobs:nodei3004 a opcua:DataTypeNodeClass ;
+    opcua:HasProperty machinery_jobs:nodei6031 ;
+    opcua:hasEnumValues machinery_jobs:nodei6031 ;
+    base:definesType machinery_jobs:ISA95JobOrderCommandEnum ;
+    base:hasBrowseName "ISA95JobOrderCommandEnum" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDescription "Describes the possible job order commands.  " ;
+    base:hasDisplayName "ISA95JobOrderCommandEnum" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "3004" .
+
+machinery_jobs:nodei3005 a opcua:DataTypeNodeClass ;
+    opcua:HasEncoding machinery_jobs:nodei5008,
+        machinery_jobs:nodei5009,
+        machinery_jobs:nodei5010 ;
+    base:definesType machinery_jobs:ISA95EquipmentDataType ;
+    base:hasBrowseName "ISA95EquipmentDataType" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDescription "Defines an equipment resource or a piece of equipment, a quantity, an optional description, and an optional collection of properties." ;
+    base:hasDisplayName "ISA95EquipmentDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "3005" .
+
+machinery_jobs:nodei3006 a opcua:DataTypeNodeClass ;
+    opcua:HasProperty machinery_jobs:nodei6032 ;
+    opcua:hasEnumValues machinery_jobs:nodei6032 ;
+    base:definesType machinery_jobs:ISA95JobOrderStateEnum ;
+    base:hasBrowseName "ISA95JobOrderStateEnum" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDescription "Describes the defined job statuses. " ;
+    base:hasDisplayName "ISA95JobOrderStateEnum" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "3006" .
+
+machinery_jobs:nodei3007 a opcua:DataTypeNodeClass ;
+    opcua:HasEncoding machinery_jobs:nodei5011,
+        machinery_jobs:nodei5012,
+        machinery_jobs:nodei5013 ;
+    base:definesType machinery_jobs:ISA95WorkMasterDataType ;
+    base:hasBrowseName "ISA95WorkMasterDataType" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDescription "Defines a Work Master ID and the defined parameters for the Work Master." ;
+    base:hasDisplayName "ISA95WorkMasterDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "3007" .
+
+machinery_jobs:nodei3008 a opcua:DataTypeNodeClass ;
+    opcua:HasEncoding machinery_jobs:nodei5014,
+        machinery_jobs:nodei5015,
+        machinery_jobs:nodei5016 ;
+    base:definesType machinery_jobs:ISA95JobOrderDataType ;
+    base:hasBrowseName "ISA95JobOrderDataType" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDescription "Defines the information needed to schedule and execute a job." ;
+    base:hasDisplayName "ISA95JobOrderDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "3008" .
+
+machinery_jobs:nodei3009 a opcua:DataTypeNodeClass ;
+    opcua:HasProperty machinery_jobs:nodei6030 ;
+    opcua:hasEnumValues machinery_jobs:nodei6030 ;
+    base:definesType machinery_jobs:ISA95ReturnEnum ;
+    base:hasBrowseName "ISA95ReturnEnum" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDescription "It describes the possible return status from a Method call" ;
+    base:hasDisplayName "ISA95ReturnEnum" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "3009" .
+
+machinery_jobs:nodei3010 a opcua:DataTypeNodeClass ;
+    opcua:HasEncoding machinery_jobs:nodei5017,
+        machinery_jobs:nodei5018,
+        machinery_jobs:nodei5019 ;
+    base:definesType machinery_jobs:ISA95MaterialDataType ;
+    base:hasBrowseName "ISA95MaterialDataType" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDescription "defines a material resource, a quantity, an optional description, and an optional collection of properties." ;
+    base:hasDisplayName "ISA95MaterialDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "3010" .
+
+machinery_jobs:nodei3011 a opcua:DataTypeNodeClass ;
+    opcua:HasEncoding machinery_jobs:nodei5020,
+        machinery_jobs:nodei5021,
+        machinery_jobs:nodei5022 ;
+    base:definesType machinery_jobs:ISA95PersonnelDataType ;
+    base:hasBrowseName "ISA95PersonnelDataType" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDescription "defines a personnel resource or a person, a quantity, an optional description, and an optional collection of properties." ;
+    base:hasDisplayName "ISA95PersonnelDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "3011" .
+
+machinery_jobs:nodei3012 a opcua:DataTypeNodeClass ;
+    opcua:HasEncoding machinery_jobs:nodei5023,
+        machinery_jobs:nodei5024,
+        machinery_jobs:nodei5025 ;
+    base:definesType machinery_jobs:ISA95PhysicalAssetDataType ;
+    base:hasBrowseName "ISA95PhysicalAssetDataType" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDescription "defines a physical asset, a quantity, an optional description, and an optional collection of properties." ;
+    base:hasDisplayName "ISA95PhysicalAssetDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "3012" .
+
+machinery_jobs:nodei3013 a opcua:DataTypeNodeClass ;
+    opcua:HasEncoding machinery_jobs:nodei5026,
+        machinery_jobs:nodei5027,
+        machinery_jobs:nodei5028 ;
+    base:definesType machinery_jobs:ISA95JobResponseDataType ;
+    base:hasBrowseName "ISA95JobResponseDataType" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDescription "defines the information needed to schedule and execute a job." ;
+    base:hasDisplayName "ISA95JobResponseDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "3013" .
+
+opcua:nodei11715 opcua:HasComponent machinery_jobs:nodei5001 ;
+    ns1:ISA95-JOBCONTROL machinery_jobs:nodei5001 .
+
+opcua:nodei92 opcua:HasComponent machinery_jobs:nodei6003 ;
+    machinery_jobs:hasTypeDictionary machinery_jobs:nodei6003 .
+
+opcua:nodei93 opcua:HasComponent machinery_jobs:nodei6001 ;
+    machinery_jobs:hasTypeDictionary machinery_jobs:nodei6001 .
+
+machinery_jobs:EquipmentActuals a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype machinery_jobs:ISA95EquipmentDataType ;
+    base:hasFieldName "EquipmentActuals" .
+
+machinery_jobs:EquipmentRequirements a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype machinery_jobs:ISA95EquipmentDataType ;
+    base:hasFieldName "EquipmentRequirements" .
+
+machinery_jobs:EquipmentUse a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype opcua:String ;
+    base:hasFieldName "EquipmentUse" .
+
+machinery_jobs:ISA95JobOrderReceiverObjectType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+machinery_jobs:ISA95JobResponseDataType a owl:Class ;
+    rdfs:subClassOf opcua:Structure ;
+    base:hasField machinery_jobs:Description,
+        machinery_jobs:EndTime,
+        machinery_jobs:EquipmentActuals,
+        machinery_jobs:ID,
+        machinery_jobs:JobOrderID,
+        machinery_jobs:JobResponseData,
+        machinery_jobs:JobState,
+        machinery_jobs:MaterialActuals,
+        machinery_jobs:PersonnelActuals,
+        machinery_jobs:PhysicalAssetActuals,
+        machinery_jobs:StartTime .
+
+machinery_jobs:ISA95JobResponseProviderObjectType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+machinery_jobs:ISA95JobResponseReceiverObjectType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+machinery_jobs:JobOrderID a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype opcua:String ;
+    base:hasFieldName "JobOrderID" .
+
+machinery_jobs:JobOrderParameters a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype machinery_jobs:ISA95ParameterDataType ;
+    base:hasFieldName "JobOrderParameters" .
+
+machinery_jobs:JobResponseData a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype machinery_jobs:ISA95ParameterDataType ;
+    base:hasFieldName "JobResponseData" .
+
+machinery_jobs:JobState a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype machinery_jobs:ISA95JobOrderStateEnum ;
+    base:hasFieldName "JobState" .
+
+machinery_jobs:MaterialActuals a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype machinery_jobs:ISA95MaterialDataType ;
+    base:hasFieldName "MaterialActuals" .
+
+machinery_jobs:MaterialClassID a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype opcua:String ;
+    base:hasFieldName "MaterialClassID" .
+
+machinery_jobs:MaterialDefinitionID a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype opcua:String ;
+    base:hasFieldName "MaterialDefinitionID" .
+
+machinery_jobs:MaterialLotID a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype opcua:String ;
+    base:hasFieldName "MaterialLotID" .
+
+machinery_jobs:MaterialRequirements a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype machinery_jobs:ISA95MaterialDataType ;
+    base:hasFieldName "MaterialRequirements" .
+
+machinery_jobs:MaterialSublotID a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype opcua:String ;
+    base:hasFieldName "MaterialSublotID" .
+
+machinery_jobs:MaterialUse a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype opcua:String ;
+    base:hasFieldName "MaterialUse" .
+
+machinery_jobs:Parameters a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype machinery_jobs:ISA95ParameterDataType ;
+    base:hasFieldName "Parameters" .
+
+machinery_jobs:PersonnelActuals a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype machinery_jobs:ISA95PersonnelDataType ;
+    base:hasFieldName "PersonnelActuals" .
+
+machinery_jobs:PersonnelRequirements a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype machinery_jobs:ISA95PersonnelDataType ;
+    base:hasFieldName "PersonnelRequirements" .
+
+machinery_jobs:PersonnelUse a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype opcua:String ;
+    base:hasFieldName "PersonnelUse" .
+
+machinery_jobs:PhysicalAssetActuals a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype machinery_jobs:ISA95PhysicalAssetDataType ;
+    base:hasFieldName "PhysicalAssetActuals" .
+
+machinery_jobs:PhysicalAssetRequirements a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype machinery_jobs:ISA95PhysicalAssetDataType ;
+    base:hasFieldName "PhysicalAssetRequirements" .
+
+machinery_jobs:PhysicalAssetUse a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype opcua:String ;
+    base:hasFieldName "PhysicalAssetUse" .
+
+machinery_jobs:Priority a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype opcua:Int16 ;
+    base:hasFieldName "Priority" .
+
+machinery_jobs:Subparameters a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype machinery_jobs:ISA95ParameterDataType ;
+    base:hasFieldName "Subparameters" .
+
+machinery_jobs:Subproperties a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype machinery_jobs:ISA95PropertyDataType ;
+    base:hasFieldName "Subproperties" .
+
+machinery_jobs:WorkMasterID a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype machinery_jobs:ISA95WorkMasterDataType ;
+    base:hasFieldName "WorkMasterID" .
+
+machinery_jobs:nodei5002 a opcua:DataTypeEncodingType,
+        opcua:ObjectNodeClass ;
+    opcua:HasDescription machinery_jobs:nodei6021 ;
+    base:hasBrowseName "Default Binary" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Default Binary" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "5002" ;
+    base:hasSymbolicName "DefaultBinary" .
+
+machinery_jobs:nodei5003 a opcua:DataTypeEncodingType,
+        opcua:ObjectNodeClass ;
+    opcua:HasDescription machinery_jobs:nodei6022 ;
+    base:hasBrowseName "Default XML" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Default XML" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "5003" ;
+    base:hasSymbolicName "DefaultXml" .
+
+machinery_jobs:nodei5004 a opcua:DataTypeEncodingType,
+        opcua:ObjectNodeClass ;
+    base:hasBrowseName "Default JSON" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Default JSON" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "5004" ;
+    base:hasSymbolicName "DefaultJson" .
+
+machinery_jobs:nodei5005 a opcua:DataTypeEncodingType,
+        opcua:ObjectNodeClass ;
+    opcua:HasDescription machinery_jobs:nodei6019 ;
+    base:hasBrowseName "Default Binary" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Default Binary" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "5005" ;
+    base:hasSymbolicName "DefaultBinary" .
+
+machinery_jobs:nodei5006 a opcua:DataTypeEncodingType,
+        opcua:ObjectNodeClass ;
+    opcua:HasDescription machinery_jobs:nodei6020 ;
+    base:hasBrowseName "Default XML" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Default XML" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "5006" ;
+    base:hasSymbolicName "DefaultXml" .
+
+machinery_jobs:nodei5007 a opcua:DataTypeEncodingType,
+        opcua:ObjectNodeClass ;
+    base:hasBrowseName "Default JSON" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Default JSON" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "5007" ;
+    base:hasSymbolicName "DefaultJson" .
+
+machinery_jobs:nodei5008 a opcua:DataTypeEncodingType,
+        opcua:ObjectNodeClass ;
+    opcua:HasDescription machinery_jobs:nodei6009 ;
+    base:hasBrowseName "Default Binary" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Default Binary" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "5008" ;
+    base:hasSymbolicName "DefaultBinary" .
+
+machinery_jobs:nodei5009 a opcua:DataTypeEncodingType,
+        opcua:ObjectNodeClass ;
+    opcua:HasDescription machinery_jobs:nodei6010 ;
+    base:hasBrowseName "Default XML" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Default XML" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "5009" ;
+    base:hasSymbolicName "DefaultXml" .
+
+machinery_jobs:nodei5010 a opcua:DataTypeEncodingType,
+        opcua:ObjectNodeClass ;
+    base:hasBrowseName "Default JSON" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Default JSON" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "5010" ;
+    base:hasSymbolicName "DefaultJson" .
+
+machinery_jobs:nodei5011 a opcua:DataTypeEncodingType,
+        opcua:ObjectNodeClass ;
+    opcua:HasDescription machinery_jobs:nodei6017 ;
+    base:hasBrowseName "Default Binary" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Default Binary" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "5011" ;
+    base:hasSymbolicName "DefaultBinary" .
+
+machinery_jobs:nodei5012 a opcua:DataTypeEncodingType,
+        opcua:ObjectNodeClass ;
+    opcua:HasDescription machinery_jobs:nodei6018 ;
+    base:hasBrowseName "Default XML" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Default XML" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "5012" ;
+    base:hasSymbolicName "DefaultXml" .
+
+machinery_jobs:nodei5013 a opcua:DataTypeEncodingType,
+        opcua:ObjectNodeClass ;
+    base:hasBrowseName "Default JSON" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Default JSON" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "5013" ;
+    base:hasSymbolicName "DefaultJson" .
+
+machinery_jobs:nodei5014 a opcua:DataTypeEncodingType,
+        opcua:ObjectNodeClass ;
+    opcua:HasDescription machinery_jobs:nodei6005 ;
+    base:hasBrowseName "Default Binary" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Default Binary" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "5014" ;
+    base:hasSymbolicName "DefaultBinary" .
+
+machinery_jobs:nodei5015 a opcua:DataTypeEncodingType,
+        opcua:ObjectNodeClass ;
+    opcua:HasDescription machinery_jobs:nodei6006 ;
+    base:hasBrowseName "Default XML" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Default XML" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "5015" ;
+    base:hasSymbolicName "DefaultXml" .
+
+machinery_jobs:nodei5016 a opcua:DataTypeEncodingType,
+        opcua:ObjectNodeClass ;
+    base:hasBrowseName "Default JSON" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Default JSON" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "5016" ;
+    base:hasSymbolicName "DefaultJson" .
+
+machinery_jobs:nodei5017 a opcua:DataTypeEncodingType,
+        opcua:ObjectNodeClass ;
+    opcua:HasDescription machinery_jobs:nodei6011 ;
+    base:hasBrowseName "Default Binary" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Default Binary" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "5017" ;
+    base:hasSymbolicName "DefaultBinary" .
+
+machinery_jobs:nodei5018 a opcua:DataTypeEncodingType,
+        opcua:ObjectNodeClass ;
+    opcua:HasDescription machinery_jobs:nodei6012 ;
+    base:hasBrowseName "Default XML" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Default XML" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "5018" ;
+    base:hasSymbolicName "DefaultXml" .
+
+machinery_jobs:nodei5019 a opcua:DataTypeEncodingType,
+        opcua:ObjectNodeClass ;
+    base:hasBrowseName "Default JSON" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Default JSON" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "5019" ;
+    base:hasSymbolicName "DefaultJson" .
+
+machinery_jobs:nodei5020 a opcua:DataTypeEncodingType,
+        opcua:ObjectNodeClass ;
+    opcua:HasDescription machinery_jobs:nodei6013 ;
+    base:hasBrowseName "Default Binary" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Default Binary" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "5020" ;
+    base:hasSymbolicName "DefaultBinary" .
+
+machinery_jobs:nodei5021 a opcua:DataTypeEncodingType,
+        opcua:ObjectNodeClass ;
+    opcua:HasDescription machinery_jobs:nodei6014 ;
+    base:hasBrowseName "Default XML" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Default XML" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "5021" ;
+    base:hasSymbolicName "DefaultXml" .
+
+machinery_jobs:nodei5022 a opcua:DataTypeEncodingType,
+        opcua:ObjectNodeClass ;
+    base:hasBrowseName "Default JSON" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Default JSON" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "5022" ;
+    base:hasSymbolicName "DefaultJson" .
+
+machinery_jobs:nodei5023 a opcua:DataTypeEncodingType,
+        opcua:ObjectNodeClass ;
+    opcua:HasDescription machinery_jobs:nodei6015 ;
+    base:hasBrowseName "Default Binary" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Default Binary" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "5023" ;
+    base:hasSymbolicName "DefaultBinary" .
+
+machinery_jobs:nodei5024 a opcua:DataTypeEncodingType,
+        opcua:ObjectNodeClass ;
+    opcua:HasDescription machinery_jobs:nodei6016 ;
+    base:hasBrowseName "Default XML" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Default XML" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "5024" ;
+    base:hasSymbolicName "DefaultXml" .
+
+machinery_jobs:nodei5025 a opcua:DataTypeEncodingType,
+        opcua:ObjectNodeClass ;
+    base:hasBrowseName "Default JSON" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Default JSON" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "5025" ;
+    base:hasSymbolicName "DefaultJson" .
+
+machinery_jobs:nodei5026 a opcua:DataTypeEncodingType,
+        opcua:ObjectNodeClass ;
+    opcua:HasDescription machinery_jobs:nodei6007 ;
+    base:hasBrowseName "Default Binary" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Default Binary" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "5026" ;
+    base:hasSymbolicName "DefaultBinary" .
+
+machinery_jobs:nodei5027 a opcua:DataTypeEncodingType,
+        opcua:ObjectNodeClass ;
+    opcua:HasDescription machinery_jobs:nodei6008 ;
+    base:hasBrowseName "Default XML" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Default XML" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "5027" ;
+    base:hasSymbolicName "DefaultXml" .
+
+machinery_jobs:nodei5028 a opcua:DataTypeEncodingType,
+        opcua:ObjectNodeClass ;
+    base:hasBrowseName "Default JSON" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDisplayName "Default JSON" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "5028" ;
+    base:hasSymbolicName "DefaultJson" .
+
+base:_N0d65f3a42aee40ebb81258f376a58e12 a base:ValueNode ;
+    base:hasEnumValue 5 ;
+    base:hasValueClass machinery_jobs:ISA95JobOrderCommandEnum .
+
+base:_N0f00621643734db8aad4b84e5b490290 a base:ValueNode ;
+    base:hasEnumValue 2 ;
+    base:hasValueClass machinery_jobs:ISA95JobOrderCommandEnum .
+
+base:_N1df82c0adf704050931a60bfc9f0d90e a base:ValueNode ;
+    base:hasEnumValue 6 ;
+    base:hasValueClass machinery_jobs:ISA95JobOrderCommandEnum .
+
+base:_N2532561b06224b05adc76cd16d4de2af a base:ValueNode ;
+    base:hasEnumValue 1 ;
+    base:hasValueClass machinery_jobs:ISA95ReturnEnum .
+
+base:_N2e1745c5918f4692aadce1d6f37ef67f a base:ValueNode ;
+    base:hasEnumValue 0 ;
+    base:hasValueClass machinery_jobs:ISA95JobOrderCommandEnum .
+
+base:_N33648a000a0e4a58a89d6081ce790c47 a base:ValueNode ;
+    base:hasEnumValue 4 ;
+    base:hasValueClass machinery_jobs:ISA95JobOrderStateEnum .
+
+base:_N34a649c7f9dd47d198a7fe33a3c6e104 a base:ValueNode ;
+    base:hasEnumValue 5 ;
+    base:hasValueClass machinery_jobs:ISA95JobOrderStateEnum .
+
+base:_N5a77245df25a47a2bc95ae0cc9c9afa2 a base:ValueNode ;
+    base:hasEnumValue 2 ;
+    base:hasValueClass machinery_jobs:ISA95ReturnEnum .
+
+base:_N60a160b7fd1e443e89af00631602673a a base:ValueNode ;
+    base:hasEnumValue 1 ;
+    base:hasValueClass machinery_jobs:ISA95JobOrderStateEnum .
+
+base:_N6b24d5b5d7ce4e0d97f6cb3fe1da50f7 a base:ValueNode ;
+    base:hasEnumValue 10 ;
+    base:hasValueClass machinery_jobs:ISA95JobOrderStateEnum .
+
+base:_N6d37ea2c95674357b5d3bf1b52655906 a base:ValueNode ;
+    base:hasEnumValue 7 ;
+    base:hasValueClass machinery_jobs:ISA95JobOrderCommandEnum .
+
+base:_N6d6b40f95f7a4a898480caec48e9de72 a base:ValueNode ;
+    base:hasEnumValue 3 ;
+    base:hasValueClass machinery_jobs:ISA95ReturnEnum .
+
+base:_N6e0d1b066efa4696830e3448c3943915 a base:ValueNode ;
+    base:hasEnumValue 0 ;
+    base:hasValueClass machinery_jobs:ISA95ReturnEnum .
+
+base:_N719e7fcc5f8d468b8ed7f0008695d0f0 a base:ValueNode ;
+    base:hasEnumValue 2 ;
+    base:hasValueClass machinery_jobs:ISA95JobOrderStateEnum .
+
+base:_N723f72d95abd4a2f968a9ce52938c91e a base:ValueNode ;
+    base:hasEnumValue 4 ;
+    base:hasValueClass machinery_jobs:ISA95JobOrderCommandEnum .
+
+base:_N78ddf20a915c418387c2c549a00d796e a base:ValueNode ;
+    base:hasEnumValue 9 ;
+    base:hasValueClass machinery_jobs:ISA95JobOrderStateEnum .
+
+base:_N7d973de98e3f4d76a9879d577045830b a base:ValueNode ;
+    base:hasEnumValue 8 ;
+    base:hasValueClass machinery_jobs:ISA95JobOrderStateEnum .
+
+base:_N933c30647aca4ddc8dd1fffc057b3b7b a base:ValueNode ;
+    base:hasEnumValue 7 ;
+    base:hasValueClass machinery_jobs:ISA95JobOrderStateEnum .
+
+base:_N95b2b35ee92f493ea0d17ac94712f95a a base:ValueNode ;
+    base:hasEnumValue 0 ;
+    base:hasValueClass machinery_jobs:ISA95JobOrderStateEnum .
+
+base:_Na7c09cfc63424ff5bc9dd79583f181c0 a base:ValueNode ;
+    base:hasEnumValue 6 ;
+    base:hasValueClass machinery_jobs:ISA95JobOrderStateEnum .
+
+base:_Nae20164eb1c4484d9abdf9e71aa5ffa2 a base:ValueNode ;
+    base:hasEnumValue 3 ;
+    base:hasValueClass machinery_jobs:ISA95JobOrderStateEnum .
+
+base:_Nb8bd35c17d8b485098bb85ebfa62cf66 a base:ValueNode ;
+    base:hasEnumValue 3 ;
+    base:hasValueClass machinery_jobs:ISA95JobOrderCommandEnum .
+
+base:_Nd1c9d587ead04ff5b957544ccb49d161 a base:ValueNode ;
+    base:hasEnumValue 5 ;
+    base:hasValueClass machinery_jobs:ISA95ReturnEnum .
+
+base:_Nd9b35653be3d483282e323d57fc6e454 a base:ValueNode ;
+    base:hasEnumValue 1 ;
+    base:hasValueClass machinery_jobs:ISA95JobOrderCommandEnum .
+
+base:_Nee34201c20504381802d103a77594b52 a base:ValueNode ;
+    base:hasEnumValue 4 ;
+    base:hasValueClass machinery_jobs:ISA95ReturnEnum .
+
+machinery_jobs:EndTime a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype opcua:DateTime ;
+    base:hasFieldName "EndTime" .
+
+machinery_jobs:ISA95JobOrderDataType a owl:Class ;
+    rdfs:subClassOf opcua:Structure ;
+    base:hasField machinery_jobs:Description,
+        machinery_jobs:EndTime,
+        machinery_jobs:EquipmentRequirements,
+        machinery_jobs:ID,
+        machinery_jobs:JobOrderParameters,
+        machinery_jobs:MaterialRequirements,
+        machinery_jobs:PersonnelRequirements,
+        machinery_jobs:PhysicalAssetRequirements,
+        machinery_jobs:Priority,
+        machinery_jobs:StartTime,
+        machinery_jobs:WorkMasterID .
+
+machinery_jobs:StartTime a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype opcua:DateTime ;
+    base:hasFieldName "StartTime" .
+
+machinery_jobs:nodei5001 a opcua:NamespaceMetadataType,
+        opcua:ObjectNodeClass ;
+    opcua:HasProperty machinery_jobs:nodei6023,
+        machinery_jobs:nodei6024,
+        machinery_jobs:nodei6025,
+        machinery_jobs:nodei6026,
+        machinery_jobs:nodei6027,
+        machinery_jobs:nodei6028,
+        machinery_jobs:nodei6029 ;
+    opcua:hasIsNamespaceSubset machinery_jobs:nodei6023 ;
+    opcua:hasNamespacePublicationDate machinery_jobs:nodei6024 ;
+    opcua:hasNamespaceUri machinery_jobs:nodei6025 ;
+    opcua:hasNamespaceVersion machinery_jobs:nodei6026 ;
+    opcua:hasStaticNodeIdTypes machinery_jobs:nodei6027 ;
+    opcua:hasStaticNumericNodeIdRange machinery_jobs:nodei6028 ;
+    opcua:hasStaticStringNodeIdPattern machinery_jobs:nodei6029 ;
+    base:hasBrowseName "http://opcfoundation.org/UA/ISA95-JOBCONTROL" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDisplayName "http://opcfoundation.org/UA/ISA95-JOBCONTROL" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "5001" ;
+    base:hasSymbolicName "http___opcfoundation_org_UA_ISA95_JOBCONTROL" .
+
+machinery_jobs:nodei6001 a opcua:DataTypeDictionaryType,
+        opcua:VariableNodeClass ;
+    opcua:HasComponent machinery_jobs:nodei6005,
+        machinery_jobs:nodei6007,
+        machinery_jobs:nodei6009,
+        machinery_jobs:nodei6011,
+        machinery_jobs:nodei6013,
+        machinery_jobs:nodei6015,
+        machinery_jobs:nodei6017,
+        machinery_jobs:nodei6019,
+        machinery_jobs:nodei6021 ;
+    opcua:HasProperty machinery_jobs:nodei6002 ;
+    machinery_jobs:hasISA95EquipmentDataType machinery_jobs:nodei6009 ;
+    machinery_jobs:hasISA95JobOrderDataType machinery_jobs:nodei6005 ;
+    machinery_jobs:hasISA95JobResponseDataType machinery_jobs:nodei6007 ;
+    machinery_jobs:hasISA95MaterialDataType machinery_jobs:nodei6011 ;
+    machinery_jobs:hasISA95ParameterDataType machinery_jobs:nodei6019 ;
+    machinery_jobs:hasISA95PersonnelDataType machinery_jobs:nodei6013 ;
+    machinery_jobs:hasISA95PhysicalAssetDataType machinery_jobs:nodei6015 ;
+    machinery_jobs:hasISA95PropertyDataType machinery_jobs:nodei6021 ;
+    machinery_jobs:hasISA95WorkMasterDataType machinery_jobs:nodei6017 ;
+    opcua:hasNamespaceUri machinery_jobs:nodei6002 ;
+    base:hasBrowseName "TypeDictionary" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDatatype opcua:ByteString ;
+    base:hasDescription "Collects the data type descriptions of http://opcfoundation.org/UA/ISA95-JOBCONTROL" ;
+    base:hasDisplayName "TypeDictionary" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6001" ;
+    base:hasSymbolicName "TypeDictionary_BinarySchema" ;
+    base:hasValue "PG9wYzpUeXBlRGljdGlvbmFyeSB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4bWxuczp0bnM9Imh0dHA6Ly9vcGNmb3VuZGF0aW9uLm9yZy9VQS9JU0E5NS1KT0JDT05UUk9MIiBEZWZhdWx0Qnl0ZU9yZGVyPSJMaXR0bGVFbmRpYW4iIHhtbG5zOm9wYz0iaHR0cDovL29wY2ZvdW5kYXRpb24ub3JnL0JpbmFyeVNjaGVtYS8iIHhtbG5zOnVhPSJodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvIiBUYXJnZXROYW1lc3BhY2U9Imh0dHA6Ly9vcGNmb3VuZGF0aW9uLm9yZy9VQS9JU0E5NS1KT0JDT05UUk9MIj4KIDxvcGM6SW1wb3J0IE5hbWVzcGFjZT0iaHR0cDovL29wY2ZvdW5kYXRpb24ub3JnL1VBLyIvPgogPG9wYzpTdHJ1Y3R1cmVkVHlwZSBCYXNlVHlwZT0idWE6RXh0ZW5zaW9uT2JqZWN0IiBOYW1lPSJJU0E5NUVxdWlwbWVudERhdGFUeXBlIj4KICA8b3BjOkRvY3VtZW50YXRpb24+RGVmaW5lcyBhbiBlcXVpcG1lbnQgcmVzb3VyY2Ugb3IgYSBwaWVjZSBvZiBlcXVpcG1lbnQsIGEgcXVhbnRpdHksIGFuIG9wdGlvbmFsIGRlc2NyaXB0aW9uLCBhbmQgYW4gb3B0aW9uYWwgY29sbGVjdGlvbiBvZiBwcm9wZXJ0aWVzLjwvb3BjOkRvY3VtZW50YXRpb24+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOkNoYXJBcnJheSIgTmFtZT0iSUQiLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6Q2hhckFycmF5IiBOYW1lPSJEZXNjcmlwdGlvbiIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpDaGFyQXJyYXkiIE5hbWU9IkVxdWlwbWVudFVzZSIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpDaGFyQXJyYXkiIE5hbWU9IlF1YW50aXR5Ii8+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOkNoYXJBcnJheSIgTmFtZT0iVW9NIi8+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOkludDMyIiBOYW1lPSJOb09mUHJvcGVydGllcyIvPgogIDxvcGM6RmllbGQgTGVuZ3RoRmllbGQ9Ik5vT2ZQcm9wZXJ0aWVzIiBUeXBlTmFtZT0idG5zOklTQTk1UHJvcGVydHlEYXRhVHlwZSIgTmFtZT0iUHJvcGVydGllcyIvPgogPC9vcGM6U3RydWN0dXJlZFR5cGU+CiA8b3BjOlN0cnVjdHVyZWRUeXBlIEJhc2VUeXBlPSJ1YTpFeHRlbnNpb25PYmplY3QiIE5hbWU9IklTQTk1Sm9iT3JkZXJEYXRhVHlwZSI+CiAgPG9wYzpEb2N1bWVudGF0aW9uPkRlZmluZXMgdGhlIGluZm9ybWF0aW9uIG5lZWRlZCB0byBzY2hlZHVsZSBhbmQgZXhlY3V0ZSBhIGpvYi48L29wYzpEb2N1bWVudGF0aW9uPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpDaGFyQXJyYXkiIE5hbWU9IklEIi8+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOkNoYXJBcnJheSIgTmFtZT0iRGVzY3JpcHRpb24iLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6SW50MzIiIE5hbWU9Ik5vT2ZXb3JrTWFzdGVySUQiLz4KICA8b3BjOkZpZWxkIExlbmd0aEZpZWxkPSJOb09mV29ya01hc3RlcklEIiBUeXBlTmFtZT0idG5zOklTQTk1V29ya01hc3RlckRhdGFUeXBlIiBOYW1lPSJXb3JrTWFzdGVySUQiLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6RGF0ZVRpbWUiIE5hbWU9IlN0YXJ0VGltZSIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpEYXRlVGltZSIgTmFtZT0iRW5kVGltZSIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpJbnQxNiIgTmFtZT0iUHJpb3JpdHkiLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6SW50MzIiIE5hbWU9Ik5vT2ZKb2JPcmRlclBhcmFtZXRlcnMiLz4KICA8b3BjOkZpZWxkIExlbmd0aEZpZWxkPSJOb09mSm9iT3JkZXJQYXJhbWV0ZXJzIiBUeXBlTmFtZT0idG5zOklTQTk1UGFyYW1ldGVyRGF0YVR5cGUiIE5hbWU9IkpvYk9yZGVyUGFyYW1ldGVycyIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpJbnQzMiIgTmFtZT0iTm9PZlBlcnNvbm5lbFJlcXVpcmVtZW50cyIvPgogIDxvcGM6RmllbGQgTGVuZ3RoRmllbGQ9Ik5vT2ZQZXJzb25uZWxSZXF1aXJlbWVudHMiIFR5cGVOYW1lPSJ0bnM6SVNBOTVQZXJzb25uZWxEYXRhVHlwZSIgTmFtZT0iUGVyc29ubmVsUmVxdWlyZW1lbnRzIi8+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOkludDMyIiBOYW1lPSJOb09mRXF1aXBtZW50UmVxdWlyZW1lbnRzIi8+CiAgPG9wYzpGaWVsZCBMZW5ndGhGaWVsZD0iTm9PZkVxdWlwbWVudFJlcXVpcmVtZW50cyIgVHlwZU5hbWU9InRuczpJU0E5NUVxdWlwbWVudERhdGFUeXBlIiBOYW1lPSJFcXVpcG1lbnRSZXF1aXJlbWVudHMiLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6SW50MzIiIE5hbWU9Ik5vT2ZQaHlzaWNhbEFzc2V0UmVxdWlyZW1lbnRzIi8+CiAgPG9wYzpGaWVsZCBMZW5ndGhGaWVsZD0iTm9PZlBoeXNpY2FsQXNzZXRSZXF1aXJlbWVudHMiIFR5cGVOYW1lPSJ0bnM6SVNBOTVQaHlzaWNhbEFzc2V0RGF0YVR5cGUiIE5hbWU9IlBoeXNpY2FsQXNzZXRSZXF1aXJlbWVudHMiLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6SW50MzIiIE5hbWU9Ik5vT2ZNYXRlcmlhbFJlcXVpcmVtZW50cyIvPgogIDxvcGM6RmllbGQgTGVuZ3RoRmllbGQ9Ik5vT2ZNYXRlcmlhbFJlcXVpcmVtZW50cyIgVHlwZU5hbWU9InRuczpJU0E5NU1hdGVyaWFsRGF0YVR5cGUiIE5hbWU9Ik1hdGVyaWFsUmVxdWlyZW1lbnRzIi8+CiA8L29wYzpTdHJ1Y3R1cmVkVHlwZT4KIDxvcGM6U3RydWN0dXJlZFR5cGUgQmFzZVR5cGU9InVhOkV4dGVuc2lvbk9iamVjdCIgTmFtZT0iSVNBOTVKb2JSZXNwb25zZURhdGFUeXBlIj4KICA8b3BjOkRvY3VtZW50YXRpb24+ZGVmaW5lcyB0aGUgaW5mb3JtYXRpb24gbmVlZGVkIHRvIHNjaGVkdWxlIGFuZCBleGVjdXRlIGEgam9iLjwvb3BjOkRvY3VtZW50YXRpb24+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOkNoYXJBcnJheSIgTmFtZT0iSUQiLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6Q2hhckFycmF5IiBOYW1lPSJEZXNjcmlwdGlvbiIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpDaGFyQXJyYXkiIE5hbWU9IkpvYk9yZGVySUQiLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6RGF0ZVRpbWUiIE5hbWU9IlN0YXJ0VGltZSIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpEYXRlVGltZSIgTmFtZT0iRW5kVGltZSIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9InRuczpJU0E5NUpvYk9yZGVyU3RhdGVFbnVtIiBOYW1lPSJKb2JTdGF0ZSIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpJbnQzMiIgTmFtZT0iTm9PZkpvYlJlc3BvbnNlRGF0YSIvPgogIDxvcGM6RmllbGQgTGVuZ3RoRmllbGQ9Ik5vT2ZKb2JSZXNwb25zZURhdGEiIFR5cGVOYW1lPSJ0bnM6SVNBOTVQYXJhbWV0ZXJEYXRhVHlwZSIgTmFtZT0iSm9iUmVzcG9uc2VEYXRhIi8+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOkludDMyIiBOYW1lPSJOb09mUGVyc29ubmVsQWN0dWFscyIvPgogIDxvcGM6RmllbGQgTGVuZ3RoRmllbGQ9Ik5vT2ZQZXJzb25uZWxBY3R1YWxzIiBUeXBlTmFtZT0idG5zOklTQTk1UGVyc29ubmVsRGF0YVR5cGUiIE5hbWU9IlBlcnNvbm5lbEFjdHVhbHMiLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6SW50MzIiIE5hbWU9Ik5vT2ZFcXVpcG1lbnRBY3R1YWxzIi8+CiAgPG9wYzpGaWVsZCBMZW5ndGhGaWVsZD0iTm9PZkVxdWlwbWVudEFjdHVhbHMiIFR5cGVOYW1lPSJ0bnM6SVNBOTVFcXVpcG1lbnREYXRhVHlwZSIgTmFtZT0iRXF1aXBtZW50QWN0dWFscyIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpJbnQzMiIgTmFtZT0iTm9PZlBoeXNpY2FsQXNzZXRBY3R1YWxzIi8+CiAgPG9wYzpGaWVsZCBMZW5ndGhGaWVsZD0iTm9PZlBoeXNpY2FsQXNzZXRBY3R1YWxzIiBUeXBlTmFtZT0idG5zOklTQTk1UGh5c2ljYWxBc3NldERhdGFUeXBlIiBOYW1lPSJQaHlzaWNhbEFzc2V0QWN0dWFscyIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpJbnQzMiIgTmFtZT0iTm9PZk1hdGVyaWFsQWN0dWFscyIvPgogIDxvcGM6RmllbGQgTGVuZ3RoRmllbGQ9Ik5vT2ZNYXRlcmlhbEFjdHVhbHMiIFR5cGVOYW1lPSJ0bnM6SVNBOTVNYXRlcmlhbERhdGFUeXBlIiBOYW1lPSJNYXRlcmlhbEFjdHVhbHMiLz4KIDwvb3BjOlN0cnVjdHVyZWRUeXBlPgogPG9wYzpTdHJ1Y3R1cmVkVHlwZSBCYXNlVHlwZT0idWE6RXh0ZW5zaW9uT2JqZWN0IiBOYW1lPSJJU0E5NU1hdGVyaWFsRGF0YVR5cGUiPgogIDxvcGM6RG9jdW1lbnRhdGlvbj5kZWZpbmVzIGEgbWF0ZXJpYWwgcmVzb3VyY2UsIGEgcXVhbnRpdHksIGFuIG9wdGlvbmFsIGRlc2NyaXB0aW9uLCBhbmQgYW4gb3B0aW9uYWwgY29sbGVjdGlvbiBvZiBwcm9wZXJ0aWVzLjwvb3BjOkRvY3VtZW50YXRpb24+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOkNoYXJBcnJheSIgTmFtZT0iTWF0ZXJpYWxDbGFzc0lEIi8+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOkNoYXJBcnJheSIgTmFtZT0iTWF0ZXJpYWxEZWZpbml0aW9uSUQiLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6Q2hhckFycmF5IiBOYW1lPSJNYXRlcmlhbExvdElEIi8+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOkNoYXJBcnJheSIgTmFtZT0iTWF0ZXJpYWxTdWJsb3RJRCIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpDaGFyQXJyYXkiIE5hbWU9IkRlc2NyaXB0aW9uIi8+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOkNoYXJBcnJheSIgTmFtZT0iTWF0ZXJpYWxVc2UiLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6Q2hhckFycmF5IiBOYW1lPSJRdWFudGl0eSIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpDaGFyQXJyYXkiIE5hbWU9IlVvTSIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpJbnQzMiIgTmFtZT0iTm9PZlByb3BlcnRpZXMiLz4KICA8b3BjOkZpZWxkIExlbmd0aEZpZWxkPSJOb09mUHJvcGVydGllcyIgVHlwZU5hbWU9InRuczpJU0E5NVByb3BlcnR5RGF0YVR5cGUiIE5hbWU9IlByb3BlcnRpZXMiLz4KIDwvb3BjOlN0cnVjdHVyZWRUeXBlPgogPG9wYzpTdHJ1Y3R1cmVkVHlwZSBCYXNlVHlwZT0idWE6RXh0ZW5zaW9uT2JqZWN0IiBOYW1lPSJJU0E5NVBhcmFtZXRlckRhdGFUeXBlIj4KICA8b3BjOkRvY3VtZW50YXRpb24+QSBzdWJ0eXBlIG9mIE9QQyBVQSBTdHJ1Y3R1cmUgdGhhdCBkZWZpbmVzIHRocmVlIGxpbmtlZCBkYXRhIGl0ZW1zOiB0aGUgSUQsIHdoaWNoIGlzIGEgdW5pcXVlIGlkZW50aWZpZXIgZm9yIGEgcHJvcGVydHksIHRoZSB2YWx1ZSwgd2hpY2ggaXMgdGhlIGRhdGEgdGhhdCBpcyBpZGVudGlmaWVkLCBhbmQgYW4gb3B0aW9uYWwgZGVzY3JpcHRpb24gb2YgdGhlIHBhcmFtZXRlci48L29wYzpEb2N1bWVudGF0aW9uPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpDaGFyQXJyYXkiIE5hbWU9IklEIi8+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0idWE6VmFyaWFudCIgTmFtZT0iVmFsdWUiLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6Q2hhckFycmF5IiBOYW1lPSJEZXNjcmlwdGlvbiIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpDaGFyQXJyYXkiIE5hbWU9IlVvTSIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpJbnQzMiIgTmFtZT0iTm9PZlN1YnBhcmFtZXRlcnMiLz4KICA8b3BjOkZpZWxkIExlbmd0aEZpZWxkPSJOb09mU3VicGFyYW1ldGVycyIgVHlwZU5hbWU9InRuczpJU0E5NVBhcmFtZXRlckRhdGFUeXBlIiBOYW1lPSJTdWJwYXJhbWV0ZXJzIi8+CiA8L29wYzpTdHJ1Y3R1cmVkVHlwZT4KIDxvcGM6U3RydWN0dXJlZFR5cGUgQmFzZVR5cGU9InVhOkV4dGVuc2lvbk9iamVjdCIgTmFtZT0iSVNBOTVQZXJzb25uZWxEYXRhVHlwZSI+CiAgPG9wYzpEb2N1bWVudGF0aW9uPmRlZmluZXMgYSBwZXJzb25uZWwgcmVzb3VyY2Ugb3IgYSBwZXJzb24sIGEgcXVhbnRpdHksIGFuIG9wdGlvbmFsIGRlc2NyaXB0aW9uLCBhbmQgYW4gb3B0aW9uYWwgY29sbGVjdGlvbiBvZiBwcm9wZXJ0aWVzLjwvb3BjOkRvY3VtZW50YXRpb24+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOkNoYXJBcnJheSIgTmFtZT0iSUQiLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6Q2hhckFycmF5IiBOYW1lPSJEZXNjcmlwdGlvbiIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpDaGFyQXJyYXkiIE5hbWU9IlBlcnNvbm5lbFVzZSIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpDaGFyQXJyYXkiIE5hbWU9IlF1YW50aXR5Ii8+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOkNoYXJBcnJheSIgTmFtZT0iVW9NIi8+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOkludDMyIiBOYW1lPSJOb09mUHJvcGVydGllcyIvPgogIDxvcGM6RmllbGQgTGVuZ3RoRmllbGQ9Ik5vT2ZQcm9wZXJ0aWVzIiBUeXBlTmFtZT0idG5zOklTQTk1UHJvcGVydHlEYXRhVHlwZSIgTmFtZT0iUHJvcGVydGllcyIvPgogPC9vcGM6U3RydWN0dXJlZFR5cGU+CiA8b3BjOlN0cnVjdHVyZWRUeXBlIEJhc2VUeXBlPSJ1YTpFeHRlbnNpb25PYmplY3QiIE5hbWU9IklTQTk1UGh5c2ljYWxBc3NldERhdGFUeXBlIj4KICA8b3BjOkRvY3VtZW50YXRpb24+ZGVmaW5lcyBhIHBoeXNpY2FsIGFzc2V0LCBhIHF1YW50aXR5LCBhbiBvcHRpb25hbCBkZXNjcmlwdGlvbiwgYW5kIGFuIG9wdGlvbmFsIGNvbGxlY3Rpb24gb2YgcHJvcGVydGllcy48L29wYzpEb2N1bWVudGF0aW9uPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpDaGFyQXJyYXkiIE5hbWU9IklEIi8+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOkNoYXJBcnJheSIgTmFtZT0iRGVzY3JpcHRpb24iLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6Q2hhckFycmF5IiBOYW1lPSJQaHlzaWNhbEFzc2V0VXNlIi8+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOkNoYXJBcnJheSIgTmFtZT0iUXVhbnRpdHkiLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6Q2hhckFycmF5IiBOYW1lPSJVb00iLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6SW50MzIiIE5hbWU9Ik5vT2ZQcm9wZXJ0aWVzIi8+CiAgPG9wYzpGaWVsZCBMZW5ndGhGaWVsZD0iTm9PZlByb3BlcnRpZXMiIFR5cGVOYW1lPSJ0bnM6SVNBOTVQcm9wZXJ0eURhdGFUeXBlIiBOYW1lPSJQcm9wZXJ0aWVzIi8+CiA8L29wYzpTdHJ1Y3R1cmVkVHlwZT4KIDxvcGM6U3RydWN0dXJlZFR5cGUgQmFzZVR5cGU9InVhOkV4dGVuc2lvbk9iamVjdCIgTmFtZT0iSVNBOTVQcm9wZXJ0eURhdGFUeXBlIj4KICA8b3BjOkRvY3VtZW50YXRpb24+QSBzdWJ0eXBlIG9mIE9QQyBVQSBTdHJ1Y3R1cmUgdGhhdCBkZWZpbmVzIHR3byBsaW5rZWQgZGF0YSBpdGVtczogYW4gSUQsIHdoaWNoIGlzIGEgdW5pcXVlIGlkZW50aWZpZXIgZm9yIGEgcHJvcGVydHkgd2l0aGluIHRoZSBzY29wZSBvZiB0aGUgYXNzb2NpYXRlZCByZXNvdXJjZSwgYW5kIHRoZSB2YWx1ZSwgd2hpY2ggaXMgdGhlIGRhdGEgZm9yIHRoZSBwcm9wZXJ0eS48L29wYzpEb2N1bWVudGF0aW9uPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpDaGFyQXJyYXkiIE5hbWU9IklEIi8+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0idWE6VmFyaWFudCIgTmFtZT0iVmFsdWUiLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6Q2hhckFycmF5IiBOYW1lPSJEZXNjcmlwdGlvbiIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpDaGFyQXJyYXkiIE5hbWU9IlVvTSIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpJbnQzMiIgTmFtZT0iTm9PZlN1YnByb3BlcnRpZXMiLz4KICA8b3BjOkZpZWxkIExlbmd0aEZpZWxkPSJOb09mU3VicHJvcGVydGllcyIgVHlwZU5hbWU9InRuczpJU0E5NVByb3BlcnR5RGF0YVR5cGUiIE5hbWU9IlN1YnByb3BlcnRpZXMiLz4KIDwvb3BjOlN0cnVjdHVyZWRUeXBlPgogPG9wYzpTdHJ1Y3R1cmVkVHlwZSBCYXNlVHlwZT0idWE6RXh0ZW5zaW9uT2JqZWN0IiBOYW1lPSJJU0E5NVdvcmtNYXN0ZXJEYXRhVHlwZSI+CiAgPG9wYzpEb2N1bWVudGF0aW9uPkRlZmluZXMgYSBXb3JrIE1hc3RlciBJRCBhbmQgdGhlIGRlZmluZWQgcGFyYW1ldGVycyBmb3IgdGhlIFdvcmsgTWFzdGVyLjwvb3BjOkRvY3VtZW50YXRpb24+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOkNoYXJBcnJheSIgTmFtZT0iSUQiLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6Q2hhckFycmF5IiBOYW1lPSJEZXNjcmlwdGlvbiIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpJbnQzMiIgTmFtZT0iTm9PZlBhcmFtZXRlcnMiLz4KICA8b3BjOkZpZWxkIExlbmd0aEZpZWxkPSJOb09mUGFyYW1ldGVycyIgVHlwZU5hbWU9InRuczpJU0E5NVBhcmFtZXRlckRhdGFUeXBlIiBOYW1lPSJQYXJhbWV0ZXJzIi8+CiA8L29wYzpTdHJ1Y3R1cmVkVHlwZT4KIDxvcGM6RW51bWVyYXRlZFR5cGUgTGVuZ3RoSW5CaXRzPSIzMiIgTmFtZT0iSVNBOTVKb2JPcmRlckNvbW1hbmRFbnVtIj4KICA8b3BjOkRvY3VtZW50YXRpb24+RGVzY3JpYmVzIHRoZSBwb3NzaWJsZSBqb2Igb3JkZXIgY29tbWFuZHMuICA8L29wYzpEb2N1bWVudGF0aW9uPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlVuZGVmaW5lZCIgVmFsdWU9IjAiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJTdG9yZSIgVmFsdWU9IjEiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJTdG9yZUFuZFN0YXJ0IiBWYWx1ZT0iMiIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlN0YXJ0IiBWYWx1ZT0iMyIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlVwZGF0ZSIgVmFsdWU9IjQiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJTdG9wIiBWYWx1ZT0iNSIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkNhbmNlbCIgVmFsdWU9IjYiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJDbGVhciIgVmFsdWU9IjciLz4KIDwvb3BjOkVudW1lcmF0ZWRUeXBlPgogPG9wYzpFbnVtZXJhdGVkVHlwZSBMZW5ndGhJbkJpdHM9IjMyIiBOYW1lPSJJU0E5NUpvYk9yZGVyU3RhdGVFbnVtIj4KICA8b3BjOkRvY3VtZW50YXRpb24+RGVzY3JpYmVzIHRoZSBkZWZpbmVkIGpvYiBzdGF0dXNlcy4gPC9vcGM6RG9jdW1lbnRhdGlvbj4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJVbmRlZmluZWQiIFZhbHVlPSIwIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iV2FpdGluZyIgVmFsdWU9IjEiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJSZWFkeSIgVmFsdWU9IjIiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJMb2FkZWQiIFZhbHVlPSIzIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iUnVubmluZyIgVmFsdWU9IjQiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJDb21wbGV0ZWQiIFZhbHVlPSI1Ii8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iQWJvcnRlZCIgVmFsdWU9IjYiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJIZWxkIiBWYWx1ZT0iNyIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlN1c3BlbmRlZCIgVmFsdWU9IjgiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJDbG9zZWQiIFZhbHVlPSI5Ii8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iRXJyb3IiIFZhbHVlPSIxMCIvPgogPC9vcGM6RW51bWVyYXRlZFR5cGU+CiA8b3BjOkVudW1lcmF0ZWRUeXBlIExlbmd0aEluQml0cz0iMzIiIE5hbWU9IklTQTk1UmV0dXJuRW51bSI+CiAgPG9wYzpEb2N1bWVudGF0aW9uPkl0IGRlc2NyaWJlcyB0aGUgcG9zc2libGUgcmV0dXJuIHN0YXR1cyBmcm9tIGEgTWV0aG9kIGNhbGw8L29wYzpEb2N1bWVudGF0aW9uPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlVuZGVmaW5lZCIgVmFsdWU9IjAiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJOb0Vycm9yIiBWYWx1ZT0iMSIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkludmFsaWRKb2JPcmRlcklEIiBWYWx1ZT0iMiIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlVuYWJsZVRvQWNjZXB0Sm9iT3JkZXIiIFZhbHVlPSIzIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iVW5hYmxlVG9BY2NlcHRKb2JPcmRlckNvbW1hbmQiIFZhbHVlPSI0Ii8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iVW5hYmxlVG9SZXR1cm5Kb2JSZXNwb25zZSIgVmFsdWU9IjUiLz4KIDwvb3BjOkVudW1lcmF0ZWRUeXBlPgo8L29wYzpUeXBlRGljdGlvbmFyeT4K" .
+
+machinery_jobs:nodei6002 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "NamespaceUri" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "NamespaceUri" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6002" ;
+    base:hasValue "http://opcfoundation.org/UA/ISA95-JOBCONTROL" .
+
+machinery_jobs:nodei6003 a opcua:DataTypeDictionaryType,
+        opcua:VariableNodeClass ;
+    opcua:HasComponent machinery_jobs:nodei6006,
+        machinery_jobs:nodei6008,
+        machinery_jobs:nodei6010,
+        machinery_jobs:nodei6012,
+        machinery_jobs:nodei6014,
+        machinery_jobs:nodei6016,
+        machinery_jobs:nodei6018,
+        machinery_jobs:nodei6020,
+        machinery_jobs:nodei6022 ;
+    opcua:HasProperty machinery_jobs:nodei6004 ;
+    machinery_jobs:hasISA95EquipmentDataType machinery_jobs:nodei6010 ;
+    machinery_jobs:hasISA95JobOrderDataType machinery_jobs:nodei6006 ;
+    machinery_jobs:hasISA95JobResponseDataType machinery_jobs:nodei6008 ;
+    machinery_jobs:hasISA95MaterialDataType machinery_jobs:nodei6012 ;
+    machinery_jobs:hasISA95ParameterDataType machinery_jobs:nodei6020 ;
+    machinery_jobs:hasISA95PersonnelDataType machinery_jobs:nodei6014 ;
+    machinery_jobs:hasISA95PhysicalAssetDataType machinery_jobs:nodei6016 ;
+    machinery_jobs:hasISA95PropertyDataType machinery_jobs:nodei6022 ;
+    machinery_jobs:hasISA95WorkMasterDataType machinery_jobs:nodei6018 ;
+    opcua:hasNamespaceUri machinery_jobs:nodei6004 ;
+    base:hasBrowseName "TypeDictionary" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDatatype opcua:ByteString ;
+    base:hasDescription "Collects the data type descriptions of http://opcfoundation.org/UA/ISA95-JOBCONTROL" ;
+    base:hasDisplayName "TypeDictionary" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6003" ;
+    base:hasSymbolicName "TypeDictionary_XmlSchema" ;
+    base:hasValue "PHhzOnNjaGVtYSBlbGVtZW50Rm9ybURlZmF1bHQ9InF1YWxpZmllZCIgdGFyZ2V0TmFtZXNwYWNlPSJodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvSVNBOTUtSk9CQ09OVFJPTC9UeXBlcy54c2QiIHhtbG5zOnRucz0iaHR0cDovL29wY2ZvdW5kYXRpb24ub3JnL1VBL0lTQTk1LUpPQkNPTlRST0wvVHlwZXMueHNkIiB4bWxuczp1YT0iaHR0cDovL29wY2ZvdW5kYXRpb24ub3JnL1VBLzIwMDgvMDIvVHlwZXMueHNkIiB4bWxuczp4cz0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiPgogPHhzOmltcG9ydCBuYW1lc3BhY2U9Imh0dHA6Ly9vcGNmb3VuZGF0aW9uLm9yZy9VQS8yMDA4LzAyL1R5cGVzLnhzZCIvPgogPHhzOnNpbXBsZVR5cGUgbmFtZT0iSVNBOTVKb2JPcmRlckNvbW1hbmRFbnVtIj4KICA8eHM6YW5ub3RhdGlvbj4KICAgPHhzOmRvY3VtZW50YXRpb24+RGVzY3JpYmVzIHRoZSBwb3NzaWJsZSBqb2Igb3JkZXIgY29tbWFuZHMuICA8L3hzOmRvY3VtZW50YXRpb24+CiAgPC94czphbm5vdGF0aW9uPgogIDx4czpyZXN0cmljdGlvbiBiYXNlPSJ4czpzdHJpbmciPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IlVuZGVmaW5lZF8wIi8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iU3RvcmVfMSIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IlN0b3JlQW5kU3RhcnRfMiIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IlN0YXJ0XzMiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJVcGRhdGVfNCIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IlN0b3BfNSIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IkNhbmNlbF82Ii8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iQ2xlYXJfNyIvPgogIDwveHM6cmVzdHJpY3Rpb24+CiA8L3hzOnNpbXBsZVR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6SVNBOTVKb2JPcmRlckNvbW1hbmRFbnVtIiBuYW1lPSJJU0E5NUpvYk9yZGVyQ29tbWFuZEVudW0iLz4KIDx4czpjb21wbGV4VHlwZSBuYW1lPSJMaXN0T2ZJU0E5NUpvYk9yZGVyQ29tbWFuZEVudW0iPgogIDx4czpzZXF1ZW5jZT4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9InVuYm91bmRlZCIgdHlwZT0idG5zOklTQTk1Sm9iT3JkZXJDb21tYW5kRW51bSIgbmFtZT0iSVNBOTVKb2JPcmRlckNvbW1hbmRFbnVtIiBuaWxsYWJsZT0idHJ1ZSIvPgogIDwveHM6c2VxdWVuY2U+CiA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOkxpc3RPZklTQTk1Sm9iT3JkZXJDb21tYW5kRW51bSIgbmFtZT0iTGlzdE9mSVNBOTVKb2JPcmRlckNvbW1hbmRFbnVtIiBuaWxsYWJsZT0idHJ1ZSIvPgogPHhzOnNpbXBsZVR5cGUgbmFtZT0iSVNBOTVKb2JPcmRlclN0YXRlRW51bSI+CiAgPHhzOmFubm90YXRpb24+CiAgIDx4czpkb2N1bWVudGF0aW9uPkRlc2NyaWJlcyB0aGUgZGVmaW5lZCBqb2Igc3RhdHVzZXMuIDwveHM6ZG9jdW1lbnRhdGlvbj4KICA8L3hzOmFubm90YXRpb24+CiAgPHhzOnJlc3RyaWN0aW9uIGJhc2U9InhzOnN0cmluZyI+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iVW5kZWZpbmVkXzAiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJXYWl0aW5nXzEiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJSZWFkeV8yIi8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iTG9hZGVkXzMiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJSdW5uaW5nXzQiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJDb21wbGV0ZWRfNSIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IkFib3J0ZWRfNiIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IkhlbGRfNyIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IlN1c3BlbmRlZF84Ii8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iQ2xvc2VkXzkiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJFcnJvcl8xMCIvPgogIDwveHM6cmVzdHJpY3Rpb24+CiA8L3hzOnNpbXBsZVR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6SVNBOTVKb2JPcmRlclN0YXRlRW51bSIgbmFtZT0iSVNBOTVKb2JPcmRlclN0YXRlRW51bSIvPgogPHhzOmNvbXBsZXhUeXBlIG5hbWU9Ikxpc3RPZklTQTk1Sm9iT3JkZXJTdGF0ZUVudW0iPgogIDx4czpzZXF1ZW5jZT4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9InVuYm91bmRlZCIgdHlwZT0idG5zOklTQTk1Sm9iT3JkZXJTdGF0ZUVudW0iIG5hbWU9IklTQTk1Sm9iT3JkZXJTdGF0ZUVudW0iIG5pbGxhYmxlPSJ0cnVlIi8+CiAgPC94czpzZXF1ZW5jZT4KIDwveHM6Y29tcGxleFR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6TGlzdE9mSVNBOTVKb2JPcmRlclN0YXRlRW51bSIgbmFtZT0iTGlzdE9mSVNBOTVKb2JPcmRlclN0YXRlRW51bSIgbmlsbGFibGU9InRydWUiLz4KIDx4czpzaW1wbGVUeXBlIG5hbWU9IklTQTk1UmV0dXJuRW51bSI+CiAgPHhzOmFubm90YXRpb24+CiAgIDx4czpkb2N1bWVudGF0aW9uPkl0IGRlc2NyaWJlcyB0aGUgcG9zc2libGUgcmV0dXJuIHN0YXR1cyBmcm9tIGEgTWV0aG9kIGNhbGw8L3hzOmRvY3VtZW50YXRpb24+CiAgPC94czphbm5vdGF0aW9uPgogIDx4czpyZXN0cmljdGlvbiBiYXNlPSJ4czpzdHJpbmciPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IlVuZGVmaW5lZF8wIi8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iTm9FcnJvcl8xIi8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iSW52YWxpZEpvYk9yZGVySURfMiIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IlVuYWJsZVRvQWNjZXB0Sm9iT3JkZXJfMyIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IlVuYWJsZVRvQWNjZXB0Sm9iT3JkZXJDb21tYW5kXzQiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJVbmFibGVUb1JldHVybkpvYlJlc3BvbnNlXzUiLz4KICA8L3hzOnJlc3RyaWN0aW9uPgogPC94czpzaW1wbGVUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOklTQTk1UmV0dXJuRW51bSIgbmFtZT0iSVNBOTVSZXR1cm5FbnVtIi8+CiA8eHM6Y29tcGxleFR5cGUgbmFtZT0iTGlzdE9mSVNBOTVSZXR1cm5FbnVtIj4KICA8eHM6c2VxdWVuY2U+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSJ1bmJvdW5kZWQiIHR5cGU9InRuczpJU0E5NVJldHVybkVudW0iIG5hbWU9IklTQTk1UmV0dXJuRW51bSIgbmlsbGFibGU9InRydWUiLz4KICA8L3hzOnNlcXVlbmNlPgogPC94czpjb21wbGV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuczpMaXN0T2ZJU0E5NVJldHVybkVudW0iIG5hbWU9Ikxpc3RPZklTQTk1UmV0dXJuRW51bSIgbmlsbGFibGU9InRydWUiLz4KIDx4czpjb21wbGV4VHlwZSBuYW1lPSJJU0E5NUVxdWlwbWVudERhdGFUeXBlIj4KICA8eHM6YW5ub3RhdGlvbj4KICAgPHhzOmRvY3VtZW50YXRpb24+RGVmaW5lcyBhbiBlcXVpcG1lbnQgcmVzb3VyY2Ugb3IgYSBwaWVjZSBvZiBlcXVpcG1lbnQsIGEgcXVhbnRpdHksIGFuIG9wdGlvbmFsIGRlc2NyaXB0aW9uLCBhbmQgYW4gb3B0aW9uYWwgY29sbGVjdGlvbiBvZiBwcm9wZXJ0aWVzLjwveHM6ZG9jdW1lbnRhdGlvbj4KICA8L3hzOmFubm90YXRpb24+CiAgPHhzOnNlcXVlbmNlPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0ieHM6c3RyaW5nIiBuYW1lPSJJRCIvPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0ieHM6c3RyaW5nIiBuYW1lPSJEZXNjcmlwdGlvbiIvPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0ieHM6c3RyaW5nIiBuYW1lPSJFcXVpcG1lbnRVc2UiLz4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InhzOnN0cmluZyIgbmFtZT0iUXVhbnRpdHkiLz4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InhzOnN0cmluZyIgbmFtZT0iVW9NIi8+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ0bnM6TGlzdE9mSVNBOTVQcm9wZXJ0eURhdGFUeXBlIiBuYW1lPSJQcm9wZXJ0aWVzIi8+CiAgPC94czpzZXF1ZW5jZT4KIDwveHM6Y29tcGxleFR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6SVNBOTVFcXVpcG1lbnREYXRhVHlwZSIgbmFtZT0iSVNBOTVFcXVpcG1lbnREYXRhVHlwZSIvPgogPHhzOmNvbXBsZXhUeXBlIG5hbWU9Ikxpc3RPZklTQTk1RXF1aXBtZW50RGF0YVR5cGUiPgogIDx4czpzZXF1ZW5jZT4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9InVuYm91bmRlZCIgdHlwZT0idG5zOklTQTk1RXF1aXBtZW50RGF0YVR5cGUiIG5hbWU9IklTQTk1RXF1aXBtZW50RGF0YVR5cGUiIG5pbGxhYmxlPSJ0cnVlIi8+CiAgPC94czpzZXF1ZW5jZT4KIDwveHM6Y29tcGxleFR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6TGlzdE9mSVNBOTVFcXVpcG1lbnREYXRhVHlwZSIgbmFtZT0iTGlzdE9mSVNBOTVFcXVpcG1lbnREYXRhVHlwZSIgbmlsbGFibGU9InRydWUiLz4KIDx4czpjb21wbGV4VHlwZSBuYW1lPSJJU0E5NUpvYk9yZGVyRGF0YVR5cGUiPgogIDx4czphbm5vdGF0aW9uPgogICA8eHM6ZG9jdW1lbnRhdGlvbj5EZWZpbmVzIHRoZSBpbmZvcm1hdGlvbiBuZWVkZWQgdG8gc2NoZWR1bGUgYW5kIGV4ZWN1dGUgYSBqb2IuPC94czpkb2N1bWVudGF0aW9uPgogIDwveHM6YW5ub3RhdGlvbj4KICA8eHM6c2VxdWVuY2U+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ4czpzdHJpbmciIG5hbWU9IklEIi8+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ4czpzdHJpbmciIG5hbWU9IkRlc2NyaXB0aW9uIi8+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ0bnM6TGlzdE9mSVNBOTVXb3JrTWFzdGVyRGF0YVR5cGUiIG5hbWU9IldvcmtNYXN0ZXJJRCIvPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0ieHM6ZGF0ZVRpbWUiIG5hbWU9IlN0YXJ0VGltZSIvPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0ieHM6ZGF0ZVRpbWUiIG5hbWU9IkVuZFRpbWUiLz4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InhzOnNob3J0IiBuYW1lPSJQcmlvcml0eSIvPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0idG5zOkxpc3RPZklTQTk1UGFyYW1ldGVyRGF0YVR5cGUiIG5hbWU9IkpvYk9yZGVyUGFyYW1ldGVycyIvPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0idG5zOkxpc3RPZklTQTk1UGVyc29ubmVsRGF0YVR5cGUiIG5hbWU9IlBlcnNvbm5lbFJlcXVpcmVtZW50cyIvPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0idG5zOkxpc3RPZklTQTk1RXF1aXBtZW50RGF0YVR5cGUiIG5hbWU9IkVxdWlwbWVudFJlcXVpcmVtZW50cyIvPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0idG5zOkxpc3RPZklTQTk1UGh5c2ljYWxBc3NldERhdGFUeXBlIiBuYW1lPSJQaHlzaWNhbEFzc2V0UmVxdWlyZW1lbnRzIi8+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ0bnM6TGlzdE9mSVNBOTVNYXRlcmlhbERhdGFUeXBlIiBuYW1lPSJNYXRlcmlhbFJlcXVpcmVtZW50cyIvPgogIDwveHM6c2VxdWVuY2U+CiA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOklTQTk1Sm9iT3JkZXJEYXRhVHlwZSIgbmFtZT0iSVNBOTVKb2JPcmRlckRhdGFUeXBlIi8+CiA8eHM6Y29tcGxleFR5cGUgbmFtZT0iTGlzdE9mSVNBOTVKb2JPcmRlckRhdGFUeXBlIj4KICA8eHM6c2VxdWVuY2U+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSJ1bmJvdW5kZWQiIHR5cGU9InRuczpJU0E5NUpvYk9yZGVyRGF0YVR5cGUiIG5hbWU9IklTQTk1Sm9iT3JkZXJEYXRhVHlwZSIgbmlsbGFibGU9InRydWUiLz4KICA8L3hzOnNlcXVlbmNlPgogPC94czpjb21wbGV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuczpMaXN0T2ZJU0E5NUpvYk9yZGVyRGF0YVR5cGUiIG5hbWU9Ikxpc3RPZklTQTk1Sm9iT3JkZXJEYXRhVHlwZSIgbmlsbGFibGU9InRydWUiLz4KIDx4czpjb21wbGV4VHlwZSBuYW1lPSJJU0E5NUpvYlJlc3BvbnNlRGF0YVR5cGUiPgogIDx4czphbm5vdGF0aW9uPgogICA8eHM6ZG9jdW1lbnRhdGlvbj5kZWZpbmVzIHRoZSBpbmZvcm1hdGlvbiBuZWVkZWQgdG8gc2NoZWR1bGUgYW5kIGV4ZWN1dGUgYSBqb2IuPC94czpkb2N1bWVudGF0aW9uPgogIDwveHM6YW5ub3RhdGlvbj4KICA8eHM6c2VxdWVuY2U+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ4czpzdHJpbmciIG5hbWU9IklEIi8+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ4czpzdHJpbmciIG5hbWU9IkRlc2NyaXB0aW9uIi8+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ4czpzdHJpbmciIG5hbWU9IkpvYk9yZGVySUQiLz4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InhzOmRhdGVUaW1lIiBuYW1lPSJTdGFydFRpbWUiLz4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InhzOmRhdGVUaW1lIiBuYW1lPSJFbmRUaW1lIi8+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ0bnM6SVNBOTVKb2JPcmRlclN0YXRlRW51bSIgbmFtZT0iSm9iU3RhdGUiLz4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InRuczpMaXN0T2ZJU0E5NVBhcmFtZXRlckRhdGFUeXBlIiBuYW1lPSJKb2JSZXNwb25zZURhdGEiLz4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InRuczpMaXN0T2ZJU0E5NVBlcnNvbm5lbERhdGFUeXBlIiBuYW1lPSJQZXJzb25uZWxBY3R1YWxzIi8+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ0bnM6TGlzdE9mSVNBOTVFcXVpcG1lbnREYXRhVHlwZSIgbmFtZT0iRXF1aXBtZW50QWN0dWFscyIvPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0idG5zOkxpc3RPZklTQTk1UGh5c2ljYWxBc3NldERhdGFUeXBlIiBuYW1lPSJQaHlzaWNhbEFzc2V0QWN0dWFscyIvPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0idG5zOkxpc3RPZklTQTk1TWF0ZXJpYWxEYXRhVHlwZSIgbmFtZT0iTWF0ZXJpYWxBY3R1YWxzIi8+CiAgPC94czpzZXF1ZW5jZT4KIDwveHM6Y29tcGxleFR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6SVNBOTVKb2JSZXNwb25zZURhdGFUeXBlIiBuYW1lPSJJU0E5NUpvYlJlc3BvbnNlRGF0YVR5cGUiLz4KIDx4czpjb21wbGV4VHlwZSBuYW1lPSJMaXN0T2ZJU0E5NUpvYlJlc3BvbnNlRGF0YVR5cGUiPgogIDx4czpzZXF1ZW5jZT4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9InVuYm91bmRlZCIgdHlwZT0idG5zOklTQTk1Sm9iUmVzcG9uc2VEYXRhVHlwZSIgbmFtZT0iSVNBOTVKb2JSZXNwb25zZURhdGFUeXBlIiBuaWxsYWJsZT0idHJ1ZSIvPgogIDwveHM6c2VxdWVuY2U+CiA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOkxpc3RPZklTQTk1Sm9iUmVzcG9uc2VEYXRhVHlwZSIgbmFtZT0iTGlzdE9mSVNBOTVKb2JSZXNwb25zZURhdGFUeXBlIiBuaWxsYWJsZT0idHJ1ZSIvPgogPHhzOmNvbXBsZXhUeXBlIG5hbWU9IklTQTk1TWF0ZXJpYWxEYXRhVHlwZSI+CiAgPHhzOmFubm90YXRpb24+CiAgIDx4czpkb2N1bWVudGF0aW9uPmRlZmluZXMgYSBtYXRlcmlhbCByZXNvdXJjZSwgYSBxdWFudGl0eSwgYW4gb3B0aW9uYWwgZGVzY3JpcHRpb24sIGFuZCBhbiBvcHRpb25hbCBjb2xsZWN0aW9uIG9mIHByb3BlcnRpZXMuPC94czpkb2N1bWVudGF0aW9uPgogIDwveHM6YW5ub3RhdGlvbj4KICA8eHM6c2VxdWVuY2U+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ4czpzdHJpbmciIG5hbWU9Ik1hdGVyaWFsQ2xhc3NJRCIvPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0ieHM6c3RyaW5nIiBuYW1lPSJNYXRlcmlhbERlZmluaXRpb25JRCIvPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0ieHM6c3RyaW5nIiBuYW1lPSJNYXRlcmlhbExvdElEIi8+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ4czpzdHJpbmciIG5hbWU9Ik1hdGVyaWFsU3VibG90SUQiLz4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InhzOnN0cmluZyIgbmFtZT0iRGVzY3JpcHRpb24iLz4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InhzOnN0cmluZyIgbmFtZT0iTWF0ZXJpYWxVc2UiLz4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InhzOnN0cmluZyIgbmFtZT0iUXVhbnRpdHkiLz4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InhzOnN0cmluZyIgbmFtZT0iVW9NIi8+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ0bnM6TGlzdE9mSVNBOTVQcm9wZXJ0eURhdGFUeXBlIiBuYW1lPSJQcm9wZXJ0aWVzIi8+CiAgPC94czpzZXF1ZW5jZT4KIDwveHM6Y29tcGxleFR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6SVNBOTVNYXRlcmlhbERhdGFUeXBlIiBuYW1lPSJJU0E5NU1hdGVyaWFsRGF0YVR5cGUiLz4KIDx4czpjb21wbGV4VHlwZSBuYW1lPSJMaXN0T2ZJU0E5NU1hdGVyaWFsRGF0YVR5cGUiPgogIDx4czpzZXF1ZW5jZT4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9InVuYm91bmRlZCIgdHlwZT0idG5zOklTQTk1TWF0ZXJpYWxEYXRhVHlwZSIgbmFtZT0iSVNBOTVNYXRlcmlhbERhdGFUeXBlIiBuaWxsYWJsZT0idHJ1ZSIvPgogIDwveHM6c2VxdWVuY2U+CiA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOkxpc3RPZklTQTk1TWF0ZXJpYWxEYXRhVHlwZSIgbmFtZT0iTGlzdE9mSVNBOTVNYXRlcmlhbERhdGFUeXBlIiBuaWxsYWJsZT0idHJ1ZSIvPgogPHhzOmNvbXBsZXhUeXBlIG5hbWU9IklTQTk1UGFyYW1ldGVyRGF0YVR5cGUiPgogIDx4czphbm5vdGF0aW9uPgogICA8eHM6ZG9jdW1lbnRhdGlvbj5BIHN1YnR5cGUgb2YgT1BDIFVBIFN0cnVjdHVyZSB0aGF0IGRlZmluZXMgdGhyZWUgbGlua2VkIGRhdGEgaXRlbXM6IHRoZSBJRCwgd2hpY2ggaXMgYSB1bmlxdWUgaWRlbnRpZmllciBmb3IgYSBwcm9wZXJ0eSwgdGhlIHZhbHVlLCB3aGljaCBpcyB0aGUgZGF0YSB0aGF0IGlzIGlkZW50aWZpZWQsIGFuZCBhbiBvcHRpb25hbCBkZXNjcmlwdGlvbiBvZiB0aGUgcGFyYW1ldGVyLjwveHM6ZG9jdW1lbnRhdGlvbj4KICA8L3hzOmFubm90YXRpb24+CiAgPHhzOnNlcXVlbmNlPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0ieHM6c3RyaW5nIiBuYW1lPSJJRCIvPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0idWE6VmFyaWFudCIgbmFtZT0iVmFsdWUiLz4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InhzOnN0cmluZyIgbmFtZT0iRGVzY3JpcHRpb24iLz4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InhzOnN0cmluZyIgbmFtZT0iVW9NIi8+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ0bnM6TGlzdE9mSVNBOTVQYXJhbWV0ZXJEYXRhVHlwZSIgbmFtZT0iU3VicGFyYW1ldGVycyIvPgogIDwveHM6c2VxdWVuY2U+CiA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOklTQTk1UGFyYW1ldGVyRGF0YVR5cGUiIG5hbWU9IklTQTk1UGFyYW1ldGVyRGF0YVR5cGUiLz4KIDx4czpjb21wbGV4VHlwZSBuYW1lPSJMaXN0T2ZJU0E5NVBhcmFtZXRlckRhdGFUeXBlIj4KICA8eHM6c2VxdWVuY2U+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSJ1bmJvdW5kZWQiIHR5cGU9InRuczpJU0E5NVBhcmFtZXRlckRhdGFUeXBlIiBuYW1lPSJJU0E5NVBhcmFtZXRlckRhdGFUeXBlIiBuaWxsYWJsZT0idHJ1ZSIvPgogIDwveHM6c2VxdWVuY2U+CiA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOkxpc3RPZklTQTk1UGFyYW1ldGVyRGF0YVR5cGUiIG5hbWU9Ikxpc3RPZklTQTk1UGFyYW1ldGVyRGF0YVR5cGUiIG5pbGxhYmxlPSJ0cnVlIi8+CiA8eHM6Y29tcGxleFR5cGUgbmFtZT0iSVNBOTVQZXJzb25uZWxEYXRhVHlwZSI+CiAgPHhzOmFubm90YXRpb24+CiAgIDx4czpkb2N1bWVudGF0aW9uPmRlZmluZXMgYSBwZXJzb25uZWwgcmVzb3VyY2Ugb3IgYSBwZXJzb24sIGEgcXVhbnRpdHksIGFuIG9wdGlvbmFsIGRlc2NyaXB0aW9uLCBhbmQgYW4gb3B0aW9uYWwgY29sbGVjdGlvbiBvZiBwcm9wZXJ0aWVzLjwveHM6ZG9jdW1lbnRhdGlvbj4KICA8L3hzOmFubm90YXRpb24+CiAgPHhzOnNlcXVlbmNlPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0ieHM6c3RyaW5nIiBuYW1lPSJJRCIvPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0ieHM6c3RyaW5nIiBuYW1lPSJEZXNjcmlwdGlvbiIvPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0ieHM6c3RyaW5nIiBuYW1lPSJQZXJzb25uZWxVc2UiLz4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InhzOnN0cmluZyIgbmFtZT0iUXVhbnRpdHkiLz4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InhzOnN0cmluZyIgbmFtZT0iVW9NIi8+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ0bnM6TGlzdE9mSVNBOTVQcm9wZXJ0eURhdGFUeXBlIiBuYW1lPSJQcm9wZXJ0aWVzIi8+CiAgPC94czpzZXF1ZW5jZT4KIDwveHM6Y29tcGxleFR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6SVNBOTVQZXJzb25uZWxEYXRhVHlwZSIgbmFtZT0iSVNBOTVQZXJzb25uZWxEYXRhVHlwZSIvPgogPHhzOmNvbXBsZXhUeXBlIG5hbWU9Ikxpc3RPZklTQTk1UGVyc29ubmVsRGF0YVR5cGUiPgogIDx4czpzZXF1ZW5jZT4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9InVuYm91bmRlZCIgdHlwZT0idG5zOklTQTk1UGVyc29ubmVsRGF0YVR5cGUiIG5hbWU9IklTQTk1UGVyc29ubmVsRGF0YVR5cGUiIG5pbGxhYmxlPSJ0cnVlIi8+CiAgPC94czpzZXF1ZW5jZT4KIDwveHM6Y29tcGxleFR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6TGlzdE9mSVNBOTVQZXJzb25uZWxEYXRhVHlwZSIgbmFtZT0iTGlzdE9mSVNBOTVQZXJzb25uZWxEYXRhVHlwZSIgbmlsbGFibGU9InRydWUiLz4KIDx4czpjb21wbGV4VHlwZSBuYW1lPSJJU0E5NVBoeXNpY2FsQXNzZXREYXRhVHlwZSI+CiAgPHhzOmFubm90YXRpb24+CiAgIDx4czpkb2N1bWVudGF0aW9uPmRlZmluZXMgYSBwaHlzaWNhbCBhc3NldCwgYSBxdWFudGl0eSwgYW4gb3B0aW9uYWwgZGVzY3JpcHRpb24sIGFuZCBhbiBvcHRpb25hbCBjb2xsZWN0aW9uIG9mIHByb3BlcnRpZXMuPC94czpkb2N1bWVudGF0aW9uPgogIDwveHM6YW5ub3RhdGlvbj4KICA8eHM6c2VxdWVuY2U+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ4czpzdHJpbmciIG5hbWU9IklEIi8+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ4czpzdHJpbmciIG5hbWU9IkRlc2NyaXB0aW9uIi8+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ4czpzdHJpbmciIG5hbWU9IlBoeXNpY2FsQXNzZXRVc2UiLz4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InhzOnN0cmluZyIgbmFtZT0iUXVhbnRpdHkiLz4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InhzOnN0cmluZyIgbmFtZT0iVW9NIi8+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ0bnM6TGlzdE9mSVNBOTVQcm9wZXJ0eURhdGFUeXBlIiBuYW1lPSJQcm9wZXJ0aWVzIi8+CiAgPC94czpzZXF1ZW5jZT4KIDwveHM6Y29tcGxleFR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6SVNBOTVQaHlzaWNhbEFzc2V0RGF0YVR5cGUiIG5hbWU9IklTQTk1UGh5c2ljYWxBc3NldERhdGFUeXBlIi8+CiA8eHM6Y29tcGxleFR5cGUgbmFtZT0iTGlzdE9mSVNBOTVQaHlzaWNhbEFzc2V0RGF0YVR5cGUiPgogIDx4czpzZXF1ZW5jZT4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9InVuYm91bmRlZCIgdHlwZT0idG5zOklTQTk1UGh5c2ljYWxBc3NldERhdGFUeXBlIiBuYW1lPSJJU0E5NVBoeXNpY2FsQXNzZXREYXRhVHlwZSIgbmlsbGFibGU9InRydWUiLz4KICA8L3hzOnNlcXVlbmNlPgogPC94czpjb21wbGV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuczpMaXN0T2ZJU0E5NVBoeXNpY2FsQXNzZXREYXRhVHlwZSIgbmFtZT0iTGlzdE9mSVNBOTVQaHlzaWNhbEFzc2V0RGF0YVR5cGUiIG5pbGxhYmxlPSJ0cnVlIi8+CiA8eHM6Y29tcGxleFR5cGUgbmFtZT0iSVNBOTVQcm9wZXJ0eURhdGFUeXBlIj4KICA8eHM6YW5ub3RhdGlvbj4KICAgPHhzOmRvY3VtZW50YXRpb24+QSBzdWJ0eXBlIG9mIE9QQyBVQSBTdHJ1Y3R1cmUgdGhhdCBkZWZpbmVzIHR3byBsaW5rZWQgZGF0YSBpdGVtczogYW4gSUQsIHdoaWNoIGlzIGEgdW5pcXVlIGlkZW50aWZpZXIgZm9yIGEgcHJvcGVydHkgd2l0aGluIHRoZSBzY29wZSBvZiB0aGUgYXNzb2NpYXRlZCByZXNvdXJjZSwgYW5kIHRoZSB2YWx1ZSwgd2hpY2ggaXMgdGhlIGRhdGEgZm9yIHRoZSBwcm9wZXJ0eS48L3hzOmRvY3VtZW50YXRpb24+CiAgPC94czphbm5vdGF0aW9uPgogIDx4czpzZXF1ZW5jZT4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InhzOnN0cmluZyIgbmFtZT0iSUQiLz4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InVhOlZhcmlhbnQiIG5hbWU9IlZhbHVlIi8+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ4czpzdHJpbmciIG5hbWU9IkRlc2NyaXB0aW9uIi8+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ4czpzdHJpbmciIG5hbWU9IlVvTSIvPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0idG5zOkxpc3RPZklTQTk1UHJvcGVydHlEYXRhVHlwZSIgbmFtZT0iU3VicHJvcGVydGllcyIvPgogIDwveHM6c2VxdWVuY2U+CiA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOklTQTk1UHJvcGVydHlEYXRhVHlwZSIgbmFtZT0iSVNBOTVQcm9wZXJ0eURhdGFUeXBlIi8+CiA8eHM6Y29tcGxleFR5cGUgbmFtZT0iTGlzdE9mSVNBOTVQcm9wZXJ0eURhdGFUeXBlIj4KICA8eHM6c2VxdWVuY2U+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSJ1bmJvdW5kZWQiIHR5cGU9InRuczpJU0E5NVByb3BlcnR5RGF0YVR5cGUiIG5hbWU9IklTQTk1UHJvcGVydHlEYXRhVHlwZSIgbmlsbGFibGU9InRydWUiLz4KICA8L3hzOnNlcXVlbmNlPgogPC94czpjb21wbGV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuczpMaXN0T2ZJU0E5NVByb3BlcnR5RGF0YVR5cGUiIG5hbWU9Ikxpc3RPZklTQTk1UHJvcGVydHlEYXRhVHlwZSIgbmlsbGFibGU9InRydWUiLz4KIDx4czpjb21wbGV4VHlwZSBuYW1lPSJJU0E5NVdvcmtNYXN0ZXJEYXRhVHlwZSI+CiAgPHhzOmFubm90YXRpb24+CiAgIDx4czpkb2N1bWVudGF0aW9uPkRlZmluZXMgYSBXb3JrIE1hc3RlciBJRCBhbmQgdGhlIGRlZmluZWQgcGFyYW1ldGVycyBmb3IgdGhlIFdvcmsgTWFzdGVyLjwveHM6ZG9jdW1lbnRhdGlvbj4KICA8L3hzOmFubm90YXRpb24+CiAgPHhzOnNlcXVlbmNlPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0ieHM6c3RyaW5nIiBuYW1lPSJJRCIvPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0ieHM6c3RyaW5nIiBuYW1lPSJEZXNjcmlwdGlvbiIvPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0idG5zOkxpc3RPZklTQTk1UGFyYW1ldGVyRGF0YVR5cGUiIG5hbWU9IlBhcmFtZXRlcnMiLz4KICA8L3hzOnNlcXVlbmNlPgogPC94czpjb21wbGV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuczpJU0E5NVdvcmtNYXN0ZXJEYXRhVHlwZSIgbmFtZT0iSVNBOTVXb3JrTWFzdGVyRGF0YVR5cGUiLz4KIDx4czpjb21wbGV4VHlwZSBuYW1lPSJMaXN0T2ZJU0E5NVdvcmtNYXN0ZXJEYXRhVHlwZSI+CiAgPHhzOnNlcXVlbmNlPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0idW5ib3VuZGVkIiB0eXBlPSJ0bnM6SVNBOTVXb3JrTWFzdGVyRGF0YVR5cGUiIG5hbWU9IklTQTk1V29ya01hc3RlckRhdGFUeXBlIiBuaWxsYWJsZT0idHJ1ZSIvPgogIDwveHM6c2VxdWVuY2U+CiA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOkxpc3RPZklTQTk1V29ya01hc3RlckRhdGFUeXBlIiBuYW1lPSJMaXN0T2ZJU0E5NVdvcmtNYXN0ZXJEYXRhVHlwZSIgbmlsbGFibGU9InRydWUiLz4KPC94czpzY2hlbWE+Cg==" .
+
+machinery_jobs:nodei6004 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "NamespaceUri" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "NamespaceUri" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6004" ;
+    base:hasValue "http://opcfoundation.org/UA/ISA95-JOBCONTROL/Types.xsd" .
+
+machinery_jobs:nodei6023 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "IsNamespaceSubset" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Boolean ;
+    base:hasDisplayName "IsNamespaceSubset" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6023" ;
+    base:hasValue false .
+
+machinery_jobs:nodei6024 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "NamespacePublicationDate" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:DateTime ;
+    base:hasDisplayName "NamespacePublicationDate" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6024" ;
+    base:hasValue "2021-03-31T00:00:00Z" .
+
+machinery_jobs:nodei6025 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "NamespaceUri" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "NamespaceUri" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6025" ;
+    base:hasValue "http://opcfoundation.org/UA/ISA95-JOBCONTROL" .
+
+machinery_jobs:nodei6026 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "NamespaceVersion" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "NamespaceVersion" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6026" ;
+    base:hasValue "1.0.0" .
+
+machinery_jobs:nodei6027 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "StaticNodeIdTypes" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:IdType ;
+    base:hasDisplayName "StaticNodeIdTypes" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6027" ;
+    base:hasValueList ( 0 ) ;
+    base:hasValueRank 1 .
+
+machinery_jobs:nodei6028 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "StaticNumericNodeIdRange" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NumericRange ;
+    base:hasDisplayName "StaticNumericNodeIdRange" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6028" ;
+    base:hasValueList ( "1:2147483647" ) ;
+    base:hasValueRank 1 .
+
+machinery_jobs:nodei6029 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "StaticStringNodeIdPattern" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "StaticStringNodeIdPattern" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6029" ;
+    base:hasValue "0" .
+
+machinery_jobs:nodei6030 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasArrayDimensions ( 6 ) ;
+    base:hasBrowseName "EnumValues" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:EnumValueType ;
+    base:hasDisplayName "EnumValues" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6030" ;
+    base:hasValueList ( "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 0, \"xsd:DisplayName\": {\"xsd:Text\": \"Undefined\"}, \"xsd:Description\": {\"xsd:Text\": \"Undefined value, should never be seen\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 1, \"xsd:DisplayName\": {\"xsd:Text\": \"NoError\"}, \"xsd:Description\": {\"xsd:Text\": \"There were no errors in processing the method.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 2, \"xsd:DisplayName\": {\"xsd:Text\": \"InvalidJobOrderID\"}, \"xsd:Description\": {\"xsd:Text\": \"The referenced job order ID is invalid or not known to the receiver.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 3, \"xsd:DisplayName\": {\"xsd:Text\": \"UnableToAcceptJobOrder\"}, \"xsd:Description\": {\"xsd:Text\": \"The server is currently unable to accept job orders.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 4, \"xsd:DisplayName\": {\"xsd:Text\": \"UnableToAcceptJobOrderCommand\"}, \"xsd:Description\": {\"xsd:Text\": \"The server is currently unable to accept job order commands for the specified job order.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 5, \"xsd:DisplayName\": {\"xsd:Text\": \"UnableToReturnJobResponse\"}, \"xsd:Description\": {\"xsd:Text\": \"The server is unable to provide a Job Response for the specified Job Order.\"}}}}"^^rdf:JSON ) ;
+    base:hasValueRank 1 .
+
+machinery_jobs:nodei6031 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasArrayDimensions ( 8 ) ;
+    base:hasBrowseName "EnumValues" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:EnumValueType ;
+    base:hasDisplayName "EnumValues" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6031" ;
+    base:hasValueList ( "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 0, \"xsd:DisplayName\": {\"xsd:Text\": \"Undefined\"}, \"xsd:Description\": {\"xsd:Text\": \"Undefined value, should never be seen.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 1, \"xsd:DisplayName\": {\"xsd:Text\": \"Store\"}, \"xsd:Description\": {\"xsd:Text\": \"Command to store the job order in local storage, but not to start the order.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 2, \"xsd:DisplayName\": {\"xsd:Text\": \"StoreAndStart\"}, \"xsd:Description\": {\"xsd:Text\": \"Command to store the job order and start it as soon as the Job Order receiver is ready to start.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 3, \"xsd:DisplayName\": {\"xsd:Text\": \"Start\"}, \"xsd:Description\": {\"xsd:Text\": \"Command to start a stored job order as soon as the receiver is ready to start. Only the Job Orders ID is used to identify the stored job order, all other information is not used.  No changes are made to the stored order. If multiple Job Orders have been commanded to Start, then the priority and timing values in the Job Orders shall be used to determine the order of execution of the orders.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 4, \"xsd:DisplayName\": {\"xsd:Text\": \"Update\"}, \"xsd:Description\": {\"xsd:Text\": \"Command to update a stored Job Order that has not yet been started, with the new order information.  All previously stored information is replaced.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 5, \"xsd:DisplayName\": {\"xsd:Text\": \"Stop\"}, \"xsd:Description\": {\"xsd:Text\": \"Command to stop a started job order, report on any work done on the order, and remove the stored information. Only the Job Orders ID is used to identify the job order, all other information is not used.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 6, \"xsd:DisplayName\": {\"xsd:Text\": \"Cancel\"}, \"xsd:Description\": {\"xsd:Text\": \"Cancel an un-started job order and remove the stored information. Only the Job Orders ID is used to identify the job order, all other information is not used.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 7, \"xsd:DisplayName\": {\"xsd:Text\": \"Clear\"}, \"xsd:Description\": {\"xsd:Text\": \"Command to allow the Information Receiver to clear any maintained information on the Job Order (usually sent after a receipt of a Job Response with a status of Finished.) Only the Job Orders ID is used to identify the job order, all other information is not used.\"}}}}"^^rdf:JSON ) ;
+    base:hasValueRank 1 .
+
+machinery_jobs:nodei6032 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasArrayDimensions ( 11 ) ;
+    base:hasBrowseName "EnumValues" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:EnumValueType ;
+    base:hasDisplayName "EnumValues" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6032" ;
+    base:hasValueList ( "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 0, \"xsd:DisplayName\": {\"xsd:Text\": \"Undefined\"}, \"xsd:Description\": {\"xsd:Text\": \"Undefined value, should never be seen.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 1, \"xsd:DisplayName\": {\"xsd:Text\": \"Waiting\"}, \"xsd:Description\": {\"xsd:Text\": \"The necessary pre-conditions have not been met and the order is not ready to run.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 2, \"xsd:DisplayName\": {\"xsd:Text\": \"Ready\"}, \"xsd:Description\": {\"xsd:Text\": \"The necessary pre-conditions have been met and the order is ready to run, awaiting a Start command.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 3, \"xsd:DisplayName\": {\"xsd:Text\": \"Loaded\"}, \"xsd:Description\": {\"xsd:Text\": \"In situations where only one job may be in active memory and is able to be run, then the job is loaded in active memory, the necessary pre-conditions have been met, and the order is ready to run, awaiting a Start command.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 4, \"xsd:DisplayName\": {\"xsd:Text\": \"Running\"}, \"xsd:Description\": {\"xsd:Text\": \"The order is executing.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 5, \"xsd:DisplayName\": {\"xsd:Text\": \"Completed\"}, \"xsd:Description\": {\"xsd:Text\": \"The order has been completed and is no longer in execution.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 6, \"xsd:DisplayName\": {\"xsd:Text\": \"Aborted\"}, \"xsd:Description\": {\"xsd:Text\": \"The order was aborted.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 7, \"xsd:DisplayName\": {\"xsd:Text\": \"Held\"}, \"xsd:Description\": {\"xsd:Text\": \"The order has been temporarily stopped due to a constraint of some form.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 8, \"xsd:DisplayName\": {\"xsd:Text\": \"Suspended\"}, \"xsd:Description\": {\"xsd:Text\": \"The order has been temporarily stopped due to a deliberate decision within the execution system.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 9, \"xsd:DisplayName\": {\"xsd:Text\": \"Closed\"}, \"xsd:Description\": {\"xsd:Text\": \"The order has been completed and fully reconciled. No further changes, or restatement of actuals is expected.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 10, \"xsd:DisplayName\": {\"xsd:Text\": \"Error\"}, \"xsd:Description\": {\"xsd:Text\": \"The Job is in error and requires attention.\"}}}}"^^rdf:JSON ) ;
+    base:hasValueRank 1 .
+
+machinery_jobs:nodei6033 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasAccessLevel opcua:CurrentRead,
+        opcua:CurrentWrite ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "JobOrderList" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDatatype machinery_jobs:ISA95JobOrderDataType ;
+    base:hasDescription "Defines a read-only list of job order information available from the server. " ;
+    base:hasDisplayName "JobOrderList" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6033" ;
+    base:hasValueRank 1 .
+
+machinery_jobs:nodei6034 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasAccessLevel opcua:CurrentRead,
+        opcua:CurrentWrite ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "WorkMaster" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDatatype machinery_jobs:ISA95WorkMasterDataType ;
+    base:hasDescription "Defines a read-only set of work master IDs that may be specified in a job order, and the read-only set of parameters that may be specified for a specific work master. " ;
+    base:hasDisplayName "WorkMaster" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6034" ;
+    base:hasValueRank 1 .
+
+machinery_jobs:nodei6035 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasAccessLevel opcua:CurrentRead,
+        opcua:CurrentWrite ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "MaterialClassID" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDescription "Defines a read-only set of Material Classes IDs that may be specified in a job order. " ;
+    base:hasDisplayName "MaterialClassID" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6035" ;
+    base:hasValueRank 1 .
+
+machinery_jobs:nodei6036 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasAccessLevel opcua:CurrentRead,
+        opcua:CurrentWrite ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "MaterialDefinitionID" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDescription "Defines a read-only set of Material Classes IDs that may be specified in a job order." ;
+    base:hasDisplayName "MaterialDefinitionID" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6036" ;
+    base:hasValueRank 1 .
+
+machinery_jobs:nodei6037 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasAccessLevel opcua:CurrentRead,
+        opcua:CurrentWrite ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "EquipmentID" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDescription "Defines a read-only set of Equipment Class IDs and Equipment IDs that may be specified in a job order. " ;
+    base:hasDisplayName "EquipmentID" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6037" ;
+    base:hasValueRank 1 .
+
+machinery_jobs:nodei6038 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasAccessLevel opcua:CurrentRead,
+        opcua:CurrentWrite ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "PhysicalAssetID" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDescription "Defines a read-only set of Physical Asset Class IDs and Physical Asset IDs that may be specified in a job order. " ;
+    base:hasDisplayName "PhysicalAssetID" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6038" ;
+    base:hasValueRank 1 .
+
+machinery_jobs:nodei6039 a opcua:BaseDataVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasAccessLevel opcua:CurrentRead,
+        opcua:CurrentWrite ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "PersonnelID" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDescription "Defines a read-only set of Personnel IDs and Person IDs that may be specified in a job order. " ;
+    base:hasDisplayName "PersonnelID" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6039" ;
+    base:hasValueRank 1 .
+
+machinery_jobs:nodei6040 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasArrayDimensions ( 2 ) ;
+    base:hasBrowseName "InputArguments" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Argument ;
+    base:hasDisplayName "InputArguments" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6040" ;
+    base:hasValueList ( "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=297\"}, \"xsd:Body\": {\"xsd:Argument\": {\"xsd:Name\": \"JobOrderCommand\", \"xsd:DataType\": {\"xsd:Identifier\": \"ns=1;i=3004\"}, \"xsd:ValueRank\": -1, \"xsd:ArrayDimensions\": null, \"xsd:Description\": {\"xsd:Text\": \"Contains the command to the Information Receiver on the action to be taken on the job order. \"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=297\"}, \"xsd:Body\": {\"xsd:Argument\": {\"xsd:Name\": \"JobOrder\", \"xsd:DataType\": {\"xsd:Identifier\": \"ns=1;i=3008\"}, \"xsd:ValueRank\": -1, \"xsd:ArrayDimensions\": null, \"xsd:Description\": {\"xsd:Text\": \"Contains information defining the job order with all parameters and any material, equipment, or physical asset requirements associated with the order.\"}}}}"^^rdf:JSON ) ;
+    base:hasValueRank 1 .
+
+machinery_jobs:nodei6041 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasArrayDimensions ( 1 ) ;
+    base:hasBrowseName "OutputArguments" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Argument ;
+    base:hasDisplayName "OutputArguments" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6041" ;
+    base:hasValueList ( "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=297\"}, \"xsd:Body\": {\"xsd:Argument\": {\"xsd:Name\": \"ReturnStatus\", \"xsd:DataType\": {\"xsd:Identifier\": \"i=9\"}, \"xsd:ValueRank\": -1, \"xsd:ArrayDimensions\": null, \"xsd:Description\": {\"xsd:Text\": \"Returns the status of the method execution.\"}}}}"^^rdf:JSON ) ;
+    base:hasValueRank 1 .
+
+machinery_jobs:nodei6042 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasArrayDimensions ( 2 ) ;
+    base:hasBrowseName "InputArguments" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Argument ;
+    base:hasDisplayName "InputArguments" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6042" ;
+    base:hasValueList ( "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=297\"}, \"xsd:Body\": {\"xsd:Argument\": {\"xsd:Name\": \"JobOrderID\", \"xsd:DataType\": {\"xsd:Identifier\": \"i=12\"}, \"xsd:ValueRank\": -1, \"xsd:ArrayDimensions\": null, \"xsd:Description\": {\"xsd:Text\": \"Contains an ID of the job order, as specified by the method caller.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=297\"}, \"xsd:Body\": {\"xsd:Argument\": {\"xsd:Name\": \"JobOrderState\", \"xsd:DataType\": {\"xsd:Identifier\": \"ns=1;i=3006\"}, \"xsd:ValueRank\": -1, \"xsd:ArrayDimensions\": null, \"xsd:Description\": {\"xsd:Text\": \"Contains an ID of the job order, as specified by the method caller.\"}}}}"^^rdf:JSON ) ;
+    base:hasValueRank 1 .
+
+machinery_jobs:nodei6043 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasArrayDimensions ( 2 ) ;
+    base:hasBrowseName "OutputArguments" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Argument ;
+    base:hasDisplayName "OutputArguments" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6043" ;
+    base:hasValueList ( "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=297\"}, \"xsd:Body\": {\"xsd:Argument\": {\"xsd:Name\": \"JobResponse\", \"xsd:DataType\": {\"xsd:Identifier\": \"ns=1;i=3013\"}, \"xsd:ValueRank\": 1, \"xsd:ArrayDimensions\": {\"xsd:UInt32\": [0]}, \"xsd:Description\": {\"xsd:Text\": \"Contains information about the execution of a job order, such as the current status of the job, actual material consumed, actual material produced, actual equipment used, and job specific data.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=297\"}, \"xsd:Body\": {\"xsd:Argument\": {\"xsd:Name\": \"ReturnStatus\", \"xsd:DataType\": {\"xsd:Identifier\": \"i=9\"}, \"xsd:ValueRank\": -1, \"xsd:ArrayDimensions\": null, \"xsd:Description\": {\"xsd:Text\": \"Returns the status of the method execution.\"}}}}"^^rdf:JSON ) ;
+    base:hasValueRank 1 .
+
+machinery_jobs:nodei6044 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasArrayDimensions ( 1 ) ;
+    base:hasBrowseName "InputArguments" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Argument ;
+    base:hasDisplayName "InputArguments" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6044" ;
+    base:hasValueList ( "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=297\"}, \"xsd:Body\": {\"xsd:Argument\": {\"xsd:Name\": \"JobResponse\", \"xsd:DataType\": {\"xsd:Identifier\": \"ns=1;i=3013\"}, \"xsd:ValueRank\": -1, \"xsd:ArrayDimensions\": null, \"xsd:Description\": {\"xsd:Text\": \"Contains information about the execution of a job order, such as actual material consumed, actual material produced, actual equipment used, and job specific data.\"}}}}"^^rdf:JSON ) ;
+    base:hasValueRank 1 .
+
+machinery_jobs:nodei6045 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasArrayDimensions ( 1 ) ;
+    base:hasBrowseName "OutputArguments" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Argument ;
+    base:hasDisplayName "OutputArguments" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6045" ;
+    base:hasValueList ( "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=297\"}, \"xsd:Body\": {\"xsd:Argument\": {\"xsd:Name\": \"ReturnStatus\", \"xsd:DataType\": {\"xsd:Identifier\": \"i=9\"}, \"xsd:ValueRank\": -1, \"xsd:ArrayDimensions\": null, \"xsd:Description\": {\"xsd:Text\": \"Returns the status of the method execution.\"}}}}"^^rdf:JSON ) ;
+    base:hasValueRank 1 .
+
+machinery_jobs:nodei7001 a opcua:MethodNodeClass ;
+    opcua:HasProperty machinery_jobs:nodei6040,
+        machinery_jobs:nodei6041 ;
+    opcua:hasInputArguments machinery_jobs:nodei6040 ;
+    opcua:hasOutputArguments machinery_jobs:nodei6041 ;
+    base:hasBrowseName "ReceiveJobOrder" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDescription "Defines a method of type which receives job orders and job order commands" ;
+    base:hasDisplayName "ReceiveJobOrder" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "7001" .
+
+machinery_jobs:nodei7002 a opcua:MethodNodeClass ;
+    opcua:HasProperty machinery_jobs:nodei6042,
+        machinery_jobs:nodei6043 ;
+    opcua:hasInputArguments machinery_jobs:nodei6042 ;
+    opcua:hasOutputArguments machinery_jobs:nodei6043 ;
+    base:hasBrowseName "RequestJobResponse" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDescription "This method is used to return Job Responses from unsolicited requests for responses from a job order." ;
+    base:hasDisplayName "RequestJobResponse" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "7002" .
+
+machinery_jobs:nodei7003 a opcua:MethodNodeClass ;
+    opcua:HasProperty machinery_jobs:nodei6044,
+        machinery_jobs:nodei6045 ;
+    opcua:hasInputArguments machinery_jobs:nodei6044 ;
+    opcua:hasOutputArguments machinery_jobs:nodei6045 ;
+    base:hasBrowseName "ReceiveJobResponse" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDescription "Defines a method of type ReceiveJobResponseMethodType which receives unsolicited Job Responses." ;
+    base:hasDisplayName "ReceiveJobResponse" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "7003" .
+
+machinery_jobs:ISA95EquipmentDataType a owl:Class ;
+    rdfs:subClassOf opcua:Structure ;
+    base:hasField machinery_jobs:Description,
+        machinery_jobs:EquipmentUse,
+        machinery_jobs:ID,
+        machinery_jobs:Properties,
+        machinery_jobs:Quantity,
+        machinery_jobs:UoM .
+
+machinery_jobs:ISA95MaterialDataType a owl:Class ;
+    rdfs:subClassOf opcua:Structure ;
+    base:hasField machinery_jobs:Description,
+        machinery_jobs:MaterialClassID,
+        machinery_jobs:MaterialDefinitionID,
+        machinery_jobs:MaterialLotID,
+        machinery_jobs:MaterialSublotID,
+        machinery_jobs:MaterialUse,
+        machinery_jobs:Properties,
+        machinery_jobs:Quantity,
+        machinery_jobs:UoM .
+
+machinery_jobs:ISA95PersonnelDataType a owl:Class ;
+    rdfs:subClassOf opcua:Structure ;
+    base:hasField machinery_jobs:Description,
+        machinery_jobs:ID,
+        machinery_jobs:PersonnelUse,
+        machinery_jobs:Properties,
+        machinery_jobs:Quantity,
+        machinery_jobs:UoM .
+
+machinery_jobs:ISA95PhysicalAssetDataType a owl:Class ;
+    rdfs:subClassOf opcua:Structure ;
+    base:hasField machinery_jobs:Description,
+        machinery_jobs:ID,
+        machinery_jobs:PhysicalAssetUse,
+        machinery_jobs:Properties,
+        machinery_jobs:Quantity,
+        machinery_jobs:UoM .
+
+machinery_jobs:ISA95WorkMasterDataType a owl:Class ;
+    rdfs:subClassOf opcua:Structure ;
+    base:hasField machinery_jobs:Description,
+        machinery_jobs:ID,
+        machinery_jobs:Parameters .
+
+machinery_jobs:nodei6005 a opcua:DataTypeDescriptionType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "ISA95JobOrderDataType" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "ISA95JobOrderDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6005" ;
+    base:hasValue "ISA95JobOrderDataType" .
+
+machinery_jobs:nodei6006 a opcua:DataTypeDescriptionType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "ISA95JobOrderDataType" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "ISA95JobOrderDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6006" ;
+    base:hasValue "//xs:element[@name='ISA95JobOrderDataType']" .
+
+machinery_jobs:nodei6007 a opcua:DataTypeDescriptionType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "ISA95JobResponseDataType" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "ISA95JobResponseDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6007" ;
+    base:hasValue "ISA95JobResponseDataType" .
+
+machinery_jobs:nodei6008 a opcua:DataTypeDescriptionType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "ISA95JobResponseDataType" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "ISA95JobResponseDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6008" ;
+    base:hasValue "//xs:element[@name='ISA95JobResponseDataType']" .
+
+machinery_jobs:nodei6009 a opcua:DataTypeDescriptionType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "ISA95EquipmentDataType" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "ISA95EquipmentDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6009" ;
+    base:hasValue "ISA95EquipmentDataType" .
+
+machinery_jobs:nodei6010 a opcua:DataTypeDescriptionType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "ISA95EquipmentDataType" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "ISA95EquipmentDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6010" ;
+    base:hasValue "//xs:element[@name='ISA95EquipmentDataType']" .
+
+machinery_jobs:nodei6011 a opcua:DataTypeDescriptionType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "ISA95MaterialDataType" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "ISA95MaterialDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6011" ;
+    base:hasValue "ISA95MaterialDataType" .
+
+machinery_jobs:nodei6012 a opcua:DataTypeDescriptionType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "ISA95MaterialDataType" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "ISA95MaterialDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6012" ;
+    base:hasValue "//xs:element[@name='ISA95MaterialDataType']" .
+
+machinery_jobs:nodei6013 a opcua:DataTypeDescriptionType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "ISA95PersonnelDataType" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "ISA95PersonnelDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6013" ;
+    base:hasValue "ISA95PersonnelDataType" .
+
+machinery_jobs:nodei6014 a opcua:DataTypeDescriptionType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "ISA95PersonnelDataType" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "ISA95PersonnelDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6014" ;
+    base:hasValue "//xs:element[@name='ISA95PersonnelDataType']" .
+
+machinery_jobs:nodei6015 a opcua:DataTypeDescriptionType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "ISA95PhysicalAssetDataType" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "ISA95PhysicalAssetDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6015" ;
+    base:hasValue "ISA95PhysicalAssetDataType" .
+
+machinery_jobs:nodei6016 a opcua:DataTypeDescriptionType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "ISA95PhysicalAssetDataType" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "ISA95PhysicalAssetDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6016" ;
+    base:hasValue "//xs:element[@name='ISA95PhysicalAssetDataType']" .
+
+machinery_jobs:nodei6017 a opcua:DataTypeDescriptionType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "ISA95WorkMasterDataType" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "ISA95WorkMasterDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6017" ;
+    base:hasValue "ISA95WorkMasterDataType" .
+
+machinery_jobs:nodei6018 a opcua:DataTypeDescriptionType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "ISA95WorkMasterDataType" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "ISA95WorkMasterDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6018" ;
+    base:hasValue "//xs:element[@name='ISA95WorkMasterDataType']" .
+
+machinery_jobs:nodei6019 a opcua:DataTypeDescriptionType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "ISA95ParameterDataType" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "ISA95ParameterDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6019" ;
+    base:hasValue "ISA95ParameterDataType" .
+
+machinery_jobs:nodei6020 a opcua:DataTypeDescriptionType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "ISA95ParameterDataType" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "ISA95ParameterDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6020" ;
+    base:hasValue "//xs:element[@name='ISA95ParameterDataType']" .
+
+machinery_jobs:nodei6021 a opcua:DataTypeDescriptionType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "ISA95PropertyDataType" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "ISA95PropertyDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6021" ;
+    base:hasValue "ISA95PropertyDataType" .
+
+machinery_jobs:nodei6022 a opcua:DataTypeDescriptionType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "ISA95PropertyDataType" ;
+    base:hasBrowseNameNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "ISA95PropertyDataType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machinery_jobs:MACHINERY_JOBSNamespace ;
+    base:hasNodeId "6022" ;
+    base:hasValue "//xs:element[@name='ISA95PropertyDataType']" .
+
+machinery_jobs:ISA95PropertyDataType a owl:Class ;
+    rdfs:subClassOf opcua:Structure ;
+    base:hasField machinery_jobs:Description,
+        machinery_jobs:ID,
+        machinery_jobs:Subproperties,
+        machinery_jobs:UoM .
+
+machinery_jobs:Properties a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype machinery_jobs:ISA95PropertyDataType ;
+    base:hasFieldName "Properties" .
+
+machinery_jobs:Quantity a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype opcua:DecimalString ;
+    base:hasFieldName "Quantity" .
+
+machinery_jobs:ISA95ParameterDataType a owl:Class ;
+    rdfs:subClassOf opcua:Structure ;
+    base:hasField machinery_jobs:Description,
+        machinery_jobs:ID,
+        machinery_jobs:Subparameters,
+        machinery_jobs:UoM .
+
+machinery_jobs:UoM a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype opcua:String ;
+    base:hasFieldName "UoM" .
+
+machinery_jobs:ID a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype opcua:String ;
+    base:hasFieldName "ID" .
+
+machinery_jobs:Description a owl:NamedIndividual,
+        base:Field ;
+    base:hasDatatype opcua:String ;
+    base:hasFieldName "Description" .
+
+machinery_jobs:ISA95ReturnEnum a owl:Class ;
+    rdfs:subClassOf opcua:Enumeration .
+
+machinery_jobs:ISA95JobOrderCommandEnum a owl:Class ;
+    rdfs:subClassOf opcua:Enumeration .
+
+machinery_jobs:ISA95JobOrderStateEnum a owl:Class ;
+    rdfs:subClassOf opcua:Enumeration .
+
+machinery_jobs:MACHINERY_JOBSNamespace a base:Namespace ;
+    base:hasPrefix "machinery_jobs" ;
+    base:hasUri "http://opcfoundation.org/UA/ISA95-JOBCONTROL/" .
+

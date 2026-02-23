@@ -1,0 +1,1009 @@
+@prefix base: <https://industryfusion.github.io/contexts/ontology/v0/base/> .
+@prefix devices: <http://opcfoundation.org/UA/DI/> .
+@prefix machinery: <http://opcfoundation.org/UA/Machinery/> .
+@prefix machineryexample: <http://opcfoundation.org/UA/Machinery_Example/> .
+@prefix opcua: <http://opcfoundation.org/UA/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+machinery:hasComponents rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machinery:hasMachineryBuildingBlocks rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machinery:nodei1001 opcua:Organizes machineryexample:nodei5003 .
+
+machineryexample: a owl:Ontology ;
+    owl:imports <file:///home/gregor/DigitalTwin/semantic-model/opcua/core.ttl>,
+        <file:///home/gregor/DigitalTwin/semantic-model/opcua/devices.ttl>,
+        <file:///home/gregor/DigitalTwin/semantic-model/opcua/machinery.ttl>,
+        <https://industryfusion.github.io/contexts/staging/ontology/v0/base.ttl> ;
+    owl:versionIRI <http://example.com/MachineryExample/v0.1/pumpexample/> ;
+    owl:versionInfo 1e-01 .
+
+machineryexample:hasIdentification rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machineryexample:hasMachineryItemState rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machineryexample:hasMachineryOperationMode rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machineryexample:hasMyComponent rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+<http://opcfoundation.org/UA/Machinery_Example/hashttp%3A//opcfoundation.org/UA/Machinery_Example/> rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+machineryexample:nodei1002 a opcua:ObjectTypeNodeClass ;
+    devices:hasIdentification machineryexample:nodei5001 ;
+    opcua:HasAddIn machineryexample:nodei5001,
+        machineryexample:nodei5005 ;
+    opcua:HasComponent machineryexample:nodei5007 ;
+    machinery:hasComponents machineryexample:nodei5005 ;
+    machinery:hasMachineryBuildingBlocks machineryexample:nodei5007 ;
+    base:definesType machineryexample:ExampleMachineType ;
+    base:hasBrowseName "ExampleMachineType" ;
+    base:hasBrowseNameNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasDisplayName "ExampleMachineType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "1002" .
+
+machineryexample:nodei1009 a opcua:ObjectTypeNodeClass ;
+    opcua:HasComponent machineryexample:nodei5044 ;
+    machineryexample:hasIdentification machineryexample:nodei5044 ;
+    base:definesType machineryexample:ExampleComponentType ;
+    base:hasBrowseName "ExampleComponentType" ;
+    base:hasBrowseNameNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasDisplayName "ExampleComponentType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "1009" .
+
+opcua:nodei11715 opcua:HasComponent machineryexample:nodei5002 ;
+    <http://opcfoundation.org/UA/Machinery_Example/hashttp%3A//opcfoundation.org/UA/Machinery_Example/> machineryexample:nodei5002 .
+
+machineryexample:nodei5003 a machineryexample:ExampleMachineType,
+        opcua:ObjectNodeClass ;
+    devices:hasIdentification machineryexample:nodei5004 ;
+    opcua:HasAddIn machineryexample:nodei5004,
+        machineryexample:nodei5006 ;
+    opcua:HasComponent machineryexample:nodei5008 ;
+    machinery:hasComponents machineryexample:nodei5006 ;
+    machinery:hasMachineryBuildingBlocks machineryexample:nodei5008 ;
+    base:hasBrowseName "ExampleMachine01" ;
+    base:hasBrowseNameNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasDisplayName "ExampleMachine01" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "5003" .
+
+machineryexample:ExampleMachineType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+machineryexample:nodei5002 a opcua:NamespaceMetadataType,
+        opcua:ObjectNodeClass ;
+    opcua:HasProperty machineryexample:nodei6028,
+        machineryexample:nodei6029,
+        machineryexample:nodei6030,
+        machineryexample:nodei6031,
+        machineryexample:nodei6032,
+        machineryexample:nodei6033,
+        machineryexample:nodei6034 ;
+    opcua:hasIsNamespaceSubset machineryexample:nodei6028 ;
+    opcua:hasNamespacePublicationDate machineryexample:nodei6029 ;
+    opcua:hasNamespaceUri machineryexample:nodei6030 ;
+    opcua:hasNamespaceVersion machineryexample:nodei6031 ;
+    opcua:hasStaticNodeIdTypes machineryexample:nodei6032 ;
+    opcua:hasStaticNumericNodeIdRange machineryexample:nodei6033 ;
+    opcua:hasStaticStringNodeIdPattern machineryexample:nodei6034 ;
+    base:hasBrowseName "http://opcfoundation.org/UA/Machinery_Example/" ;
+    base:hasBrowseNameNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasDisplayName "http://opcfoundation.org/UA/Machinery_Example/" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "5002" ;
+    base:hasSymbolicName "http___opcfoundation_org_UA_Machinery_Example_" .
+
+machineryexample:nodei5007 a opcua:FolderType,
+        opcua:ObjectNodeClass ;
+    devices:hasIdentification machineryexample:nodei5001 ;
+    opcua:HasAddIn machineryexample:nodei5001,
+        machineryexample:nodei5005,
+        machineryexample:nodei5009,
+        machineryexample:nodei5011 ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    machinery:hasComponents machineryexample:nodei5005 ;
+    machineryexample:hasMachineryItemState machineryexample:nodei5009 ;
+    machineryexample:hasMachineryOperationMode machineryexample:nodei5011 ;
+    base:hasBrowseName "MachineryBuildingBlocks" ;
+    base:hasBrowseNameNamespace machinery:MACHINERYNamespace ;
+    base:hasDisplayName "MachineryBuildingBlocks" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "5007" .
+
+machineryexample:nodei5008 a opcua:FolderType,
+        opcua:ObjectNodeClass ;
+    devices:hasIdentification machineryexample:nodei5004 ;
+    opcua:HasAddIn machineryexample:nodei5004,
+        machineryexample:nodei5006,
+        machineryexample:nodei5010,
+        machineryexample:nodei5012 ;
+    machinery:hasComponents machineryexample:nodei5006 ;
+    machineryexample:hasMachineryItemState machineryexample:nodei5010 ;
+    machineryexample:hasMachineryOperationMode machineryexample:nodei5012 ;
+    base:hasBrowseName "MachineryBuildingBlocks" ;
+    base:hasBrowseNameNamespace machinery:MACHINERYNamespace ;
+    base:hasDisplayName "MachineryBuildingBlocks" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "5008" .
+
+machineryexample:nodei5009 a machinery:MachineryItemState_StateMachineType,
+        opcua:ObjectNodeClass ;
+    opcua:HasComponent machineryexample:nodei6035 ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    opcua:hasCurrentState machineryexample:nodei6035 ;
+    base:hasBrowseName "MachineryItemState" ;
+    base:hasBrowseNameNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasDisplayName "MachineryItemState" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "5009" .
+
+machineryexample:nodei5010 a machinery:MachineryItemState_StateMachineType,
+        opcua:ObjectNodeClass ;
+    opcua:HasComponent machineryexample:nodei6037 ;
+    opcua:hasCurrentState machineryexample:nodei6037 ;
+    base:hasBrowseName "MachineryItemState" ;
+    base:hasBrowseNameNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasDisplayName "MachineryItemState" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "5010" .
+
+machineryexample:nodei5011 a machinery:MachineryOperationModeStateMachineType,
+        opcua:ObjectNodeClass ;
+    opcua:HasComponent machineryexample:nodei6042 ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    opcua:hasCurrentState machineryexample:nodei6042 ;
+    base:hasBrowseName "MachineryOperationMode" ;
+    base:hasBrowseNameNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasDisplayName "MachineryOperationMode" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "5011" .
+
+machineryexample:nodei5012 a machinery:MachineryOperationModeStateMachineType,
+        opcua:ObjectNodeClass ;
+    opcua:HasComponent machineryexample:nodei6044 ;
+    opcua:hasCurrentState machineryexample:nodei6044 ;
+    base:hasBrowseName "MachineryOperationMode" ;
+    base:hasBrowseNameNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasDisplayName "MachineryOperationMode" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "5012" .
+
+machineryexample:nodei5013 a machineryexample:ExampleComponentType,
+        opcua:ObjectNodeClass ;
+    opcua:HasComponent machineryexample:nodei5014 ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    machineryexample:hasIdentification machineryexample:nodei5014 ;
+    base:hasBrowseName "MyComponent" ;
+    base:hasBrowseNameNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasDisplayName "MyComponent" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "5013" .
+
+machineryexample:nodei5014 a machinery:MachineryComponentIdentificationType,
+        opcua:ObjectNodeClass ;
+    devices:hasDeviceRevision machineryexample:nodei6047 ;
+    devices:hasManufacturer machineryexample:nodei6048 ;
+    devices:hasSerialNumber machineryexample:nodei6049 ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    opcua:HasProperty machineryexample:nodei6047,
+        machineryexample:nodei6048,
+        machineryexample:nodei6049 ;
+    base:hasBrowseName "Identification" ;
+    base:hasBrowseNameNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasDisplayName "Identification" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "5014" .
+
+machineryexample:nodei5015 a machineryexample:ExampleComponentType,
+        opcua:ObjectNodeClass ;
+    opcua:HasComponent machineryexample:nodei5016 ;
+    machineryexample:hasIdentification machineryexample:nodei5016 ;
+    base:hasBrowseName "MyComponent" ;
+    base:hasBrowseNameNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasDisplayName "MyComponent" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "5015" .
+
+machineryexample:nodei5016 a machinery:MachineryComponentIdentificationType,
+        opcua:ObjectNodeClass ;
+    devices:hasDeviceRevision machineryexample:nodei6051 ;
+    devices:hasManufacturer machineryexample:nodei6052 ;
+    devices:hasSerialNumber machineryexample:nodei6053 ;
+    opcua:HasProperty machineryexample:nodei6051,
+        machineryexample:nodei6052,
+        machineryexample:nodei6053 ;
+    base:hasBrowseName "Identification" ;
+    base:hasBrowseNameNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasDisplayName "Identification" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "5016" .
+
+machineryexample:nodei5044 a machinery:MachineryComponentIdentificationType,
+        opcua:ObjectNodeClass ;
+    devices:hasDeviceRevision machineryexample:nodei6080 ;
+    devices:hasManufacturer machineryexample:nodei6081 ;
+    devices:hasSerialNumber machineryexample:nodei6082 ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    opcua:HasProperty machineryexample:nodei6080,
+        machineryexample:nodei6081,
+        machineryexample:nodei6082 ;
+    base:hasBrowseName "Identification" ;
+    base:hasBrowseNameNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasDisplayName "Identification" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "5044" .
+
+machineryexample:nodei6001 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "Manufacturer" ;
+    base:hasBrowseNameNamespace devices:DEVICESNamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDescription "A human-readable, localized name of the manufacturer of the MachineryItem." ;
+    base:hasDisplayName "Manufacturer" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6001" .
+
+machineryexample:nodei6002 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "ProductInstanceUri" ;
+    base:hasBrowseNameNamespace devices:DEVICESNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDescription "A globally unique resource identifier provided by the manufacturer of the machine" ;
+    base:hasDisplayName "ProductInstanceUri" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6002" .
+
+machineryexample:nodei6003 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "SerialNumber" ;
+    base:hasBrowseNameNamespace devices:DEVICESNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDescription "A string containing a unique production number of the manufacturer of the MachineryItem. The global uniqueness of the serial number is only given in the context of the manufacturer, and potentially the model. The value shall not change during the life-cycle of the MachineryItem." ;
+    base:hasDisplayName "SerialNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6003" .
+
+machineryexample:nodei6004 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasAccessLevel opcua:CurrentRead,
+        opcua:CurrentWrite ;
+    base:hasBrowseName "AssetId" ;
+    base:hasBrowseNameNamespace devices:DEVICESNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDescription "To be used by end users to store a unique identification in the context of their overall application. Servers shall support at least 40 Unicode characters for the clients writing this value, this means clients can expect to be able to write strings with a length of 40 Unicode characters into that field." ;
+    base:hasDisplayName "AssetId" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6004" .
+
+machineryexample:nodei6005 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasAccessLevel opcua:CurrentRead,
+        opcua:CurrentWrite ;
+    base:hasBrowseName "ComponentName" ;
+    base:hasBrowseNameNamespace devices:DEVICESNamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDescription "To be used by end users to store a human-readable localized text for the MachineryItem. The minimum number of locales supported for this property shall be two. Servers shall support at least 40 Unicode characters for the clients writing the text part of each locale, this means clients can expect to be able to write texts with a length of 40 Unicode characters into that field." ;
+    base:hasDisplayName "ComponentName" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6005" .
+
+machineryexample:nodei6006 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasBrowseName "DeviceClass" ;
+    base:hasBrowseNameNamespace devices:DEVICESNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDescription "Indicates in which domain or for what purpose the MachineryItem is used." ;
+    base:hasDisplayName "DeviceClass" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6006" .
+
+machineryexample:nodei6007 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasBrowseName "HardwareRevision" ;
+    base:hasBrowseNameNamespace devices:DEVICESNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDescription "A string representation of the revision level of the hardware of a MachineryItem. Hardware is physical equipment, as opposed to programs, procedures, rules and associated documentation. Many machines will not provide such information due to the modular and configurable nature of the machine." ;
+    base:hasDisplayName "HardwareRevision" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6007" .
+
+machineryexample:nodei6008 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasBrowseName "InitialOperationDate" ;
+    base:hasBrowseNameNamespace machinery:MACHINERYNamespace ;
+    base:hasDatatype opcua:DateTime ;
+    base:hasDescription "The date, when the MachineryItem was switched on the first time after it has left the manufacturer plant." ;
+    base:hasDisplayName "InitialOperationDate" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6008" .
+
+machineryexample:nodei6009 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasAccessLevel opcua:CurrentRead,
+        opcua:CurrentWrite ;
+    base:hasBrowseName "Location" ;
+    base:hasBrowseNameNamespace machinery:MACHINERYNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDescription "To be used by end users to store the location of the machine in a scheme specific to the end user. Servers shall support at least 60 Unicode characters for the clients writing this value, this means clients can expect to be able to write strings with a length of 60 Unicode characters into that field." ;
+    base:hasDisplayName "Location" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6009" .
+
+machineryexample:nodei6010 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasBrowseName "ManufacturerUri" ;
+    base:hasBrowseNameNamespace devices:DEVICESNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDescription "A globally unique identifier of the manufacturer of the MachineryItem." ;
+    base:hasDisplayName "ManufacturerUri" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6010" .
+
+machineryexample:nodei6011 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasBrowseName "Model" ;
+    base:hasBrowseNameNamespace devices:DEVICESNamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDescription "A human-readable, localized name of the model of the MachineryItem." ;
+    base:hasDisplayName "Model" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6011" .
+
+machineryexample:nodei6012 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasBrowseName "MonthOfConstruction" ;
+    base:hasBrowseNameNamespace machinery:MACHINERYNamespace ;
+    base:hasDatatype opcua:Byte ;
+    base:hasDescription "The month in which the manufacturing process of the MachineryItem has been completed. It shall be a number between 1 and 12, representing the month from January to December." ;
+    base:hasDisplayName "MonthOfConstruction" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6012" .
+
+machineryexample:nodei6013 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasBrowseName "ProductCode" ;
+    base:hasBrowseNameNamespace devices:DEVICESNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDescription "A machine-readable string of the model of the MachineryItem, that might include options like the hardware configuration of the model. This information might be provided by the ERP system of the vendor. For example, it can be used as order information." ;
+    base:hasDisplayName "ProductCode" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6013" .
+
+machineryexample:nodei6014 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasBrowseName "SoftwareRevision" ;
+    base:hasBrowseNameNamespace devices:DEVICESNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDescription "A string representation of the revision level of a MachineryItem. In most cases, MachineryItems consist of several software components. In that case, information about the software components might be provided as additional information in the address space, including individual revision information. In that case, this property is either not provided or provides an overall software revision level. The value might change during the life-cycle of a MachineryItem." ;
+    base:hasDisplayName "SoftwareRevision" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6014" .
+
+machineryexample:nodei6015 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasBrowseName "YearOfConstruction" ;
+    base:hasBrowseNameNamespace machinery:MACHINERYNamespace ;
+    base:hasDatatype opcua:UInt16 ;
+    base:hasDescription "The year (Gregorian calendar) in which the manufacturing process of the MachineryItem has been completed. It shall be a four-digit number and never change during the life-cycle of a MachineryItem." ;
+    base:hasDisplayName "YearOfConstruction" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6015" .
+
+machineryexample:nodei6016 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasAccessLevel opcua:CurrentRead,
+        opcua:CurrentWrite ;
+    base:hasBrowseName "AssetId" ;
+    base:hasBrowseNameNamespace devices:DEVICESNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDescription "To be used by end users to store a unique identification in the context of their overall application. Servers shall support at least 40 Unicode characters for the clients writing this value, this means clients can expect to be able to write strings with a length of 40 Unicode characters into that field." ;
+    base:hasDisplayName "AssetId" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6016" .
+
+machineryexample:nodei6017 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasAccessLevel opcua:CurrentRead,
+        opcua:CurrentWrite ;
+    base:hasBrowseName "ComponentName" ;
+    base:hasBrowseNameNamespace devices:DEVICESNamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDescription "To be used by end users to store a human-readable localized text for the MachineryItem. The minimum number of locales supported for this property shall be two. Servers shall support at least 40 Unicode characters for the clients writing the text part of each locale, this means clients can expect to be able to write texts with a length of 40 Unicode characters into that field." ;
+    base:hasDisplayName "ComponentName" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6017" .
+
+machineryexample:nodei6018 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "DeviceClass" ;
+    base:hasBrowseNameNamespace devices:DEVICESNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDescription "Indicates in which domain or for what purpose the MachineryItem is used." ;
+    base:hasDisplayName "DeviceClass" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6018" ;
+    base:hasValue "Injection Moulding Machine" .
+
+machineryexample:nodei6019 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "HardwareRevision" ;
+    base:hasBrowseNameNamespace devices:DEVICESNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDescription "A string representation of the revision level of the hardware of a MachineryItem. Hardware is physical equipment, as opposed to programs, procedures, rules and associated documentation. Many machines will not provide such information due to the modular and configurable nature of the machine." ;
+    base:hasDisplayName "HardwareRevision" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6019" ;
+    base:hasValue "014/15120129-2018" .
+
+machineryexample:nodei6020 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "InitialOperationDate" ;
+    base:hasBrowseNameNamespace machinery:MACHINERYNamespace ;
+    base:hasDatatype opcua:DateTime ;
+    base:hasDescription "The date, when the MachineryItem was switched on the first time after it has left the manufacturer plant." ;
+    base:hasDisplayName "InitialOperationDate" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6020" ;
+    base:hasValue "2020-06-01T00:00:00Z" .
+
+machineryexample:nodei6021 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasAccessLevel opcua:CurrentRead,
+        opcua:CurrentWrite ;
+    base:hasBrowseName "Location" ;
+    base:hasBrowseNameNamespace machinery:MACHINERYNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDescription "To be used by end users to store the location of the machine in a scheme specific to the end user. Servers shall support at least 60 Unicode characters for the clients writing this value, this means clients can expect to be able to write strings with a length of 60 Unicode characters into that field." ;
+    base:hasDisplayName "Location" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6021" .
+
+machineryexample:nodei6022 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "ManufacturerUri" ;
+    base:hasBrowseNameNamespace devices:DEVICESNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDescription "A globally unique identifier of the manufacturer of the MachineryItem." ;
+    base:hasDisplayName "ManufacturerUri" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6022" ;
+    base:hasValue "http://www.engelglobal.com" .
+
+machineryexample:nodei6023 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "Model" ;
+    base:hasBrowseNameNamespace devices:DEVICESNamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDescription "A human-readable, localized name of the model of the MachineryItem." ;
+    base:hasDisplayName "Model" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6023" ;
+    base:hasValue "Viper 6" .
+
+machineryexample:nodei6024 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "MonthOfConstruction" ;
+    base:hasBrowseNameNamespace machinery:MACHINERYNamespace ;
+    base:hasDatatype opcua:Byte ;
+    base:hasDescription "The month in which the manufacturing process of the MachineryItem has been completed. It shall be a number between 1 and 12, representing the month from January to December." ;
+    base:hasDisplayName "MonthOfConstruction" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6024" ;
+    base:hasValue 3 .
+
+machineryexample:nodei6025 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "ProductCode" ;
+    base:hasBrowseNameNamespace devices:DEVICESNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDescription "A machine-readable string of the model of the MachineryItem, that might include options like the hardware configuration of the model. This information might be provided by the ERP system of the vendor. For example, it can be used as order information." ;
+    base:hasDisplayName "ProductCode" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6025" ;
+    base:hasValue "2377636" .
+
+machineryexample:nodei6026 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "SoftwareRevision" ;
+    base:hasBrowseNameNamespace devices:DEVICESNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDescription "A string representation of the revision level of a MachineryItem. In most cases, MachineryItems consist of several software components. In that case, information about the software components might be provided as additional information in the address space, including individual revision information. In that case, this property is either not provided or provides an overall software revision level. The value might change during the life-cycle of a MachineryItem." ;
+    base:hasDisplayName "SoftwareRevision" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6026" ;
+    base:hasValue "70.0.1" .
+
+machineryexample:nodei6027 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "YearOfConstruction" ;
+    base:hasBrowseNameNamespace machinery:MACHINERYNamespace ;
+    base:hasDatatype opcua:UInt16 ;
+    base:hasDescription "The year (Gregorian calendar) in which the manufacturing process of the MachineryItem has been completed. It shall be a four-digit number and never change during the life-cycle of a MachineryItem." ;
+    base:hasDisplayName "YearOfConstruction" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6027" ;
+    base:hasValue 2020 .
+
+machineryexample:nodei6028 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "IsNamespaceSubset" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Boolean ;
+    base:hasDisplayName "IsNamespaceSubset" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6028" ;
+    base:hasValue false .
+
+machineryexample:nodei6029 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "NamespacePublicationDate" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:DateTime ;
+    base:hasDisplayName "NamespacePublicationDate" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6029" ;
+    base:hasValue "2022-05-01T00:00:00Z" .
+
+machineryexample:nodei6030 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "NamespaceUri" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "NamespaceUri" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6030" ;
+    base:hasValue "http://opcfoundation.org/UA/Machinery_Example/" .
+
+machineryexample:nodei6031 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "NamespaceVersion" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "NamespaceVersion" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6031" ;
+    base:hasValue "1.0.0" .
+
+machineryexample:nodei6032 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "StaticNodeIdTypes" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:IdType ;
+    base:hasDisplayName "StaticNodeIdTypes" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6032" ;
+    base:hasValueRank 1 .
+
+machineryexample:nodei6033 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasArrayDimensions ( 0 ) ;
+    base:hasBrowseName "StaticNumericNodeIdRange" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NumericRange ;
+    base:hasDisplayName "StaticNumericNodeIdRange" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6033" ;
+    base:hasValueRank 1 .
+
+machineryexample:nodei6034 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "StaticStringNodeIdPattern" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "StaticStringNodeIdPattern" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6034" .
+
+machineryexample:nodei6035 a opcua:FiniteStateVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    opcua:HasProperty machineryexample:nodei6036 ;
+    opcua:hasId machineryexample:nodei6036 ;
+    base:hasBrowseName "CurrentState" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDisplayName "CurrentState" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6035" .
+
+machineryexample:nodei6036 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "Id" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "Id" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6036" .
+
+machineryexample:nodei6037 a opcua:FiniteStateVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasProperty machineryexample:nodei6041 ;
+    opcua:hasId machineryexample:nodei6041 ;
+    base:hasBrowseName "CurrentState" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDisplayName "CurrentState" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6037" .
+
+machineryexample:nodei6038 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "Manufacturer" ;
+    base:hasBrowseNameNamespace devices:DEVICESNamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDescription "A human-readable, localized name of the manufacturer of the MachineryItem." ;
+    base:hasDisplayName "Manufacturer" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6038" ;
+    base:hasValue "ENGEL AUSTRIA GMBH" .
+
+machineryexample:nodei6039 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "ProductInstanceUri" ;
+    base:hasBrowseNameNamespace devices:DEVICESNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDescription "A globally unique resource identifier provided by the manufacturer of the machine" ;
+    base:hasDisplayName "ProductInstanceUri" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6039" ;
+    base:hasValue "http://www.engelglobal.com/Viper06/235223" .
+
+machineryexample:nodei6040 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "SerialNumber" ;
+    base:hasBrowseNameNamespace devices:DEVICESNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDescription "A string containing a unique production number of the manufacturer of the MachineryItem. The global uniqueness of the serial number is only given in the context of the manufacturer, and potentially the model. The value shall not change during the life-cycle of the MachineryItem." ;
+    base:hasDisplayName "SerialNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6040" ;
+    base:hasValue "235223" .
+
+machineryexample:nodei6041 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "Id" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "Id" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6041" .
+
+machineryexample:nodei6042 a opcua:FiniteStateVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    opcua:HasProperty machineryexample:nodei6043 ;
+    opcua:hasId machineryexample:nodei6043 ;
+    base:hasBrowseName "CurrentState" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDisplayName "CurrentState" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6042" .
+
+machineryexample:nodei6043 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "Id" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "Id" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6043" .
+
+machineryexample:nodei6044 a opcua:FiniteStateVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasProperty machineryexample:nodei6045 ;
+    opcua:hasId machineryexample:nodei6045 ;
+    base:hasBrowseName "CurrentState" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDisplayName "CurrentState" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6044" .
+
+machineryexample:nodei6045 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "Id" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:NodeId ;
+    base:hasDisplayName "Id" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6045" .
+
+machineryexample:nodei6047 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasBrowseName "DeviceRevision" ;
+    base:hasBrowseNameNamespace devices:DEVICESNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDescription "A string representation of the overall revision level of the component. Often, it is increased when either the SoftwareRevision and / or the HardwareRevision of the component is increased. As an example, it can be used in ERP systems together with the ProductCode." ;
+    base:hasDisplayName "DeviceRevision" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6047" .
+
+machineryexample:nodei6048 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "Manufacturer" ;
+    base:hasBrowseNameNamespace devices:DEVICESNamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDescription "A human-readable, localized name of the manufacturer of the MachineryItem." ;
+    base:hasDisplayName "Manufacturer" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6048" .
+
+machineryexample:nodei6049 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "SerialNumber" ;
+    base:hasBrowseNameNamespace devices:DEVICESNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDescription "A string containing a unique production number of the manufacturer of the MachineryItem. The global uniqueness of the serial number is only given in the context of the manufacturer, and potentially the model. The value shall not change during the life-cycle of the MachineryItem." ;
+    base:hasDisplayName "SerialNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6049" .
+
+machineryexample:nodei6051 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "DeviceRevision" ;
+    base:hasBrowseNameNamespace devices:DEVICESNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDescription "A string representation of the overall revision level of the component. Often, it is increased when either the SoftwareRevision and / or the HardwareRevision of the component is increased. As an example, it can be used in ERP systems together with the ProductCode." ;
+    base:hasDisplayName "DeviceRevision" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6051" .
+
+machineryexample:nodei6052 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "Manufacturer" ;
+    base:hasBrowseNameNamespace devices:DEVICESNamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDescription "A human-readable, localized name of the manufacturer of the MachineryItem." ;
+    base:hasDisplayName "Manufacturer" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6052" .
+
+machineryexample:nodei6053 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "SerialNumber" ;
+    base:hasBrowseNameNamespace devices:DEVICESNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDescription "A string containing a unique production number of the manufacturer of the MachineryItem. The global uniqueness of the serial number is only given in the context of the manufacturer, and potentially the model. The value shall not change during the life-cycle of the MachineryItem." ;
+    base:hasDisplayName "SerialNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6053" .
+
+machineryexample:nodei6080 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei80 ;
+    base:hasBrowseName "DeviceRevision" ;
+    base:hasBrowseNameNamespace devices:DEVICESNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDescription "A string representation of the overall revision level of the component. Often, it is increased when either the SoftwareRevision and / or the HardwareRevision of the component is increased. As an example, it can be used in ERP systems together with the ProductCode." ;
+    base:hasDisplayName "DeviceRevision" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6080" .
+
+machineryexample:nodei6081 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "Manufacturer" ;
+    base:hasBrowseNameNamespace devices:DEVICESNamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDescription "A human-readable, localized name of the manufacturer of the MachineryItem." ;
+    base:hasDisplayName "Manufacturer" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6081" .
+
+machineryexample:nodei6082 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "SerialNumber" ;
+    base:hasBrowseNameNamespace devices:DEVICESNamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDescription "A string containing a unique production number of the manufacturer of the MachineryItem. The global uniqueness of the serial number is only given in the context of the manufacturer, and potentially the model. The value shall not change during the life-cycle of the MachineryItem." ;
+    base:hasDisplayName "SerialNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "6082" .
+
+machineryexample:ExampleComponentType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+machineryexample:nodei5001 a machinery:MachineIdentificationType,
+        opcua:ObjectNodeClass ;
+    devices:hasAssetId machineryexample:nodei6004 ;
+    devices:hasComponentName machineryexample:nodei6005 ;
+    devices:hasDeviceClass machineryexample:nodei6006 ;
+    devices:hasHardwareRevision machineryexample:nodei6007 ;
+    devices:hasManufacturer machineryexample:nodei6001 ;
+    devices:hasManufacturerUri machineryexample:nodei6010 ;
+    devices:hasModel machineryexample:nodei6011 ;
+    devices:hasProductCode machineryexample:nodei6013 ;
+    devices:hasProductInstanceUri machineryexample:nodei6002 ;
+    devices:hasSerialNumber machineryexample:nodei6003 ;
+    devices:hasSoftwareRevision machineryexample:nodei6014 ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    opcua:HasProperty machineryexample:nodei6001,
+        machineryexample:nodei6002,
+        machineryexample:nodei6003,
+        machineryexample:nodei6004,
+        machineryexample:nodei6005,
+        machineryexample:nodei6006,
+        machineryexample:nodei6007,
+        machineryexample:nodei6008,
+        machineryexample:nodei6009,
+        machineryexample:nodei6010,
+        machineryexample:nodei6011,
+        machineryexample:nodei6012,
+        machineryexample:nodei6013,
+        machineryexample:nodei6014,
+        machineryexample:nodei6015 ;
+    machinery:hasInitialOperationDate machineryexample:nodei6008 ;
+    machinery:hasLocation machineryexample:nodei6009 ;
+    machinery:hasMonthOfConstruction machineryexample:nodei6012 ;
+    machinery:hasYearOfConstruction machineryexample:nodei6015 ;
+    base:hasBrowseName "Identification" ;
+    base:hasBrowseNameNamespace devices:DEVICESNamespace ;
+    base:hasDisplayName "Identification" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "5001" .
+
+machineryexample:nodei5004 a machinery:MachineIdentificationType,
+        opcua:ObjectNodeClass ;
+    devices:hasAssetId machineryexample:nodei6016 ;
+    devices:hasComponentName machineryexample:nodei6017 ;
+    devices:hasDeviceClass machineryexample:nodei6018 ;
+    devices:hasHardwareRevision machineryexample:nodei6019 ;
+    devices:hasManufacturer machineryexample:nodei6038 ;
+    devices:hasManufacturerUri machineryexample:nodei6022 ;
+    devices:hasModel machineryexample:nodei6023 ;
+    devices:hasProductCode machineryexample:nodei6025 ;
+    devices:hasProductInstanceUri machineryexample:nodei6039 ;
+    devices:hasSerialNumber machineryexample:nodei6040 ;
+    devices:hasSoftwareRevision machineryexample:nodei6026 ;
+    opcua:HasProperty machineryexample:nodei6016,
+        machineryexample:nodei6017,
+        machineryexample:nodei6018,
+        machineryexample:nodei6019,
+        machineryexample:nodei6020,
+        machineryexample:nodei6021,
+        machineryexample:nodei6022,
+        machineryexample:nodei6023,
+        machineryexample:nodei6024,
+        machineryexample:nodei6025,
+        machineryexample:nodei6026,
+        machineryexample:nodei6027,
+        machineryexample:nodei6038,
+        machineryexample:nodei6039,
+        machineryexample:nodei6040 ;
+    machinery:hasInitialOperationDate machineryexample:nodei6020 ;
+    machinery:hasLocation machineryexample:nodei6021 ;
+    machinery:hasMonthOfConstruction machineryexample:nodei6024 ;
+    machinery:hasYearOfConstruction machineryexample:nodei6027 ;
+    base:hasBrowseName "Identification" ;
+    base:hasBrowseNameNamespace devices:DEVICESNamespace ;
+    base:hasDisplayName "Identification" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "5004" .
+
+machineryexample:nodei5005 a machinery:MachineComponentsType,
+        opcua:ObjectNodeClass ;
+    opcua:HasComponent machineryexample:nodei5013 ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    machineryexample:hasMyComponent machineryexample:nodei5013 ;
+    base:hasBrowseName "Components" ;
+    base:hasBrowseNameNamespace machinery:MACHINERYNamespace ;
+    base:hasDisplayName "Components" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "5005" .
+
+machineryexample:nodei5006 a machinery:MachineComponentsType,
+        opcua:ObjectNodeClass ;
+    opcua:HasComponent machineryexample:nodei5015 ;
+    machineryexample:hasMyComponent machineryexample:nodei5015 ;
+    base:hasBrowseName "Components" ;
+    base:hasBrowseNameNamespace machinery:MACHINERYNamespace ;
+    base:hasDisplayName "Components" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace machineryexample:MACHINERYEXAMPLENamespace ;
+    base:hasNodeId "5006" .
+
+machineryexample:MACHINERYEXAMPLENamespace a base:Namespace ;
+    base:hasPrefix "machineryexample" ;
+    base:hasUri "http://opcfoundation.org/UA/Machinery_Example/" .
+

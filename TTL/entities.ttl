@@ -1,0 +1,4849 @@
+@prefix base: <https://industryfusion.github.io/contexts/ontology/v0/base/> .
+@prefix devices: <http://opcfoundation.org/UA/DI/> .
+@prefix machinery: <http://opcfoundation.org/UA/Machinery/> .
+@prefix opcua: <http://opcfoundation.org/UA/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pumps: <http://opcfoundation.org/UA/Pumps/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix uaentity: <http://yourorganisation.org/InstanceExample/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+opcua:AddressSpaceFileType a owl:Class ;
+    rdfs:subClassOf opcua:FileType .
+
+opcua:AggregateConfigurationType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:AggregateFunctionType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:AlarmMetricsType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:AlarmSuppressionGroupType a owl:Class ;
+    rdfs:subClassOf opcua:AlarmGroupType .
+
+opcua:AliasNameCategoryType a owl:Class ;
+    rdfs:subClassOf opcua:FolderType .
+
+opcua:AliasNameType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:AlternativeUnitType a owl:Class ;
+    rdfs:subClassOf opcua:UnitType .
+
+opcua:ApplicationConfigurationType a owl:Class ;
+    rdfs:subClassOf opcua:ServerConfigurationType .
+
+opcua:AuditActivateSessionEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditSessionEventType .
+
+opcua:AuditAddNodesEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditNodeManagementEventType .
+
+opcua:AuditAddReferencesEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditNodeManagementEventType .
+
+opcua:AuditCancelEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditSessionEventType .
+
+opcua:AuditCertificateDataMismatchEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditCertificateEventType .
+
+opcua:AuditCertificateExpiredEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditCertificateEventType .
+
+opcua:AuditCertificateInvalidEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditCertificateEventType .
+
+opcua:AuditCertificateMismatchEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditCertificateEventType .
+
+opcua:AuditCertificateRevokedEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditCertificateEventType .
+
+opcua:AuditCertificateUntrustedEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditCertificateEventType .
+
+opcua:AuditClientUpdateMethodResultEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditClientEventType .
+
+opcua:AuditConditionAcknowledgeEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditConditionEventType .
+
+opcua:AuditConditionCommentEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditConditionEventType .
+
+opcua:AuditConditionConfirmEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditConditionEventType .
+
+opcua:AuditConditionEnableEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditConditionEventType .
+
+opcua:AuditConditionOutOfServiceEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditConditionEventType .
+
+opcua:AuditConditionResetEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditConditionEventType .
+
+opcua:AuditConditionRespondEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditConditionEventType .
+
+opcua:AuditConditionShelvingEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditConditionEventType .
+
+opcua:AuditConditionSilenceEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditConditionEventType .
+
+opcua:AuditConditionSuppressionEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditConditionEventType .
+
+opcua:AuditDeleteNodesEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditNodeManagementEventType .
+
+opcua:AuditDeleteReferencesEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditNodeManagementEventType .
+
+opcua:AuditHistoryAnnotationUpdateEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditHistoryUpdateEventType .
+
+opcua:AuditHistoryAtTimeDeleteEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditHistoryDeleteEventType .
+
+opcua:AuditHistoryBulkInsertEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditEventType .
+
+opcua:AuditHistoryConfigurationChangeEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditEventType .
+
+opcua:AuditHistoryEventDeleteEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditHistoryDeleteEventType .
+
+opcua:AuditHistoryEventUpdateEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditHistoryUpdateEventType .
+
+opcua:AuditHistoryRawModifyDeleteEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditHistoryDeleteEventType .
+
+opcua:AuditHistoryValueUpdateEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditHistoryUpdateEventType .
+
+opcua:AuditOpenSecureChannelEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditChannelEventType .
+
+opcua:AuditProgramTransitionEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditUpdateStateEventType .
+
+opcua:AuditUrlMismatchEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditCreateSessionEventType .
+
+opcua:AuditWriteUpdateEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditUpdateEventType .
+
+opcua:AuthorizationServiceConfigurationType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:AuthorizationServicesConfigurationFolderType a owl:Class ;
+    rdfs:subClassOf opcua:FolderType .
+
+opcua:BrokerConnectionTransportType a owl:Class ;
+    rdfs:subClassOf opcua:ConnectionTransportType .
+
+opcua:BrokerDataSetReaderTransportType a owl:Class ;
+    rdfs:subClassOf opcua:DataSetReaderTransportType .
+
+opcua:BrokerDataSetWriterTransportType a owl:Class ;
+    rdfs:subClassOf opcua:DataSetWriterTransportType .
+
+opcua:BrokerWriterGroupTransportType a owl:Class ;
+    rdfs:subClassOf opcua:WriterGroupTransportType .
+
+opcua:CertificateExpirationAlarmType a owl:Class ;
+    rdfs:subClassOf opcua:SystemOffNormalAlarmType .
+
+opcua:CertificateGroupFolderType a owl:Class ;
+    rdfs:subClassOf opcua:FolderType .
+
+opcua:CertificateGroupType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:CertificateUpdateRequestedAuditEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditUpdateMethodEventType .
+
+opcua:CertificateUpdatedAuditEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditEventType .
+
+opcua:ChoiceStateType a owl:Class ;
+    rdfs:subClassOf opcua:StateType .
+
+devices:BlockType a owl:Class ;
+    rdfs:subClassOf devices:TopologyElementType .
+
+devices:CachedLoadingType a owl:Class ;
+    rdfs:subClassOf devices:PackageLoadingType .
+
+devices:CheckFunctionAlarmType a owl:Class ;
+    rdfs:subClassOf devices:DeviceHealthDiagnosticAlarmType .
+
+devices:ConfigurableObjectType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+devices:ConfirmationStateMachineType a owl:Class ;
+    rdfs:subClassOf opcua:FiniteStateMachineType .
+
+devices:ConnectionPointType a owl:Class ;
+    rdfs:subClassOf devices:TopologyElementType .
+
+devices:DeviceType a owl:Class ;
+    rdfs:subClassOf devices:ComponentType .
+
+devices:DiameterIndicationType a owl:Class ;
+    rdfs:subClassOf devices:BaseLifetimeIndicationType .
+
+devices:DirectLoadingType a owl:Class ;
+    rdfs:subClassOf devices:PackageLoadingType .
+
+devices:FailureAlarmType a owl:Class ;
+    rdfs:subClassOf devices:DeviceHealthDiagnosticAlarmType .
+
+devices:FileSystemLoadingType a owl:Class ;
+    rdfs:subClassOf devices:SoftwareLoadingType .
+
+devices:IDeviceHealthType a owl:Class ;
+    rdfs:subClassOf opcua:BaseInterfaceType .
+
+devices:IOperationCounterType a owl:Class ;
+    rdfs:subClassOf opcua:BaseInterfaceType .
+
+devices:ISupportInfoType a owl:Class ;
+    rdfs:subClassOf opcua:BaseInterfaceType .
+
+devices:InstallationStateMachineType a owl:Class ;
+    rdfs:subClassOf opcua:FiniteStateMachineType .
+
+devices:LengthIndicationType a owl:Class ;
+    rdfs:subClassOf devices:BaseLifetimeIndicationType .
+
+devices:LockingServicesType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+devices:MaintenanceRequiredAlarmType a owl:Class ;
+    rdfs:subClassOf devices:DeviceHealthDiagnosticAlarmType .
+
+devices:NetworkType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+devices:NumberOfPartsIndicationType a owl:Class ;
+    rdfs:subClassOf devices:BaseLifetimeIndicationType .
+
+devices:NumberOfUsagesIndicationType a owl:Class ;
+    rdfs:subClassOf devices:BaseLifetimeIndicationType .
+
+devices:OffSpecAlarmType a owl:Class ;
+    rdfs:subClassOf devices:DeviceHealthDiagnosticAlarmType .
+
+devices:PowerCycleStateMachineType a owl:Class ;
+    rdfs:subClassOf opcua:FiniteStateMachineType .
+
+devices:PrepareForUpdateStateMachineType a owl:Class ;
+    rdfs:subClassOf opcua:FiniteStateMachineType .
+
+devices:ProtocolType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+devices:SoftwareType a owl:Class ;
+    rdfs:subClassOf devices:ComponentType .
+
+devices:SoftwareUpdateType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+devices:SoftwareVersionType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+devices:SubstanceVolumeIndicationType a owl:Class ;
+    rdfs:subClassOf devices:BaseLifetimeIndicationType .
+
+devices:TimeIndicationType a owl:Class ;
+    rdfs:subClassOf devices:BaseLifetimeIndicationType .
+
+devices:TransferServicesType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+devices:has%3CGroupIdentifier%3E a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain devices:FunctionalGroupType,
+        pumps:ActuationType,
+        pumps:BreakdownMaintenanceType,
+        pumps:ConditionBasedMaintenanceType,
+        pumps:ConfigurationGroupType,
+        pumps:ControlType,
+        pumps:DesignType,
+        pumps:DocumentationType,
+        pumps:DriveDesignType,
+        pumps:DriveMeasurementsType,
+        pumps:GeneralMaintenanceType,
+        pumps:ImplementationType,
+        pumps:InletConnectionDesignType,
+        pumps:InletConnectionImplementationType,
+        pumps:InletConnectionMeasurementsType,
+        pumps:InletConnectionSystemRequirementsType,
+        pumps:MaintenanceGroupType,
+        pumps:MeasurementsType,
+        pumps:MultiPumpType,
+        pumps:OperationalGroupType,
+        pumps:OutletConnectionDesignType,
+        pumps:OutletConnectionImplementationType,
+        pumps:OutletConnectionMeasurementsType,
+        pumps:OutletConnectionSystemRequirementsType,
+        pumps:PortsGroupType,
+        pumps:PreventiveMaintenanceType,
+        pumps:PumpActuationType,
+        pumps:PumpIdentificationType,
+        pumps:PumpType,
+        pumps:SignalsType,
+        pumps:SupervisionAuxiliaryDeviceType,
+        pumps:SupervisionElectronicsType,
+        pumps:SupervisionHardwareType,
+        pumps:SupervisionMechanicsType,
+        pumps:SupervisionProcessFluidType,
+        pumps:SupervisionPumpOperationType,
+        pumps:SupervisionSoftwareType,
+        pumps:SupervisionType,
+        pumps:SystemRequirementsType,
+        pumps:VibrationMeasurementType .
+
+devices:has%3CParameterIdentifier%3E a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain opcua:BaseObjectType .
+
+devices:hasConfiguration a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:PumpType .
+
+devices:hasIdentification a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:PumpType .
+
+devices:hasLock a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:PumpType .
+
+devices:hasMaintenance a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:PumpType .
+
+devices:hasMethodSet a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:PumpType .
+
+devices:hasOperational a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:PumpType .
+
+devices:hasParameterSet a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:PumpType .
+
+devices:hasUIElement a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain devices:FunctionalGroupType,
+        pumps:ActuationType,
+        pumps:BreakdownMaintenanceType,
+        pumps:ConditionBasedMaintenanceType,
+        pumps:ConfigurationGroupType,
+        pumps:ControlType,
+        pumps:DesignType,
+        pumps:DocumentationType,
+        pumps:DriveDesignType,
+        pumps:DriveMeasurementsType,
+        pumps:GeneralMaintenanceType,
+        pumps:ImplementationType,
+        pumps:InletConnectionDesignType,
+        pumps:InletConnectionImplementationType,
+        pumps:InletConnectionMeasurementsType,
+        pumps:InletConnectionSystemRequirementsType,
+        pumps:MaintenanceGroupType,
+        pumps:MeasurementsType,
+        pumps:MultiPumpType,
+        pumps:OperationalGroupType,
+        pumps:OutletConnectionDesignType,
+        pumps:OutletConnectionImplementationType,
+        pumps:OutletConnectionMeasurementsType,
+        pumps:OutletConnectionSystemRequirementsType,
+        pumps:PortsGroupType,
+        pumps:PreventiveMaintenanceType,
+        pumps:PumpActuationType,
+        pumps:PumpIdentificationType,
+        pumps:SignalsType,
+        pumps:SupervisionAuxiliaryDeviceType,
+        pumps:SupervisionElectronicsType,
+        pumps:SupervisionHardwareType,
+        pumps:SupervisionMechanicsType,
+        pumps:SupervisionProcessFluidType,
+        pumps:SupervisionPumpOperationType,
+        pumps:SupervisionSoftwareType,
+        pumps:SupervisionType,
+        pumps:SystemRequirementsType,
+        pumps:VibrationMeasurementType .
+
+opcua:DataSetFolderType a owl:Class ;
+    rdfs:subClassOf opcua:FolderType .
+
+opcua:DataSetReaderType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:DataSetWriterType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:DataTypeEncodingType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:DataTypeNodeClass a owl:Class,
+        owl:NamedIndividual ;
+    rdfs:subClassOf opcua:BaseNodeClass .
+
+opcua:DataTypeSystemType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:DatagramConnectionTransportType a owl:Class ;
+    rdfs:subClassOf opcua:ConnectionTransportType .
+
+opcua:DatagramDataSetReaderTransportType a owl:Class ;
+    rdfs:subClassOf opcua:DataSetReaderTransportType .
+
+opcua:DatagramWriterGroupTransportType a owl:Class ;
+    rdfs:subClassOf opcua:WriterGroupTransportType .
+
+opcua:DeviceFailureEventType a owl:Class ;
+    rdfs:subClassOf opcua:SystemEventType .
+
+opcua:DialogConditionType a owl:Class ;
+    rdfs:subClassOf opcua:ConditionType .
+
+opcua:DictionaryFolderType a owl:Class ;
+    rdfs:subClassOf opcua:FolderType .
+
+opcua:DiscrepancyAlarmType a owl:Class ;
+    rdfs:subClassOf opcua:AlarmConditionType .
+
+opcua:EccBrainpoolP256r1ApplicationCertificateType a owl:Class ;
+    rdfs:subClassOf opcua:EccApplicationCertificateType .
+
+opcua:EccBrainpoolP384r1ApplicationCertificateType a owl:Class ;
+    rdfs:subClassOf opcua:EccApplicationCertificateType .
+
+opcua:EccCurve25519ApplicationCertificateType a owl:Class ;
+    rdfs:subClassOf opcua:EccApplicationCertificateType .
+
+opcua:EccCurve448ApplicationCertificateType a owl:Class ;
+    rdfs:subClassOf opcua:EccApplicationCertificateType .
+
+opcua:EccNistP256ApplicationCertificateType a owl:Class ;
+    rdfs:subClassOf opcua:EccApplicationCertificateType .
+
+opcua:EccNistP384ApplicationCertificateType a owl:Class ;
+    rdfs:subClassOf opcua:EccApplicationCertificateType .
+
+opcua:EventQueueOverflowEventType a owl:Class ;
+    rdfs:subClassOf opcua:BaseEventType .
+
+opcua:ExclusiveDeviationAlarmType a owl:Class ;
+    rdfs:subClassOf opcua:ExclusiveLimitAlarmType .
+
+opcua:ExclusiveLevelAlarmType a owl:Class ;
+    rdfs:subClassOf opcua:ExclusiveLimitAlarmType .
+
+opcua:ExclusiveLimitStateMachineType a owl:Class ;
+    rdfs:subClassOf opcua:FiniteStateMachineType .
+
+opcua:ExclusiveRateOfChangeAlarmType a owl:Class ;
+    rdfs:subClassOf opcua:ExclusiveLimitAlarmType .
+
+opcua:ExtensionFieldsType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:FileDirectoryType a owl:Class ;
+    rdfs:subClassOf opcua:FolderType .
+
+opcua:FileTransferStateMachineType a owl:Class ;
+    rdfs:subClassOf opcua:FiniteStateMachineType .
+
+opcua:GeneralModelChangeEventType a owl:Class ;
+    rdfs:subClassOf opcua:BaseModelChangeEventType .
+
+opcua:HighlyManagedAlarmConditionClassType a owl:Class ;
+    rdfs:subClassOf opcua:BaseConditionClassType .
+
+opcua:HistoricalDataConfigurationType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:HistoricalEventConfigurationType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:HistoricalExternalEventSourceType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:HistoryServerCapabilitiesType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:HttpsCertificateType a owl:Class ;
+    rdfs:subClassOf opcua:CertificateType .
+
+opcua:IBaseEthernetCapabilitiesType a owl:Class ;
+    rdfs:subClassOf opcua:BaseInterfaceType .
+
+opcua:IIeeeAutoNegotiationStatusType a owl:Class ;
+    rdfs:subClassOf opcua:BaseInterfaceType .
+
+opcua:IIeeeBaseEthernetPortType a owl:Class ;
+    rdfs:subClassOf opcua:BaseInterfaceType .
+
+opcua:IIeeeBaseTsnStatusStreamType a owl:Class ;
+    rdfs:subClassOf opcua:BaseInterfaceType .
+
+opcua:IIeeeBaseTsnStreamType a owl:Class ;
+    rdfs:subClassOf opcua:BaseInterfaceType .
+
+opcua:IIeeeBaseTsnTrafficSpecificationType a owl:Class ;
+    rdfs:subClassOf opcua:BaseInterfaceType .
+
+opcua:IIeeeTsnInterfaceConfigurationListenerType a owl:Class ;
+    rdfs:subClassOf opcua:IIeeeTsnInterfaceConfigurationType .
+
+opcua:IIeeeTsnInterfaceConfigurationTalkerType a owl:Class ;
+    rdfs:subClassOf opcua:IIeeeTsnInterfaceConfigurationType .
+
+opcua:IIeeeTsnMacAddressType a owl:Class ;
+    rdfs:subClassOf opcua:BaseInterfaceType .
+
+opcua:IIeeeTsnVlanTagType a owl:Class ;
+    rdfs:subClassOf opcua:BaseInterfaceType .
+
+opcua:IIetfBaseNetworkInterfaceType a owl:Class ;
+    rdfs:subClassOf opcua:BaseInterfaceType .
+
+opcua:IOrderedObjectType a owl:Class ;
+    rdfs:subClassOf opcua:BaseInterfaceType .
+
+opcua:IPriorityMappingEntryType a owl:Class ;
+    rdfs:subClassOf opcua:BaseInterfaceType .
+
+opcua:ISrClassType a owl:Class ;
+    rdfs:subClassOf opcua:BaseInterfaceType .
+
+opcua:IVlanIdType a owl:Class ;
+    rdfs:subClassOf opcua:BaseInterfaceType .
+
+opcua:IetfBaseNetworkInterfaceType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:InitialStateType a owl:Class ;
+    rdfs:subClassOf opcua:StateType .
+
+opcua:IrdiDictionaryEntryType a owl:Class ;
+    rdfs:subClassOf opcua:DictionaryEntryType .
+
+opcua:JsonDataSetReaderMessageType a owl:Class ;
+    rdfs:subClassOf opcua:DataSetReaderMessageType .
+
+opcua:JsonDataSetWriterMessageType a owl:Class ;
+    rdfs:subClassOf opcua:DataSetWriterMessageType .
+
+opcua:JsonWriterGroupMessageType a owl:Class ;
+    rdfs:subClassOf opcua:WriterGroupMessageType .
+
+opcua:KeyCredentialConfigurationFolderType a owl:Class ;
+    rdfs:subClassOf opcua:FolderType .
+
+opcua:KeyCredentialConfigurationType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:KeyCredentialDeletedAuditEventType a owl:Class ;
+    rdfs:subClassOf opcua:KeyCredentialAuditEventType .
+
+opcua:KeyCredentialUpdatedAuditEventType a owl:Class ;
+    rdfs:subClassOf opcua:KeyCredentialAuditEventType .
+
+machinery:IMachineTagNameplateType a owl:Class ;
+    rdfs:subClassOf devices:ITagNameplateType .
+
+machinery:MachineComponentsType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+machinery:MachineryComponentIdentificationType a owl:Class ;
+    rdfs:subClassOf machinery:MachineryItemIdentificationType .
+
+machinery:MachineryItemState_StateMachineType a owl:Class ;
+    rdfs:subClassOf opcua:FiniteStateMachineType .
+
+machinery:MachineryLifetimeCounterType a owl:Class ;
+    rdfs:subClassOf opcua:FolderType .
+
+machinery:MachineryOperationCounterType a owl:Class ;
+    rdfs:subClassOf devices:FunctionalGroupType .
+
+machinery:MachineryOperationModeStateMachineType a owl:Class ;
+    rdfs:subClassOf opcua:FiniteStateMachineType .
+
+opcua:MaintenanceConditionClassType a owl:Class ;
+    rdfs:subClassOf opcua:BaseConditionClassType .
+
+opcua:MethodNodeClass a owl:Class,
+        owl:NamedIndividual ;
+    rdfs:subClassOf opcua:BaseNodeClass .
+
+opcua:ModellingRuleType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:NamespaceMetadataType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:NamespacesType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:NetworkAddressUrlType a owl:Class ;
+    rdfs:subClassOf opcua:NetworkAddressType .
+
+opcua:NonExclusiveDeviationAlarmType a owl:Class ;
+    rdfs:subClassOf opcua:NonExclusiveLimitAlarmType .
+
+opcua:NonExclusiveLevelAlarmType a owl:Class ;
+    rdfs:subClassOf opcua:NonExclusiveLimitAlarmType .
+
+opcua:NonExclusiveRateOfChangeAlarmType a owl:Class ;
+    rdfs:subClassOf opcua:NonExclusiveLimitAlarmType .
+
+opcua:NonTransparentBackupRedundancyType a owl:Class ;
+    rdfs:subClassOf opcua:NonTransparentRedundancyType .
+
+opcua:NonTransparentNetworkRedundancyType a owl:Class ;
+    rdfs:subClassOf opcua:NonTransparentRedundancyType .
+
+opcua:ObjectNodeClass a owl:Class,
+        owl:NamedIndividual ;
+    rdfs:subClassOf opcua:BaseNodeClass .
+
+opcua:ObjectTypeNodeClass a owl:Class,
+        owl:NamedIndividual ;
+    rdfs:subClassOf opcua:BaseNodeClass .
+
+opcua:OperationLimitsType a owl:Class ;
+    rdfs:subClassOf opcua:FolderType .
+
+opcua:OrderedListType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:PriorityMappingTableType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:ProcessConditionClassType a owl:Class ;
+    rdfs:subClassOf opcua:BaseConditionClassType .
+
+opcua:ProgramStateMachineType a owl:Class ;
+    rdfs:subClassOf opcua:FiniteStateMachineType .
+
+opcua:ProgramTransitionAuditEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditUpdateStateEventType .
+
+opcua:ProgramTransitionEventType a owl:Class ;
+    rdfs:subClassOf opcua:TransitionEventType .
+
+opcua:ProgressEventType a owl:Class ;
+    rdfs:subClassOf opcua:BaseEventType .
+
+opcua:ProvisionableDeviceType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:PubSubCapabilitiesType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:PubSubCommunicationFailureEventType a owl:Class ;
+    rdfs:subClassOf opcua:PubSubStatusEventType .
+
+opcua:PubSubConfigurationType a owl:Class ;
+    rdfs:subClassOf opcua:FileType .
+
+opcua:PubSubConnectionType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:PubSubDiagnosticsConnectionType a owl:Class ;
+    rdfs:subClassOf opcua:PubSubDiagnosticsType .
+
+opcua:PubSubDiagnosticsDataSetReaderType a owl:Class ;
+    rdfs:subClassOf opcua:PubSubDiagnosticsType .
+
+opcua:PubSubDiagnosticsDataSetWriterType a owl:Class ;
+    rdfs:subClassOf opcua:PubSubDiagnosticsType .
+
+opcua:PubSubDiagnosticsReaderGroupType a owl:Class ;
+    rdfs:subClassOf opcua:PubSubDiagnosticsType .
+
+opcua:PubSubDiagnosticsRootType a owl:Class ;
+    rdfs:subClassOf opcua:PubSubDiagnosticsType .
+
+opcua:PubSubDiagnosticsWriterGroupType a owl:Class ;
+    rdfs:subClassOf opcua:PubSubDiagnosticsType .
+
+opcua:PubSubKeyPushTargetFolderType a owl:Class ;
+    rdfs:subClassOf opcua:FolderType .
+
+opcua:PubSubKeyPushTargetType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:PubSubStatusType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:PubSubTransportLimitsExceedEventType a owl:Class ;
+    rdfs:subClassOf opcua:PubSubStatusEventType .
+
+opcua:PublishSubscribeType a owl:Class ;
+    rdfs:subClassOf opcua:PubSubKeyServiceType .
+
+opcua:PublishedDataItemsType a owl:Class ;
+    rdfs:subClassOf opcua:PublishedDataSetType .
+
+opcua:PublishedEventsType a owl:Class ;
+    rdfs:subClassOf opcua:PublishedDataSetType .
+
+pumps:ARCNET a pumps:FieldbusEnum,
+        pumps:OfferedFieldbusesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "ARCNET"^^xsd:string ;
+    base:hasValueNode base:_Nbe44ca785d3e41889d405afb8ae45f2e,
+        base:_Ne3cf8b86d661425486dc02cd56d2e834 .
+
+pumps:AS_Interface a pumps:FieldbusEnum,
+        pumps:OfferedFieldbusesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "AS_Interface"^^xsd:string ;
+    base:hasValueNode base:_N2c7c600186a147beace0edce9e81f88e,
+        base:_Nda583455ba70488a87e1fc2dc580754d .
+
+pumps:AdditionOperation a pumps:MultiPumpOperationModeEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "AdditionOperation"^^xsd:string ;
+    base:hasValueNode base:_N76970de970b244a0a388f0a56d1bd07e .
+
+pumps:Advanced a pumps:OperationModeEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "Advanced"^^xsd:string ;
+    base:hasValueNode base:_Ne2f026712b23402e95506df5539516ce .
+
+pumps:AutoControl a pumps:OperationModeEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "AutoControl"^^xsd:string ;
+    base:hasValueNode base:_Nb92119b815cf4a15ae95977d3fe66a87 .
+
+pumps:Automatic a pumps:ControlModeEnum,
+        pumps:OfferedControlModesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "Automatic"^^xsd:string ;
+    base:hasValueNode base:_N94269e82025849bfb39af7340adcfb96,
+        base:_Ncac993df6aa34ab4a7ea70bf598d7b4f .
+
+pumps:BACnet_IP a pumps:FieldbusEnum,
+        pumps:OfferedFieldbusesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "BACnet_IP"^^xsd:string ;
+    base:hasValueNode base:_N937f8c64b7dc422d84d389990a4c4a63,
+        base:_N97f9a79e12814c1c97466d5a59a8fc29 .
+
+pumps:BACnet_MSTP a pumps:FieldbusEnum,
+        pumps:OfferedFieldbusesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "BACnet_MSTP"^^xsd:string ;
+    base:hasValueNode base:_N857fdcd7365147d0b65bb54df94d56df,
+        base:_Nc9f32f74dbda431c89e2e6291f3a7162 .
+
+pumps:Bluetooth a pumps:FieldbusEnum,
+        pumps:OfferedFieldbusesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "Bluetooth"^^xsd:string ;
+    base:hasValueNode base:_N2be94b24695a43d19a40fafd3bf14bee,
+        base:_Nf5bd84b08d5046ae82f248860d7ff3b5 .
+
+pumps:BluetoothLowEnergy a pumps:FieldbusEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "BluetoothLowEnergy"^^xsd:string ;
+    base:hasValueNode base:_N3a81ba11f04e4296b5c4db723f938c09 .
+
+pumps:CAN a pumps:FieldbusEnum,
+        pumps:OfferedFieldbusesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "CAN"^^xsd:string ;
+    base:hasValueNode base:_N3fb3f2296ed34c70b02c0f4936352133,
+        base:_N60996cd950bd4b8b876ec323c9a6180f .
+
+pumps:CANopen a pumps:FieldbusEnum,
+        pumps:OfferedFieldbusesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "CANopen"^^xsd:string ;
+    base:hasValueNode base:_N2cf147e5941c47ff89c44042c7673551,
+        base:_Nc35b487ac6c04dd18735ed63c4c15fe0 .
+
+pumps:CC_Link a pumps:FieldbusEnum,
+        pumps:OfferedFieldbusesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "CC_Link"^^xsd:string ;
+    base:hasValueNode base:_N80f31a945a42437a9f4f7bcf633dd196,
+        base:_Nf2ff38e931f8440f931a5377d7e6d43b .
+
+pumps:Calibration a pumps:OperationModeEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "Calibration"^^xsd:string ;
+    base:hasValueNode base:_N833bbfe7d8a64e2db62250aa3b634fe3 .
+
+pumps:ClosedLoopMax a pumps:OperationModeEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "ClosedLoopMax"^^xsd:string ;
+    base:hasValueNode base:_N77d6f3dfe2fa401daa7173eb049726aa .
+
+pumps:ClosedLoopMin a pumps:OperationModeEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "ClosedLoopMin"^^xsd:string ;
+    base:hasValueNode base:_N47290a70544745d8b843a141aaed2f5e .
+
+pumps:ClosedLoopStandardPID a pumps:OperationModeEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "ClosedLoopStandardPID"^^xsd:string ;
+    base:hasValueNode base:_Ndd333d8ed4bb406ea7345760c6901652 .
+
+pumps:ConcerningLoadDistribution a pumps:DistributionTypeEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "ConcerningLoadDistribution"^^xsd:string ;
+    base:hasValueNode base:_N7af683a77de64c10bc5199e8fb3f0c3a .
+
+pumps:ConcerningTimeDistribution a pumps:DistributionTypeEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "ConcerningTimeDistribution"^^xsd:string ;
+    base:hasValueNode base:_Nb50d77801ed6402590b42be51b8df64d .
+
+pumps:ConstantDifferentialPressureControl a pumps:ControlModeEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "ConstantDifferentialPressureControl"^^xsd:string ;
+    base:hasValueNode base:_Na069246b22594cb986d7bc3ed587cfdd .
+
+pumps:ConstantPressureControl a pumps:ControlModeEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "ConstantPressureControl"^^xsd:string ;
+    base:hasValueNode base:_Ne003df0eb49144a49de2ede9075b92e8 .
+
+pumps:ConstantTemperatureControl a pumps:ControlModeEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "ConstantTemperatureControl"^^xsd:string ;
+    base:hasValueNode base:_N303663cbf160438c93c9b2bca0aa82e1 .
+
+pumps:ControlNet a pumps:FieldbusEnum,
+        pumps:OfferedFieldbusesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "ControlNet"^^xsd:string ;
+    base:hasValueNode base:_N25c435f465e84dd0a2b456f99bc0f351,
+        base:_N509c4d6dfab14ee2931314e3bf7b6b53 .
+
+pumps:DALI a pumps:FieldbusEnum,
+        pumps:OfferedFieldbusesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "DALI"^^xsd:string ;
+    base:hasValueNode base:_Nbb4df8f16ab14e9ba837214512ed8b82,
+        base:_Neeaa0a44657847f48b2563b28ce75500 .
+
+pumps:DECTULE a pumps:FieldbusEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "DECTULE"^^xsd:string ;
+    base:hasValueNode base:_N58c96aea4ca84382945bfd0566390d4b .
+
+pumps:DMX a pumps:FieldbusEnum,
+        pumps:OfferedFieldbusesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "DMX"^^xsd:string ;
+    base:hasValueNode base:_N1db04ce6089f4a3da61f7b896c34246c,
+        base:_Naf714b045f4542afb40c4c4c58e3e21c .
+
+pumps:DeviceNet a pumps:FieldbusEnum,
+        pumps:OfferedFieldbusesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "DeviceNet"^^xsd:string ;
+    base:hasValueNode base:_N0d365c1d4bfd4d9ba54c1a58f7d85162,
+        base:_N399d96b29c6d496daee933f1a5ab9248 .
+
+pumps:DifferentialPressureControl a pumps:ControlModeEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "DifferentialPressureControl"^^xsd:string ;
+    base:hasValueNode base:_N927a36ee9fc7403ab127fb4d6c2477ab .
+
+pumps:Disabled a pumps:PumpKickModeEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "Disabled"^^xsd:string ;
+    base:hasValueNode base:_N390bb8ab2059402ba7d3f7a3d9263f5e .
+
+pumps:DownState a pumps:StateOfTheItemEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "DownState"^^xsd:string ;
+    base:hasValueNode base:_N672ebd52fdfe4fee95434e9d7a1afe7f .
+
+pumps:EnOcean a pumps:FieldbusEnum,
+        pumps:OfferedFieldbusesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "EnOcean"^^xsd:string ;
+    base:hasValueNode base:_N0943a4d4f7bf415f9c90fec2e03e2f14,
+        base:_Ncfcf96ccdad340ae824565f92a52ae2a .
+
+pumps:EtherCAT a pumps:FieldbusEnum,
+        pumps:OfferedFieldbusesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "EtherCAT"^^xsd:string ;
+    base:hasValueNode base:_N6d66f1dfdfed4392afef328c9e93ba64,
+        base:_N867bb410f5d04d918a7a10482fc66102 .
+
+pumps:EthernetTCP_IP a pumps:FieldbusEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "EthernetTCP_IP"^^xsd:string ;
+    base:hasValueNode base:_N15eff47de96b4ffc91269c4b13e99efa .
+
+pumps:Ethernet_IP a pumps:FieldbusEnum,
+        pumps:OfferedFieldbusesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "Ethernet_IP"^^xsd:string ;
+    base:hasValueNode base:_Na35d7d5b9ec94b17953275c8030731d1,
+        base:_Necbb7052b8ae49df8283d9944e010bf4 .
+
+pumps:ExchangeDisabled a pumps:ExchangeModeEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "ExchangeDisabled"^^xsd:string ;
+    base:hasValueNode base:_N2522ea4005b14ffb9c2174e6659d35d8 .
+
+pumps:ExternalDisabledState a pumps:StateOfTheItemEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "ExternalDisabledState"^^xsd:string ;
+    base:hasValueNode base:_N0988249cad1d45fbb89d147edb0631de .
+
+pumps:FlowDependentDifferentialPressureControl a pumps:ControlModeEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "FlowDependentDifferentialPressureControl"^^xsd:string ;
+    base:hasValueNode base:_Nb7577d9d85d84cceb15057308837cf39 .
+
+pumps:FlowRateControl a pumps:ControlModeEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "FlowRateControl"^^xsd:string ;
+    base:hasValueNode base:_Nd2dd7229c8f24d7299dd7b0bbd6c1509 .
+
+pumps:FlowTemperatureControl a pumps:ControlModeEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "FlowTemperatureControl"^^xsd:string ;
+    base:hasValueNode base:_N5c58e23bf4974e38a6893842b35ac26b .
+
+pumps:GSM a pumps:FieldbusEnum,
+        pumps:OfferedFieldbusesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "GSM"^^xsd:string ;
+    base:hasValueNode base:_N571691d6e63c4d4a9cc9d9f3d274b057,
+        base:_N834bdf748bac42fb955c05285ba04648 .
+
+pumps:HART a pumps:FieldbusEnum,
+        pumps:OfferedFieldbusesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "HART"^^xsd:string ;
+    base:hasValueNode base:_N787763eb96864755b35309d0cd3ec3be,
+        base:_Na15a7ee02c8b453b9930fec2f98f43f7 .
+
+pumps:IEEE1588 a pumps:FieldbusEnum,
+        pumps:OfferedFieldbusesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "IEEE1588"^^xsd:string ;
+    base:hasValueNode base:_N6a20142070754c03bcc216dfa2d41742,
+        base:_Nb7bd0f9e21e646c0b4379efa5af8c0fc .
+
+pumps:IO_Link a pumps:FieldbusEnum,
+        pumps:OfferedFieldbusesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "IO_Link"^^xsd:string ;
+    base:hasValueNode base:_N040cb7ced14e4c75aed1d16cfadda985,
+        base:_N5dca3a3738fd491fb724e8a175cece69 .
+
+pumps:IPumpVendorNameplateType a owl:Class ;
+    rdfs:subClassOf machinery:IMachineVendorNameplateType .
+
+pumps:IdleState a pumps:StateOfTheItemEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "IdleState"^^xsd:string ;
+    base:hasValueNode base:_N4d48f18701da487497c0abb6d7e37892 .
+
+pumps:In a pumps:PortDirectionEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "In"^^xsd:string ;
+    base:hasValueNode base:_N4cc1a2bfa5d843689f6ee62d1e2293e9 .
+
+pumps:InOut a pumps:PortDirectionEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "InOut"^^xsd:string ;
+    base:hasValueNode base:_Nbcb3c5458aae49628105bb3129e9b2aa .
+
+pumps:Interbus a pumps:FieldbusEnum,
+        pumps:OfferedFieldbusesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "Interbus"^^xsd:string ;
+    base:hasValueNode base:_N3d4614b5ed234a92b810904ba2fe9d66,
+        base:_Nb3c12651fc134c9686965501d3b5e324 .
+
+pumps:KNX a pumps:FieldbusEnum,
+        pumps:OfferedFieldbusesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "KNX"^^xsd:string ;
+    base:hasValueNode base:_N573f57594e0d42b0a3b3cfe8fc63b73f,
+        base:_Nafe62e9b2ddf460abf543754b26e28bb .
+
+pumps:LIN_Bus a pumps:FieldbusEnum,
+        pumps:OfferedFieldbusesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "LIN_Bus"^^xsd:string ;
+    base:hasValueNode base:_N1bdbcb5e7efd462395bf0061c90146fa,
+        base:_Ncc9abd18e3954ed0ab945bf32be32412 .
+
+pumps:LON a pumps:FieldbusEnum,
+        pumps:OfferedFieldbusesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "LON"^^xsd:string ;
+    base:hasValueNode base:_N45ff90dc3c1745e4bdff6eae7bfb0170,
+        base:_Ncaace0c4b3e44986a621e71a46a3430b .
+
+pumps:LTE a pumps:FieldbusEnum,
+        pumps:OfferedFieldbusesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "LTE"^^xsd:string ;
+    base:hasValueNode base:_N9880b28c67de4dfe9407afcf5999327a,
+        base:_N99e359db2a8b44a29b42cbc9cc7563ba .
+
+pumps:LTE_M a pumps:FieldbusEnum,
+        pumps:OfferedFieldbusesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "LTE_M"^^xsd:string ;
+    base:hasValueNode base:_N49dbbc8310644cada214e74a26958c5b,
+        base:_Nf619d5de937b4b1a9ff4466a32baef9b .
+
+pumps:Level1 a pumps:MaintenanceLevelEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "Level1"^^xsd:string ;
+    base:hasValueNode base:_N65c143b969854710ba55e6ef50c27c7c .
+
+pumps:Level2 a pumps:MaintenanceLevelEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "Level2"^^xsd:string ;
+    base:hasValueNode base:_Na62d726adc8b48f8890b24b28a285f59 .
+
+pumps:Level3 a pumps:MaintenanceLevelEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "Level3"^^xsd:string ;
+    base:hasValueNode base:_N98f13eb8d18549afb24653145ea0fdbb .
+
+pumps:Level4 a pumps:MaintenanceLevelEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "Level4"^^xsd:string ;
+    base:hasValueNode base:_N0728153dd7c248cc8aadb1ebbffdfdc5 .
+
+pumps:Level5 a pumps:MaintenanceLevelEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "Level5"^^xsd:string ;
+    base:hasValueNode base:_N1f67e4555c3a4d66aeb366fc79145309 .
+
+pumps:LiquidPump a pumps:PumpClassEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "LiquidPump"^^xsd:string ;
+    base:hasValueNode base:_N3740d1cf396642a3ad319cad4cd7073c .
+
+pumps:LoRaWAN a pumps:FieldbusEnum,
+        pumps:OfferedFieldbusesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "LoRaWAN"^^xsd:string ;
+    base:hasValueNode base:_N670a484793764317b02cedc5b6fb17f9,
+        base:_Nbf8f3e6aa82c488caa7925caafbd15ca .
+
+pumps:MP_Bus a pumps:FieldbusEnum,
+        pumps:OfferedFieldbusesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "MP_Bus"^^xsd:string ;
+    base:hasValueNode base:_Nb674f87b66f64d8f9b4552ab421ad552,
+        base:_Ndb88354870814f489015a5759d4a58dd .
+
+pumps:M_Bus a pumps:FieldbusEnum,
+        pumps:OfferedFieldbusesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "M_Bus"^^xsd:string ;
+    base:hasValueNode base:_N98ef5d6d5a864055880ff3e635cede1d,
+        base:_Nb85a1375a7574d13901a07f88af8e8f2 .
+
+pumps:ManufacturerSpecific a pumps:DistributionTypeEnum,
+        pumps:ExchangeModeEnum,
+        pumps:PumpKickModeEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "ManufacturerSpecific"^^xsd:string ;
+    base:hasValueNode base:_N9f13cd4c414a4391a2d3f711d1c594a6,
+        base:_Nbff58903fbd949f39f078ed8080bc7c7,
+        base:_Ne1e5d617542a41e08c7570068a681b54 .
+
+pumps:Master a pumps:PumpRoleEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "Master"^^xsd:string ;
+    base:hasValueNode base:_Ne8dd4b2c7d6243748c770dfbc29e0598 .
+
+pumps:MixedRedundancy a pumps:MultiPumpOperationModeEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "MixedRedundancy"^^xsd:string ;
+    base:hasValueNode base:_N662d2d5f63a143bbacef6f553f98284e .
+
+pumps:ModbusRTU a pumps:FieldbusEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "ModbusRTU"^^xsd:string ;
+    base:hasValueNode base:_N91e01b7450e4453ab4125a112a7658fd .
+
+pumps:ModbusTCP a pumps:FieldbusEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "ModbusTCP"^^xsd:string ;
+    base:hasValueNode base:_Nc702e3d01b35479d9b8a778dabb6469f .
+
+pumps:NB_IOT a pumps:FieldbusEnum,
+        pumps:OfferedFieldbusesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "NB_IOT"^^xsd:string ;
+    base:hasValueNode base:_N79c5e13c283f441889858bd804667830,
+        base:_N9adc5d89531f4bee894e64cf02a15deb .
+
+pumps:NFC a pumps:FieldbusEnum,
+        pumps:OfferedFieldbusesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "NFC"^^xsd:string ;
+    base:hasValueNode base:_N08fec8f0b900443187240eae9996fdcb,
+        base:_Nba7775dbd14c4ccf8534c83a5bd23ab3 .
+
+pumps:OPCDA a pumps:FieldbusEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "OPCDA"^^xsd:string ;
+    base:hasValueNode base:_N17727c1824534bcb85851631154ccff4 .
+
+pumps:OPCUA a pumps:FieldbusEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "OPCUA"^^xsd:string ;
+    base:hasValueNode base:_Nbb9cefd628f84a65b120514899676d22 .
+
+pumps:OpenLoopMax a pumps:OperationModeEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "OpenLoopMax"^^xsd:string ;
+    base:hasValueNode base:_N069e800a28e44a99897cdfb948a0430b .
+
+pumps:OpenLoopMin a pumps:OperationModeEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "OpenLoopMin"^^xsd:string ;
+    base:hasValueNode base:_N25a7d6638e6546e9912a5fdfea1b77f2 .
+
+pumps:OpenLoopValue a pumps:OperationModeEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "OpenLoopValue"^^xsd:string ;
+    base:hasValueNode base:_N0153090f9f484cecb7524db2fc1ab78e .
+
+pumps:OperatingState a pumps:StateOfTheItemEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "OperatingState"^^xsd:string ;
+    base:hasValueNode base:_N5fd2e94680fc4eee9d0f98c59e8dd746 .
+
+pumps:OperatorSpecific a pumps:DistributionTypeEnum,
+        pumps:ExchangeModeEnum,
+        pumps:PumpKickModeEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "OperatorSpecific"^^xsd:string ;
+    base:hasValueNode base:_N2f0d74fd8ddb4f5c96248dced4a3592c,
+        base:_N88842f76b8c64c66890b356b02307575,
+        base:_Ne6fe346d6fd34f3f9df7f3b8abb96d5c .
+
+pumps:Other a pumps:FieldbusEnum,
+        pumps:OfferedFieldbusesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "Other"^^xsd:string ;
+    base:hasValueNode base:_N0df37dbada5146ec82869c02608578b6,
+        base:_N10fb52b9508f4225bfa1188b97bb0a7c .
+
+pumps:Out a pumps:PortDirectionEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "Out"^^xsd:string ;
+    base:hasValueNode base:_N91086f90197546cf8fcf688a4a6675a8 .
+
+pumps:PROFIBUSDP a pumps:FieldbusEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "PROFIBUSDP"^^xsd:string ;
+    base:hasValueNode base:_Na852ba311921461daf6993d5df0a5181 .
+
+pumps:PROFINETRT a pumps:FieldbusEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "PROFINETRT"^^xsd:string ;
+    base:hasValueNode base:_N8b18b601d7f14826aec52e3dd2d969f8 .
+
+pumps:ParallelOperation a pumps:OperatingModeEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "ParallelOperation"^^xsd:string ;
+    base:hasValueNode base:_N05708a1b209d4f9084f5fd552542a130 .
+
+pumps:PositiveDisplacementPump a pumps:PumpClassEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "PositiveDisplacementPump"^^xsd:string ;
+    base:hasValueNode base:_N693f78f8943042c9bf1a299aaaac370b .
+
+pumps:Powerlink a pumps:FieldbusEnum,
+        pumps:OfferedFieldbusesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "Powerlink"^^xsd:string ;
+    base:hasValueNode base:_Nbefd0ef5bd734571bbf077ddd82c9aad,
+        base:_Ne9f347bf3f004f36880a92bc943e3577 .
+
+pumps:ProcessVacuumPump a pumps:PumpClassEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "ProcessVacuumPump"^^xsd:string ;
+    base:hasValueNode base:_N30342d46d30746378080d04b9a0f40bd .
+
+pumps:Pump a pumps:PumpClassEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "Pump"^^xsd:string ;
+    base:hasValueNode base:_N7b1bda5a179542469e3f451bdc75bd4b .
+
+pumps:RedundancyOperation a pumps:MultiPumpOperationModeEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "RedundancyOperation"^^xsd:string ;
+    base:hasValueNode base:_N0eb63e4b02924a17b21b4a524c282c8b .
+
+pumps:ReturnFlowTemperatureControl a pumps:ControlModeEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "ReturnFlowTemperatureControl"^^xsd:string ;
+    base:hasValueNode base:_Na4a1b80ec6194dd6b293f76fe580938c .
+
+pumps:RotodynamicPump a pumps:PumpClassEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "RotodynamicPump"^^xsd:string ;
+    base:hasValueNode base:_Nebb23afe84f741e9b9dc2a67b4df600f .
+
+pumps:SERCOS a pumps:FieldbusEnum,
+        pumps:OfferedFieldbusesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "SERCOS"^^xsd:string ;
+    base:hasValueNode base:_N67e35cdfe5a8469591e358682786c5b6,
+        base:_N835ac28d5fe14451b969c7798c8fa15a .
+
+pumps:SMI a pumps:FieldbusEnum,
+        pumps:OfferedFieldbusesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "SMI"^^xsd:string ;
+    base:hasValueNode base:_N91a2a0bf7ee145b2aa1c2f0ec1ee1d63,
+        base:_Na0efefea45294f8fa1663ef8b0fead4d .
+
+pumps:SeriesOperation a pumps:OperatingModeEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "SeriesOperation"^^xsd:string ;
+    base:hasValueNode base:_N0b2aa192e2244a89b1ed1e15bd5b8784 .
+
+pumps:SingleOperation a pumps:OperatingModeEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "SingleOperation"^^xsd:string ;
+    base:hasValueNode base:_N3f6aa1d9869b40f2b078cfcd74033ece .
+
+pumps:Slave a pumps:PumpRoleEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "Slave"^^xsd:string ;
+    base:hasValueNode base:_Nd08abd85e2414a548ff6a3a9423360be .
+
+pumps:SlaveAndAuxiliaryMaster a pumps:PumpRoleEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "SlaveAndAuxiliaryMaster"^^xsd:string ;
+    base:hasValueNode base:_Neb868502ba6b48b48cc1f375285faabb .
+
+pumps:SpeedControl a pumps:ControlModeEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "SpeedControl"^^xsd:string ;
+    base:hasValueNode base:_N14067253f79e47f1a92b30fd35f230a4 .
+
+pumps:StandBy a pumps:OperationModeEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "StandBy"^^xsd:string ;
+    base:hasValueNode base:_N64a90a054d194cc298712960b9b2284b .
+
+pumps:StandByState a pumps:StateOfTheItemEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "StandByState"^^xsd:string ;
+    base:hasValueNode base:_N2f5f092abdab4933a8357ad2ed10b1b1 .
+
+pumps:Standalone a pumps:MultiPumpOperationModeEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "Standalone"^^xsd:string ;
+    base:hasValueNode base:_Nc0f169f800a04d41979dfd1f6526f5b2 .
+
+pumps:Test a pumps:OperationModeEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "Test"^^xsd:string ;
+    base:hasValueNode base:_N6f13d7e89d7b461ba12c7f84fd266425 .
+
+pumps:Thread a pumps:FieldbusEnum,
+        pumps:OfferedFieldbusesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "Thread"^^xsd:string ;
+    base:hasValueNode base:_N75b347a71d994e0b84bf68cee0286ced,
+        base:_Ndd0210dfd3a24a1d8357591afffb646e .
+
+pumps:TurboVacuumPump a pumps:PumpClassEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "TurboVacuumPump"^^xsd:string ;
+    base:hasValueNode base:_N3789a9e281e44483967f6bd52699c47a .
+
+pumps:UMTS a pumps:FieldbusEnum,
+        pumps:OfferedFieldbusesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "UMTS"^^xsd:string ;
+    base:hasValueNode base:_Ne13cb39ac2ba4e0385cee08e6d128578,
+        base:_Nefbae3c03c3a41a198436ea5638dd94d .
+
+pumps:Uncontrolled a pumps:ControlModeEnum,
+        pumps:OfferedControlModesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "Uncontrolled"^^xsd:string ;
+    base:hasValueNode base:_N269db41a8d8546d3a5d6057066568f91,
+        base:_N28f1cde6ad094a5e81869c07a4185563 .
+
+pumps:VARAN a pumps:FieldbusEnum,
+        pumps:OfferedFieldbusesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "VARAN"^^xsd:string ;
+    base:hasValueNode base:_N30d2777c5f964f60938d927776fb48a3,
+        base:_Nffec1eedc8594e02a534488e18d692d1 .
+
+pumps:VacuumPump a pumps:PumpClassEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "VacuumPump"^^xsd:string ;
+    base:hasValueNode base:_N8d88ab7346474bf1a23dbfb13f7d6a94 .
+
+pumps:VariableDifferentialPressureControl a pumps:ControlModeEnum,
+        owl:NamedIndividual ;
+    base:hasFieldName "VariableDifferentialPressureControl"^^xsd:string ;
+    base:hasValueNode base:_N0d0fe9b2a49146f08c0eb71a3b5a19ce .
+
+pumps:WIFI a pumps:FieldbusEnum,
+        pumps:OfferedFieldbusesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "WIFI"^^xsd:string ;
+    base:hasValueNode base:_N393f38d0e57b493d8e69c5b7deb46908,
+        base:_Nd0f6c17a1cca402096f342985998fd89 .
+
+pumps:X2X_Link a pumps:FieldbusEnum,
+        pumps:OfferedFieldbusesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "X2X_Link"^^xsd:string ;
+    base:hasValueNode base:_N26582b8329b54809bbc90a51379a06e8,
+        base:_N8386bbeeab01413cb4d25f1e448dac2f .
+
+pumps:Z_Wave a pumps:FieldbusEnum,
+        pumps:OfferedFieldbusesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "Z_Wave"^^xsd:string ;
+    base:hasValueNode base:_N32b7858b62f74af6bd606047c950641c,
+        base:_N585f5cf1e09a4804aab968b1e82dc5fa .
+
+pumps:ZigBee a pumps:FieldbusEnum,
+        pumps:OfferedFieldbusesOptionSet,
+        owl:NamedIndividual ;
+    base:hasFieldName "ZigBee"^^xsd:string ;
+    base:hasValueNode base:_N7c8fa9a30f964d8da48daa568e8169c6,
+        base:_Ne029b4ed8f7548e6a6c4912600922caa .
+
+pumps:has%3CDrive%3E a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:PortsGroupType .
+
+pumps:has%3CInletConnection%3E a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:PortsGroupType .
+
+pumps:has%3CMarking%3E a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MarkingsType .
+
+pumps:has%3COutletConnection%3E a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:PortsGroupType .
+
+pumps:has%3CVibration%3E a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MeasurementsType .
+
+pumps:has1XPhase a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:VibrationMeasurementType .
+
+pumps:has1XRelativeShaftVibrationP_P a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:VibrationMeasurementType .
+
+pumps:has2XPhase a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:VibrationMeasurementType .
+
+pumps:has2XRelativeShaftVibrationP_P a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:VibrationMeasurementType .
+
+pumps:hasAcceleration a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SignalsType .
+
+pumps:hasAccessoryLiquidFlow a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionPumpOperationType .
+
+pumps:hasAccessoryLiquidHigh a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionPumpOperationType .
+
+pumps:hasAccessoryLiquidLow a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionPumpOperationType .
+
+pumps:hasAccessoryLiquidOverheat a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionPumpOperationType .
+
+pumps:hasAccessoryLiquidPressure a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionPumpOperationType .
+
+pumps:hasActiveMaintenanceTime a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:GeneralMaintenanceType .
+
+pumps:hasActivePreventiveMaintenanceTime a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:PreventiveMaintenanceType .
+
+pumps:hasActualControlMode a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:PumpActuationType .
+
+pumps:hasActualOperationMode a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:PumpActuationType .
+
+pumps:hasActuatorElement a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionAuxiliaryDeviceType .
+
+pumps:hasAdditionalFieldbuses a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasAmbientHumidity a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MeasurementsType .
+
+pumps:hasAmbientTemperature a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MeasurementsType,
+        pumps:SupervisionAuxiliaryDeviceType,
+        pumps:SupervisionPumpOperationType .
+
+pumps:hasApplication a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionSoftwareType .
+
+pumps:hasArmatureCircuit a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionElectronicsType .
+
+pumps:hasArrangements a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasArrangementsLink a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasAtmosphericPressure a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ImplementationType .
+
+pumps:hasAuxiliaryDeviceFault a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionAuxiliaryDeviceType .
+
+pumps:hasAuxiliaryMediumAbsence a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionAuxiliaryDeviceType .
+
+pumps:hasAuxiliaryMediumInsufficiency a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionAuxiliaryDeviceType .
+
+pumps:hasAuxiliaryPowerPole a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionAuxiliaryDeviceType .
+
+pumps:hasAuxiliaryPowerRange a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionAuxiliaryDeviceType .
+
+pumps:hasAvailability a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ConditionBasedMaintenanceType .
+
+pumps:hasAxialBearingAbrasion a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionMechanicsType .
+
+pumps:hasAxialBearingFault a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionMechanicsType .
+
+pumps:hasAxialBearingOverheat a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionMechanicsType .
+
+pumps:hasAxialLoadOfPumpRotor a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MeasurementsType .
+
+pumps:hasAxialRotorPosition a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MeasurementsType .
+
+pumps:hasBackPressure a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MeasurementsType .
+
+pumps:hasBackingPressure a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:OutletConnectionSystemRequirementsType .
+
+pumps:hasBalancingRateOfFlow a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasBasePressure a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasBearingFault a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionMechanicsType .
+
+pumps:hasBearingIndex a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:VibrationMeasurementType .
+
+pumps:hasBearingIndexPerG a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:VibrationMeasurementType .
+
+pumps:hasBearingTemperature a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MeasurementsType .
+
+pumps:hasBlockage a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionProcessFluidType .
+
+pumps:hasBrakeChopper a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionMechanicsType .
+
+pumps:hasBrakeOverheat a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionMechanicsType .
+
+pumps:hasBreakdownMaintenance a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MaintenanceGroupType .
+
+pumps:hasBroadbandCavitationAccelerationPerG_RMS a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:VibrationMeasurementType .
+
+pumps:hasBroadbandCavitationAccelerationRMS a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:VibrationMeasurementType .
+
+pumps:hasBypassActuation a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:OperationalGroupType .
+
+pumps:hasCaseOverheat a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionPumpOperationType .
+
+pumps:hasCategory a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DrivePortType,
+        pumps:InletConnectionPortType,
+        pumps:OutletConnectionPortType .
+
+pumps:hasCavitation a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionProcessFluidType .
+
+pumps:hasCertificates a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasCertificatesLink a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasCircuitDiagram a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasCircuitDiagramLink a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasCleanValveOpen a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SignalsType .
+
+pumps:hasCleanValveRequest a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:PumpActuationType .
+
+pumps:hasClearanceFlow a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MeasurementsType .
+
+pumps:hasClearanceVolume a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasClockwiseRotation a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasCommandVariable a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ControlType .
+
+pumps:hasCommunication a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionHardwareType,
+        pumps:SupervisionSoftwareType .
+
+pumps:hasCommunicationError a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionAuxiliaryDeviceType .
+
+pumps:hasComponentsList a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasComponentsListLink a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasCompressionRatio a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SystemRequirementsType .
+
+pumps:hasComputingCircuit a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionHardwareType .
+
+pumps:hasCondensation a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionProcessFluidType .
+
+pumps:hasConditionBasedMaintenance a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MaintenanceGroupType .
+
+pumps:hasControl a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:OperationalGroupType,
+        pumps:SupervisionSoftwareType .
+
+pumps:hasControlCircuit a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionHardwareType .
+
+pumps:hasControlDifferenceVariable a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ControlType .
+
+pumps:hasControlInversion a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:PumpActuationType .
+
+pumps:hasControllable a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasControlledVariable a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ControlType .
+
+pumps:hasControllerOutputVariable a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ControlType .
+
+pumps:hasControllerOverheat a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionPumpOperationType .
+
+pumps:hasConverterOverheat a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionPumpOperationType .
+
+pumps:hasCool_DownTimeForAVaporJetPumpOrADiffusionPump a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasCoolantFlow a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionPumpOperationType .
+
+pumps:hasCoolantHigh a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionPumpOperationType .
+
+pumps:hasCoolantLow a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionPumpOperationType .
+
+pumps:hasCoolantOverheat a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionPumpOperationType .
+
+pumps:hasCoolantTemperature a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MeasurementsType .
+
+pumps:hasCorrectiveMaintenanceTime a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:BreakdownMaintenanceType .
+
+pumps:hasCorrosion a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionAuxiliaryDeviceType .
+
+pumps:hasCounter_ClockwiseRotation a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasCriticalBackingPressure a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:InletConnectionDesignType .
+
+pumps:hasCriticalSpeed a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasCriticality a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:BreakdownMaintenanceType .
+
+pumps:hasCurrent a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DriveMeasurementsType .
+
+pumps:hasCurrentInsideDevice a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionElectronicsType .
+
+pumps:hasDCLinkCurrent a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DriveMeasurementsType .
+
+pumps:hasDCLinkSupply a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionHardwareType .
+
+pumps:hasDCLinkVoltage a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DriveMeasurementsType .
+
+pumps:hasDeadTime a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ControlType .
+
+pumps:hasDeceleration a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SignalsType,
+        pumps:SupervisionPumpOperationType .
+
+pumps:hasDeclarationOfConformity a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasDeclarationOfConformityAvailable a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasDensity a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ImplementationType,
+        pumps:MeasurementsType .
+
+pumps:hasDerivativeActionCoefficient a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ControlType .
+
+pumps:hasDesign a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ConfigurationGroupType,
+        pumps:DrivePortType,
+        pumps:InletConnectionPortType,
+        pumps:OutletConnectionPortType .
+
+pumps:hasDesignAxialLoad a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasDesignRadialLoad a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasDetail a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasDetailLink a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasDeviation a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionAuxiliaryDeviceType .
+
+pumps:hasDifferentialPressure a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MeasurementsType .
+
+pumps:hasDirection a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DrivePortType,
+        pumps:InletConnectionPortType,
+        pumps:OutletConnectionPortType .
+
+pumps:hasDirectivesOfEUDeclarationOfConformity a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasDirtyImpeller a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionPumpOperationType .
+
+pumps:hasDiscreteInputValue a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DiscreteInputObjectType .
+
+pumps:hasDiscreteOutputValue a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DiscreteOutputObjectType,
+        pumps:PumpKickObjectType .
+
+pumps:hasDistributionPriority a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MultiPumpType .
+
+pumps:hasDistributionType a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MultiPumpType .
+
+pumps:hasDocumentation a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:PumpType .
+
+pumps:hasDownTime a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:GeneralMaintenanceType .
+
+pumps:hasDriveOverheat a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionPumpOperationType .
+
+pumps:hasDriverPowerInput a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DriveMeasurementsType .
+
+pumps:hasDry a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionProcessFluidType .
+
+pumps:hasDryCriticalSpeed a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasDurability a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ConditionBasedMaintenanceType .
+
+pumps:hasDuringMaintenanceServicesRendered a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasDuringMaintenanceServicesRenderedLink a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasDynamicViscosity a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ImplementationType,
+        pumps:MeasurementsType .
+
+pumps:hasElectricalFault a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionElectronicsType .
+
+pumps:hasElectromagneticInterference a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionAuxiliaryDeviceType .
+
+pumps:hasElectronicFault a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionAuxiliaryDeviceType .
+
+pumps:hasElectronicTemperature a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MeasurementsType .
+
+pumps:hasEnable a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:PumpActuationType .
+
+pumps:hasEnergyConsumption a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DriveMeasurementsType .
+
+pumps:hasEnergyEfficiencyClassOfMotor a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DriveDesignType .
+
+pumps:hasEnergySupply a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionAuxiliaryDeviceType .
+
+pumps:hasEprom a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionHardwareType .
+
+pumps:hasEvaluationElectronics a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionAuxiliaryDeviceType .
+
+pumps:hasEvents a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:PumpType .
+
+pumps:hasExcessVibration a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionMechanicsType .
+
+pumps:hasExchangeMode a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MultiPumpType .
+
+pumps:hasExchangeTime a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MultiPumpType .
+
+pumps:hasExchangeTimeDifference a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MultiPumpType .
+
+pumps:hasExciterError a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionAuxiliaryDeviceType .
+
+pumps:hasExpectedReliability a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ConditionBasedMaintenanceType .
+
+pumps:hasExplosionProtection a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasExplosionZone a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SystemRequirementsType .
+
+pumps:hasExternalDisabledTime a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:GeneralMaintenanceType .
+
+pumps:hasExternalSignal a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:PumpActuationType .
+
+pumps:hasFailure a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:BreakdownMaintenanceType .
+
+pumps:hasFailureRate a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:GeneralMaintenanceType .
+
+pumps:hasFaultAction a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ActuationType,
+        pumps:DiscreteOutputObjectType,
+        pumps:PumpActuationType,
+        pumps:PumpKickObjectType .
+
+pumps:hasFaultValue a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ActuationType,
+        pumps:DiscreteOutputObjectType,
+        pumps:PumpActuationType,
+        pumps:PumpKickObjectType .
+
+pumps:hasFeedbackVariable a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ActuationType,
+        pumps:ControlType,
+        pumps:PumpActuationType .
+
+pumps:hasFieldCircuit a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionElectronicsType .
+
+pumps:hasFieldbus a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SystemRequirementsType .
+
+pumps:hasFinalControlledVariable a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ControlType .
+
+pumps:hasFlow a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionProcessFluidType .
+
+pumps:hasFluid a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SystemRequirementsType .
+
+pumps:hasFluidTemperature a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MeasurementsType .
+
+pumps:hasFlushValveOpen a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SignalsType .
+
+pumps:hasFlushValveRequest a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:PumpActuationType .
+
+pumps:hasFouling a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionAuxiliaryDeviceType .
+
+pumps:hasFrequency a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DriveMeasurementsType .
+
+pumps:hasGapVoltage a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:VibrationMeasurementType .
+
+pumps:hasGapWear a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionMechanicsType .
+
+pumps:hasGas a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionProcessFluidType .
+
+pumps:hasGasContent a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SystemRequirementsType .
+
+pumps:hasGasDilValveOpen a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SignalsType .
+
+pumps:hasGasDilValveRequest a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:PumpActuationType .
+
+pumps:hasGeneralMaintenance a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MaintenanceGroupType .
+
+pumps:hasGeneratorOperation a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionPumpOperationType .
+
+pumps:hasGeometricDisplacementVolume a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasGeometricalFlow a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasHardwareFault a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionHardwareType .
+
+pumps:hasHeadAtPeakPoint a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasHeightOfTheInletConnection a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:InletConnectionImplementationType .
+
+pumps:hasHeightOfTheInletManometer a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ImplementationType .
+
+pumps:hasHeightOfTheInletSideOfTheInstallation a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SystemRequirementsType .
+
+pumps:hasHeightOfTheNpshDatumPlane a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ImplementationType .
+
+pumps:hasHeightOfTheOutletConnection a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:OutletConnectionImplementationType .
+
+pumps:hasHeightOfTheOutletManometer a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ImplementationType .
+
+pumps:hasHeightOfTheOutletSideOfTheInstallation a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SystemRequirementsType .
+
+pumps:hasHeightOfThePump a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SystemRequirementsType .
+
+pumps:hasHousingTemperature a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MeasurementsType .
+
+pumps:hasHumidityElectronics a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionAuxiliaryDeviceType .
+
+pumps:hasHydraulicEfficiency a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ImplementationType,
+        pumps:MeasurementsType .
+
+pumps:hasIONA a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionHardwareType .
+
+pumps:hasIdCarrier a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DrivePortType,
+        pumps:InletConnectionPortType,
+        pumps:OutletConnectionPortType .
+
+pumps:hasIdleTime a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:GeneralMaintenanceType .
+
+pumps:hasImplementation a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ConfigurationGroupType,
+        pumps:InletConnectionPortType,
+        pumps:OutletConnectionPortType .
+
+pumps:hasImplementationDescription a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasImplementationDescriptionLink a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasInletAreaOfThePump a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:InletConnectionDesignType .
+
+pumps:hasInletPressure a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:InletConnectionSystemRequirementsType .
+
+pumps:hasInletPressureOfTheInstallation a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MeasurementsType .
+
+pumps:hasInletTemperatureOfThePump a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:InletConnectionMeasurementsType .
+
+pumps:hasInletValveOpen a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SignalsType .
+
+pumps:hasInletValveRequest a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:PumpActuationType .
+
+pumps:hasInstallation a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionAuxiliaryDeviceType .
+
+pumps:hasInstallationDate a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:PreventiveMaintenanceType .
+
+pumps:hasInstallationFault a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionElectronicsType .
+
+pumps:hasInstallationNpshCurve a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasInstallationTotalHead a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ImplementationType,
+        pumps:MeasurementsType .
+
+pumps:hasInstantaneousAvailability a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ConditionBasedMaintenanceType .
+
+pumps:hasInsulationResistance a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionElectronicsType .
+
+pumps:hasIntegralActionCoefficient a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ControlType .
+
+pumps:hasInterruption a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionAuxiliaryDeviceType .
+
+pumps:hasIntrinsicMaintainability a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ConditionBasedMaintenanceType .
+
+pumps:hasIntrinsicReliability a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ConditionBasedMaintenanceType .
+
+pumps:hasKinematicViscosity a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ImplementationType,
+        pumps:MeasurementsType .
+
+pumps:hasLastInspectionDate a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:PreventiveMaintenanceType .
+
+pumps:hasLastServicingDate a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:PreventiveMaintenanceType .
+
+pumps:hasLayout a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasLayoutLink a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasLeakage a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionPumpOperationType .
+
+pumps:hasLeakageRateOfFlow a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType,
+        pumps:MeasurementsType .
+
+pumps:hasLevel a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MeasurementsType .
+
+pumps:hasLineLength a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionAuxiliaryDeviceType .
+
+pumps:hasLiquid a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionProcessFluidType .
+
+pumps:hasLocation a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasLocationLink a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasLogicDiagram a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasLogicDiagramLink a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasLubricant a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionPumpOperationType .
+
+pumps:hasLubricatingOilConsumption a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MeasurementsType .
+
+pumps:hasLubricatingOilPressure a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MeasurementsType .
+
+pumps:hasLubricationMap a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasLubricationMapLink a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasMaintainability a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ConditionBasedMaintenanceType .
+
+pumps:hasMaintenanceLevel a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:GeneralMaintenanceType .
+
+pumps:hasMaintenanceManual a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasMaintenanceManualLink a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasMaintenanceTime a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:GeneralMaintenanceType .
+
+pumps:hasManipulatedValue a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ActuationType,
+        pumps:PumpActuationType .
+
+pumps:hasManipulatedVariable a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ControlType .
+
+pumps:hasMarkings a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:PumpIdentificationType .
+
+pumps:hasMassFlow a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MeasurementsType .
+
+pumps:hasMaterialElectronics a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionAuxiliaryDeviceType .
+
+pumps:hasMaxNominalFrequency a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DriveDesignType .
+
+pumps:hasMaximumAllowableAmbientTemperature a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasMaximumAllowableCasingWorkingPressure a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasMaximumAllowableContinuousSpeed a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasMaximumAllowableFlow a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ImplementationType .
+
+pumps:hasMaximumAllowableHead a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasMaximumAllowableInletPressure a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:InletConnectionDesignType .
+
+pumps:hasMaximumAllowableOutletPressure a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:OutletConnectionDesignType .
+
+pumps:hasMaximumAllowableRelativeHumidity a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasMaximumAllowableTemperature a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasMaximumAllowableThroughput a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasMaximumAllowableWorkingPressure a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasMaximumAmbientTemperature a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SystemRequirementsType .
+
+pumps:hasMaximumAxialLoad a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasMaximumDynamicSealingPressure a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ImplementationType .
+
+pumps:hasMaximumFlow a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SystemRequirementsType .
+
+pumps:hasMaximumHead a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SystemRequirementsType .
+
+pumps:hasMaximumInletPressure a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SystemRequirementsType .
+
+pumps:hasMaximumNumberOfPumpsInOperation a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MultiPumpType .
+
+pumps:hasMaximumNumberStarts a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionPumpOperationType .
+
+pumps:hasMaximumOperationTime a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionPumpOperationType .
+
+pumps:hasMaximumOutletPressure a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SystemRequirementsType .
+
+pumps:hasMaximumPumpPowerInput a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasMaximumRadialLoad a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasMaximumRelativeHumidity a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SystemRequirementsType .
+
+pumps:hasMaximumStartsAtTime a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionPumpOperationType .
+
+pumps:hasMaximumStaticSealingPressure a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasMaximumTemperature a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SystemRequirementsType .
+
+pumps:hasMaximumTolerableWaterVaporInletPressure a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:InletConnectionDesignType .
+
+pumps:hasMaximumWorkingPressure a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:InletConnectionDesignType .
+
+pumps:hasMeanOperatingTimeBetweenFailures a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:GeneralMaintenanceType .
+
+pumps:hasMeanRatedVelocityAtInlet a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:InletConnectionImplementationType .
+
+pumps:hasMeanRatedVelocityAtOutlet a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:OutletConnectionImplementationType .
+
+pumps:hasMeanRepairTime a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:GeneralMaintenanceType .
+
+pumps:hasMeanTimeBetweenFailures a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SystemRequirementsType .
+
+pumps:hasMeanTimeToRestauration a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:GeneralMaintenanceType .
+
+pumps:hasMeanTimebetweenFailures a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasMeanVelocityAtInlet a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:InletConnectionMeasurementsType .
+
+pumps:hasMeanVelocityAtOutlet a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:OutletConnectionMeasurementsType .
+
+pumps:hasMeanVelocityAtThroat a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MeasurementsType .
+
+pumps:hasMeasureCircuit a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionHardwareType .
+
+pumps:hasMeasuredMaterialElectronics a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionAuxiliaryDeviceType .
+
+pumps:hasMeasurements a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DrivePortType,
+        pumps:InletConnectionPortType,
+        pumps:OperationalGroupType,
+        pumps:OutletConnectionPortType .
+
+pumps:hasMechanicalDamage a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionAuxiliaryDeviceType .
+
+pumps:hasMechanicalEfficiency a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ImplementationType,
+        pumps:MeasurementsType .
+
+pumps:hasMechanicalFault a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionMechanicsType .
+
+pumps:hasMemory a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionSoftwareType .
+
+pumps:hasMicroProcessor a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionHardwareType .
+
+pumps:hasMinNominalFrequency a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DriveDesignType .
+
+pumps:hasMinimumAllowableAmbientTemperature a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasMinimumAllowableContinuousSpeed a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasMinimumAllowableFlow a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ImplementationType .
+
+pumps:hasMinimumAllowableHead a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasMinimumAllowableInletPressure a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:InletConnectionDesignType .
+
+pumps:hasMinimumAllowableOutetPressure a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:OutletConnectionDesignType .
+
+pumps:hasMinimumAllowableRelativeHumidity a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasMinimumAllowableStableFlow a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ImplementationType .
+
+pumps:hasMinimumAllowableTemperature a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasMinimumAllowableThermalFlow a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasMinimumAmbientTemperature a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SystemRequirementsType .
+
+pumps:hasMinimumContinuousStableFlow a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasMinimumContinuousThermalFlow a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasMinimumFlow a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SystemRequirementsType .
+
+pumps:hasMinimumHead a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SystemRequirementsType .
+
+pumps:hasMinimumInletPressure a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SystemRequirementsType .
+
+pumps:hasMinimumOutletPressure a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SystemRequirementsType .
+
+pumps:hasMinimumRelativeHumidity a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SystemRequirementsType .
+
+pumps:hasMinimumTemperature a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SystemRequirementsType .
+
+pumps:hasMisalignment a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionMechanicsType .
+
+pumps:hasMotorCurrent a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DriveMeasurementsType .
+
+pumps:hasMotorEfficiency a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DriveDesignType,
+        pumps:DriveMeasurementsType .
+
+pumps:hasMotorHumidity a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionPumpOperationType .
+
+pumps:hasMotorOverheat a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionPumpOperationType .
+
+pumps:hasMotorTemperature a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DriveMeasurementsType .
+
+pumps:hasMotorVoltage a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DriveMeasurementsType .
+
+pumps:hasMultiPump a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:OperationalGroupType .
+
+pumps:hasMultiPumpOperationMode a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MultiPumpType .
+
+pumps:hasMulti_Phase a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SystemRequirementsType .
+
+pumps:hasNetPositiveInletPressure a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MeasurementsType .
+
+pumps:hasNetPositiveInletPressureAvailable a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SystemRequirementsType .
+
+pumps:hasNetPositiveInletPressureRequired a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:InletConnectionDesignType .
+
+pumps:hasNetPositiveSuctionHead a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MeasurementsType .
+
+pumps:hasNetPositiveSuctionHeadAvailable a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ImplementationType .
+
+pumps:hasNetPositiveSuctionHeadRequired a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasNetPositiveSuctionHeadRequiredForADropOf3Percent a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasNetworkNA a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionHardwareType .
+
+pumps:hasNextInspectionDate a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:PreventiveMaintenanceType .
+
+pumps:hasNextServicingDate a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:PreventiveMaintenanceType .
+
+pumps:hasNoRotation a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SignalsType .
+
+pumps:hasNominalFrequency a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DriveDesignType .
+
+pumps:hasNominalPowerConsumption a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DriveDesignType .
+
+pumps:hasNominalPressure a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:InletConnectionDesignType,
+        pumps:OutletConnectionDesignType .
+
+pumps:hasNominalSize a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:InletConnectionImplementationType,
+        pumps:OutletConnectionImplementationType .
+
+pumps:hasNominalVoltage a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DriveDesignType .
+
+pumps:hasNormalFlow a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SystemRequirementsType .
+
+pumps:hasNot1XRelativeShaftVibrationP_P a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:VibrationMeasurementType .
+
+pumps:hasNpshDatumPlane a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SystemRequirementsType .
+
+pumps:hasNumberOfFailures a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:BreakdownMaintenanceType .
+
+pumps:hasNumberOfPumps a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MultiPumpType .
+
+pumps:hasNumberOfStarts a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MeasurementsType .
+
+pumps:hasOS a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionSoftwareType .
+
+pumps:hasObsolescence a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:GeneralMaintenanceType .
+
+pumps:hasOfferedControlModes a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasOfferedFieldbuses a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasOnOff a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ActuationType,
+        pumps:PumpActuationType .
+
+pumps:hasOnOffCycle a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DiscreteInputObjectType,
+        pumps:DiscreteOutputObjectType,
+        pumps:PumpKickObjectType .
+
+pumps:hasOperatingConditions a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionAuxiliaryDeviceType .
+
+pumps:hasOperatingMode a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ControlType,
+        pumps:SystemRequirementsType .
+
+pumps:hasOperatingTime a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:GeneralMaintenanceType .
+
+pumps:hasOperatingTimeBetweenFailures a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:GeneralMaintenanceType .
+
+pumps:hasOperatingTimeToFailure a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:GeneralMaintenanceType .
+
+pumps:hasOperationFault a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionPumpOperationType .
+
+pumps:hasOperationManual a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasOperationManualLink a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasOperationalReliability a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ConditionBasedMaintenanceType .
+
+pumps:hasOptimumHead a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasOptimumPumpPowerInput a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasOptimumRateOfFlow a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasOther a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionAuxiliaryDeviceType .
+
+pumps:hasOutletAreaOfThePump a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:OutletConnectionDesignType .
+
+pumps:hasOutletPressureOfTheInstallation a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MeasurementsType .
+
+pumps:hasOutletTemperatureOfThePump a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:OutletConnectionMeasurementsType .
+
+pumps:hasOutletValveOpen a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SignalsType .
+
+pumps:hasOutletValveRequest a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:PumpActuationType .
+
+pumps:hasOverLoad a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionPumpOperationType .
+
+pumps:hasOverSpeed a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionPumpOperationType .
+
+pumps:hasOverallEfficiency a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ImplementationType,
+        pumps:MeasurementsType .
+
+pumps:hasOverallVibrationAcceleration0_P a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:VibrationMeasurementType .
+
+pumps:hasOverallVibrationAccelerationP_P a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:VibrationMeasurementType .
+
+pumps:hasOverallVibrationAccelerationPerG0_P a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:VibrationMeasurementType .
+
+pumps:hasOverallVibrationAccelerationPerGP_P a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:VibrationMeasurementType .
+
+pumps:hasOverallVibrationAccelerationPerG_RMS a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:VibrationMeasurementType .
+
+pumps:hasOverallVibrationAccelerationRMS a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:VibrationMeasurementType .
+
+pumps:hasOverallVibrationDisplacementP_P a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:VibrationMeasurementType .
+
+pumps:hasOverallVibrationDisplacementRMS a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:VibrationMeasurementType .
+
+pumps:hasOverallVibrationVelocity0_P a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:VibrationMeasurementType .
+
+pumps:hasOverallVibrationVelocityP_P a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:VibrationMeasurementType .
+
+pumps:hasOverallVibrationVelocityRMS a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:VibrationMeasurementType .
+
+pumps:hasOverloading a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionAuxiliaryDeviceType .
+
+pumps:hasParameter a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionSoftwareType .
+
+pumps:hasParameterSetting a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionAuxiliaryDeviceType .
+
+pumps:hasPartialLoad a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionPumpOperationType .
+
+pumps:hasPeripheral a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionAuxiliaryDeviceType .
+
+pumps:hasPersonnelRecording a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasPersonnelRecordingLink a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasPhaseFailure a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionElectronicsType .
+
+pumps:hasPipeAndInstrumentDiagram a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasPipeAndInstrumentDiagramLink a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasPistonVelocity a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasPorts a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:PumpType .
+
+pumps:hasPossibleFluids a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasPowerFactor a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DriveDesignType,
+        pumps:DriveMeasurementsType .
+
+pumps:hasPowerLossDueToInternalLeakage a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MeasurementsType .
+
+pumps:hasPowerSupply a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionHardwareType .
+
+pumps:hasPre_ChargePressure a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasPressure a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionProcessFluidType .
+
+pumps:hasPreventiveMaintenance a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MaintenanceGroupType .
+
+pumps:hasPreventiveMaintenanceTime a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:PreventiveMaintenanceType .
+
+pumps:hasProcessFault a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionProcessFluidType .
+
+pumps:hasProcessInfluence a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionAuxiliaryDeviceType .
+
+pumps:hasProcessIsActive a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SignalsType .
+
+pumps:hasProcessPressure a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MeasurementsType .
+
+pumps:hasProductionBasedAvailability a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ConditionBasedMaintenanceType .
+
+pumps:hasProportionalActionCoefficient a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ControlType .
+
+pumps:hasProtectionClass a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DriveDesignType .
+
+pumps:hasPumpActivation a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SignalsType .
+
+pumps:hasPumpActuation a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:OperationalGroupType .
+
+pumps:hasPumpBestEfficiency a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ImplementationType .
+
+pumps:hasPumpClass a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasPumpCollectiveIDs a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MultiPumpType .
+
+pumps:hasPumpCurve a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasPumpDirection a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SignalsType .
+
+pumps:hasPumpEfficiency a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ImplementationType,
+        pumps:MeasurementsType .
+
+pumps:hasPumpEfficiencyCurve a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasPumpH_Q_Curve a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasPumpHumidity a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MeasurementsType .
+
+pumps:hasPumpKick a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:PumpActuationType .
+
+pumps:hasPumpKickMode a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:PumpKickObjectType .
+
+pumps:hasPumpKickTime a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:PumpKickObjectType .
+
+pumps:hasPumpKickTimeDifference a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:PumpKickObjectType .
+
+pumps:hasPumpMechanicalPowerLosses a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ImplementationType .
+
+pumps:hasPumpNpshCurve a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasPumpOperation a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SignalsType .
+
+pumps:hasPumpPowerInput a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MeasurementsType .
+
+pumps:hasPumpPowerInputCurve a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasPumpPowerMax a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SignalsType .
+
+pumps:hasPumpPowerOutput a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MeasurementsType .
+
+pumps:hasPumpRatedPowerInput a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ImplementationType .
+
+pumps:hasPumpRole a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MultiPumpType .
+
+pumps:hasPumpSpeedMax a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SignalsType .
+
+pumps:hasPumpSpeedMin a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SignalsType .
+
+pumps:hasPumpStandByRequest a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:PumpActuationType .
+
+pumps:hasPumpTemperature a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MeasurementsType .
+
+pumps:hasPumpTotalHead a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ImplementationType,
+        pumps:MeasurementsType .
+
+pumps:hasPurgeValveOpen a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SignalsType .
+
+pumps:hasPurgeValveRequest a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:PumpActuationType .
+
+pumps:hasRadialBearingAbrasion a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionMechanicsType .
+
+pumps:hasRadialBearingFault a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionMechanicsType .
+
+pumps:hasRadialBearingOverheat a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionMechanicsType .
+
+pumps:hasRadialLoadOfPumpRotor a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MeasurementsType .
+
+pumps:hasRam a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionHardwareType .
+
+pumps:hasRatedCurrent a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DriveDesignType .
+
+pumps:hasRatedDifferentialPressure a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ImplementationType .
+
+pumps:hasRatedFlow a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ImplementationType .
+
+pumps:hasRatedInletPressure a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:InletConnectionImplementationType .
+
+pumps:hasRatedInletPressureOfTheInstallation a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SystemRequirementsType .
+
+pumps:hasRatedMeanVelocityAtInletAreaOfTheInstallation a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ImplementationType .
+
+pumps:hasRatedMeanVelocityAtOutletAreaOfTheInstallation a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ImplementationType .
+
+pumps:hasRatedOutletPressure a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:OutletConnectionImplementationType .
+
+pumps:hasRatedPumpUnitTotalHead a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SystemRequirementsType .
+
+pumps:hasRatedSpeed a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DriveDesignType,
+        pumps:ImplementationType,
+        pumps:SignalsType .
+
+pumps:hasRedundantPumpIDs a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MultiPumpType .
+
+pumps:hasReferencePlane a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SystemRequirementsType .
+
+pumps:hasReferenceStandardForVibrationMeasurement a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:VibrationMeasurementType .
+
+pumps:hasReferenceVariable a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ActuationType,
+        pumps:ControlType,
+        pumps:PumpActuationType .
+
+pumps:hasReliability a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ConditionBasedMaintenanceType .
+
+pumps:hasReliefValveAccumulationPressure a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:OutletConnectionDesignType .
+
+pumps:hasReliefValveBackPressure a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:OutletConnectionDesignType .
+
+pumps:hasReliefValveReseatPressure a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:OutletConnectionDesignType .
+
+pumps:hasReliefValveSetPressure a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:OutletConnectionDesignType .
+
+pumps:hasRepairTime a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:GeneralMaintenanceType .
+
+pumps:hasRequiredControlMode a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SystemRequirementsType .
+
+pumps:hasRequiredTime a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SystemRequirementsType .
+
+pumps:hasReverseRotatingDirection a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:PumpActuationType .
+
+pumps:hasRotationalPhase1X a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:VibrationMeasurementType .
+
+pumps:hasRotationalPhase2X a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:VibrationMeasurementType .
+
+pumps:hasRotorBlocked a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionMechanicsType .
+
+pumps:hasRotorStationRubbing a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionMechanicsType .
+
+pumps:hasScopeOfWork a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasScopeOfWorkLink a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasSensorElement a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionAuxiliaryDeviceType .
+
+pumps:hasSetControlMode a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:PumpActuationType .
+
+pumps:hasSetOperationMode a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:PumpActuationType .
+
+pumps:hasSeverity a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:BreakdownMaintenanceType .
+
+pumps:hasShortCircuit a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionElectronicsType .
+
+pumps:hasShortToEarth a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionElectronicsType .
+
+pumps:hasShut_OffHead a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasShut_OffPumpPowerInput a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasSignals a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:OperationalGroupType .
+
+pumps:hasSingleLineDiagram a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasSingleLineDiagramLink a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasSlipFlow a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasSoftwareFault a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionSoftwareType .
+
+pumps:hasSoftwareReset a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionSoftwareType .
+
+pumps:hasSolid a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionProcessFluidType .
+
+pumps:hasSolidContent a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SystemRequirementsType .
+
+pumps:hasSoundEnergy a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType,
+        pumps:MeasurementsType .
+
+pumps:hasSoundEnergyLevel a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType,
+        pumps:MeasurementsType .
+
+pumps:hasSoundPower a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType,
+        pumps:MeasurementsType .
+
+pumps:hasSoundPowerLevel a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType,
+        pumps:MeasurementsType .
+
+pumps:hasSoundPressure a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType,
+        pumps:MeasurementsType .
+
+pumps:hasSoundPressureLevel a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType,
+        pumps:MeasurementsType .
+
+pumps:hasSparePartReference a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasSparePartReferenceLink a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasSpecificSpeed a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasSpeed a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MeasurementsType .
+
+pumps:hasSpeedOfRotation a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:VibrationMeasurementType .
+
+pumps:hasStablePumpH_Q_Curve a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasStaff a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasStaffLink a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasStall a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionProcessFluidType .
+
+pumps:hasStandBy a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SignalsType .
+
+pumps:hasStandBySpeed a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SignalsType .
+
+pumps:hasStandardGasFlowrate a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasStandbyTime a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:GeneralMaintenanceType .
+
+pumps:hasStartUp a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionAuxiliaryDeviceType .
+
+pumps:hasStartingPressure a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasStateOfTheItem a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:GeneralMaintenanceType .
+
+pumps:hasStatus a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ActuationType,
+        pumps:DiscreteInputObjectType,
+        pumps:DiscreteOutputObjectType,
+        pumps:PumpActuationType,
+        pumps:PumpKickObjectType .
+
+pumps:hasSuction_SpecificSpeed a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasSupervisionAuxiliaryDevice a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionType .
+
+pumps:hasSupervisionElectronics a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionType .
+
+pumps:hasSupervisionHardware a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionType .
+
+pumps:hasSupervisionMechanics a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionType .
+
+pumps:hasSupervisionProcessFluid a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionType .
+
+pumps:hasSupervisionPumpOperation a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionType .
+
+pumps:hasSupervisionSoftware a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionType .
+
+pumps:hasSupplyCurrent a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionElectronicsType .
+
+pumps:hasSupplyCurrentHigh a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionElectronicsType .
+
+pumps:hasSupplyCurrentLow a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionElectronicsType .
+
+pumps:hasSupplyFrequency a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionElectronicsType .
+
+pumps:hasSupplyFrequencyHigh a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionElectronicsType .
+
+pumps:hasSupplyFrequencyLow a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionElectronicsType .
+
+pumps:hasSupplyVoltage a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionElectronicsType .
+
+pumps:hasSupplyVoltageHigh a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionElectronicsType .
+
+pumps:hasSupplyVoltageLow a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionElectronicsType .
+
+pumps:hasSweptVolume a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasSynchronisation a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionPumpOperationType .
+
+pumps:hasSystemRequirements a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ConfigurationGroupType,
+        pumps:InletConnectionPortType,
+        pumps:OutletConnectionPortType .
+
+pumps:hasTMSFailure a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionPumpOperationType .
+
+pumps:hasTargetSpeed a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SignalsType .
+
+pumps:hasTechnicalData a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasTechnicalDataLink a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasTemperature a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionProcessFluidType .
+
+pumps:hasTemperatureFault a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionPumpOperationType .
+
+pumps:hasTemperatureShock a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionAuxiliaryDeviceType .
+
+pumps:hasTestProgramReport a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasTestProgramReportLink a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasThrottleValveActuation a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:OperationalGroupType .
+
+pumps:hasThroughput a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:MeasurementsType,
+        pumps:SystemRequirementsType .
+
+pumps:hasThrustPosition a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:VibrationMeasurementType .
+
+pumps:hasTimeBasedAvailability a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ConditionBasedMaintenanceType .
+
+pumps:hasTimeBetweenFailures a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:GeneralMaintenanceType .
+
+pumps:hasTimeOut a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionPumpOperationType .
+
+pumps:hasTimeToRestoration a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:GeneralMaintenanceType .
+
+pumps:hasTorque a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DriveMeasurementsType .
+
+pumps:hasTorqueAtNominalSpeedOfDrive a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DriveDesignType .
+
+pumps:hasTorqueLimit a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionPumpOperationType .
+
+pumps:hasTotalHeadAtInletAreaOfTheInstallation a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ImplementationType,
+        pumps:MeasurementsType .
+
+pumps:hasTotalHeadAtInletAreaOfThePump a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:InletConnectionImplementationType .
+
+pumps:hasTotalHeadAtOutletAreaOfTheInstallation a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ImplementationType,
+        pumps:MeasurementsType .
+
+pumps:hasTotalHeadAtOutletAreaOfThePump a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:OutletConnectionImplementationType .
+
+pumps:hasTripSpeed a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasTurbineOperation a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionPumpOperationType .
+
+pumps:hasTypeNumber a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasUltimatePressureOfAVacuumPump a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SystemRequirementsType .
+
+pumps:hasUnbalance a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionMechanicsType .
+
+pumps:hasUnderSpeed a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionPumpOperationType .
+
+pumps:hasUnitMaintenanceReport a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasUnitMaintenanceReportLink a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DocumentationType .
+
+pumps:hasUpTime a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:GeneralMaintenanceType .
+
+pumps:hasUsefulLife a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ImplementationType .
+
+pumps:hasValveSeatVelocity a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ImplementationType .
+
+pumps:hasValveSpillVelocity a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ImplementationType .
+
+pumps:hasVaporPressureOfThePumpedLiquid a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ImplementationType .
+
+pumps:hasVelocityLimit a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionPumpOperationType .
+
+pumps:hasVentValveOpen a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SignalsType .
+
+pumps:hasVentValveRequest a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:PumpActuationType .
+
+pumps:hasVibration a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionAuxiliaryDeviceType .
+
+pumps:hasVibrationAmplitudeAtTheBearingDefectFrequencies a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:VibrationMeasurementType .
+
+pumps:hasVibrationAmplitudeAtTheBearingDefectFrequenciesPerG a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:VibrationMeasurementType .
+
+pumps:hasVibrationAmplitudeAtTheBladePassFrequency a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:VibrationMeasurementType .
+
+pumps:hasVibrationAmplitudeAtTheFirstHarmonicOfTheRotationFrequency2X a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:VibrationMeasurementType .
+
+pumps:hasVibrationAmplitudeAtTheGearMeshingFrequency a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:VibrationMeasurementType .
+
+pumps:hasVibrationAmplitudeAtTheGearMeshingFrequencyPerG a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:VibrationMeasurementType .
+
+pumps:hasVibrationAmplitudeAtTheHarmonicsOfTheRotationFrequencyNx a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:VibrationMeasurementType .
+
+pumps:hasVibrationAmplitudeAtTheRotationFrequency1X a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:VibrationMeasurementType .
+
+pumps:hasVibrationAmplitudeAtTheSidebandsOfTheGearMeshingFrequency a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:VibrationMeasurementType .
+
+pumps:hasVibrationAmplitudeAtTheSidebandsOfTheGearMeshingFrequencyPerG a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:VibrationMeasurementType .
+
+pumps:hasViscosity a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionProcessFluidType .
+
+pumps:hasVoltage a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DriveMeasurementsType .
+
+pumps:hasVoltageInsideDevice a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionElectronicsType .
+
+pumps:hasVolumeFlowRate a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasVolumeFlowRateOfBackingPump a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasVolumetricEfficiency a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:ImplementationType,
+        pumps:MeasurementsType .
+
+pumps:hasWarmUpTimeForAVaporJetPumpOrADiffusionPump a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasWaterVaporCapacity a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:InletConnectionDesignType .
+
+pumps:hasWaterVaporTolerableLoad a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasWearReserveExhausted a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionPumpOperationType .
+
+pumps:hasWearReserveOperation a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionAuxiliaryDeviceType .
+
+pumps:hasWearReserveWear a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionAuxiliaryDeviceType .
+
+pumps:hasWetCriticalSpeed a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:DesignType .
+
+pumps:hasWindingTemperature a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SupervisionElectronicsType .
+
+pumps:hasWorkingTemperature a owl:NamedIndividual,
+        owl:ObjectProperty ;
+    rdfs:domain pumps:SystemRequirementsType .
+
+opcua:QuantitiesFolderType a owl:Class ;
+    rdfs:subClassOf opcua:FolderType .
+
+opcua:QuantityType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:ReaderGroupMessageType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:ReaderGroupTransportType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:ReaderGroupType a owl:Class ;
+    rdfs:subClassOf opcua:PubSubGroupType .
+
+opcua:ReferenceTypeNodeClass a owl:Class,
+        owl:NamedIndividual ;
+    rdfs:subClassOf opcua:BaseNodeClass .
+
+opcua:RefreshEndEventType a owl:Class ;
+    rdfs:subClassOf opcua:SystemEventType .
+
+opcua:RefreshRequiredEventType a owl:Class ;
+    rdfs:subClassOf opcua:SystemEventType .
+
+opcua:RefreshStartEventType a owl:Class ;
+    rdfs:subClassOf opcua:SystemEventType .
+
+opcua:RoleMappingRuleChangedAuditEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditUpdateMethodEventType .
+
+opcua:RoleSetType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:RoleType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:RsaMinApplicationCertificateType a owl:Class ;
+    rdfs:subClassOf opcua:ApplicationCertificateType .
+
+opcua:RsaSha256ApplicationCertificateType a owl:Class ;
+    rdfs:subClassOf opcua:ApplicationCertificateType .
+
+opcua:SafetyConditionClassType a owl:Class ;
+    rdfs:subClassOf opcua:BaseConditionClassType .
+
+opcua:SecurityGroupFolderType a owl:Class ;
+    rdfs:subClassOf opcua:FolderType .
+
+opcua:SecurityGroupType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:SemanticChangeEventType a owl:Class ;
+    rdfs:subClassOf opcua:BaseEventType .
+
+opcua:ServerCapabilitiesType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:ServerDiagnosticsType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:ServerType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:ServerUnitType a owl:Class ;
+    rdfs:subClassOf opcua:UnitType .
+
+opcua:SessionDiagnosticsObjectType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:SessionsDiagnosticsSummaryType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:ShelvedStateMachineType a owl:Class ;
+    rdfs:subClassOf opcua:FiniteStateMachineType .
+
+opcua:StandaloneSubscribedDataSetType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:StatisticalConditionClassType a owl:Class ;
+    rdfs:subClassOf opcua:BaseConditionClassType .
+
+opcua:SubscribedDataSetFolderType a owl:Class ;
+    rdfs:subClassOf opcua:FolderType .
+
+opcua:SubscribedDataSetMirrorType a owl:Class ;
+    rdfs:subClassOf opcua:SubscribedDataSetType .
+
+opcua:SyntaxReferenceEntryType a owl:Class ;
+    rdfs:subClassOf opcua:DictionaryEntryType .
+
+opcua:SystemConditionClassType a owl:Class ;
+    rdfs:subClassOf opcua:BaseConditionClassType .
+
+opcua:SystemDiagnosticAlarmType a owl:Class ;
+    rdfs:subClassOf opcua:OffNormalAlarmType .
+
+opcua:SystemStatusChangeEventType a owl:Class ;
+    rdfs:subClassOf opcua:SystemEventType .
+
+opcua:TargetVariablesType a owl:Class ;
+    rdfs:subClassOf opcua:SubscribedDataSetType .
+
+opcua:TemporaryFileTransferType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:TestingConditionClassType a owl:Class ;
+    rdfs:subClassOf opcua:BaseConditionClassType .
+
+opcua:TrainingConditionClassType a owl:Class ;
+    rdfs:subClassOf opcua:BaseConditionClassType .
+
+opcua:TransactionDiagnosticsType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:TransitionType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:TransparentRedundancyType a owl:Class ;
+    rdfs:subClassOf opcua:ServerRedundancyType .
+
+opcua:TripAlarmType a owl:Class ;
+    rdfs:subClassOf opcua:OffNormalAlarmType .
+
+opcua:TrustListOutOfDateAlarmType a owl:Class ;
+    rdfs:subClassOf opcua:SystemOffNormalAlarmType .
+
+opcua:TrustListType a owl:Class ;
+    rdfs:subClassOf opcua:FileType .
+
+opcua:TrustListUpdateRequestedAuditEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditUpdateMethodEventType .
+
+opcua:TrustListUpdatedAuditEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditEventType .
+
+opcua:UadpDataSetReaderMessageType a owl:Class ;
+    rdfs:subClassOf opcua:DataSetReaderMessageType .
+
+opcua:UadpDataSetWriterMessageType a owl:Class ;
+    rdfs:subClassOf opcua:DataSetWriterMessageType .
+
+opcua:UadpWriterGroupMessageType a owl:Class ;
+    rdfs:subClassOf opcua:WriterGroupMessageType .
+
+opcua:UriDictionaryEntryType a owl:Class ;
+    rdfs:subClassOf opcua:DictionaryEntryType .
+
+opcua:UserCredentialCertificateType a owl:Class ;
+    rdfs:subClassOf opcua:CertificateType .
+
+opcua:UserManagementType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:VariableNodeClass a owl:Class,
+        owl:NamedIndividual ;
+    rdfs:subClassOf opcua:BaseNodeClass .
+
+opcua:VariableTypeNodeClass a owl:Class,
+        owl:NamedIndividual ;
+    rdfs:subClassOf opcua:BaseNodeClass .
+
+opcua:VendorServerInfoType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:WriterGroupType a owl:Class ;
+    rdfs:subClassOf opcua:PubSubGroupType .
+
+uaentity: a owl:Ontology ;
+    owl:versionInfo 1e-01 .
+
+opcua:AcknowledgeableConditionType a owl:Class ;
+    rdfs:subClassOf opcua:ConditionType .
+
+opcua:AlarmGroupType a owl:Class ;
+    rdfs:subClassOf opcua:FolderType .
+
+opcua:AuditChannelEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditSecurityEventType .
+
+opcua:AuditClientEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditEventType .
+
+opcua:AuditCreateSessionEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditSessionEventType .
+
+opcua:BaseModelChangeEventType a owl:Class ;
+    rdfs:subClassOf opcua:BaseEventType .
+
+devices:ITagNameplateType a owl:Class ;
+    rdfs:subClassOf opcua:BaseInterfaceType .
+
+devices:IVendorNameplateType a owl:Class ;
+    rdfs:subClassOf opcua:BaseInterfaceType .
+
+opcua:DataSetWriterTransportType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:DiscreteAlarmType a owl:Class ;
+    rdfs:subClassOf opcua:AlarmConditionType .
+
+opcua:InstrumentDiagnosticAlarmType a owl:Class ;
+    rdfs:subClassOf opcua:OffNormalAlarmType .
+
+machinery:IMachineVendorNameplateType a owl:Class ;
+    rdfs:subClassOf machinery:IMachineryItemVendorNameplateType .
+
+machinery:IMachineryItemVendorNameplateType a owl:Class ;
+    rdfs:subClassOf devices:IVendorNameplateType .
+
+machinery:MachineIdentificationType a owl:Class ;
+    rdfs:subClassOf machinery:MachineryItemIdentificationType .
+
+opcua:NetworkAddressType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:PubSubKeyServiceType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+pumps:MarkingsType a owl:Class ;
+    rdfs:subClassOf opcua:FolderType .
+
+opcua:ServerConfigurationType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:StateMachineType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:TransitionEventType a owl:Class ;
+    rdfs:subClassOf opcua:BaseEventType .
+
+base:_N0153090f9f484cecb7524db2fc1ab78e base:hasEnumValue 5 ;
+    base:hasValueClass pumps:OperationModeEnum .
+
+base:_N040cb7ced14e4c75aed1d16cfadda985 base:hasEnumValue 23 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_N05708a1b209d4f9084f5fd552542a130 base:hasEnumValue 2 ;
+    base:hasValueClass pumps:OperatingModeEnum .
+
+base:_N069e800a28e44a99897cdfb948a0430b base:hasEnumValue 6 ;
+    base:hasValueClass pumps:OperationModeEnum .
+
+base:_N0728153dd7c248cc8aadb1ebbffdfdc5 base:hasEnumValue 3 ;
+    base:hasValueClass pumps:MaintenanceLevelEnum .
+
+base:_N08fec8f0b900443187240eae9996fdcb base:hasEnumValue 35 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_N0943a4d4f7bf415f9c90fec2e03e2f14 base:hasEnumValue 16 ;
+    base:hasValueClass pumps:OfferedFieldbusesOptionSet .
+
+base:_N0988249cad1d45fbb89d147edb0631de base:hasEnumValue 3 ;
+    base:hasValueClass pumps:StateOfTheItemEnum .
+
+base:_N0b2aa192e2244a89b1ed1e15bd5b8784 base:hasEnumValue 1 ;
+    base:hasValueClass pumps:OperatingModeEnum .
+
+base:_N0d0fe9b2a49146f08c0eb71a3b5a19ce base:hasEnumValue 4 ;
+    base:hasValueClass pumps:ControlModeEnum .
+
+base:_N0d365c1d4bfd4d9ba54c1a58f7d85162 base:hasEnumValue 13 ;
+    base:hasValueClass pumps:OfferedFieldbusesOptionSet .
+
+base:_N0df37dbada5146ec82869c02608578b6 base:hasEnumValue 0 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_N0eb63e4b02924a17b21b4a524c282c8b base:hasEnumValue 1 ;
+    base:hasValueClass pumps:MultiPumpOperationModeEnum .
+
+base:_N10fb52b9508f4225bfa1188b97bb0a7c base:hasEnumValue 0 ;
+    base:hasValueClass pumps:OfferedFieldbusesOptionSet .
+
+base:_N14067253f79e47f1a92b30fd35f230a4 base:hasEnumValue 9 ;
+    base:hasValueClass pumps:ControlModeEnum .
+
+base:_N15eff47de96b4ffc91269c4b13e99efa base:hasEnumValue 19 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_N17727c1824534bcb85851631154ccff4 base:hasEnumValue 37 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_N1bdbcb5e7efd462395bf0061c90146fa base:hasEnumValue 27 ;
+    base:hasValueClass pumps:OfferedFieldbusesOptionSet .
+
+base:_N1db04ce6089f4a3da61f7b896c34246c base:hasEnumValue 14 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_N1f67e4555c3a4d66aeb366fc79145309 base:hasEnumValue 4 ;
+    base:hasValueClass pumps:MaintenanceLevelEnum .
+
+base:_N2522ea4005b14ffb9c2174e6659d35d8 base:hasEnumValue 1 ;
+    base:hasValueClass pumps:ExchangeModeEnum .
+
+base:_N25a7d6638e6546e9912a5fdfea1b77f2 base:hasEnumValue 4 ;
+    base:hasValueClass pumps:OperationModeEnum .
+
+base:_N25c435f465e84dd0a2b456f99bc0f351 base:hasEnumValue 10 ;
+    base:hasValueClass pumps:OfferedFieldbusesOptionSet .
+
+base:_N26582b8329b54809bbc90a51379a06e8 base:hasEnumValue 46 ;
+    base:hasValueClass pumps:OfferedFieldbusesOptionSet .
+
+base:_N269db41a8d8546d3a5d6057066568f91 base:hasEnumValue 11 ;
+    base:hasValueClass pumps:ControlModeEnum .
+
+base:_N28f1cde6ad094a5e81869c07a4185563 base:hasEnumValue 10 ;
+    base:hasValueClass pumps:OfferedControlModesOptionSet .
+
+base:_N2be94b24695a43d19a40fafd3bf14bee base:hasEnumValue 5 ;
+    base:hasValueClass pumps:OfferedFieldbusesOptionSet .
+
+base:_N2c7c600186a147beace0edce9e81f88e base:hasEnumValue 2 ;
+    base:hasValueClass pumps:OfferedFieldbusesOptionSet .
+
+base:_N2cf147e5941c47ff89c44042c7673551 base:hasEnumValue 8 ;
+    base:hasValueClass pumps:OfferedFieldbusesOptionSet .
+
+base:_N2f0d74fd8ddb4f5c96248dced4a3592c base:hasEnumValue 2 ;
+    base:hasValueClass pumps:ExchangeModeEnum .
+
+base:_N2f5f092abdab4933a8357ad2ed10b1b1 base:hasEnumValue 1 ;
+    base:hasValueClass pumps:StateOfTheItemEnum .
+
+base:_N30342d46d30746378080d04b9a0f40bd base:hasEnumValue 2 ;
+    base:hasValueClass pumps:PumpClassEnum .
+
+base:_N303663cbf160438c93c9b2bca0aa82e1 base:hasEnumValue 1 ;
+    base:hasValueClass pumps:ControlModeEnum .
+
+base:_N30d2777c5f964f60938d927776fb48a3 base:hasEnumValue 47 ;
+    base:hasValueClass pumps:OfferedFieldbusesOptionSet .
+
+base:_N32b7858b62f74af6bd606047c950641c base:hasEnumValue 49 ;
+    base:hasValueClass pumps:OfferedFieldbusesOptionSet .
+
+base:_N3740d1cf396642a3ad319cad4cd7073c base:hasEnumValue 5 ;
+    base:hasValueClass pumps:PumpClassEnum .
+
+base:_N3789a9e281e44483967f6bd52699c47a base:hasEnumValue 3 ;
+    base:hasValueClass pumps:PumpClassEnum .
+
+base:_N390bb8ab2059402ba7d3f7a3d9263f5e base:hasEnumValue 1 ;
+    base:hasValueClass pumps:PumpKickModeEnum .
+
+base:_N393f38d0e57b493d8e69c5b7deb46908 base:hasEnumValue 45 ;
+    base:hasValueClass pumps:OfferedFieldbusesOptionSet .
+
+base:_N399d96b29c6d496daee933f1a5ab9248 base:hasEnumValue 13 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_N3a81ba11f04e4296b5c4db723f938c09 base:hasEnumValue 6 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_N3d4614b5ed234a92b810904ba2fe9d66 base:hasEnumValue 22 ;
+    base:hasValueClass pumps:OfferedFieldbusesOptionSet .
+
+base:_N3f6aa1d9869b40f2b078cfcd74033ece base:hasEnumValue 0 ;
+    base:hasValueClass pumps:OperatingModeEnum .
+
+base:_N3fb3f2296ed34c70b02c0f4936352133 base:hasEnumValue 7 ;
+    base:hasValueClass pumps:OfferedFieldbusesOptionSet .
+
+base:_N45ff90dc3c1745e4bdff6eae7bfb0170 base:hasEnumValue 25 ;
+    base:hasValueClass pumps:OfferedFieldbusesOptionSet .
+
+base:_N47290a70544745d8b843a141aaed2f5e base:hasEnumValue 7 ;
+    base:hasValueClass pumps:OperationModeEnum .
+
+base:_N49dbbc8310644cada214e74a26958c5b base:hasEnumValue 29 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_N4cc1a2bfa5d843689f6ee62d1e2293e9 base:hasEnumValue 0 ;
+    base:hasValueClass pumps:PortDirectionEnum .
+
+base:_N4d48f18701da487497c0abb6d7e37892 base:hasEnumValue 0 ;
+    base:hasValueClass pumps:StateOfTheItemEnum .
+
+base:_N509c4d6dfab14ee2931314e3bf7b6b53 base:hasEnumValue 10 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_N571691d6e63c4d4a9cc9d9f3d274b057 base:hasEnumValue 21 ;
+    base:hasValueClass pumps:OfferedFieldbusesOptionSet .
+
+base:_N573f57594e0d42b0a3b3cfe8fc63b73f base:hasEnumValue 15 ;
+    base:hasValueClass pumps:OfferedFieldbusesOptionSet .
+
+base:_N585f5cf1e09a4804aab968b1e82dc5fa base:hasEnumValue 49 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_N58c96aea4ca84382945bfd0566390d4b base:hasEnumValue 12 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_N5c58e23bf4974e38a6893842b35ac26b base:hasEnumValue 7 ;
+    base:hasValueClass pumps:ControlModeEnum .
+
+base:_N5dca3a3738fd491fb724e8a175cece69 base:hasEnumValue 23 ;
+    base:hasValueClass pumps:OfferedFieldbusesOptionSet .
+
+base:_N5fd2e94680fc4eee9d0f98c59e8dd746 base:hasEnumValue 2 ;
+    base:hasValueClass pumps:StateOfTheItemEnum .
+
+base:_N60996cd950bd4b8b876ec323c9a6180f base:hasEnumValue 7 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_N64a90a054d194cc298712960b9b2284b base:hasEnumValue 3 ;
+    base:hasValueClass pumps:OperationModeEnum .
+
+base:_N65c143b969854710ba55e6ef50c27c7c base:hasEnumValue 0 ;
+    base:hasValueClass pumps:MaintenanceLevelEnum .
+
+base:_N662d2d5f63a143bbacef6f553f98284e base:hasEnumValue 3 ;
+    base:hasValueClass pumps:MultiPumpOperationModeEnum .
+
+base:_N670a484793764317b02cedc5b6fb17f9 base:hasEnumValue 26 ;
+    base:hasValueClass pumps:OfferedFieldbusesOptionSet .
+
+base:_N672ebd52fdfe4fee95434e9d7a1afe7f base:hasEnumValue 4 ;
+    base:hasValueClass pumps:StateOfTheItemEnum .
+
+base:_N67e35cdfe5a8469591e358682786c5b6 base:hasEnumValue 41 ;
+    base:hasValueClass pumps:OfferedFieldbusesOptionSet .
+
+base:_N693f78f8943042c9bf1a299aaaac370b base:hasEnumValue 1 ;
+    base:hasValueClass pumps:PumpClassEnum .
+
+base:_N6a20142070754c03bcc216dfa2d41742 base:hasEnumValue 20 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_N6d66f1dfdfed4392afef328c9e93ba64 base:hasEnumValue 17 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_N6f13d7e89d7b461ba12c7f84fd266425 base:hasEnumValue 9 ;
+    base:hasValueClass pumps:OperationModeEnum .
+
+base:_N75b347a71d994e0b84bf68cee0286ced base:hasEnumValue 43 ;
+    base:hasValueClass pumps:OfferedFieldbusesOptionSet .
+
+base:_N76970de970b244a0a388f0a56d1bd07e base:hasEnumValue 2 ;
+    base:hasValueClass pumps:MultiPumpOperationModeEnum .
+
+base:_N77d6f3dfe2fa401daa7173eb049726aa base:hasEnumValue 8 ;
+    base:hasValueClass pumps:OperationModeEnum .
+
+base:_N787763eb96864755b35309d0cd3ec3be base:hasEnumValue 24 ;
+    base:hasValueClass pumps:OfferedFieldbusesOptionSet .
+
+base:_N79c5e13c283f441889858bd804667830 base:hasEnumValue 34 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_N7af683a77de64c10bc5199e8fb3f0c3a base:hasEnumValue 3 ;
+    base:hasValueClass pumps:DistributionTypeEnum .
+
+base:_N7b1bda5a179542469e3f451bdc75bd4b base:hasEnumValue 6 ;
+    base:hasValueClass pumps:PumpClassEnum .
+
+base:_N7c8fa9a30f964d8da48daa568e8169c6 base:hasEnumValue 48 ;
+    base:hasValueClass pumps:OfferedFieldbusesOptionSet .
+
+base:_N80f31a945a42437a9f4f7bcf633dd196 base:hasEnumValue 9 ;
+    base:hasValueClass pumps:OfferedFieldbusesOptionSet .
+
+base:_N833bbfe7d8a64e2db62250aa3b634fe3 base:hasEnumValue 10 ;
+    base:hasValueClass pumps:OperationModeEnum .
+
+base:_N834bdf748bac42fb955c05285ba04648 base:hasEnumValue 21 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_N835ac28d5fe14451b969c7798c8fa15a base:hasEnumValue 41 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_N8386bbeeab01413cb4d25f1e448dac2f base:hasEnumValue 46 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_N857fdcd7365147d0b65bb54df94d56df base:hasEnumValue 4 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_N867bb410f5d04d918a7a10482fc66102 base:hasEnumValue 17 ;
+    base:hasValueClass pumps:OfferedFieldbusesOptionSet .
+
+base:_N88842f76b8c64c66890b356b02307575 base:hasEnumValue 2 ;
+    base:hasValueClass pumps:PumpKickModeEnum .
+
+base:_N8b18b601d7f14826aec52e3dd2d969f8 base:hasEnumValue 39 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_N8d88ab7346474bf1a23dbfb13f7d6a94 base:hasEnumValue 4 ;
+    base:hasValueClass pumps:PumpClassEnum .
+
+base:_N91086f90197546cf8fcf688a4a6675a8 base:hasEnumValue 1 ;
+    base:hasValueClass pumps:PortDirectionEnum .
+
+base:_N91a2a0bf7ee145b2aa1c2f0ec1ee1d63 base:hasEnumValue 42 ;
+    base:hasValueClass pumps:OfferedFieldbusesOptionSet .
+
+base:_N91e01b7450e4453ab4125a112a7658fd base:hasEnumValue 32 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_N927a36ee9fc7403ab127fb4d6c2477ab base:hasEnumValue 2 ;
+    base:hasValueClass pumps:ControlModeEnum .
+
+base:_N937f8c64b7dc422d84d389990a4c4a63 base:hasEnumValue 3 ;
+    base:hasValueClass pumps:OfferedFieldbusesOptionSet .
+
+base:_N94269e82025849bfb39af7340adcfb96 base:hasEnumValue 9 ;
+    base:hasValueClass pumps:OfferedControlModesOptionSet .
+
+base:_N97f9a79e12814c1c97466d5a59a8fc29 base:hasEnumValue 3 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_N9880b28c67de4dfe9407afcf5999327a base:hasEnumValue 28 ;
+    base:hasValueClass pumps:OfferedFieldbusesOptionSet .
+
+base:_N98ef5d6d5a864055880ff3e635cede1d base:hasEnumValue 30 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_N98f13eb8d18549afb24653145ea0fdbb base:hasEnumValue 2 ;
+    base:hasValueClass pumps:MaintenanceLevelEnum .
+
+base:_N99e359db2a8b44a29b42cbc9cc7563ba base:hasEnumValue 28 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_N9adc5d89531f4bee894e64cf02a15deb base:hasEnumValue 34 ;
+    base:hasValueClass pumps:OfferedFieldbusesOptionSet .
+
+base:_N9f13cd4c414a4391a2d3f711d1c594a6 base:hasEnumValue 0 ;
+    base:hasValueClass pumps:DistributionTypeEnum .
+
+base:_Na069246b22594cb986d7bc3ed587cfdd base:hasEnumValue 3 ;
+    base:hasValueClass pumps:ControlModeEnum .
+
+base:_Na0efefea45294f8fa1663ef8b0fead4d base:hasEnumValue 42 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_Na15a7ee02c8b453b9930fec2f98f43f7 base:hasEnumValue 24 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_Na35d7d5b9ec94b17953275c8030731d1 base:hasEnumValue 18 ;
+    base:hasValueClass pumps:OfferedFieldbusesOptionSet .
+
+base:_Na4a1b80ec6194dd6b293f76fe580938c base:hasEnumValue 6 ;
+    base:hasValueClass pumps:ControlModeEnum .
+
+base:_Na62d726adc8b48f8890b24b28a285f59 base:hasEnumValue 1 ;
+    base:hasValueClass pumps:MaintenanceLevelEnum .
+
+base:_Na852ba311921461daf6993d5df0a5181 base:hasEnumValue 38 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_Naf714b045f4542afb40c4c4c58e3e21c base:hasEnumValue 14 ;
+    base:hasValueClass pumps:OfferedFieldbusesOptionSet .
+
+base:_Nafe62e9b2ddf460abf543754b26e28bb base:hasEnumValue 15 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_Nb3c12651fc134c9686965501d3b5e324 base:hasEnumValue 22 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_Nb50d77801ed6402590b42be51b8df64d base:hasEnumValue 2 ;
+    base:hasValueClass pumps:DistributionTypeEnum .
+
+base:_Nb674f87b66f64d8f9b4552ab421ad552 base:hasEnumValue 33 ;
+    base:hasValueClass pumps:OfferedFieldbusesOptionSet .
+
+base:_Nb7577d9d85d84cceb15057308837cf39 base:hasEnumValue 5 ;
+    base:hasValueClass pumps:ControlModeEnum .
+
+base:_Nb7bd0f9e21e646c0b4379efa5af8c0fc base:hasEnumValue 20 ;
+    base:hasValueClass pumps:OfferedFieldbusesOptionSet .
+
+base:_Nb85a1375a7574d13901a07f88af8e8f2 base:hasEnumValue 30 ;
+    base:hasValueClass pumps:OfferedFieldbusesOptionSet .
+
+base:_Nb92119b815cf4a15ae95977d3fe66a87 base:hasEnumValue 0 ;
+    base:hasValueClass pumps:OperationModeEnum .
+
+base:_Nba7775dbd14c4ccf8534c83a5bd23ab3 base:hasEnumValue 35 ;
+    base:hasValueClass pumps:OfferedFieldbusesOptionSet .
+
+base:_Nbb4df8f16ab14e9ba837214512ed8b82 base:hasEnumValue 11 ;
+    base:hasValueClass pumps:OfferedFieldbusesOptionSet .
+
+base:_Nbb9cefd628f84a65b120514899676d22 base:hasEnumValue 36 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_Nbcb3c5458aae49628105bb3129e9b2aa base:hasEnumValue 2 ;
+    base:hasValueClass pumps:PortDirectionEnum .
+
+base:_Nbe44ca785d3e41889d405afb8ae45f2e base:hasEnumValue 1 ;
+    base:hasValueClass pumps:OfferedFieldbusesOptionSet .
+
+base:_Nbefd0ef5bd734571bbf077ddd82c9aad base:hasEnumValue 40 ;
+    base:hasValueClass pumps:OfferedFieldbusesOptionSet .
+
+base:_Nbf8f3e6aa82c488caa7925caafbd15ca base:hasEnumValue 26 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_Nbff58903fbd949f39f078ed8080bc7c7 base:hasEnumValue 0 ;
+    base:hasValueClass pumps:PumpKickModeEnum .
+
+base:_Nc0f169f800a04d41979dfd1f6526f5b2 base:hasEnumValue 0 ;
+    base:hasValueClass pumps:MultiPumpOperationModeEnum .
+
+base:_Nc35b487ac6c04dd18735ed63c4c15fe0 base:hasEnumValue 8 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_Nc702e3d01b35479d9b8a778dabb6469f base:hasEnumValue 31 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_Nc9f32f74dbda431c89e2e6291f3a7162 base:hasEnumValue 4 ;
+    base:hasValueClass pumps:OfferedFieldbusesOptionSet .
+
+base:_Ncaace0c4b3e44986a621e71a46a3430b base:hasEnumValue 25 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_Ncac993df6aa34ab4a7ea70bf598d7b4f base:hasEnumValue 10 ;
+    base:hasValueClass pumps:ControlModeEnum .
+
+base:_Ncc9abd18e3954ed0ab945bf32be32412 base:hasEnumValue 27 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_Ncfcf96ccdad340ae824565f92a52ae2a base:hasEnumValue 16 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_Nd08abd85e2414a548ff6a3a9423360be base:hasEnumValue 0 ;
+    base:hasValueClass pumps:PumpRoleEnum .
+
+base:_Nd0f6c17a1cca402096f342985998fd89 base:hasEnumValue 45 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_Nd2dd7229c8f24d7299dd7b0bbd6c1509 base:hasEnumValue 8 ;
+    base:hasValueClass pumps:ControlModeEnum .
+
+base:_Nda583455ba70488a87e1fc2dc580754d base:hasEnumValue 2 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_Ndb88354870814f489015a5759d4a58dd base:hasEnumValue 33 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_Ndd0210dfd3a24a1d8357591afffb646e base:hasEnumValue 43 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_Ndd333d8ed4bb406ea7345760c6901652 base:hasEnumValue 1 ;
+    base:hasValueClass pumps:OperationModeEnum .
+
+base:_Ne003df0eb49144a49de2ede9075b92e8 base:hasEnumValue 0 ;
+    base:hasValueClass pumps:ControlModeEnum .
+
+base:_Ne029b4ed8f7548e6a6c4912600922caa base:hasEnumValue 48 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_Ne13cb39ac2ba4e0385cee08e6d128578 base:hasEnumValue 44 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_Ne1e5d617542a41e08c7570068a681b54 base:hasEnumValue 0 ;
+    base:hasValueClass pumps:ExchangeModeEnum .
+
+base:_Ne2f026712b23402e95506df5539516ce base:hasEnumValue 2 ;
+    base:hasValueClass pumps:OperationModeEnum .
+
+base:_Ne3cf8b86d661425486dc02cd56d2e834 base:hasEnumValue 1 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_Ne6fe346d6fd34f3f9df7f3b8abb96d5c base:hasEnumValue 1 ;
+    base:hasValueClass pumps:DistributionTypeEnum .
+
+base:_Ne8dd4b2c7d6243748c770dfbc29e0598 base:hasEnumValue 1 ;
+    base:hasValueClass pumps:PumpRoleEnum .
+
+base:_Ne9f347bf3f004f36880a92bc943e3577 base:hasEnumValue 40 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_Neb868502ba6b48b48cc1f375285faabb base:hasEnumValue 2 ;
+    base:hasValueClass pumps:PumpRoleEnum .
+
+base:_Nebb23afe84f741e9b9dc2a67b4df600f base:hasEnumValue 0 ;
+    base:hasValueClass pumps:PumpClassEnum .
+
+base:_Necbb7052b8ae49df8283d9944e010bf4 base:hasEnumValue 18 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_Neeaa0a44657847f48b2563b28ce75500 base:hasEnumValue 11 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_Nefbae3c03c3a41a198436ea5638dd94d base:hasEnumValue 44 ;
+    base:hasValueClass pumps:OfferedFieldbusesOptionSet .
+
+base:_Nf2ff38e931f8440f931a5377d7e6d43b base:hasEnumValue 9 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_Nf5bd84b08d5046ae82f248860d7ff3b5 base:hasEnumValue 5 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+base:_Nf619d5de937b4b1a9ff4466a32baef9b base:hasEnumValue 29 ;
+    base:hasValueClass pumps:OfferedFieldbusesOptionSet .
+
+base:_Nffec1eedc8594e02a534488e18d692d1 base:hasEnumValue 47 ;
+    base:hasValueClass pumps:FieldbusEnum .
+
+opcua:AuditUpdateEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditEventType .
+
+opcua:AuditUpdateStateEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditUpdateMethodEventType .
+
+opcua:ConditionType a owl:Class ;
+    rdfs:subClassOf opcua:BaseEventType .
+
+opcua:ConnectionTransportType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+devices:ComponentType a owl:Class ;
+    rdfs:subClassOf devices:TopologyElementType .
+
+devices:PackageLoadingType a owl:Class ;
+    rdfs:subClassOf devices:SoftwareLoadingType .
+
+devices:SoftwareLoadingType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:DataSetReaderMessageType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:DataSetReaderTransportType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:DataSetWriterMessageType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:IIeeeTsnInterfaceConfigurationType a owl:Class ;
+    rdfs:subClassOf opcua:BaseInterfaceType .
+
+opcua:KeyCredentialAuditEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditUpdateMethodEventType .
+
+opcua:LimitAlarmType a owl:Class ;
+    rdfs:subClassOf opcua:AlarmConditionType .
+
+machinery:MachineryItemIdentificationType a owl:Class ;
+    rdfs:subClassOf devices:FunctionalGroupType .
+
+opcua:NonTransparentRedundancyType a owl:Class ;
+    rdfs:subClassOf opcua:ServerRedundancyType .
+
+opcua:PubSubGroupType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:PubSubStatusEventType a owl:Class ;
+    rdfs:subClassOf opcua:SystemEventType .
+
+opcua:PublishedDataSetType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+pumps:ConnectionDesignType a owl:Class ;
+    rdfs:subClassOf devices:FunctionalGroupType .
+
+pumps:ConnectionImplementationType a owl:Class ;
+    rdfs:subClassOf devices:FunctionalGroupType .
+
+pumps:DiscreteObjectType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:ServerRedundancyType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:StateType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:SubscribedDataSetType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:SystemOffNormalAlarmType a owl:Class ;
+    rdfs:subClassOf opcua:OffNormalAlarmType .
+
+opcua:UnitType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:WriterGroupMessageType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:WriterGroupTransportType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:AlarmConditionType a owl:Class ;
+    rdfs:subClassOf opcua:AcknowledgeableConditionType .
+
+opcua:ApplicationCertificateType a owl:Class ;
+    rdfs:subClassOf opcua:CertificateType .
+
+opcua:AuditHistoryDeleteEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditHistoryUpdateEventType .
+
+opcua:AuditSecurityEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditEventType .
+
+opcua:AuditSessionEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditSecurityEventType .
+
+opcua:CertificateType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:DictionaryEntryType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:ExclusiveLimitAlarmType a owl:Class ;
+    rdfs:subClassOf opcua:LimitAlarmType .
+
+opcua:FileType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:NonExclusiveLimitAlarmType a owl:Class ;
+    rdfs:subClassOf opcua:LimitAlarmType .
+
+pumps:DiscreteInputObjectType a owl:Class ;
+    rdfs:subClassOf pumps:DiscreteObjectType .
+
+pumps:InletConnectionSystemRequirementsType a owl:Class ;
+    rdfs:subClassOf devices:FunctionalGroupType .
+
+pumps:OutletConnectionSystemRequirementsType a owl:Class ;
+    rdfs:subClassOf devices:FunctionalGroupType .
+
+pumps:PortType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+pumps:PumpIdentificationType a owl:Class ;
+    rdfs:subClassOf machinery:MachineIdentificationType .
+
+opcua:AuditHistoryUpdateEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditUpdateEventType .
+
+opcua:AuditNodeManagementEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditEventType .
+
+devices:DeviceHealthDiagnosticAlarmType a owl:Class ;
+    rdfs:subClassOf opcua:InstrumentDiagnosticAlarmType .
+
+devices:TopologyElementType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:OffNormalAlarmType a owl:Class ;
+    rdfs:subClassOf opcua:DiscreteAlarmType .
+
+pumps:InletConnectionMeasurementsType a owl:Class ;
+    rdfs:subClassOf devices:FunctionalGroupType .
+
+pumps:OutletConnectionMeasurementsType a owl:Class ;
+    rdfs:subClassOf devices:FunctionalGroupType .
+
+pumps:ConfigurationGroupType a owl:Class ;
+    rdfs:subClassOf devices:FunctionalGroupType .
+
+pumps:DrivePortType a owl:Class ;
+    rdfs:subClassOf pumps:PortType .
+
+pumps:PortsGroupType a owl:Class ;
+    rdfs:subClassOf devices:FunctionalGroupType .
+
+opcua:AuditCertificateEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditSecurityEventType .
+
+opcua:AuditUpdateMethodEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditEventType .
+
+devices:BaseLifetimeIndicationType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:EccApplicationCertificateType a owl:Class ;
+    rdfs:subClassOf opcua:ApplicationCertificateType .
+
+opcua:PubSubDiagnosticsType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+pumps:DiscreteOutputObjectType a owl:Class ;
+    rdfs:subClassOf pumps:DiscreteObjectType .
+
+pumps:ExchangeModeEnum a owl:Class ;
+    rdfs:subClassOf opcua:Enumeration .
+
+pumps:MaintenanceGroupType a owl:Class ;
+    rdfs:subClassOf devices:FunctionalGroupType .
+
+pumps:OperatingModeEnum a owl:Class ;
+    rdfs:subClassOf opcua:Enumeration .
+
+pumps:PortDirectionEnum a owl:Class ;
+    rdfs:subClassOf opcua:Enumeration .
+
+pumps:PumpKickModeEnum a owl:Class ;
+    rdfs:subClassOf opcua:Enumeration .
+
+pumps:PumpRoleEnum a owl:Class ;
+    rdfs:subClassOf opcua:Enumeration .
+
+opcua:SystemEventType a owl:Class ;
+    rdfs:subClassOf opcua:BaseEventType .
+
+pumps:BreakdownMaintenanceType a owl:Class ;
+    rdfs:subClassOf devices:FunctionalGroupType .
+
+pumps:InletConnectionImplementationType a owl:Class ;
+    rdfs:subClassOf pumps:ConnectionImplementationType .
+
+pumps:InletConnectionPortType a owl:Class ;
+    rdfs:subClassOf pumps:PortType .
+
+pumps:OutletConnectionImplementationType a owl:Class ;
+    rdfs:subClassOf pumps:ConnectionImplementationType .
+
+pumps:OutletConnectionPortType a owl:Class ;
+    rdfs:subClassOf pumps:PortType .
+
+opcua:BaseConditionClassType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+opcua:BaseEventType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+pumps:DistributionTypeEnum a owl:Class ;
+    rdfs:subClassOf opcua:Enumeration .
+
+pumps:MultiPumpOperationModeEnum a owl:Class ;
+    rdfs:subClassOf opcua:Enumeration .
+
+pumps:PumpKickObjectType a owl:Class ;
+    rdfs:subClassOf pumps:DiscreteOutputObjectType .
+
+opcua:AuditEventType a owl:Class ;
+    rdfs:subClassOf opcua:BaseEventType .
+
+pumps:OperationalGroupType a owl:Class ;
+    rdfs:subClassOf devices:FunctionalGroupType .
+
+pumps:PreventiveMaintenanceType a owl:Class ;
+    rdfs:subClassOf devices:FunctionalGroupType .
+
+pumps:SupervisionType a owl:Class ;
+    rdfs:subClassOf devices:FunctionalGroupType .
+
+opcua:AuditConditionEventType a owl:Class ;
+    rdfs:subClassOf opcua:AuditUpdateMethodEventType .
+
+opcua:FiniteStateMachineType a owl:Class ;
+    rdfs:subClassOf opcua:StateMachineType .
+
+pumps:ActuationType a owl:Class ;
+    rdfs:subClassOf devices:FunctionalGroupType .
+
+pumps:MaintenanceLevelEnum a owl:Class ;
+    rdfs:subClassOf opcua:Enumeration .
+
+pumps:OutletConnectionDesignType a owl:Class ;
+    rdfs:subClassOf pumps:ConnectionDesignType .
+
+pumps:StateOfTheItemEnum a owl:Class ;
+    rdfs:subClassOf opcua:Enumeration .
+
+pumps:SupervisionSoftwareType a owl:Class ;
+    rdfs:subClassOf devices:FunctionalGroupType .
+
+pumps:InletConnectionDesignType a owl:Class ;
+    rdfs:subClassOf pumps:ConnectionDesignType .
+
+pumps:PumpType a owl:Class ;
+    rdfs:subClassOf devices:TopologyElementType .
+
+pumps:ConditionBasedMaintenanceType a owl:Class ;
+    rdfs:subClassOf devices:FunctionalGroupType .
+
+pumps:MultiPumpType a owl:Class ;
+    rdfs:subClassOf devices:FunctionalGroupType .
+
+pumps:DriveDesignType a owl:Class ;
+    rdfs:subClassOf devices:FunctionalGroupType .
+
+pumps:PumpClassEnum a owl:Class ;
+    rdfs:subClassOf opcua:Enumeration .
+
+pumps:SupervisionHardwareType a owl:Class ;
+    rdfs:subClassOf devices:FunctionalGroupType .
+
+pumps:ControlType a owl:Class ;
+    rdfs:subClassOf devices:FunctionalGroupType .
+
+pumps:DriveMeasurementsType a owl:Class ;
+    rdfs:subClassOf devices:FunctionalGroupType .
+
+pumps:SupervisionProcessFluidType a owl:Class ;
+    rdfs:subClassOf devices:FunctionalGroupType .
+
+opcua:FolderType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+pumps:SupervisionMechanicsType a owl:Class ;
+    rdfs:subClassOf devices:FunctionalGroupType .
+
+opcua:BaseInterfaceType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType .
+
+pumps:GeneralMaintenanceType a owl:Class ;
+    rdfs:subClassOf devices:FunctionalGroupType .
+
+pumps:OperationModeEnum a owl:Class ;
+    rdfs:subClassOf opcua:Enumeration .
+
+pumps:SupervisionElectronicsType a owl:Class ;
+    rdfs:subClassOf devices:FunctionalGroupType .
+
+pumps:SignalsType a owl:Class ;
+    rdfs:subClassOf devices:FunctionalGroupType .
+
+pumps:ControlModeEnum a owl:Class ;
+    rdfs:subClassOf opcua:Enumeration .
+
+pumps:PumpActuationType a owl:Class ;
+    rdfs:subClassOf pumps:ActuationType .
+
+pumps:ImplementationType a owl:Class ;
+    rdfs:subClassOf devices:FunctionalGroupType .
+
+pumps:SupervisionAuxiliaryDeviceType a owl:Class ;
+    rdfs:subClassOf devices:FunctionalGroupType .
+
+devices:FunctionalGroupType a owl:Class ;
+    rdfs:subClassOf opcua:FolderType .
+
+pumps:VibrationMeasurementType a owl:Class ;
+    rdfs:subClassOf devices:FunctionalGroupType .
+
+pumps:SupervisionPumpOperationType a owl:Class ;
+    rdfs:subClassOf devices:FunctionalGroupType .
+
+pumps:SystemRequirementsType a owl:Class ;
+    rdfs:subClassOf devices:FunctionalGroupType .
+
+pumps:DocumentationType a owl:Class ;
+    rdfs:subClassOf devices:FunctionalGroupType .
+
+pumps:MeasurementsType a owl:Class ;
+    rdfs:subClassOf devices:FunctionalGroupType .
+
+pumps:DesignType a owl:Class ;
+    rdfs:subClassOf devices:FunctionalGroupType .
+
+opcua:BaseObjectType a owl:Class .
+
+pumps:FieldbusEnum a owl:Class ;
+    rdfs:subClassOf opcua:Enumeration .
+

@@ -1,0 +1,693 @@
+@prefix base: <https://industryfusion.github.io/contexts/ontology/v0/base/> .
+@prefix binding: <http://yourorganisation.org/InstanceExample/bindings/> .
+
+<http://opcfoundation.org/UA/Pumps/hasActiveMaintenanceTime> base:boundBy binding:binding_CFV040U4GDIEX0LH .
+
+<http://opcfoundation.org/UA/Pumps/hasActualControlMode> base:boundBy binding:binding_Y0MZIAI5QHLU1DPO .
+
+<http://opcfoundation.org/UA/Pumps/hasBlockage> base:boundBy binding:binding_P9ZI5ULEIQNBQBMY .
+
+<http://opcfoundation.org/UA/Pumps/hasClockwiseRotation> base:boundBy binding:binding_T7ZNYA0042D4BBV4 .
+
+<http://opcfoundation.org/UA/Pumps/hasControllable> base:boundBy binding:binding_SQ634BQWY3FMJUOJ .
+
+<http://opcfoundation.org/UA/Pumps/hasDifferentialPressure> base:boundBy binding:binding_CA0D1PX513EFCX1N .
+
+<http://opcfoundation.org/UA/Pumps/hasDriverPowerInput> base:boundBy binding:binding_WUF24SP3YUO7WOUE .
+
+<http://opcfoundation.org/UA/Pumps/hasEnergyConsumption> base:boundBy binding:binding_93O5VEGB18KNP5E9 .
+
+<http://opcfoundation.org/UA/Pumps/hasExcessVibration> base:boundBy binding:binding_UCVDF693M0EVVMJC .
+
+<http://opcfoundation.org/UA/Pumps/hasFailure> base:boundBy binding:binding_PRM413XC2KUJZY4I .
+
+<http://opcfoundation.org/UA/Pumps/hasFieldbus> base:boundBy binding:binding_DHXY4RW119SFA2OW .
+
+<http://opcfoundation.org/UA/Pumps/hasFluidTemperature> base:boundBy binding:binding_F6R49E5UJ8383B0T .
+
+<http://opcfoundation.org/UA/Pumps/hasFrequency> base:boundBy binding:binding_I2SRFAG6N75EF91F .
+
+<http://opcfoundation.org/UA/Pumps/hasInstallationDate> base:boundBy binding:binding_V1GPAODPM8P0YNIG .
+
+<http://opcfoundation.org/UA/Pumps/hasLastInspectionDate> base:boundBy binding:binding_IZNNF2DG5MKXHOYL .
+
+<http://opcfoundation.org/UA/Pumps/hasLastServicingDate> base:boundBy binding:binding_MY8YE264XCXBCOUR .
+
+<http://opcfoundation.org/UA/Pumps/hasMaximumAllowableAmbientTemperature> base:boundBy binding:binding_6W08A3BLQJ98BXFL .
+
+<http://opcfoundation.org/UA/Pumps/hasMaximumAllowableContinuousSpeed> base:boundBy binding:binding_Z31PDBW5C2XOY5QC .
+
+<http://opcfoundation.org/UA/Pumps/hasMaximumAllowableHead> base:boundBy binding:binding_5YU07PUB0F153MHM .
+
+<http://opcfoundation.org/UA/Pumps/hasMaximumAllowableRelativeHumidity> base:boundBy binding:binding_M05D0O8PAA8ZFN9J .
+
+<http://opcfoundation.org/UA/Pumps/hasMaximumNumberStarts> base:boundBy binding:binding_QUXKC1P7W04ASEHF .
+
+<http://opcfoundation.org/UA/Pumps/hasMaximumOperationTime> base:boundBy binding:binding_2T0ZKCFJO99F796X .
+
+<http://opcfoundation.org/UA/Pumps/hasMaximumPumpPowerInput> base:boundBy binding:binding_H1KD3EUVE3GZX8H8 .
+
+<http://opcfoundation.org/UA/Pumps/hasMinimumAllowableAmbientTemperature> base:boundBy binding:binding_EZPP0IP0BPMLMH1O .
+
+<http://opcfoundation.org/UA/Pumps/hasMinimumAllowableContinuousSpeed> base:boundBy binding:binding_0MOL3S5TZAVGXK92 .
+
+<http://opcfoundation.org/UA/Pumps/hasMotorCurrent> base:boundBy binding:binding_2IKZ8IVTCV383RPL .
+
+<http://opcfoundation.org/UA/Pumps/hasMotorTemperature> base:boundBy binding:binding_UWOR74AI1S4HMZI1 .
+
+<http://opcfoundation.org/UA/Pumps/hasMotorVoltage> base:boundBy binding:binding_PDCQCSMCGNQ0Z5ZX .
+
+<http://opcfoundation.org/UA/Pumps/hasNextInspectionDate> base:boundBy binding:binding_3XNMZ91LNSIY8QH9 .
+
+<http://opcfoundation.org/UA/Pumps/hasNextServicingDate> base:boundBy binding:binding_BD7AZMZS8B0JTIUG .
+
+<http://opcfoundation.org/UA/Pumps/hasNumberOfFailures> base:boundBy binding:binding_8H0W80S3YL7YGYO7 .
+
+<http://opcfoundation.org/UA/Pumps/hasNumberOfStarts> base:boundBy binding:binding_3ROSZ4FX50NMVR5B .
+
+<http://opcfoundation.org/UA/Pumps/hasOfferedControlModes> base:boundBy binding:binding_F8L4HCZ3KBX6ZADP .
+
+<http://opcfoundation.org/UA/Pumps/hasOfferedFieldbuses> base:boundBy binding:binding_H7ALG65CGVOUHJ7T .
+
+<http://opcfoundation.org/UA/Pumps/hasOnOff> base:boundBy binding:binding_XTZ6SWAJ6FD6CRF0 .
+
+<http://opcfoundation.org/UA/Pumps/hasOperatingTime> base:boundBy binding:binding_C903NSBD1X97J4VL .
+
+<http://opcfoundation.org/UA/Pumps/hasOverallVibrationAcceleration0_P> base:boundBy binding:binding_L26NYNS0TEVQ2E9Y .
+
+<http://opcfoundation.org/UA/Pumps/hasOverallVibrationAccelerationP_P> base:boundBy binding:binding_UT1ZUWXQWKOAZYSU .
+
+<http://opcfoundation.org/UA/Pumps/hasOverallVibrationAccelerationPerG0_P> base:boundBy binding:binding_1P4J0BO60VL2YM50 .
+
+<http://opcfoundation.org/UA/Pumps/hasPumpClass> base:boundBy binding:binding_DRWFK643P15F6ZU5 .
+
+<http://opcfoundation.org/UA/Pumps/hasPumpPowerInput> base:boundBy binding:binding_QO0TSKVMYG8IWAAE .
+
+<http://opcfoundation.org/UA/Pumps/hasRotorBlocked> base:boundBy binding:binding_NH0SCBWK3Z4A9IWJ .
+
+<http://opcfoundation.org/UA/Pumps/hasSpeed> base:boundBy binding:binding_XGMO8HC0NAXSWXRG .
+
+<http://opcfoundation.org/UA/Pumps/hasTechnicalDataLink> base:boundBy binding:binding_YF03OQN7EIBNRA4G .
+
+<http://opcfoundation.org/UA/Pumps/hasTemperature> base:boundBy binding:binding_VGPRKWLHC5UHMY5Q .
+
+<http://opcfoundation.org/UA/Pumps/hasUnbalance> base:boundBy binding:binding_HDD5NDZUWF2UK8XU .
+
+binding:binding_0MOL3S5TZAVGXK92 a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5021> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_BV3VNEBRQ4O0ZTL7 .
+
+binding:binding_1P4J0BO60VL2YM50 a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5019> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_105K7CWV2MVG7VZ1 .
+
+binding:binding_2IKZ8IVTCV383RPL a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5006> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_RV5J9MGFIUGBS9GF .
+
+binding:binding_2T0ZKCFJO99F796X a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5011> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_84GI8UJTVPC9I7OR .
+
+binding:binding_3ROSZ4FX50NMVR5B a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5018> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_YOGRFLNIHS8QFDXV .
+
+binding:binding_3XNMZ91LNSIY8QH9 a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5015> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_PB0XTVAS1MSUYNHV .
+
+binding:binding_5YU07PUB0F153MHM a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5021> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_FWO9ADK30UR4VWYA .
+
+binding:binding_6W08A3BLQJ98BXFL a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5021> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_TBKH8H09JEHYUFQG .
+
+binding:binding_8H0W80S3YL7YGYO7 a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5013> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_4444XS9I4LTALNLX .
+
+binding:binding_93O5VEGB18KNP5E9 a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5006> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_AMZWLJ4P1H4SVNG5 .
+
+binding:binding_BD7AZMZS8B0JTIUG a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5015> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_761HSYIF6NGW8HDA .
+
+binding:binding_C903NSBD1X97J4VL a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5014> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_UQ66O7E9UWHQC7XH .
+
+binding:binding_CA0D1PX513EFCX1N a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5018> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_IJNVE2GCEGUW1GMF .
+
+binding:binding_CFV040U4GDIEX0LH a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5014> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_FOB0UATQ9FGP1RFX .
+
+binding:binding_DHXY4RW119SFA2OW a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5022> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_TMY0MTM90TX9KUNZ .
+
+binding:binding_DRWFK643P15F6ZU5 a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5021> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_AKVAAA2KXT8HVSTN .
+
+binding:binding_EZPP0IP0BPMLMH1O a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5021> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_NT58C7CD6SJKNZUQ .
+
+binding:binding_F6R49E5UJ8383B0T a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5018> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_12RS2KDIVMKKHOQ9 .
+
+binding:binding_F8L4HCZ3KBX6ZADP a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5021> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_H2GFZCSFYTOFCA3O .
+
+binding:binding_H1KD3EUVE3GZX8H8 a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5021> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_G8ZOLIE0B9HHHJC1 .
+
+binding:binding_H7ALG65CGVOUHJ7T a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5021> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_RZA1KTL6532NGSDV .
+
+binding:binding_HDD5NDZUWF2UK8XU a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5009> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_D1J69MRTWN48R4JN .
+
+binding:binding_I2SRFAG6N75EF91F a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5006> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_UTIYZAXP8N01O5M1 .
+
+binding:binding_IZNNF2DG5MKXHOYL a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5015> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_KVIJ0WAYYM07L9C3 .
+
+binding:binding_L26NYNS0TEVQ2E9Y a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5019> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_RBBZU9S9KJ7RSS71 .
+
+binding:binding_M05D0O8PAA8ZFN9J a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5021> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_NX3Z3NY6Z4W5AFZB .
+
+binding:binding_MY8YE264XCXBCOUR a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5015> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_WQ07QAYIFPV027ZH .
+
+binding:binding_NH0SCBWK3Z4A9IWJ a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5009> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_8EYWHEVMBBL83PQ6 .
+
+binding:binding_P9ZI5ULEIQNBQBMY a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5010> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_KG4UQUKT65BS5R0X .
+
+binding:binding_PDCQCSMCGNQ0Z5ZX a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5006> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_RH00ZQVOSRWR94RX .
+
+binding:binding_PRM413XC2KUJZY4I a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5013> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_2PP39RR5LNHGYZ8L .
+
+binding:binding_QO0TSKVMYG8IWAAE a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5018> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_O5G9G6JZY8Q09U9A .
+
+binding:binding_QUXKC1P7W04ASEHF a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5011> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_VFZDZZLNAWD4MXJW .
+
+binding:binding_SQ634BQWY3FMJUOJ a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5021> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_CJ2GAPZWH1U7Q6S9 .
+
+binding:binding_T7ZNYA0042D4BBV4 a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5021> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_V81SZ660W01H9W71 .
+
+binding:binding_UCVDF693M0EVVMJC a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5009> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_EZHT9PXGH3VGOZIX .
+
+binding:binding_UT1ZUWXQWKOAZYSU a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5019> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_TCR7XJ9OW9OZI9YY .
+
+binding:binding_UWOR74AI1S4HMZI1 a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5006> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_XXQJGZQ9RRI8XVV0 .
+
+binding:binding_V1GPAODPM8P0YNIG a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5015> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_NRYCXZLQBIEMAX34 .
+
+binding:binding_VGPRKWLHC5UHMY5Q a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5010> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_LGYYNRZRVQX5IXD9 .
+
+binding:binding_WUF24SP3YUO7WOUE a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5006> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_1GYF20RZFNGJAX65 .
+
+binding:binding_XGMO8HC0NAXSWXRG a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5018> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_7J9UJB5GXYNY3EH8 .
+
+binding:binding_XTZ6SWAJ6FD6CRF0 a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5017> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_YYX7JHPU0YAG007J .
+
+binding:binding_Y0MZIAI5QHLU1DPO a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5017> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_QVXZFU2GG3IOK4R1 .
+
+binding:binding_YF03OQN7EIBNRA4G a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5005> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_MJ45OHIS61634OBN .
+
+binding:binding_Z31PDBW5C2XOY5QC a base:Binding ;
+    base:bindingVersion "0.1" ;
+    base:bindsAttributeType <https://uri.etsi.org/ngsi-ld/Property> ;
+    base:bindsEntity <http://yourorganisation.org/InstanceExample/sn1234:i5021> ;
+    base:bindsFirmware "firmware" ;
+    base:bindsMap binding:map_CWOBJMR5WJ4TW82E .
+
+binding:map_105K7CWV2MVG7VZ1 a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6144" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/Double> .
+
+binding:map_12RS2KDIVMKKHOQ9 a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6118" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/Double> .
+
+binding:map_1GYF20RZFNGJAX65 a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6016" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/Double> .
+
+binding:map_2PP39RR5LNHGYZ8L a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6078" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/Boolean> .
+
+binding:map_4444XS9I4LTALNLX a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6081" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/Int32> .
+
+binding:map_761HSYIF6NGW8HDA a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6105" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/DateTime> .
+
+binding:map_7J9UJB5GXYNY3EH8 a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6121" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/Double> .
+
+binding:map_84GI8UJTVPC9I7OR a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6044" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/Boolean> .
+
+binding:map_8EYWHEVMBBL83PQ6 a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6029" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/Boolean> .
+
+binding:map_AKVAAA2KXT8HVSTN a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6097" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/Pumps/PumpClassEnum> .
+
+binding:map_AMZWLJ4P1H4SVNG5 a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6017" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/Double> .
+
+binding:map_BV3VNEBRQ4O0ZTL7 a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6094" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/Double> .
+
+binding:map_CJ2GAPZWH1U7Q6S9 a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6049" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/Boolean> .
+
+binding:map_CWOBJMR5WJ4TW82E a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6053" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/Double> .
+
+binding:map_D1J69MRTWN48R4JN a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6032" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/Boolean> .
+
+binding:map_EZHT9PXGH3VGOZIX a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6026" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/Boolean> .
+
+binding:map_FOB0UATQ9FGP1RFX a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6085" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/Double> .
+
+binding:map_FWO9ADK30UR4VWYA a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6086" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/Double> .
+
+binding:map_G8ZOLIE0B9HHHJC1 a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6092" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/Double> .
+
+binding:map_H2GFZCSFYTOFCA3O a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6095" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/Pumps/OfferedControlModesOptionSet> .
+
+binding:map_IJNVE2GCEGUW1GMF a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6117" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/Double> .
+
+binding:map_KG4UQUKT65BS5R0X a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6035" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/Boolean> .
+
+binding:map_KVIJ0WAYYM07L9C3 a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6102" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/DateTime> .
+
+binding:map_LGYYNRZRVQX5IXD9 a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6038" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/Boolean> .
+
+binding:map_MJ45OHIS61634OBN a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6023" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/String> .
+
+binding:map_NRYCXZLQBIEMAX34 a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6101" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/DateTime> .
+
+binding:map_NT58C7CD6SJKNZUQ a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6093" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/Double> .
+
+binding:map_NX3Z3NY6Z4W5AFZB a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6087" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/Double> .
+
+binding:map_O5G9G6JZY8Q09U9A a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6120" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/Double> .
+
+binding:map_PB0XTVAS1MSUYNHV a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6104" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/DateTime> .
+
+binding:map_QVXZFU2GG3IOK4R1 a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6111" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/Pumps/ControlModeEnum> .
+
+binding:map_RBBZU9S9KJ7RSS71 a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6142" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/Double> .
+
+binding:map_RH00ZQVOSRWR94RX a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6021" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/Double> .
+
+binding:map_RV5J9MGFIUGBS9GF a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6019" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/Double> .
+
+binding:map_RZA1KTL6532NGSDV a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6096" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/Pumps/OfferedFieldbusesOptionSet> .
+
+binding:map_TBKH8H09JEHYUFQG a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6052" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/Double> .
+
+binding:map_TCR7XJ9OW9OZI9YY a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6143" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/Double> .
+
+binding:map_TMY0MTM90TX9KUNZ a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6168" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/Pumps/FieldbusEnum> .
+
+binding:map_UQ66O7E9UWHQC7XH a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6088" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/Double> .
+
+binding:map_UTIYZAXP8N01O5M1 a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6018" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/Double> .
+
+binding:map_V81SZ660W01H9W71 a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6025" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/Boolean> .
+
+binding:map_VFZDZZLNAWD4MXJW a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6041" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/Boolean> .
+
+binding:map_WQ07QAYIFPV027ZH a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6103" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/DateTime> .
+
+binding:map_XXQJGZQ9RRI8XVV0 a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6020" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/Double> .
+
+binding:map_YOGRFLNIHS8QFDXV a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6119" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/UInt32> .
+
+binding:map_YYX7JHPU0YAG007J a base:BoundMap ;
+    base:bindsConnector base:OPCUAConnector ;
+    base:bindsConnectorParameter "nsu=http://yourorganisation.org/InstanceExample/;i=6112" ;
+    base:bindsLogicVar "var1" ;
+    base:bindsMapDatatype <http://opcfoundation.org/UA/Boolean> .
+

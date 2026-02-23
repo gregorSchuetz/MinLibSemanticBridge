@@ -1,0 +1,42 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix shacl: <http://yourorganisation.org/InstanceExample/shacl/> .
+
+shacl:BreakdownMaintenanceTypeShape a sh:NodeShape ;
+    sh:targetClass <http://opcfoundation.org/UA/Pumps/BreakdownMaintenanceType> .
+
+shacl:DesignTypeShape a sh:NodeShape ;
+    sh:targetClass <http://opcfoundation.org/UA/Pumps/DesignType> .
+
+shacl:DocumentationTypeShape a sh:NodeShape ;
+    sh:targetClass <http://opcfoundation.org/UA/Pumps/DocumentationType> .
+
+shacl:DriveMeasurementsTypeShape a sh:NodeShape ;
+    sh:targetClass <http://opcfoundation.org/UA/Pumps/DriveMeasurementsType> .
+
+shacl:GeneralMaintenanceTypeShape a sh:NodeShape ;
+    sh:targetClass <http://opcfoundation.org/UA/Pumps/GeneralMaintenanceType> .
+
+shacl:MeasurementsTypeShape a sh:NodeShape ;
+    sh:targetClass <http://opcfoundation.org/UA/Pumps/MeasurementsType> .
+
+shacl:PreventiveMaintenanceTypeShape a sh:NodeShape ;
+    sh:targetClass <http://opcfoundation.org/UA/Pumps/PreventiveMaintenanceType> .
+
+shacl:PumpActuationTypeShape a sh:NodeShape ;
+    sh:targetClass <http://opcfoundation.org/UA/Pumps/PumpActuationType> .
+
+shacl:SupervisionMechanicsTypeShape a sh:NodeShape ;
+    sh:targetClass <http://opcfoundation.org/UA/Pumps/SupervisionMechanicsType> .
+
+shacl:SupervisionProcessFluidTypeShape a sh:NodeShape ;
+    sh:targetClass <http://opcfoundation.org/UA/Pumps/SupervisionProcessFluidType> .
+
+shacl:SupervisionPumpOperationTypeShape a sh:NodeShape ;
+    sh:targetClass <http://opcfoundation.org/UA/Pumps/SupervisionPumpOperationType> .
+
+shacl:SystemRequirementsTypeShape a sh:NodeShape ;
+    sh:targetClass <http://opcfoundation.org/UA/Pumps/SystemRequirementsType> .
+
+shacl:VibrationMeasurementTypeShape a sh:NodeShape ;
+    sh:targetClass <http://opcfoundation.org/UA/Pumps/VibrationMeasurementType> .
+

@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" LastModified="2026-02-16T17:16:04.1189134Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+  <NamespaceUris>
+    <Uri>http://abb.com/MinLib/Types/</Uri>
+    <Uri>http://opcfoundation.org/UA/Machinery/ProcessValues/</Uri>
+    <Uri>http://opcfoundation.org/UA/PADIM/</Uri>
+    <Uri>https://abb.com/MinLib/BaseModel/</Uri>
+  </NamespaceUris>
+  <Models>
+    <Model ModelUri="http://abb.com/MinLib/Types/" Version="0.03.01" PublicationDate="2026-02-09T00:00:00Z">
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.05.05" PublicationDate="2025-06-30T00:00:00Z" />
+    </Model>
+  </Models>
+  <Aliases>
+    <Alias Alias="Float">i=10</Alias>
+    <Alias Alias="HasTypeDefinition">i=40</Alias>
+    <Alias Alias="HasSubtype">i=45</Alias>
+    <Alias Alias="HasProperty">i=46</Alias>
+    <Alias Alias="BaseObjectType">i=58</Alias>
+    <Alias Alias="BaseDataVariableType">i=63</Alias>
+    <Alias Alias="PropertyType">i=68</Alias>
+    <Alias Alias="EUInformation">i=887</Alias>
+    <Alias Alias="ProcessValueType">ns=2;i=1003</Alias>
+    <Alias Alias="DiscreteSignalType">ns=3;i=1036</Alias>
+    <Alias Alias="ProcessFunctionEnumeration">ns=4;i=1071</Alias>
+  </Aliases>
+  <UAObjectType NodeId="ns=1;i=1002" BrowseName="1:Type" SymbolicName="type" IsAbstract="true">
+    <DisplayName Locale="en">Type</DisplayName>
+    <Description Locale="en">MinLib Abstract base type for all MinLib Object</Description>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=1001</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">BaseObjectType</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1003" BrowseName="1:CtrlElementType" SymbolicName="ctrl_element_type">
+    <DisplayName Locale="en">Ctrl Element Type</DisplayName>
+    <Description Locale="en">MinLib Generic Control Element Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1002</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1004" BrowseName="1:GenericAnalogType" SymbolicName="generic_analog_type" IsAbstract="true">
+    <DisplayName Locale="en">Generic Analog Type</DisplayName>
+    <Description Locale="en">MinLib Abstract Analog Signal type for all MinLib Object</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ProcessValueType</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1005" BrowseName="1:AnalogInputType" SymbolicName="analog_input_type">
+    <DisplayName Locale="en">Analog Input Type</DisplayName>
+    <Description Locale="en">MinLib Input Analog Signal</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1004</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1006" BrowseName="1:AnalogOutputType" SymbolicName="analog_output_type">
+    <DisplayName Locale="en">Analog Output Type</DisplayName>
+    <Description Locale="en">MinLib Output Analog Signal</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1004</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1007" BrowseName="1:AnalogCalcInputType" SymbolicName="analog_calc_input_type">
+    <DisplayName Locale="en">Analog Calc Input Type</DisplayName>
+    <Description Locale="en">MinLib Calculcated Input Analog Signal</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1004</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1008" BrowseName="1:AnalogCalcOutputType" SymbolicName="analog_calc_output_type">
+    <DisplayName Locale="en">Analog Calc Output Type</DisplayName>
+    <Description Locale="en">MinLib Calculated Output Analog Signal</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1004</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1009" BrowseName="1:GenericDigitalType" SymbolicName="generic_digital_type" IsAbstract="true">
+    <DisplayName Locale="en">Generic Digital Type</DisplayName>
+    <Description Locale="en">MinLib Abstract Digital Signal type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">DiscreteSignalType</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1010" BrowseName="1:DigitalInputType" SymbolicName="digital_input_type">
+    <DisplayName Locale="en">Digital Input Type</DisplayName>
+    <Description Locale="en">MinLib Input Digital Signal</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1009</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1011" BrowseName="1:DigitalOutputType" SymbolicName="digital_output_type">
+    <DisplayName Locale="en">Digital Output Type</DisplayName>
+    <Description Locale="en">MinLib Output Digital Signal</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1009</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1012" BrowseName="1:DigitalCalcInputType" SymbolicName="digital_calc_input_type">
+    <DisplayName Locale="en">Digital Calc Input Type</DisplayName>
+    <Description Locale="en">MinLib Calculated Input Digital Signal</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1009</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1013" BrowseName="1:DigitalCalcOutputType" SymbolicName="digital_calc_output_type">
+    <DisplayName Locale="en">Digital Calc Output Type</DisplayName>
+    <Description Locale="en">MinLib Calculated Output Digital Signal</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1009</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1014" BrowseName="1:GenericMinLibConsumerType" SymbolicName="generic_minlib_consumer_type" IsAbstract="true">
+    <DisplayName Locale="en">Generic MinLib Consumer Type</DisplayName>
+    <Description Locale="en">MinLib Generic Consumer Element Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1002</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1015" BrowseName="1:ConsumerMOT1Type" SymbolicName="consumer_mot1_type">
+    <DisplayName Locale="en">Consumer MOT1 Type</DisplayName>
+    <Description Locale="en">MinLib Direct Online Motor Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1014</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1016" BrowseName="1:ConsumerMOT2Type" SymbolicName="consumer_mot2_type">
+    <DisplayName Locale="en">Consumer MOT2 Type</DisplayName>
+    <Description Locale="en">MinLib Direct Online Motor two directions Type</Description>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=1036</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1014</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1017" BrowseName="1:ConsumerMOT1VVVFType" SymbolicName="consumer_mot1_vvvf_type">
+    <DisplayName Locale="en">Consumer MOT1 VVVF Type</DisplayName>
+    <Description Locale="en">MinLib Direct Online Motor Variable Frequency Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1014</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1018" BrowseName="1:ConsumerMOT2VVVFType" SymbolicName="consumer_mot2_vvvf_type">
+    <DisplayName Locale="en">Consumer MOT2 VVVF Type</DisplayName>
+    <Description Locale="en">MinLib Direct Online Motor Variable Frequency Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1014</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1019" BrowseName="1:ConsumerMOTPType" SymbolicName="consumer_motp_type">
+    <DisplayName Locale="en">Consumer MOTP Type</DisplayName>
+    <Description Locale="en">MinLib Damper / Actuator controller with feedback</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1014</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1020" BrowseName="1:ConsumerVLV1Type" SymbolicName="consumer_vlv1_type">
+    <DisplayName Locale="en">Consumer VLV1 Type</DisplayName>
+    <Description Locale="en">MinLib Valve Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1014</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1021" BrowseName="1:ConsumerVLV1NOType" SymbolicName="consumer_vlv1_no_type">
+    <DisplayName Locale="en">Consumer VLV1 NO Type</DisplayName>
+    <Description Locale="en">MinLib Valve normally open Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1014</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1022" BrowseName="1:ConsumerActuatorType" SymbolicName="consumer_actuator_type">
+    <DisplayName Locale="en">Consumer Actuator Type</DisplayName>
+    <Description Locale="en">MinLib Actuator Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1014</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1023" BrowseName="1:SequencerType" SymbolicName="sequencer_type" IsAbstract="true">
+    <DisplayName Locale="en">Sequencer Type</DisplayName>
+    <Description Locale="en">MinLib Generic Sequencer Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1002</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1024" BrowseName="1:GroupType" SymbolicName="group_type">
+    <DisplayName Locale="en">Group Type</DisplayName>
+    <Description Locale="en">MinLib Group Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1023</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1025" BrowseName="1:GroupCycleControlType" SymbolicName="group_cycle_control_type">
+    <DisplayName Locale="en">Group Cycle Control Type</DisplayName>
+    <Description Locale="en">MinLib Group Cycle control type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1023</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1026" BrowseName="1:SubGroupType" SymbolicName="sub_group_type">
+    <DisplayName Locale="en">Sub Group Type</DisplayName>
+    <Description Locale="en">MinLib Sub Group Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1023</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1027" BrowseName="1:DriveGroupType" SymbolicName="drive_group_type">
+    <DisplayName Locale="en">Drive Group Type</DisplayName>
+    <Description Locale="en">MinLib Drive Group Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1023</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1028" BrowseName="1:LoopControlType" SymbolicName="loop_control_type" IsAbstract="true">
+    <DisplayName Locale="en">Loop Control Type</DisplayName>
+    <Description Locale="en">MinLib Generic Loop Control Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1002</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1029" BrowseName="1:AdvancedPIDType" SymbolicName="advanced_pid_type">
+    <DisplayName Locale="en">Advanced PID Type</DisplayName>
+    <Description Locale="en">MinLib Advanced Control Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1028</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1030" BrowseName="1:PIDType" SymbolicName="pid_type">
+    <DisplayName Locale="en">PID Type</DisplayName>
+    <Description Locale="en">MinLib PID Control Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1028</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1031" BrowseName="1:RatioCtrType" SymbolicName="ratio_ctr_type">
+    <DisplayName Locale="en">Ratio Ctr Type</DisplayName>
+    <Description Locale="en">MinLib Ratio Control Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1028</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1032" BrowseName="1:SplitRangeType" SymbolicName="split_range_type">
+    <DisplayName Locale="en">Split Range Type</DisplayName>
+    <Description Locale="en">MinLib Split Range Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1028</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1033" BrowseName="1:LCCDemux4Type" SymbolicName="lcc_demux_4_type">
+    <DisplayName Locale="en">LCC Demux 4 Type</DisplayName>
+    <Description Locale="en">MinLib Demultiplexer 4 Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1028</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1034" BrowseName="1:LCCMux4Type" SymbolicName="lcc_mux_4_type">
+    <DisplayName Locale="en">LCC Mux 4 Type</DisplayName>
+    <Description Locale="en">MinLib Multiplexer 4 Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1028</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1035" BrowseName="1:RecipeCtrlType" SymbolicName="recipe_ctrl_type">
+    <DisplayName Locale="en">Recipe Ctrl Type</DisplayName>
+    <Description Locale="en">MinLib Recipe Control Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1028</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariable NodeId="ns=1;i=1001" BrowseName="ProcessFunctionEnum" SymbolicName="processfunctionenum" DataType="ProcessFunctionEnumeration">
+    <DisplayName Locale="en">ProcessFunctionEnum</DisplayName>
+    <Description Locale="en">Normalized Process Function</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">PropertyType</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=1036" BrowseName="TestMeter" SymbolicName="testmeter" DataType="Float">
+    <DisplayName Locale="en">TestMeter</DisplayName>
+    <Description Locale="en">MinLib Actuator Type</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">BaseDataVariableType</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;g=13cfdd83-f215-46ff-a104-a15029ba68f2</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;g=13cfdd83-f215-46ff-a104-a15029ba68f2" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=1036" DataType="i=887">
+    <DisplayName>EngineeringUnits</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">PropertyType</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1036</Reference>
+    </References>
+    <Value>
+      <uax:ExtensionObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>i=888</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <uax:EUInformation>
+            <uax:NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</uax:NamespaceUri>
+            <uax:UnitId>5067858</uax:UnitId>
+            <uax:DisplayName>
+              <uax:Text>m</uax:Text>
+            </uax:DisplayName>
+            <uax:Description>
+              <uax:Text>metre</uax:Text>
+            </uax:Description>
+          </uax:EUInformation>
+        </uax:Body>
+      </uax:ExtensionObject>
+    </Value>
+  </UAVariable>
+</UANodeSet>

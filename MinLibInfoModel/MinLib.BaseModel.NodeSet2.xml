@@ -1,0 +1,1076 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" LastModified="2026-02-12T00:00:00Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+  <NamespaceUris>
+    <Uri>https://abb.com/MinLib/BaseModel/</Uri>
+  </NamespaceUris>
+  <Models>
+    <Model ModelUri="https://abb.com/MinLib/BaseModel/" XmlSchemaUri="https://abb.com/MinLib/MLB/Types.xsd" Version="0.03.01" PublicationDate="2026-02-12T00:00:00Z" ModelVersion="0.3.1">
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/" XmlSchemaUri="http://opcfoundation.org/UA/2008/02/Types.xsd" Version="1.05.02" PublicationDate="2022-06-28T00:00:00Z" ModelVersion="1.5.2" />
+    </Model>
+  </Models>
+  <Aliases>
+    <Alias Alias="Boolean">i=1</Alias>
+    <Alias Alias="SByte">i=2</Alias>
+    <Alias Alias="Byte">i=3</Alias>
+    <Alias Alias="Int16">i=4</Alias>
+    <Alias Alias="UInt16">i=5</Alias>
+    <Alias Alias="Int32">i=6</Alias>
+    <Alias Alias="UInt32">i=7</Alias>
+    <Alias Alias="Int64">i=8</Alias>
+    <Alias Alias="UInt64">i=9</Alias>
+    <Alias Alias="Float">i=10</Alias>
+    <Alias Alias="Double">i=11</Alias>
+    <Alias Alias="DateTime">i=13</Alias>
+    <Alias Alias="String">i=12</Alias>
+    <Alias Alias="ByteString">i=15</Alias>
+    <Alias Alias="Guid">i=14</Alias>
+    <Alias Alias="XmlElement">i=16</Alias>
+    <Alias Alias="NodeId">i=17</Alias>
+    <Alias Alias="ExpandedNodeId">i=18</Alias>
+    <Alias Alias="QualifiedName">i=20</Alias>
+    <Alias Alias="LocalizedText">i=21</Alias>
+    <Alias Alias="StatusCode">i=19</Alias>
+    <Alias Alias="Structure">i=22</Alias>
+    <Alias Alias="Number">i=26</Alias>
+    <Alias Alias="Integer">i=27</Alias>
+    <Alias Alias="UInteger">i=28</Alias>
+    <Alias Alias="HasComponent">i=47</Alias>
+    <Alias Alias="HasProperty">i=46</Alias>
+    <Alias Alias="Organizes">i=35</Alias>
+    <Alias Alias="HasEventSource">i=36</Alias>
+    <Alias Alias="HasNotifier">i=48</Alias>
+    <Alias Alias="HasSubtype">i=45</Alias>
+    <Alias Alias="HasTypeDefinition">i=40</Alias>
+    <Alias Alias="HasModellingRule">i=37</Alias>
+    <Alias Alias="HasEncoding">i=38</Alias>
+    <Alias Alias="HasDescription">i=39</Alias>
+    <Alias Alias="HasCause">i=53</Alias>
+    <Alias Alias="ToState">i=52</Alias>
+    <Alias Alias="FromState">i=51</Alias>
+    <Alias Alias="HasEffect">i=54</Alias>
+    <Alias Alias="HasTrueSubState">i=9004</Alias>
+    <Alias Alias="HasFalseSubState">i=9005</Alias>
+    <Alias Alias="HasDictionaryEntry">i=17597</Alias>
+    <Alias Alias="HasCondition">i=9006</Alias>
+    <Alias Alias="HasGuard">i=15112</Alias>
+    <Alias Alias="HasAddIn">i=17604</Alias>
+    <Alias Alias="HasInterface">i=17603</Alias>
+    <Alias Alias="GeneratesEvent">i=41</Alias>
+    <Alias Alias="AlwaysGeneratesEvent">i=3065</Alias>
+    <Alias Alias="HasOrderedComponent">i=49</Alias>
+    <Alias Alias="HasAlarmSuppressionGroup">i=16361</Alias>
+    <Alias Alias="AlarmGroupMember">i=16362</Alias>
+    <Alias Alias="AlarmSuppressionGroupMember">i=32059</Alias>
+  </Aliases>
+  <UADataType NodeId="ns=1;i=1000" BrowseName="1:PointOfControlEnum">
+    <DisplayName>PointOfControlEnum</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=1001</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
+    </References>
+    <Definition Name="1:PointOfControlEnum">
+      <Field Name="MLB:Undefined" Value="0">
+        <Description>Enumeration: POC Undefined.</Description>
+      </Field>
+      <Field Name="MLB:Central" Value="1">
+        <Description>Enumeration: POC Central.</Description>
+      </Field>
+      <Field Name="MLB:Local" Value="2">
+        <Description>Enumeration: POC from Local control Panel</Description>
+      </Field>
+      <Field Name="MLB:Sequence" Value="3">
+        <Description>Enumeration: POC from Group or Application</Description>
+      </Field>
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=1001" BrowseName="EnumStrings" ParentNodeId="ns=1;i=1000" DataType="LocalizedText" ValueRank="1" ArrayDimensions="4">
+    <DisplayName>EnumStrings</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1000</Reference>
+    </References>
+    <Value>
+      <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <LocalizedText>
+          <Text>MLB:Undefined</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>MLB:Central</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>MLB:Local</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>MLB:Sequence</Text>
+        </LocalizedText>
+      </ListOfLocalizedText>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=1002" BrowseName="1:ModeEnum">
+    <DisplayName>ModeEnum</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=1003</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
+    </References>
+    <Definition Name="1:ModeEnum">
+      <Field Name="MLB:Undefined" Value="0">
+        <Description>Enumeration: Mode Undefined.</Description>
+      </Field>
+      <Field Name="MLB:Manual" Value="1">
+        <Description>Enumeration: Mode Manual</Description>
+      </Field>
+      <Field Name="MLB:Auto" Value="2">
+        <Description>Enumeration: Mode Auto</Description>
+      </Field>
+      <Field Name="MLB:AI" Value="3">
+        <Description>Enumeration: Mode AI</Description>
+      </Field>
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=1003" BrowseName="EnumStrings" ParentNodeId="ns=1;i=1002" DataType="LocalizedText" ValueRank="1" ArrayDimensions="4">
+    <DisplayName>EnumStrings</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1002</Reference>
+    </References>
+    <Value>
+      <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <LocalizedText>
+          <Text>MLB:Undefined</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>MLB:Manual</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>MLB:Auto</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>MLB:AI</Text>
+        </LocalizedText>
+      </ListOfLocalizedText>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=1080" BrowseName="1:ModeSetPoint">
+    <DisplayName>ModeSetPoint</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=1081</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
+    </References>
+    <Definition Name="1:ModeSetPoint">
+      <Field Name="MLB:Undefined" Value="0">
+        <Description>Enumeration: SetPoint Undefined.</Description>
+      </Field>
+      <Field Name="MLB:Internal" Value="1">
+        <Description>Enumeration: SetPoint Manual</Description>
+      </Field>
+      <Field Name="MLB:External_1" Value="1">
+        <Description>Enumeration: SetPoint External 1</Description>
+      </Field>
+      <Field Name="MLB:External_2" Value="2">
+        <Description>Enumeration: SetPoint External 2</Description>
+      </Field>
+      <Field Name="MLB:External_3" Value="3">
+        <Description>Enumeration: SetPoint External 3</Description>
+      </Field>
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=1081" BrowseName="EnumValues" ParentNodeId="ns=1;i=1080" DataType="i=7594" ValueRank="1" ArrayDimensions="5">
+    <DisplayName>EnumValues</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1080</Reference>
+    </References>
+    <Value>
+      <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>0</Value>
+              <DisplayName>
+                <Text>MLB:Undefined</Text>
+              </DisplayName>
+              <Description>
+                <Text>Enumeration: SetPoint Undefined.</Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>1</Value>
+              <DisplayName>
+                <Text>MLB:Internal</Text>
+              </DisplayName>
+              <Description>
+                <Text>Enumeration: SetPoint Manual</Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>1</Value>
+              <DisplayName>
+                <Text>MLB:External_1</Text>
+              </DisplayName>
+              <Description>
+                <Text>Enumeration: SetPoint External 1</Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>2</Value>
+              <DisplayName>
+                <Text>MLB:External_2</Text>
+              </DisplayName>
+              <Description>
+                <Text>Enumeration: SetPoint External 2</Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>3</Value>
+              <DisplayName>
+                <Text>MLB:External_3</Text>
+              </DisplayName>
+              <Description>
+                <Text>Enumeration: SetPoint External 3</Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=1082" BrowseName="1:preBinStatus">
+    <DisplayName>preBinStatus</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=1083</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
+    </References>
+    <Definition Name="1:preBinStatus">
+      <Field Name="MLB:Undefined" Value="0">
+        <Description>Enumeration: SetPoint Undefined.</Description>
+      </Field>
+      <Field Name="MLB:PreSel" Value="1">
+        <Description>Enumeration: Preselected</Description>
+      </Field>
+      <Field Name="MLB:PreValid" Value="2">
+        <Description>Enumeration: Preselected is valid</Description>
+      </Field>
+      <Field Name="MLB:PreRFs" Value="3">
+        <Description>Enumeration: Preselection ReadyForStart</Description>
+      </Field>
+      <Field Name="MLB:PreSelStdBy" Value="4">
+        <Description>Enumeration: Preselection stand by</Description>
+      </Field>
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=1083" BrowseName="EnumStrings" ParentNodeId="ns=1;i=1082" DataType="LocalizedText" ValueRank="1" ArrayDimensions="5">
+    <DisplayName>EnumStrings</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1082</Reference>
+    </References>
+    <Value>
+      <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <LocalizedText>
+          <Text>MLB:Undefined</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>MLB:PreSel</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>MLB:PreValid</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>MLB:PreRFs</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>MLB:PreSelStdBy</Text>
+        </LocalizedText>
+      </ListOfLocalizedText>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=1071" BrowseName="1:ProcessFunctionEnumeration">
+    <DisplayName>ProcessFunctionEnumeration</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=1072</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
+    </References>
+    <Definition Name="1:ProcessFunctionEnumeration">
+      <Field Name="Undefined" Value="0">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="Motor" Value="1">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="Pump" Value="2">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="Fan" Value="3">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="RotaryFeeder" Value="4">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="GearWheelPump" Value="5">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="Valve" Value="6">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="ValveMan" Value="7">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="ValveAuto" Value="8">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="Generator" Value="9">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="Heater" Value="10">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="BucketElevator" Value="11">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="Conveyor" Value="12">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="Electric" Value="13">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="AirSlideOutlet" Value="14">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="Diverter" Value="15">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="LouvreDamper" Value="16">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="AirSlide" Value="17">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="PropRoller" Value="18">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="DamperDamper" Value="19">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="AirSlideShut" Value="20">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="Diverter3Ways" Value="21">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="Valve3Ways" Value="22">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="DamperState" Value="23">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="ValveLevel" Value="24">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="ValveManLevel" Value="25">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="ValveAutoLevel" Value="26">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="PropRollerState" Value="27">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="CircuitBreaker" Value="28">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="Disconnector" Value="29">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="Bar" Value="30">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="Pipe" Value="31">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="MaterialTransport" Value="32">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="Silo" Value="33">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="Agitator" Value="34">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="Tank" Value="35">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="Mixer" Value="36">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="Pile" Value="37">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="Cyclone" Value="38">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="Button" Value="39">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="RollerPress" Value="40">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="HorizontalMill" Value="41">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="AirSeparator" Value="42">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="ConeScreen" Value="43">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="VerticalMill" Value="44">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="Kiln" Value="45">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="Pelletizer" Value="46">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="Crusher" Value="47">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="MagneticSeparator" Value="48">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="HotGasGenerator" Value="49">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="Compressor" Value="50">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="PumpCentrifugal" Value="51">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="Elevator" Value="52">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+      <Field Name="EP" Value="53">
+        <Description>Enumeration: ProcessFunction.</Description>
+      </Field>
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=1072" BrowseName="EnumStrings" ParentNodeId="ns=1;i=1071" DataType="LocalizedText" ValueRank="1" ArrayDimensions="54">
+    <DisplayName>EnumStrings</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1071</Reference>
+    </References>
+    <Value>
+      <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <LocalizedText>
+          <Text>Undefined</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>Motor</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>Pump</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>Fan</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>RotaryFeeder</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>GearWheelPump</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>Valve</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>ValveMan</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>ValveAuto</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>Generator</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>Heater</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>BucketElevator</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>Conveyor</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>Electric</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>AirSlideOutlet</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>Diverter</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>LouvreDamper</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>AirSlide</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>PropRoller</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>DamperDamper</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>AirSlideShut</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>Diverter3Ways</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>Valve3Ways</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>DamperState</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>ValveLevel</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>ValveManLevel</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>ValveAutoLevel</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>PropRollerState</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>CircuitBreaker</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>Disconnector</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>Bar</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>Pipe</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>MaterialTransport</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>Silo</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>Agitator</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>Tank</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>Mixer</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>Pile</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>Cyclone</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>Button</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>RollerPress</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>HorizontalMill</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>AirSeparator</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>ConeScreen</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>VerticalMill</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>Kiln</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>Pelletizer</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>Crusher</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>MagneticSeparator</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>HotGasGenerator</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>Compressor</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>PumpCentrifugal</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>Elevator</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Text>EP</Text>
+        </LocalizedText>
+      </ListOfLocalizedText>
+    </Value>
+  </UAVariable>
+  <UAReferenceType NodeId="ns=1;i=173" BrowseName="1:MinLibHierarchicalReferences" IsAbstract="true">
+    <DisplayName>MinLibHierarchicalReferences</DisplayName>
+    <Description>Reference: Describe dependencies between MinLib objects</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=33</Reference>
+    </References>
+    <InverseName>TestInverse</InverseName>
+  </UAReferenceType>
+  <UAReferenceType NodeId="ns=1;i=1073" BrowseName="1:isControlling">
+    <DisplayName>isControlling</DisplayName>
+    <Description>Reference: Describe dependencies between MinLib objects which have a controlling character.</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=173</Reference>
+    </References>
+    <InverseName>IsControlledBy</InverseName>
+  </UAReferenceType>
+  <UAReferenceType NodeId="ns=1;i=174" BrowseName="1:isPCCInterlockedBy">
+    <DisplayName>isPCCInterlockedBy</DisplayName>
+    <Description>Reference: Describe dependencies between MinLib objects which have a controlling character.</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=173</Reference>
+    </References>
+    <InverseName>Interlocks</InverseName>
+  </UAReferenceType>
+  <UAReferenceType NodeId="ns=1;i=1074" BrowseName="1:isPCCICInterlockedBy">
+    <DisplayName>isPCCICInterlockedBy</DisplayName>
+    <Description>Reference: Equipment is Safety Interlocked</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=174</Reference>
+    </References>
+    <InverseName>Interlocks Safety</InverseName>
+  </UAReferenceType>
+  <UAReferenceType NodeId="ns=1;i=1075" BrowseName="1:isPCCIBInterlockedBy">
+    <DisplayName>isPCCIBInterlockedBy</DisplayName>
+    <Description>Reference: Equipment is Equipment Interlocked</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=174</Reference>
+    </References>
+    <InverseName>Interlocks Equipment</InverseName>
+  </UAReferenceType>
+  <UAReferenceType NodeId="ns=1;i=1076" BrowseName="1:isPCCIAInterlockedBy">
+    <DisplayName>isPCCIAInterlockedBy</DisplayName>
+    <Description>Reference: Equipment is Process Interlocked.</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=174</Reference>
+    </References>
+    <InverseName>Interlocks Process</InverseName>
+  </UAReferenceType>
+  <UAReferenceType NodeId="ns=1;i=1077" BrowseName="1:isPCCAutoStartInterlockedBy">
+    <DisplayName>isPCCAutoStartInterlockedBy</DisplayName>
+    <Description>Reference: AutoStart Interlocked.</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=174</Reference>
+    </References>
+    <InverseName>Interlocks AutoStart</InverseName>
+  </UAReferenceType>
+  <UAReferenceType NodeId="ns=1;i=1078" BrowseName="1:isThresholdPCCInterlockedBy">
+    <DisplayName>isThresholdPCCInterlockedBy</DisplayName>
+    <Description>Reference: Describe dependencies between MinLib objects which have a controlling character.</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=173</Reference>
+    </References>
+    <InverseName>Interlocks</InverseName>
+  </UAReferenceType>
+  <UAReferenceType NodeId="ns=1;i=1079" BrowseName="1:isBooleanInterlockedBy">
+    <DisplayName>isBooleanInterlockedBy</DisplayName>
+    <Description>Reference: Describe dependencies between MinLib objects which have a controlling character.</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=173</Reference>
+    </References>
+    <InverseName>Interlocks</InverseName>
+  </UAReferenceType>
+  <UAObjectType NodeId="ns=1;i=175" BrowseName="1:MinLibType" IsAbstract="true">
+    <DisplayName>MinLibType</DisplayName>
+    <Description>Base type for all MinLib Objects, that are not subtype of a CS</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1064" BrowseName="1:MinLibStateMachineType">
+    <DisplayName>MinLibStateMachineType</DisplayName>
+    <Description>A finite state machine for a general System</Description>
+    <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=1065</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=1067</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=1069</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=2771</Reference>
+    </References>
+  </UAObjectType>
+  <UAObject NodeId="ns=1;i=1065" BrowseName="1:NotRdyOn" ParentNodeId="ns=1;i=1064">
+    <DisplayName>NotRdyOn</DisplayName>
+    <Description>The motor is off and not ready to start</Description>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=1066</Reference>
+      <Reference ReferenceType="FromState" IsForward="false">ns=1;i=1069</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2309</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1064</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=1;i=1066" BrowseName="StateNumber" ParentNodeId="ns=1;i=1065" DataType="UInt32">
+    <DisplayName>StateNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1065</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;i=1067" BrowseName="1:RdyRef" ParentNodeId="ns=1;i=1064">
+    <DisplayName>RdyRef</DisplayName>
+    <Description>The motor is running</Description>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=1068</Reference>
+      <Reference ReferenceType="ToState" IsForward="false">ns=1;i=1069</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2307</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1064</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=1;i=1068" BrowseName="StateNumber" ParentNodeId="ns=1;i=1067" DataType="UInt32">
+    <DisplayName>StateNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1067</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;i=1069" BrowseName="1:StartTransition" ParentNodeId="ns=1;i=1064">
+    <DisplayName>StartTransition</DisplayName>
+    <Description>Transition from stopped to running.</Description>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=1070</Reference>
+      <Reference ReferenceType="FromState">ns=1;i=1065</Reference>
+      <Reference ReferenceType="ToState">ns=1;i=1067</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2310</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1064</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=1;i=1070" BrowseName="TransitionNumber" ParentNodeId="ns=1;i=1069" DataType="UInt32">
+    <DisplayName>TransitionNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1069</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=1084" BrowseName="1:MinLib.BaseModel" SymbolicName="MinLibBaseModel_BinarySchema" ReleaseStatus="Deprecated" DataType="ByteString">
+    <DisplayName>MinLib.BaseModel</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=1086</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=1087</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=93</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=72</Reference>
+    </References>
+    <Value>
+      <ByteString xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">PG9wYzpUeXBlRGljdGlvbmFyeQ0KICB4bWxuczpvcGM9Imh0dHA6Ly9vcGNmb3VuZGF0aW9uLm9y
+Zy9CaW5hcnlTY2hlbWEvIg0KICB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1M
+U2NoZW1hLWluc3RhbmNlIg0KICB4bWxuczp1YT0iaHR0cDovL29wY2ZvdW5kYXRpb24ub3JnL1VB
+LyINCiAgeG1sbnM6dG5zPSJodHRwczovL2FiYi5jb20vTWluTGliL0Jhc2VNb2RlbC8iDQogIERl
+ZmF1bHRCeXRlT3JkZXI9IkxpdHRsZUVuZGlhbiINCiAgVGFyZ2V0TmFtZXNwYWNlPSJodHRwczov
+L2FiYi5jb20vTWluTGliL0Jhc2VNb2RlbC8iDQo+DQogIDxvcGM6SW1wb3J0IE5hbWVzcGFjZT0i
+aHR0cDovL29wY2ZvdW5kYXRpb24ub3JnL1VBLyIgTG9jYXRpb249Ik9wYy5VYS5CaW5hcnlTY2hl
+bWEuYnNkIi8+DQoNCiAgPG9wYzpFbnVtZXJhdGVkVHlwZSBOYW1lPSJQb2ludE9mQ29udHJvbEVu
+dW0iIExlbmd0aEluQml0cz0iMzIiPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik1M
+QjpVbmRlZmluZWQiIFZhbHVlPSIwIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9
+Ik1MQjpDZW50cmFsIiBWYWx1ZT0iMSIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1l
+PSJNTEI6TG9jYWwiIFZhbHVlPSIyIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9
+Ik1MQjpTZXF1ZW5jZSIgVmFsdWU9IjMiIC8+DQogIDwvb3BjOkVudW1lcmF0ZWRUeXBlPg0KDQog
+IDxvcGM6RW51bWVyYXRlZFR5cGUgTmFtZT0iTW9kZUVudW0iIExlbmd0aEluQml0cz0iMzIiPg0K
+ICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik1MQjpVbmRlZmluZWQiIFZhbHVlPSIwIiAv
+Pg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik1MQjpNYW51YWwiIFZhbHVlPSIxIiAv
+Pg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik1MQjpBdXRvIiBWYWx1ZT0iMiIgLz4N
+CiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNTEI6QUkiIFZhbHVlPSIzIiAvPg0KICA8
+L29wYzpFbnVtZXJhdGVkVHlwZT4NCg0KICA8b3BjOkVudW1lcmF0ZWRUeXBlIE5hbWU9Ik1vZGVT
+ZXRQb2ludCIgTGVuZ3RoSW5CaXRzPSIzMiI+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFt
+ZT0iTUxCOlVuZGVmaW5lZCIgVmFsdWU9IjAiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUg
+TmFtZT0iTUxCOkludGVybmFsIiBWYWx1ZT0iMSIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1
+ZSBOYW1lPSJNTEI6RXh0ZXJuYWxfMSIgVmFsdWU9IjEiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVk
+VmFsdWUgTmFtZT0iTUxCOkV4dGVybmFsXzIiIFZhbHVlPSIyIiAvPg0KICAgIDxvcGM6RW51bWVy
+YXRlZFZhbHVlIE5hbWU9Ik1MQjpFeHRlcm5hbF8zIiBWYWx1ZT0iMyIgLz4NCiAgPC9vcGM6RW51
+bWVyYXRlZFR5cGU+DQoNCiAgPG9wYzpFbnVtZXJhdGVkVHlwZSBOYW1lPSJwcmVCaW5TdGF0dXMi
+IExlbmd0aEluQml0cz0iMzIiPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik1MQjpV
+bmRlZmluZWQiIFZhbHVlPSIwIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik1M
+QjpQcmVTZWwiIFZhbHVlPSIxIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik1M
+QjpQcmVWYWxpZCIgVmFsdWU9IjIiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0i
+TUxCOlByZVJGcyIgVmFsdWU9IjMiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0i
+TUxCOlByZVNlbFN0ZEJ5IiBWYWx1ZT0iNCIgLz4NCiAgPC9vcGM6RW51bWVyYXRlZFR5cGU+DQoN
+CiAgPG9wYzpFbnVtZXJhdGVkVHlwZSBOYW1lPSJQcm9jZXNzRnVuY3Rpb25FbnVtZXJhdGlvbiIg
+TGVuZ3RoSW5CaXRzPSIzMiI+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iVW5kZWZp
+bmVkIiBWYWx1ZT0iMCIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNb3RvciIg
+VmFsdWU9IjEiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iUHVtcCIgVmFsdWU9
+IjIiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iRmFuIiBWYWx1ZT0iMyIgLz4N
+CiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJSb3RhcnlGZWVkZXIiIFZhbHVlPSI0IiAv
+Pg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkdlYXJXaGVlbFB1bXAiIFZhbHVlPSI1
+IiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlZhbHZlIiBWYWx1ZT0iNiIgLz4N
+CiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJWYWx2ZU1hbiIgVmFsdWU9IjciIC8+DQog
+ICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iVmFsdmVBdXRvIiBWYWx1ZT0iOCIgLz4NCiAg
+ICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJHZW5lcmF0b3IiIFZhbHVlPSI5IiAvPg0KICAg
+IDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkhlYXRlciIgVmFsdWU9IjEwIiAvPg0KICAgIDxv
+cGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkJ1Y2tldEVsZXZhdG9yIiBWYWx1ZT0iMTEiIC8+DQog
+ICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iQ29udmV5b3IiIFZhbHVlPSIxMiIgLz4NCiAg
+ICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJFbGVjdHJpYyIgVmFsdWU9IjEzIiAvPg0KICAg
+IDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkFpclNsaWRlT3V0bGV0IiBWYWx1ZT0iMTQiIC8+
+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iRGl2ZXJ0ZXIiIFZhbHVlPSIxNSIgLz4N
+CiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJMb3V2cmVEYW1wZXIiIFZhbHVlPSIxNiIg
+Lz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJBaXJTbGlkZSIgVmFsdWU9IjE3IiAv
+Pg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlByb3BSb2xsZXIiIFZhbHVlPSIxOCIg
+Lz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJEYW1wZXJEYW1wZXIiIFZhbHVlPSIx
+OSIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJBaXJTbGlkZVNodXQiIFZhbHVl
+PSIyMCIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJEaXZlcnRlcjNXYXlzIiBW
+YWx1ZT0iMjEiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iVmFsdmUzV2F5cyIg
+VmFsdWU9IjIyIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkRhbXBlclN0YXRl
+IiBWYWx1ZT0iMjMiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iVmFsdmVMZXZl
+bCIgVmFsdWU9IjI0IiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlZhbHZlTWFu
+TGV2ZWwiIFZhbHVlPSIyNSIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJWYWx2
+ZUF1dG9MZXZlbCIgVmFsdWU9IjI2IiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9
+IlByb3BSb2xsZXJTdGF0ZSIgVmFsdWU9IjI3IiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVl
+IE5hbWU9IkNpcmN1aXRCcmVha2VyIiBWYWx1ZT0iMjgiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVk
+VmFsdWUgTmFtZT0iRGlzY29ubmVjdG9yIiBWYWx1ZT0iMjkiIC8+DQogICAgPG9wYzpFbnVtZXJh
+dGVkVmFsdWUgTmFtZT0iQmFyIiBWYWx1ZT0iMzAiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFs
+dWUgTmFtZT0iUGlwZSIgVmFsdWU9IjMxIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5h
+bWU9Ik1hdGVyaWFsVHJhbnNwb3J0IiBWYWx1ZT0iMzIiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVk
+VmFsdWUgTmFtZT0iU2lsbyIgVmFsdWU9IjMzIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVl
+IE5hbWU9IkFnaXRhdG9yIiBWYWx1ZT0iMzQiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUg
+TmFtZT0iVGFuayIgVmFsdWU9IjM1IiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9
+Ik1peGVyIiBWYWx1ZT0iMzYiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iUGls
+ZSIgVmFsdWU9IjM3IiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkN5Y2xvbmUi
+IFZhbHVlPSIzOCIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJCdXR0b24iIFZh
+bHVlPSIzOSIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJSb2xsZXJQcmVzcyIg
+VmFsdWU9IjQwIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ikhvcml6b250YWxN
+aWxsIiBWYWx1ZT0iNDEiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iQWlyU2Vw
+YXJhdG9yIiBWYWx1ZT0iNDIiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iQ29u
+ZVNjcmVlbiIgVmFsdWU9IjQzIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlZl
+cnRpY2FsTWlsbCIgVmFsdWU9IjQ0IiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9
+IktpbG4iIFZhbHVlPSI0NSIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJQZWxs
+ZXRpemVyIiBWYWx1ZT0iNDYiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iQ3J1
+c2hlciIgVmFsdWU9IjQ3IiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik1hZ25l
+dGljU2VwYXJhdG9yIiBWYWx1ZT0iNDgiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFt
+ZT0iSG90R2FzR2VuZXJhdG9yIiBWYWx1ZT0iNDkiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFs
+dWUgTmFtZT0iQ29tcHJlc3NvciIgVmFsdWU9IjUwIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZh
+bHVlIE5hbWU9IlB1bXBDZW50cmlmdWdhbCIgVmFsdWU9IjUxIiAvPg0KICAgIDxvcGM6RW51bWVy
+YXRlZFZhbHVlIE5hbWU9IkVsZXZhdG9yIiBWYWx1ZT0iNTIiIC8+DQogICAgPG9wYzpFbnVtZXJh
+dGVkVmFsdWUgTmFtZT0iRVAiIFZhbHVlPSI1MyIgLz4NCiAgPC9vcGM6RW51bWVyYXRlZFR5cGU+
+DQoNCjwvb3BjOlR5cGVEaWN0aW9uYXJ5Pg==</ByteString>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=1086" BrowseName="NamespaceUri" ReleaseStatus="Deprecated" ParentNodeId="ns=1;i=1084" DataType="String">
+    <DisplayName>NamespaceUri</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1084</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">https://abb.com/MinLib/BaseModel/</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=1087" BrowseName="Deprecated" ReleaseStatus="Deprecated" ParentNodeId="ns=1;i=1084" DataType="Boolean">
+    <DisplayName>Deprecated</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1084</Reference>
+    </References>
+    <Value>
+      <Boolean xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">true</Boolean>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=1088" BrowseName="1:MinLib.BaseModel" SymbolicName="MinLibBaseModel_XmlSchema" ReleaseStatus="Deprecated" DataType="ByteString">
+    <DisplayName>MinLib.BaseModel</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=1090</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=1091</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=92</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=72</Reference>
+    </References>
+    <Value>
+      <ByteString xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">PHhzOnNjaGVtYQ0KICB4bWxuczp4cz0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEi
+DQogIHhtbG5zOnVhPSJodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvMjAwOC8wMi9UeXBlcy54
+c2QiDQogIHhtbG5zOnRucz0iaHR0cHM6Ly9hYmIuY29tL01pbkxpYi9NTEIvVHlwZXMueHNkIg0K
+ICB0YXJnZXROYW1lc3BhY2U9Imh0dHBzOi8vYWJiLmNvbS9NaW5MaWIvTUxCL1R5cGVzLnhzZCIN
+CiAgZWxlbWVudEZvcm1EZWZhdWx0PSJxdWFsaWZpZWQiDQo+DQogIDx4czphbm5vdGF0aW9uPg0K
+ICAgIDx4czphcHBpbmZvPg0KICAgICAgPHVhOk1vZGVsIE1vZGVsVXJpPSJodHRwczovL2FiYi5j
+b20vTWluTGliL0Jhc2VNb2RlbC8iIFZlcnNpb249IjAuMDMuMDEiIFB1YmxpY2F0aW9uRGF0ZT0i
+MjAyNi0wMi0xMlQwMDowMDowMFoiIC8+DQogICAgPC94czphcHBpbmZvPg0KICA8L3hzOmFubm90
+YXRpb24+DQogIA0KICA8eHM6aW1wb3J0IG5hbWVzcGFjZT0iaHR0cDovL29wY2ZvdW5kYXRpb24u
+b3JnL1VBLzIwMDgvMDIvVHlwZXMueHNkIiAvPg0KDQogIDx4czpzaW1wbGVUeXBlICBuYW1lPSJQ
+b2ludE9mQ29udHJvbEVudW0iPg0KICAgIDx4czpyZXN0cmljdGlvbiBiYXNlPSJ4czpzdHJpbmci
+Pg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJNTEI6VW5kZWZpbmVkXzAiIC8+DQogICAg
+ICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ik1MQjpDZW50cmFsXzEiIC8+DQogICAgICA8eHM6ZW51
+bWVyYXRpb24gdmFsdWU9Ik1MQjpMb2NhbF8yIiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZh
+bHVlPSJNTEI6U2VxdWVuY2VfMyIgLz4NCiAgICA8L3hzOnJlc3RyaWN0aW9uPg0KICA8L3hzOnNp
+bXBsZVR5cGU+DQogIDx4czplbGVtZW50IG5hbWU9IlBvaW50T2ZDb250cm9sRW51bSIgdHlwZT0i
+dG5zOlBvaW50T2ZDb250cm9sRW51bSIgLz4NCg0KICA8eHM6Y29tcGxleFR5cGUgbmFtZT0iTGlz
+dE9mUG9pbnRPZkNvbnRyb2xFbnVtIj4NCiAgICA8eHM6c2VxdWVuY2U+DQogICAgICA8eHM6ZWxl
+bWVudCBuYW1lPSJQb2ludE9mQ29udHJvbEVudW0iIHR5cGU9InRuczpQb2ludE9mQ29udHJvbEVu
+dW0iIG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSJ1bmJvdW5kZWQiIC8+DQogICAgPC94czpzZXF1
+ZW5jZT4NCiAgPC94czpjb21wbGV4VHlwZT4NCiAgPHhzOmVsZW1lbnQgbmFtZT0iTGlzdE9mUG9p
+bnRPZkNvbnRyb2xFbnVtIiB0eXBlPSJ0bnM6TGlzdE9mUG9pbnRPZkNvbnRyb2xFbnVtIiBuaWxs
+YWJsZT0idHJ1ZSI+PC94czplbGVtZW50Pg0KDQogIDx4czpzaW1wbGVUeXBlICBuYW1lPSJNb2Rl
+RW51bSI+DQogICAgPHhzOnJlc3RyaWN0aW9uIGJhc2U9InhzOnN0cmluZyI+DQogICAgICA8eHM6
+ZW51bWVyYXRpb24gdmFsdWU9Ik1MQjpVbmRlZmluZWRfMCIgLz4NCiAgICAgIDx4czplbnVtZXJh
+dGlvbiB2YWx1ZT0iTUxCOk1hbnVhbF8xIiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVl
+PSJNTEI6QXV0b18yIiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJNTEI6QUlfMyIg
+Lz4NCiAgICA8L3hzOnJlc3RyaWN0aW9uPg0KICA8L3hzOnNpbXBsZVR5cGU+DQogIDx4czplbGVt
+ZW50IG5hbWU9Ik1vZGVFbnVtIiB0eXBlPSJ0bnM6TW9kZUVudW0iIC8+DQoNCiAgPHhzOmNvbXBs
+ZXhUeXBlIG5hbWU9Ikxpc3RPZk1vZGVFbnVtIj4NCiAgICA8eHM6c2VxdWVuY2U+DQogICAgICA8
+eHM6ZWxlbWVudCBuYW1lPSJNb2RlRW51bSIgdHlwZT0idG5zOk1vZGVFbnVtIiBtaW5PY2N1cnM9
+IjAiIG1heE9jY3Vycz0idW5ib3VuZGVkIiAvPg0KICAgIDwveHM6c2VxdWVuY2U+DQogIDwveHM6
+Y29tcGxleFR5cGU+DQogIDx4czplbGVtZW50IG5hbWU9Ikxpc3RPZk1vZGVFbnVtIiB0eXBlPSJ0
+bnM6TGlzdE9mTW9kZUVudW0iIG5pbGxhYmxlPSJ0cnVlIj48L3hzOmVsZW1lbnQ+DQoNCiAgPHhz
+OnNpbXBsZVR5cGUgIG5hbWU9Ik1vZGVTZXRQb2ludCI+DQogICAgPHhzOnJlc3RyaWN0aW9uIGJh
+c2U9InhzOnN0cmluZyI+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ik1MQjpVbmRlZmlu
+ZWRfMCIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iTUxCOkludGVybmFsXzEiIC8+
+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ik1MQjpFeHRlcm5hbF8xXzEiIC8+DQogICAg
+ICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ik1MQjpFeHRlcm5hbF8yXzIiIC8+DQogICAgICA8eHM6
+ZW51bWVyYXRpb24gdmFsdWU9Ik1MQjpFeHRlcm5hbF8zXzMiIC8+DQogICAgPC94czpyZXN0cmlj
+dGlvbj4NCiAgPC94czpzaW1wbGVUeXBlPg0KICA8eHM6ZWxlbWVudCBuYW1lPSJNb2RlU2V0UG9p
+bnQiIHR5cGU9InRuczpNb2RlU2V0UG9pbnQiIC8+DQoNCiAgPHhzOmNvbXBsZXhUeXBlIG5hbWU9
+Ikxpc3RPZk1vZGVTZXRQb2ludCI+DQogICAgPHhzOnNlcXVlbmNlPg0KICAgICAgPHhzOmVsZW1l
+bnQgbmFtZT0iTW9kZVNldFBvaW50IiB0eXBlPSJ0bnM6TW9kZVNldFBvaW50IiBtaW5PY2N1cnM9
+IjAiIG1heE9jY3Vycz0idW5ib3VuZGVkIiAvPg0KICAgIDwveHM6c2VxdWVuY2U+DQogIDwveHM6
+Y29tcGxleFR5cGU+DQogIDx4czplbGVtZW50IG5hbWU9Ikxpc3RPZk1vZGVTZXRQb2ludCIgdHlw
+ZT0idG5zOkxpc3RPZk1vZGVTZXRQb2ludCIgbmlsbGFibGU9InRydWUiPjwveHM6ZWxlbWVudD4N
+Cg0KICA8eHM6c2ltcGxlVHlwZSAgbmFtZT0icHJlQmluU3RhdHVzIj4NCiAgICA8eHM6cmVzdHJp
+Y3Rpb24gYmFzZT0ieHM6c3RyaW5nIj4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iTUxC
+OlVuZGVmaW5lZF8wIiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJNTEI6UHJlU2Vs
+XzEiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ik1MQjpQcmVWYWxpZF8yIiAvPg0K
+ICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJNTEI6UHJlUkZzXzMiIC8+DQogICAgICA8eHM6
+ZW51bWVyYXRpb24gdmFsdWU9Ik1MQjpQcmVTZWxTdGRCeV80IiAvPg0KICAgIDwveHM6cmVzdHJp
+Y3Rpb24+DQogIDwveHM6c2ltcGxlVHlwZT4NCiAgPHhzOmVsZW1lbnQgbmFtZT0icHJlQmluU3Rh
+dHVzIiB0eXBlPSJ0bnM6cHJlQmluU3RhdHVzIiAvPg0KDQogIDx4czpjb21wbGV4VHlwZSBuYW1l
+PSJMaXN0T2ZwcmVCaW5TdGF0dXMiPg0KICAgIDx4czpzZXF1ZW5jZT4NCiAgICAgIDx4czplbGVt
+ZW50IG5hbWU9InByZUJpblN0YXR1cyIgdHlwZT0idG5zOnByZUJpblN0YXR1cyIgbWluT2NjdXJz
+PSIwIiBtYXhPY2N1cnM9InVuYm91bmRlZCIgLz4NCiAgICA8L3hzOnNlcXVlbmNlPg0KICA8L3hz
+OmNvbXBsZXhUeXBlPg0KICA8eHM6ZWxlbWVudCBuYW1lPSJMaXN0T2ZwcmVCaW5TdGF0dXMiIHR5
+cGU9InRuczpMaXN0T2ZwcmVCaW5TdGF0dXMiIG5pbGxhYmxlPSJ0cnVlIj48L3hzOmVsZW1lbnQ+
+DQoNCiAgPHhzOnNpbXBsZVR5cGUgIG5hbWU9IlByb2Nlc3NGdW5jdGlvbkVudW1lcmF0aW9uIj4N
+CiAgICA8eHM6cmVzdHJpY3Rpb24gYmFzZT0ieHM6c3RyaW5nIj4NCiAgICAgIDx4czplbnVtZXJh
+dGlvbiB2YWx1ZT0iVW5kZWZpbmVkXzAiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9
+Ik1vdG9yXzEiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IlB1bXBfMiIgLz4NCiAg
+ICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iRmFuXzMiIC8+DQogICAgICA8eHM6ZW51bWVyYXRp
+b24gdmFsdWU9IlJvdGFyeUZlZWRlcl80IiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVl
+PSJHZWFyV2hlZWxQdW1wXzUiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IlZhbHZl
+XzYiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IlZhbHZlTWFuXzciIC8+DQogICAg
+ICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IlZhbHZlQXV0b184IiAvPg0KICAgICAgPHhzOmVudW1l
+cmF0aW9uIHZhbHVlPSJHZW5lcmF0b3JfOSIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1
+ZT0iSGVhdGVyXzEwIiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJCdWNrZXRFbGV2
+YXRvcl8xMSIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iQ29udmV5b3JfMTIiIC8+
+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IkVsZWN0cmljXzEzIiAvPg0KICAgICAgPHhz
+OmVudW1lcmF0aW9uIHZhbHVlPSJBaXJTbGlkZU91dGxldF8xNCIgLz4NCiAgICAgIDx4czplbnVt
+ZXJhdGlvbiB2YWx1ZT0iRGl2ZXJ0ZXJfMTUiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFs
+dWU9IkxvdXZyZURhbXBlcl8xNiIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iQWly
+U2xpZGVfMTciIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IlByb3BSb2xsZXJfMTgi
+IC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IkRhbXBlckRhbXBlcl8xOSIgLz4NCiAg
+ICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iQWlyU2xpZGVTaHV0XzIwIiAvPg0KICAgICAgPHhz
+OmVudW1lcmF0aW9uIHZhbHVlPSJEaXZlcnRlcjNXYXlzXzIxIiAvPg0KICAgICAgPHhzOmVudW1l
+cmF0aW9uIHZhbHVlPSJWYWx2ZTNXYXlzXzIyIiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZh
+bHVlPSJEYW1wZXJTdGF0ZV8yMyIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iVmFs
+dmVMZXZlbF8yNCIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iVmFsdmVNYW5MZXZl
+bF8yNSIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iVmFsdmVBdXRvTGV2ZWxfMjYi
+IC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IlByb3BSb2xsZXJTdGF0ZV8yNyIgLz4N
+CiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iQ2lyY3VpdEJyZWFrZXJfMjgiIC8+DQogICAg
+ICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IkRpc2Nvbm5lY3Rvcl8yOSIgLz4NCiAgICAgIDx4czpl
+bnVtZXJhdGlvbiB2YWx1ZT0iQmFyXzMwIiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVl
+PSJQaXBlXzMxIiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJNYXRlcmlhbFRyYW5z
+cG9ydF8zMiIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iU2lsb18zMyIgLz4NCiAg
+ICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iQWdpdGF0b3JfMzQiIC8+DQogICAgICA8eHM6ZW51
+bWVyYXRpb24gdmFsdWU9IlRhbmtfMzUiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9
+Ik1peGVyXzM2IiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJQaWxlXzM3IiAvPg0K
+ICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJDeWNsb25lXzM4IiAvPg0KICAgICAgPHhzOmVu
+dW1lcmF0aW9uIHZhbHVlPSJCdXR0b25fMzkiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFs
+dWU9IlJvbGxlclByZXNzXzQwIiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJIb3Jp
+em9udGFsTWlsbF80MSIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iQWlyU2VwYXJh
+dG9yXzQyIiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJDb25lU2NyZWVuXzQzIiAv
+Pg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJWZXJ0aWNhbE1pbGxfNDQiIC8+DQogICAg
+ICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IktpbG5fNDUiIC8+DQogICAgICA8eHM6ZW51bWVyYXRp
+b24gdmFsdWU9IlBlbGxldGl6ZXJfNDYiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9
+IkNydXNoZXJfNDciIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ik1hZ25ldGljU2Vw
+YXJhdG9yXzQ4IiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJIb3RHYXNHZW5lcmF0
+b3JfNDkiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IkNvbXByZXNzb3JfNTAiIC8+
+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IlB1bXBDZW50cmlmdWdhbF81MSIgLz4NCiAg
+ICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iRWxldmF0b3JfNTIiIC8+DQogICAgICA8eHM6ZW51
+bWVyYXRpb24gdmFsdWU9IkVQXzUzIiAvPg0KICAgIDwveHM6cmVzdHJpY3Rpb24+DQogIDwveHM6
+c2ltcGxlVHlwZT4NCiAgPHhzOmVsZW1lbnQgbmFtZT0iUHJvY2Vzc0Z1bmN0aW9uRW51bWVyYXRp
+b24iIHR5cGU9InRuczpQcm9jZXNzRnVuY3Rpb25FbnVtZXJhdGlvbiIgLz4NCg0KICA8eHM6Y29t
+cGxleFR5cGUgbmFtZT0iTGlzdE9mUHJvY2Vzc0Z1bmN0aW9uRW51bWVyYXRpb24iPg0KICAgIDx4
+czpzZXF1ZW5jZT4NCiAgICAgIDx4czplbGVtZW50IG5hbWU9IlByb2Nlc3NGdW5jdGlvbkVudW1l
+cmF0aW9uIiB0eXBlPSJ0bnM6UHJvY2Vzc0Z1bmN0aW9uRW51bWVyYXRpb24iIG1pbk9jY3Vycz0i
+MCIgbWF4T2NjdXJzPSJ1bmJvdW5kZWQiIC8+DQogICAgPC94czpzZXF1ZW5jZT4NCiAgPC94czpj
+b21wbGV4VHlwZT4NCiAgPHhzOmVsZW1lbnQgbmFtZT0iTGlzdE9mUHJvY2Vzc0Z1bmN0aW9uRW51
+bWVyYXRpb24iIHR5cGU9InRuczpMaXN0T2ZQcm9jZXNzRnVuY3Rpb25FbnVtZXJhdGlvbiIgbmls
+bGFibGU9InRydWUiPjwveHM6ZWxlbWVudD4NCg0KPC94czpzY2hlbWE+</ByteString>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=1090" BrowseName="NamespaceUri" ReleaseStatus="Deprecated" ParentNodeId="ns=1;i=1088" DataType="String">
+    <DisplayName>NamespaceUri</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1088</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">https://abb.com/MinLib/MLB/Types.xsd</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=1091" BrowseName="Deprecated" ReleaseStatus="Deprecated" ParentNodeId="ns=1;i=1088" DataType="Boolean">
+    <DisplayName>Deprecated</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1088</Reference>
+    </References>
+    <Value>
+      <Boolean xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">true</Boolean>
+    </Value>
+  </UAVariable>
+</UANodeSet>
