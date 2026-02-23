@@ -16,7 +16,6 @@
     <Alias Alias="HasTypeDefinition">i=40</Alias>
     <Alias Alias="HasSubtype">i=45</Alias>
     <Alias Alias="HasProperty">i=46</Alias>
-    <Alias Alias="BaseDataVariableType">i=63</Alias>
     <Alias Alias="EUInformation">i=887</Alias>
     <Alias Alias="ProcessValueType">ns=2;i=1003</Alias>
     <Alias Alias="DiscreteSignalType">ns=3;i=1036</Alias>
@@ -305,6 +304,7 @@
   </UAVariable>
 
 </UANodeSet>
+
 
 
 
