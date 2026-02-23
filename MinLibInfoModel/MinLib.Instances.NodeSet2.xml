@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <NamespaceUris>
-    <Uri>http://abb.com./MinLib/Facade.io</Uri>
+    <Uri>http://abb.com./MinLib/Facade</Uri>
     <Uri>http://opcfoundation.org/UA/PADIM/</Uri>
     <Uri>http://abb.com/MinLib/Types/</Uri>
   </NamespaceUris>
@@ -59,3 +59,4 @@
     </References>
   </UAVariable>
 </UANodeSet>
+
