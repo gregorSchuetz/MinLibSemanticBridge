@@ -42,7 +42,7 @@
     <DisplayName Locale="en">Generic Analog Type</DisplayName>
     <Description Locale="en">MinLib Abstract Analog Signal type for all MinLib Object</Description>
     <References>
-      <Reference ReferenceType="HasSubtype" IsForward="false">ProcessValueType</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=2;i=1003</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=1005" BrowseName="1:AnalogInputType" SymbolicName="analog_input_type">
@@ -77,7 +77,7 @@
     <DisplayName Locale="en">Generic Digital Type</DisplayName>
     <Description Locale="en">MinLib Abstract Digital Signal type</Description>
     <References>
-      <Reference ReferenceType="HasSubtype" IsForward="false">DiscreteSignalType</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=3;i=1036</Reference>
     </References>
   </UAObjectType>
   <UAObjectType NodeId="ns=1;i=1010" BrowseName="1:DigitalInputType" SymbolicName="digital_input_type">
@@ -306,3 +306,4 @@
   </UAVariable>
 
 </UANodeSet>
+
