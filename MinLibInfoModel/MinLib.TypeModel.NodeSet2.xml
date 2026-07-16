@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" LastModified="2026-07-10T08:59:43.0441789Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" LastModified="2026-07-16T07:08:56.4936811Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <NamespaceUris>
     <Uri>http://abb.com/MinLib/Types/</Uri>
     <Uri>http://opcfoundation.org/UA/Machinery/ProcessValues/</Uri>
@@ -8,7 +8,7 @@
     <Uri>https://abb.com/MinLib/BaseModel/</Uri>
   </NamespaceUris>
   <Models>
-    <Model ModelUri="http://abb.com/MinLib/Types/" Version="0.04.01" PublicationDate="2026-07-03T00:00:00Z">
+    <Model ModelUri="http://abb.com/MinLib/Types/" Version="0.04.01" PublicationDate="2026-07-15T00:00:00Z">
       <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.05.05" PublicationDate="2025-06-30T00:00:00Z" />
       <RequiredModel ModelUri="http://opcfoundation.org/UA/Machinery/ProcessValues/" Version="1.00.0" PublicationDate="2023-05-01T00:00:00Z" />
       <RequiredModel ModelUri="http://opcfoundation.org/UA/PADIM/" Version="1.02.0" PublicationDate="2025-11-10T00:00:00Z" />
@@ -20,15 +20,12 @@
     </Model>
   </Models>
   <Aliases>
-    <Alias Alias="Float">i=10</Alias>
     <Alias Alias="HasModellingRule">i=37</Alias>
     <Alias Alias="HasTypeDefinition">i=40</Alias>
     <Alias Alias="HasSubtype">i=45</Alias>
     <Alias Alias="HasProperty">i=46</Alias>
     <Alias Alias="BaseObjectType">i=58</Alias>
-    <Alias Alias="BaseDataVariableType">i=63</Alias>
     <Alias Alias="PropertyType">i=68</Alias>
-    <Alias Alias="EUInformation">i=887</Alias>
     <Alias Alias="ProcessValueType">ns=2;i=1003</Alias>
     <Alias Alias="DiscreteSignalType">ns=3;i=1036</Alias>
     <Alias Alias="DeviceType">ns=4;i=1002</Alias>
@@ -132,7 +129,6 @@
     <DisplayName Locale="en">Consumer MOT2 Type</DisplayName>
     <Description Locale="en">MinLib Direct Online Motor two directions Type</Description>
     <References>
-      <Reference ReferenceType="HasProperty">ns=1;i=1046</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1013</Reference>
     </References>
   </UAObjectType>
@@ -353,40 +349,5 @@
       <Reference ReferenceType="HasTypeDefinition">PropertyType</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
     </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=1046" BrowseName="TestMeter" SymbolicName="testmeter" DataType="Float">
-    <DisplayName Locale="en">TestMeter</DisplayName>
-    <Description Locale="en">MinLib Actuator Type</Description>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">BaseDataVariableType</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;g=d525d689-f357-468c-8a15-bbd9e204d6d2</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;g=d525d689-f357-468c-8a15-bbd9e204d6d2" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=1046" DataType="i=887">
-    <DisplayName>EngineeringUnits</DisplayName>
-    <References>
-      <Reference ReferenceType="HasTypeDefinition">PropertyType</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1046</Reference>
-    </References>
-    <Value>
-      <uax:ExtensionObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:TypeId>
-          <uax:Identifier>i=888</uax:Identifier>
-        </uax:TypeId>
-        <uax:Body>
-          <uax:EUInformation>
-            <uax:NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</uax:NamespaceUri>
-            <uax:UnitId>5067858</uax:UnitId>
-            <uax:DisplayName>
-              <uax:Text>m</uax:Text>
-            </uax:DisplayName>
-            <uax:Description>
-              <uax:Text>metre</uax:Text>
-            </uax:Description>
-          </uax:EUInformation>
-        </uax:Body>
-      </uax:ExtensionObject>
-    </Value>
   </UAVariable>
 </UANodeSet>
