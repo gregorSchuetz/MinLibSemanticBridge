@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <ns0:UANodeSet xmlns:ns0="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <ns0:NamespaceUris>
-    <ns0:Uri>http://Facade.abb.com</ns0:Uri>
+    <ns0:Uri>http://abb.com./MinLib/Facade</ns0:Uri>
     <ns0:Uri>http://opcfoundation.org/UA/DI/</ns0:Uri>
     <ns0:Uri>http://opcfoundation.org/UA/PADIM/</ns0:Uri>
     <ns0:Uri>http://opcfoundation.org/UA/Machinery/ProcessValues/</ns0:Uri>
@@ -9,7 +9,7 @@
     <ns0:Uri>http://abb.com/MinLib/Types/</ns0:Uri>
   </ns0:NamespaceUris>
   <ns0:Models>
-    <ns0:Model ModelUri="http://Facade.abb.com" Version="0.04.01" PublicationDate="2026-07-15T00:00:00Z">
+    <ns0:Model ModelUri="http://abb.com./MinLib/Facade" Version="0.04.01" PublicationDate="2026-07-15T00:00:00Z">
       <ns0:RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.05.05" PublicationDate="2025-06-30T00:00:00Z" />
       <ns0:RequiredModel ModelUri="http://opcfoundation.org/UA/Machinery/ProcessValues/" Version="1.00.0" PublicationDate="2023-05-01T00:00:00Z" />
       <ns0:RequiredModel ModelUri="http://opcfoundation.org/UA/PADIM/" Version="1.02.0" PublicationDate="2025-11-10T00:00:00Z" />
