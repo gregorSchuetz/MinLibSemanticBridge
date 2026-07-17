@@ -1131,7 +1131,7 @@
       <ns0:Reference ReferenceType="HasTypeDefinition">i=68</ns0:Reference>
     </ns0:References>
   </ns0:UAVariable>
-  <ns0:UAVariable NodeId="ns=1;i=3" BrowseName="3:DiscreteSignal" ParentNodeId="ns=1;i=2" ValueRank="-2" DataType="Null" AccessLevel="3" UserAccessLevel="3">
+  <ns0:UAVariable NodeId="ns=1;i=3" BrowseName="3:DiscreteSignal" ParentNodeId="ns=1;i=2" ValueRank="-2" AccessLevel="3" UserAccessLevel="3">
     <ns0:DisplayName>Value</ns0:DisplayName>
     <ns0:References>
       <ns0:Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=2</ns0:Reference>
@@ -1279,7 +1279,7 @@
       <ns0:Reference ReferenceType="HasComponent">ns=1;i=147</ns0:Reference>
     </ns0:References>
   </ns0:UAObject>
-  <ns0:UAVariable NodeId="ns=1;i=147" BrowseName="2:&lt;ParameterIdentifier&gt;" ParentNodeId="ns=1;i=146" DataType="Null">
+  <ns0:UAVariable NodeId="ns=1;i=147" BrowseName="2:&lt;ParameterIdentifier&gt;" ParentNodeId="ns=1;i=146">
     <ns0:DisplayName>&lt;ParameterIdentifier&gt;</ns0:DisplayName>
     <ns0:Description>A parameter which belongs to the topology element.</ns0:Description>
     <ns0:References>
