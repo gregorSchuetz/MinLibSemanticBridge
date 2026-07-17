@@ -36,6 +36,7 @@
     <ns0:Alias Alias="LocalizedText">i=21</ns0:Alias>
     <ns0:Alias Alias="Number">i=26</ns0:Alias>
     <ns0:Alias Alias="Organizes">i=35</ns0:Alias>
+    <ns0:Alias Alias="HasModellingRule">i=37</ns0:Alias>
     <ns0:Alias Alias="HasTypeDefinition">i=40</ns0:Alias>
     <ns0:Alias Alias="HasProperty">i=46</ns0:Alias>
     <ns0:Alias Alias="HasComponent">i=47</ns0:Alias>
@@ -46,6 +47,8 @@
     <ns0:Alias Alias="Image">i=30</ns0:Alias>
     <ns0:Alias Alias="Duration">i=290</ns0:Alias>
     <ns0:Alias Alias="EnumValueType">i=7594</ns0:Alias>
+    <ns0:Alias Alias="ReferenceDescriptionVariableType">i=32657</ns0:Alias>
+    <ns0:Alias Alias="HasReferenceDescription">i=32679</ns0:Alias>
     <ns0:Alias Alias="ns=5;i=1073">ns=5;i=1073</ns0:Alias>
     <ns0:Alias Alias="ns=5;i=1074">ns=5;i=1074</ns0:Alias>
   </ns0:Aliases>
@@ -69,8 +72,60 @@
       <ns0:Reference ReferenceType="HasTypeDefinition">ns=6;i=1030</ns0:Reference>
       <ns0:Reference ReferenceType="HasProperty">ns=1;i=166</ns0:Reference>
       <ns0:Reference ReferenceType="ns=5;i=1073">ns=1;i=118</ns0:Reference>
+      <ns0:Reference ReferenceType="HasComponent">ns=1;i=170</ns0:Reference>
+      <ns0:Reference ReferenceType="HasReferenceDescription">ns=1;i=170</ns0:Reference>
     </ns0:References>
   </ns0:UAObject>
+  <ns0:UAVariable NodeId="ns=1;i=170" BrowseName="1:isGCCControlling_to_531-BC2.M1_Desc" ParentNodeId="ns=1;i=165" DataType="ReferenceDescriptionVariableType">
+    <ns0:DisplayName>isGCCControlling_to_531-BC2.M1_Desc</ns0:DisplayName>
+    <ns0:Description>isGCCControlling_to_531-BC2.M1_Desc</ns0:Description>
+    <ns0:References>
+      <ns0:Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=165</ns0:Reference>
+      <ns0:Reference ReferenceType="HasTypeDefinition">i=63</ns0:Reference>
+      <ns0:Reference ReferenceType="HasProperty">ns=1;i=171</ns0:Reference>
+      <ns0:Reference ReferenceType="HasProperty">ns=1;i=172</ns0:Reference>
+      <ns0:Reference ReferenceType="HasProperty">ns=1;i=173</ns0:Reference>
+      <ns0:Reference ReferenceType="HasProperty">ns=1;i=174</ns0:Reference>
+      <ns0:Reference ReferenceType="HasReferenceDescription" IsForward="false">ns=1;i=165</ns0:Reference>
+      <ns0:Reference ReferenceType="HasReferenceDescription" IsForward="false">ns=1;i=118</ns0:Reference>
+    </ns0:References>
+  </ns0:UAVariable>
+  <ns0:UAVariable NodeId="ns=1;i=174" BrowseName="1:groupPreSel" ParentNodeId="ns=1;i=170" DataType="String">
+    <ns0:DisplayName>groupPreSel</ns0:DisplayName>
+    <ns0:Description>groupPreSel</ns0:Description>
+    <ns0:References>
+      <ns0:Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=170</ns0:Reference>
+      <ns0:Reference ReferenceType="HasTypeDefinition">i=68</ns0:Reference>
+      <ns0:Reference ReferenceType="HasModellingRule">i=78</ns0:Reference>
+    </ns0:References>
+  </ns0:UAVariable>
+  <ns0:UAVariable NodeId="ns=1;i=173" BrowseName="1:groupaction" ParentNodeId="ns=1;i=170" DataType="String">
+    <ns0:DisplayName>groupaction</ns0:DisplayName>
+    <ns0:Description>groupaction</ns0:Description>
+    <ns0:References>
+      <ns0:Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=170</ns0:Reference>
+      <ns0:Reference ReferenceType="HasTypeDefinition">i=68</ns0:Reference>
+      <ns0:Reference ReferenceType="HasModellingRule">i=78</ns0:Reference>
+    </ns0:References>
+  </ns0:UAVariable>
+  <ns0:UAVariable NodeId="ns=1;i=172" BrowseName="1:groupdelay" ParentNodeId="ns=1;i=170" DataType="Int32">
+    <ns0:DisplayName>groupdelay</ns0:DisplayName>
+    <ns0:Description>groupdelay</ns0:Description>
+    <ns0:References>
+      <ns0:Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=170</ns0:Reference>
+      <ns0:Reference ReferenceType="HasTypeDefinition">i=68</ns0:Reference>
+      <ns0:Reference ReferenceType="HasModellingRule">i=78</ns0:Reference>
+    </ns0:References>
+  </ns0:UAVariable>
+  <ns0:UAVariable NodeId="ns=1;i=171" BrowseName="1:groupstep" ParentNodeId="ns=1;i=170" DataType="Int32">
+    <ns0:DisplayName>groupstep</ns0:DisplayName>
+    <ns0:Description>groupstep</ns0:Description>
+    <ns0:References>
+      <ns0:Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=170</ns0:Reference>
+      <ns0:Reference ReferenceType="HasTypeDefinition">i=68</ns0:Reference>
+      <ns0:Reference ReferenceType="HasModellingRule">i=78</ns0:Reference>
+    </ns0:References>
+  </ns0:UAVariable>
   <ns0:UAObject NodeId="ns=1;i=118" BrowseName="1:531-BC2.M1" ParentNodeId="ns=1;i=1">
     <ns0:DisplayName>531-BC2.M1</ns0:DisplayName>
     <ns0:Description>MinLib Direct Online Motor Type</ns0:Description>
@@ -107,8 +162,41 @@
       <ns0:Reference ReferenceType="ns=5;i=1073" IsForward="false">ns=1;i=165</ns0:Reference>
       <ns0:Reference ReferenceType="ns=5;i=1074">ns=1;i=2</ns0:Reference>
       <ns0:Reference ReferenceType="ns=5;i=1074">ns=1;i=5</ns0:Reference>
+      <ns0:Reference ReferenceType="HasComponent">ns=1;i=167</ns0:Reference>
+      <ns0:Reference ReferenceType="HasReferenceDescription">ns=1;i=167</ns0:Reference>
+      <ns0:Reference ReferenceType="HasReferenceDescription">ns=1;i=170</ns0:Reference>
     </ns0:References>
   </ns0:UAObject>
+  <ns0:UAVariable NodeId="ns=1;i=167" BrowseName="1:isPCCICInterlocking_to_531-BC2.RS1_Desc" ParentNodeId="ns=1;i=118" DataType="ReferenceDescriptionVariableType">
+    <ns0:DisplayName>isPCCICInterlocking_to_531-BC2.RS1_Desc</ns0:DisplayName>
+    <ns0:Description>isPCCICInterlocking_to_531-BC2.RS1_Desc</ns0:Description>
+    <ns0:References>
+      <ns0:Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=118</ns0:Reference>
+      <ns0:Reference ReferenceType="HasTypeDefinition">i=63</ns0:Reference>
+      <ns0:Reference ReferenceType="HasProperty">ns=1;i=168</ns0:Reference>
+      <ns0:Reference ReferenceType="HasComponent">ns=1;i=169</ns0:Reference>
+      <ns0:Reference ReferenceType="HasReferenceDescription" IsForward="false">ns=1;i=118</ns0:Reference>
+      <ns0:Reference ReferenceType="HasReferenceDescription" IsForward="false">ns=1;i=2</ns0:Reference>
+    </ns0:References>
+  </ns0:UAVariable>
+  <ns0:UAVariable NodeId="ns=1;i=169" BrowseName="1:Mode" ParentNodeId="ns=1;i=167" DataType="ns=5;i=1080">
+    <ns0:DisplayName>Mode</ns0:DisplayName>
+    <ns0:Description>Mode</ns0:Description>
+    <ns0:References>
+      <ns0:Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=167</ns0:Reference>
+      <ns0:Reference ReferenceType="HasTypeDefinition">i=63</ns0:Reference>
+      <ns0:Reference ReferenceType="HasModellingRule">i=78</ns0:Reference>
+    </ns0:References>
+  </ns0:UAVariable>
+  <ns0:UAVariable NodeId="ns=1;i=168" BrowseName="1:Direction" ParentNodeId="ns=1;i=167" DataType="ns=5;i=1098">
+    <ns0:DisplayName>Direction</ns0:DisplayName>
+    <ns0:Description>Direction</ns0:Description>
+    <ns0:References>
+      <ns0:Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=167</ns0:Reference>
+      <ns0:Reference ReferenceType="HasTypeDefinition">i=68</ns0:Reference>
+      <ns0:Reference ReferenceType="HasModellingRule">i=78</ns0:Reference>
+    </ns0:References>
+  </ns0:UAVariable>
   <ns0:UAObject NodeId="ns=1;i=5" BrowseName="1:531-BC2.MC" ParentNodeId="ns=1;i=1">
     <ns0:DisplayName>531-BC2.MC</ns0:DisplayName>
     <ns0:Description>MinLib Input Analog Signal</ns0:Description>
@@ -151,6 +239,13 @@
       <ns0:Reference ReferenceType="HasComponent">ns=1;i=109</ns0:Reference>
       <ns0:Reference ReferenceType="HasComponent">ns=1;i=110</ns0:Reference>
       <ns0:Reference ReferenceType="HasComponent">ns=1;i=115</ns0:Reference>
+    </ns0:References>
+  </ns0:UAObject>
+  <ns0:UAObject NodeId="ns=1;i=115" BrowseName="3:CalibrationPointSet" ParentNodeId="ns=1;i=108">
+    <ns0:DisplayName>CalibrationPointSet</ns0:DisplayName>
+    <ns0:References>
+      <ns0:Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=108</ns0:Reference>
+      <ns0:Reference ReferenceType="HasTypeDefinition">ns=3;i=1043</ns0:Reference>
     </ns0:References>
   </ns0:UAObject>
   <ns0:UAVariable NodeId="ns=1;i=110" BrowseName="3:TypeOfCalibration" ParentNodeId="ns=1;i=108" DataType="UInt32" AccessLevel="3" UserAccessLevel="3">
@@ -1018,6 +1113,7 @@
       <ns0:Reference ReferenceType="HasComponent">ns=1;i=3</ns0:Reference>
       <ns0:Reference ReferenceType="HasComponent">ns=1;i=4</ns0:Reference>
       <ns0:Reference ReferenceType="ns=5;i=1074" IsForward="false">ns=1;i=118</ns0:Reference>
+      <ns0:Reference ReferenceType="HasReferenceDescription">ns=1;i=167</ns0:Reference>
     </ns0:References>
   </ns0:UAObject>
   <ns0:UAVariable NodeId="ns=1;i=4" BrowseName="3:SignalTag" ParentNodeId="ns=1;i=2" DataType="String" AccessLevel="3" UserAccessLevel="3">
