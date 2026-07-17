@@ -153,13 +153,6 @@
       <ns0:Reference ReferenceType="HasComponent">ns=1;i=115</ns0:Reference>
     </ns0:References>
   </ns0:UAObject>
-  <ns0:UAObject NodeId="ns=1;i=115" BrowseName="3:CalibrationPointSet" ParentNodeId="ns=1;i=108">
-    <ns0:DisplayName>CalibrationPointSet</ns0:DisplayName>
-    <ns0:References>
-      <ns0:Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=108</ns0:Reference>
-      <ns0:Reference ReferenceType="HasTypeDefinition">ns=3;i=1043</ns0:Reference>
-    </ns0:References>
-  </ns0:UAObject>
   <ns0:UAVariable NodeId="ns=1;i=110" BrowseName="3:TypeOfCalibration" ParentNodeId="ns=1;i=108" DataType="UInt32" AccessLevel="3" UserAccessLevel="3">
     <ns0:DisplayName>Type of calibration</ns0:DisplayName>
     <ns0:References>
