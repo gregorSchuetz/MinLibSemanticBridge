@@ -22,7 +22,6 @@
     </ns0:Model>
   </ns0:Models>
   <ns0:Aliases>
-    <ns0:Alias Alias="Null">i=0</ns0:Alias>
     <ns0:Alias Alias="Boolean">i=1</ns0:Alias>
     <ns0:Alias Alias="UInt16">i=5</ns0:Alias>
     <ns0:Alias Alias="Int32">i=6</ns0:Alias>
