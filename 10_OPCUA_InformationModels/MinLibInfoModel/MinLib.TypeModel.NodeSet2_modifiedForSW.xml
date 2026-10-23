@@ -462,7 +462,7 @@
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=1012</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=1013</Reference>
-      <Reference ReferenceType="HasTypeDefinition">Value</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=2;i=1111</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1015</Reference>
     </References>
