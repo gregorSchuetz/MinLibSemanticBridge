@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" LastModified="2026-10-22T15:36:24.2218096Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+  <NamespaceUris>
+    <Uri>http://abb.com/MinLib/Types/</Uri>
+    <Uri>http://opcfoundation.org/UA/PADIM/</Uri>
+    <Uri>http://opcfoundation.org/UA/DI/</Uri>
+    <Uri>https://abb.com/MinLib/BaseModel/</Uri>
+  </NamespaceUris>
+  <Models>
+    <Model ModelUri="http://abb.com/MinLib/Types/" Version="0.05.08" PublicationDate="2026-10-21T00:00:00Z">
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.05.05" PublicationDate="2025-06-30T00:00:00Z" />
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/PADIM/" Version="1.02.0" PublicationDate="2025-11-10T00:00:00Z" />
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" Version="1.04.0" PublicationDate="2022-11-03T00:00:00Z" />
+      <RequiredModel ModelUri="https://abb.com/MinLib/BaseModel/" Version="0.05.04" PublicationDate="2026-10-22T00:00:00Z" />
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/Dictionary/IRDI" Version="1.02.0" PublicationDate="2025-11-10T00:00:00Z" />
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/IA/" Version="1.01.4" PublicationDate="2025-05-23T00:00:00Z" />
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/Machinery/" Version="1.04.1" PublicationDate="2026-01-01T00:00:00Z" />
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/Machinery/ProcessValues/" Version="1.00.0" PublicationDate="2023-05-01T00:00:00Z" />
+    </Model>
+  </Models>
+  <Aliases>
+    <Alias Alias="Double">i=11</Alias>
+    <Alias Alias="String">i=12</Alias>
+    <Alias Alias="HasModellingRule">i=37</Alias>
+    <Alias Alias="HasTypeDefinition">i=40</Alias>
+    <Alias Alias="HasSubtype">i=45</Alias>
+    <Alias Alias="HasProperty">i=46</Alias>
+    <Alias Alias="HasComponent">i=47</Alias>
+    <Alias Alias="BaseObjectType">i=58</Alias>
+    <Alias Alias="PropertyType">i=68</Alias>
+    <Alias Alias="Duration">i=290</Alias>
+    <Alias Alias="Range">i=884</Alias>
+    <Alias Alias="EUInformation">i=887</Alias>
+    <Alias Alias="AnalogSignalType">ns=2;i=1022</Alias>
+    <Alias Alias="DiscreteSignalType">ns=2;i=1036</Alias>
+    <Alias Alias="Value">ns=2;i=1111</Alias>
+    <Alias Alias="TopologyElementType">ns=3;i=1001</Alias>
+    <Alias Alias="ModeEnum">ns=4;i=1002</Alias>
+    <Alias Alias="signalErrorBehaviorEnum">ns=4;i=1110</Alias>
+    <Alias Alias="IndBehaviorEnum">ns=4;i=1112</Alias>
+    <Alias Alias="ProFuncDeviceEnum">ns=4;i=1131</Alias>
+    <Alias Alias="ProFuncEquipmentEnum">ns=4;i=1135</Alias>
+  </Aliases>
+  <UAObjectType NodeId="ns=1;i=1014" BrowseName="1:MinLibType" SymbolicName="minlibtype" IsAbstract="true">
+    <DisplayName Locale="en">MinLibType</DisplayName>
+    <Description Locale="en">MinLib Abstract base type for all MinLib Objects that are not a subtype of a Companion Specification</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">BaseObjectType</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1015" BrowseName="1:MLLevelCondType" SymbolicName="mllevelcondtype">
+    <DisplayName Locale="en">MLLevelCondType</DisplayName>
+    <Description Locale="en">MinLib Type for the Level Condition</Description>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=1008</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=1006</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=1010</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=1011</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1014</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1016" BrowseName="1:MLBinaryCondType" SymbolicName="mlbinarycondtype">
+    <DisplayName Locale="en">MLBinaryCondType</DisplayName>
+    <Description Locale="en">MinLib Type for the Binary Condition</Description>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=1008</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=1006</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=1010</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1014</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1017" BrowseName="1:GenericAnalogType" SymbolicName="generic_analog_type" IsAbstract="true">
+    <DisplayName Locale="en">Generic Analog Type</DisplayName>
+    <Description Locale="en">MinLib Abstract Analog Signal type for all MinLib Object</Description>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=1002</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=1008</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=1009</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=1007</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">AnalogSignalType</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1018" BrowseName="1:AnalogInputType" SymbolicName="analog_input_type">
+    <DisplayName Locale="en">Analog Input Type</DisplayName>
+    <Description Locale="en">MinLib Input Analog Signal</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1017</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1019" BrowseName="1:AnalogOutputType" SymbolicName="analog_output_type">
+    <DisplayName Locale="en">Analog Output Type</DisplayName>
+    <Description Locale="en">MinLib Output Analog Signal</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1017</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1020" BrowseName="1:AnalogCalcInputType" SymbolicName="analog_calc_input_type">
+    <DisplayName Locale="en">Analog Calc Input Type</DisplayName>
+    <Description Locale="en">MinLib Calculcated Input Analog Signal</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1017</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1021" BrowseName="1:AnalogCalcOutputType" SymbolicName="analog_calc_output_type">
+    <DisplayName Locale="en">Analog Calc Output Type</DisplayName>
+    <Description Locale="en">MinLib Calculated Output Analog Signal</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1017</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1022" BrowseName="1:GenericDigitalType" SymbolicName="generic_digital_type" IsAbstract="true">
+    <DisplayName Locale="en">Generic Digital Type</DisplayName>
+    <Description Locale="en">MinLib Abstract Digital Signal type</Description>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=1002</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=1006</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=1008</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">DiscreteSignalType</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1023" BrowseName="1:MLDISType" SymbolicName="mldistype">
+    <DisplayName Locale="en">MLDISType</DisplayName>
+    <Description Locale="en">MinLib Input Digital Signal</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1022</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1024" BrowseName="1:MLDOSType" SymbolicName="mldostype">
+    <DisplayName Locale="en">MLDOSType</DisplayName>
+    <Description Locale="en">MinLib Output Digital Signal</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1022</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1025" BrowseName="1:MLDICType" SymbolicName="mldictype">
+    <DisplayName Locale="en">MLDICType</DisplayName>
+    <Description Locale="en">MinLib Calculated Input Digital Signal</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1022</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1026" BrowseName="1:MLDOCType" SymbolicName="mldoctype">
+    <DisplayName Locale="en">MLDOCType</DisplayName>
+    <Description Locale="en">MinLib Calculated Output Digital Signal</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1022</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1027" BrowseName="1:MLConsumerType" SymbolicName="mlconsumertype" IsAbstract="true">
+    <DisplayName Locale="en">MLConsumerType</DisplayName>
+    <Description Locale="en">MinLib Generic Consumer Element Type</Description>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=1001</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=1005</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">TopologyElementType</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1028" BrowseName="1:MLMOT1Type" SymbolicName="mlmot1type">
+    <DisplayName Locale="en">MLMOT1Type</DisplayName>
+    <Description Locale="en">MinLib Direct Online Motor Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1027</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1029" BrowseName="1:MLMOT2Type" SymbolicName="mlmot2type">
+    <DisplayName Locale="en">MLMOT2Type</DisplayName>
+    <Description Locale="en">MinLib Direct Online Motor two directions Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1027</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1030" BrowseName="1:MLMOT1_VVVFType" SymbolicName="mlmot1_vvvftype">
+    <DisplayName Locale="en">MLMOT1_VVVFType</DisplayName>
+    <Description Locale="en">MinLib Direct Online Motor Variable Frequency Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1027</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1031" BrowseName="1:MLMOT2_VVVFType" SymbolicName="mlmot2_vvvftype">
+    <DisplayName Locale="en">MLMOT2_VVVFType</DisplayName>
+    <Description Locale="en">MinLib Direct Online Motor Variable Frequency Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1027</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1032" BrowseName="1:MLMOTPType" SymbolicName="mlmotptype">
+    <DisplayName Locale="en">MLMOTPType</DisplayName>
+    <Description Locale="en">MinLib Damper / Actuator controller with feedback</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1027</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1033" BrowseName="1:MLVLV1Type" SymbolicName="mlvlv1type">
+    <DisplayName Locale="en">MLVLV1Type</DisplayName>
+    <Description Locale="en">MinLib Valve Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1027</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1034" BrowseName="1:MLVLV1NOType" SymbolicName="mlvlv1notype">
+    <DisplayName Locale="en">MLVLV1NOType</DisplayName>
+    <Description Locale="en">MinLib Valve normally open Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1027</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1035" BrowseName="1:MLActuatorType" SymbolicName="mlactuatortype">
+    <DisplayName Locale="en">MLActuatorType</DisplayName>
+    <Description Locale="en">MinLib Actuator Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1027</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1036" BrowseName="1:MLMOT1_UMC100Type" SymbolicName="mlmot1_umc100type">
+    <DisplayName Locale="en">MLMOT1_UMC100Type</DisplayName>
+    <Description Locale="en">Consumer MOT1 VVVF Type for UMC100</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1027</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1037" BrowseName="1:MLMOT2_UMC100Type" SymbolicName="mlmot2_umc100type">
+    <DisplayName Locale="en">MLMOT2_UMC100Type</DisplayName>
+    <Description Locale="en">Consumer MOT2 VVVF Type for UMC100</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1027</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1038" BrowseName="1:MLMOTP_UMC100Type" SymbolicName="mlmotp_umc100type">
+    <DisplayName Locale="en">MLMOTP_UMC100Type</DisplayName>
+    <Description Locale="en">Consumer MOTP Type for UMC100</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1027</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1039" BrowseName="1:MLMOT1_VVVF_ACS8x0Type" SymbolicName="mlmot1_vvvf_acs8x0type">
+    <DisplayName Locale="en">MLMOT1_VVVF_ACS8x0Type</DisplayName>
+    <Description Locale="en">Consumer MOT1 VVVF Type for ACS8x0</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1027</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1040" BrowseName="1:MLMOT2_VVVF_ACS8x0Type" SymbolicName="mlmot2_vvvf_acs8x0type">
+    <DisplayName Locale="en">MLMOT2_VVVF_ACS8x0Type</DisplayName>
+    <Description Locale="en">Consumer MOT2 VVVF Type for ACS8x0</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1027</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1041" BrowseName="1:MLSequenceType" SymbolicName="mlsequencetype" IsAbstract="true">
+    <DisplayName Locale="en">MLSequenceType</DisplayName>
+    <Description Locale="en">MinLib Generic Sequencer Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1014</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1042" BrowseName="1:MLGroupType" SymbolicName="mlgrouptype">
+    <DisplayName Locale="en">MLGroupType</DisplayName>
+    <Description Locale="en">MinLib Group Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1041</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1043" BrowseName="1:MLGrpCycleCtrlType" SymbolicName="mlgrpcyclectrltype">
+    <DisplayName Locale="en">MLGrpCycleCtrlType</DisplayName>
+    <Description Locale="en">MinLib Group Cycle control type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1041</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1044" BrowseName="1:MLSubGroupType" SymbolicName="mlsubgrouptype">
+    <DisplayName Locale="en">MLSubGroupType</DisplayName>
+    <Description Locale="en">MinLib Sub Group Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1041</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1045" BrowseName="1:MLDriveGroupType" SymbolicName="mldrivegrouptype">
+    <DisplayName Locale="en">MLDriveGroupType</DisplayName>
+    <Description Locale="en">MinLib Drive Group Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1041</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1046" BrowseName="1:MLGenLoopCtrType" SymbolicName="mlgenloopctrtype" IsAbstract="true">
+    <DisplayName Locale="en">MLGenLoopCtrType</DisplayName>
+    <Description Locale="en">MinLib Generic Loop Control Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1014</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1047" BrowseName="1:MLPIDAdvCtrlType" SymbolicName="mlpidadvctrltype">
+    <DisplayName Locale="en">MLPIDAdvCtrlType</DisplayName>
+    <Description Locale="en">MinLib Advanced Control Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1046</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1048" BrowseName="1:MLPIDctrlType" SymbolicName="mlpidctrltype">
+    <DisplayName Locale="en">MLPIDctrlType</DisplayName>
+    <Description Locale="en">MinLib PID Control Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1046</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1049" BrowseName="1:MLRatioCtrlType" SymbolicName="mlratioctrltype">
+    <DisplayName Locale="en">MLRatioCtrlType</DisplayName>
+    <Description Locale="en">MinLib Ratio Control Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1046</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1050" BrowseName="1:MLSplitRangeType" SymbolicName="mlsplitrangetype">
+    <DisplayName Locale="en">MLSplitRangeType</DisplayName>
+    <Description Locale="en">MinLib Split Range Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1046</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1051" BrowseName="1:MLLCCDemux4Type" SymbolicName="mllccdemux4type">
+    <DisplayName Locale="en">MLLCCDemux4Type</DisplayName>
+    <Description Locale="en">MinLib Demultiplexer 4 Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1046</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1052" BrowseName="1:MLLCMux4Type" SymbolicName="mllcmux4type">
+    <DisplayName Locale="en">MLLCMux4Type</DisplayName>
+    <Description Locale="en">MinLib Multiplexer 4 Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1046</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1053" BrowseName="1:MLRecipeCtrlType" SymbolicName="mlrecipectrltype">
+    <DisplayName Locale="en">MLRecipeCtrlType</DisplayName>
+    <Description Locale="en">MinLib Recipe Control Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1046</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1054" BrowseName="1:MLGenCtrlType" SymbolicName="mlgenctrltype" IsAbstract="true">
+    <DisplayName Locale="en">MLGenCtrlType</DisplayName>
+    <Description Locale="en">MinLib Generic Control Element Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1014</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1055" BrowseName="1:MLThresholdAndType" SymbolicName="mlthresholdandtype">
+    <DisplayName Locale="en">MLThresholdAndType</DisplayName>
+    <Description Locale="en">MinLib Threshold And Ctrl Element Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1054</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1056" BrowseName="1:MLPCC_n003Type" SymbolicName="mlpcc_n003type">
+    <DisplayName Locale="en">MLPCC_n003Type</DisplayName>
+    <Description Locale="en">MinLib PCC_n003 Ctrl Element Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1054</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1057" BrowseName="1:MLPCC_IntlkType" SymbolicName="mlpcc_intlktype">
+    <DisplayName Locale="en">MLPCC_IntlkType</DisplayName>
+    <Description Locale="en">MinLib PCC_Intlk Ctrl Element Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1054</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1058" BrowseName="1:MLGroupStepType" SymbolicName="mlgroupsteptype">
+    <DisplayName Locale="en">MLGroupStepType</DisplayName>
+    <Description Locale="en">MinLib Group Step Ctrl Element Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1054</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1059" BrowseName="1:MLAddOnElementType" SymbolicName="mladdonelementtype" IsAbstract="true">
+    <DisplayName Locale="en">MLAddOnElementType</DisplayName>
+    <Description Locale="en">MinLib Generic AddOn Element Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1014</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1060" BrowseName="1:MLAndGate3Type" SymbolicName="mlandgate3type">
+    <DisplayName Locale="en">MLAndGate3Type</DisplayName>
+    <Description Locale="en">MinLib And Gate 3 Ctrl Element Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1059</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=1061" BrowseName="1:MLRateOfChangeCondition" SymbolicName="mlrateofchangecondition">
+    <DisplayName Locale="en">MLRateOfChangeCondition</DisplayName>
+    <Description Locale="en">MinLib Rate Of Change Condition Ctrl Element Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1059</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariable NodeId="ns=1;i=1001" BrowseName="ProFuncEquipmentEnum" SymbolicName="profuncequipmentenum" DataType="ProFuncEquipmentEnum">
+    <DisplayName Locale="en">ProFuncEquipmentEnum</DisplayName>
+    <Description Locale="en">Normalized Equipment Process Function</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">PropertyType</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=1002" BrowseName="ProFuncDeviceEnum" SymbolicName="profuncdeviceenum" DataType="ProFuncDeviceEnum">
+    <DisplayName Locale="en">ProFuncDeviceEnum</DisplayName>
+    <Description Locale="en">Normalized Device Process Function</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">PropertyType</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=1005" BrowseName="ModeEnum" SymbolicName="modeenum" DataType="ModeEnum">
+    <DisplayName Locale="en">ModeEnum</DisplayName>
+    <Description Locale="en">Normalized Mode</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">PropertyType</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=1006" BrowseName="IndBehaviorEnum" SymbolicName="indbehaviorenum" DataType="IndBehaviorEnum">
+    <DisplayName Locale="en">IndBehaviorEnum</DisplayName>
+    <Description Locale="en">PCO Indication Behavior</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">PropertyType</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=1007" BrowseName="SignalErrorBehaviorEnum" SymbolicName="signalerrorbehaviorenum" DataType="signalErrorBehaviorEnum">
+    <DisplayName Locale="en">SignalErrorBehaviorEnum</DisplayName>
+    <Description Locale="en">Signal error behavior</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">PropertyType</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=1008" BrowseName="ConditionText" SymbolicName="conditiontext" DataType="String">
+    <DisplayName Locale="en">ConditionText</DisplayName>
+    <Description Locale="en">Condition text</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">PropertyType</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=1009" BrowseName="IntlkStartInhibit" SymbolicName="intlkstartinhibit" DataType="Duration">
+    <DisplayName Locale="en">IntlkStartInhibit</DisplayName>
+    <Description Locale="en">Interlock start inhibit duration in milliseconds</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">PropertyType</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=1010" BrowseName="Delay" SymbolicName="delay" DataType="Duration">
+    <DisplayName Locale="en">Delay</DisplayName>
+    <Description Locale="en">Delay duration in milliseconds</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">PropertyType</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=1011" BrowseName="ActualValue" ParentNodeId="ns=1;i=1015" DataType="Double">
+    <DisplayName Locale="en">ActualValue</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=1012</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=1013</Reference>
+      <Reference ReferenceType="HasTypeDefinition">Value</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1015</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=1012" BrowseName="EngineeringUnits" SymbolicName="engineeringunits" ParentNodeId="ns=1;i=1011" DataType="EUInformation">
+    <DisplayName Locale="en">EngineeringUnits</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">PropertyType</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1011</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=1013" BrowseName="EURange" SymbolicName="eurange" ParentNodeId="ns=1;i=1011" DataType="Range">
+    <DisplayName Locale="en">EURange</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">PropertyType</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1011</Reference>
+    </References>
+  </UAVariable>
+</UANodeSet>
