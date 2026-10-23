@@ -1,0 +1,2089 @@
+@prefix base: <https://industryfusion.github.io/contexts/ontology/v0/base/> .
+@prefix minlibbase: <https://abb.com/MinLib/BaseModel/> .
+@prefix opcua: <http://opcfoundation.org/UA/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+opcua:nodei92 opcua:HasComponent minlibbase:nodei1088 ;
+    minlibbase:hasMinLib.BaseModel minlibbase:nodei1088 .
+
+opcua:nodei93 opcua:HasComponent minlibbase:nodei1084 ;
+    minlibbase:hasMinLib.BaseModel minlibbase:nodei1084 .
+
+minlibbase: a owl:Ontology ;
+    owl:imports <file:///home/ch-admin-min/DigitalTwin/semantic-model/opcua/core.ttl>,
+        <https://industryfusion.github.io/contexts/staging/ontology/v0.1/base.ttl> ;
+    owl:versionInfo 1e-01 .
+
+minlibbase:Agitator a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "Agitator" ;
+    base:hasValueNode base:_N91dd171f3a164d3b928bbd9106e4ac12 .
+
+minlibbase:AirSeparator a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "AirSeparator" ;
+    base:hasValueNode base:_Nb538926db01a49248703fb986fcbff74 .
+
+minlibbase:AirSlide a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "AirSlide" ;
+    base:hasValueNode base:_N21b88ae60948465986452c3fa0a25adb .
+
+minlibbase:AirSlideOutlet a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "AirSlideOutlet" ;
+    base:hasValueNode base:_N95130460382c40dc9f8810fafd347bfe .
+
+minlibbase:AirSlideShut a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "AirSlideShut" ;
+    base:hasValueNode base:_Ne3d71f93d7eb4fefa555a6e5affd000f .
+
+minlibbase:AlarmText a owl:NamedIndividual,
+        minlibbase:ProFuncDeviceEnum ;
+    base:hasFieldName "AlarmText" ;
+    base:hasValueNode base:_N4cc6ae5152be4a41bb5831a65d2e9abb .
+
+minlibbase:BeltWeight a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "BeltWeight" ;
+    base:hasValueNode base:_Ndb675ea8a1ac47bba4f54698911b0477 .
+
+minlibbase:BucketElevator a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "BucketElevator" ;
+    base:hasValueNode base:_N175c7b672b274a8499a455040cccfea6 .
+
+minlibbase:BulkLoader a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "BulkLoader" ;
+    base:hasValueNode base:_Nf6412996d86847bea512984233e9c8bf .
+
+minlibbase:Button a owl:NamedIndividual,
+        minlibbase:ProFuncDeviceEnum ;
+    base:hasFieldName "Button" ;
+    base:hasValueNode base:_Nd2e8345ac9ce4e0b9619deb2213d14eb .
+
+minlibbase:Compressor a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "Compressor" ;
+    base:hasValueNode base:_Nd537316ecca443b2bd9498233c018653 .
+
+minlibbase:ConeScreen a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "ConeScreen" ;
+    base:hasValueNode base:_Nae77160d51bc449d92357d2152693ffa .
+
+minlibbase:Conveyor a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "Conveyor" ;
+    base:hasValueNode base:_Nc442bcf8f3884cb88f1047733c1b0877 .
+
+minlibbase:Crusher a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "Crusher" ;
+    base:hasValueNode base:_Nd134f2df781d4127a76f9d1c671ef6ab .
+
+minlibbase:Cyclone a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "Cyclone" ;
+    base:hasValueNode base:_N6cbdbc7bd790487dbd61096677257e00 .
+
+minlibbase:Damper a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "Damper" ;
+    base:hasValueNode base:_N176c043a23844bcebfc80dd8fe973011 .
+
+minlibbase:DamperState a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "DamperState" ;
+    base:hasValueNode base:_N3730095a63874b9296c8d6eea25e3825 .
+
+minlibbase:Diverter a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "Diverter" ;
+    base:hasValueNode base:_N98b73925776e4de8a7b3189ae426467e .
+
+minlibbase:Diverter3Ways a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "Diverter3Ways" ;
+    base:hasValueNode base:_Nf0d3cb65632b46edaf993ff3bf825e3a .
+
+minlibbase:DustCollector a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "DustCollector" ;
+    base:hasValueNode base:_N80b5aec4b0c641f1a10a87302e112786 .
+
+minlibbase:Electric a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "Electric" ;
+    base:hasValueNode base:_N061be48370874006947ce3e62b4668f1 .
+
+minlibbase:ElectrostaticPrecipitator a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "ElectrostaticPrecipitator" ;
+    base:hasValueNode base:_N18ac230bf3474aaa931aaa4769641775 .
+
+minlibbase:Elevator a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "Elevator" ;
+    base:hasValueNode base:_Nfa5f5bb970fb444cad22f9d9393a46af .
+
+minlibbase:Fan a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "Fan" ;
+    base:hasValueNode base:_Na9eeea0688ac4f6bb28f7ad8255edb4f .
+
+minlibbase:Flow a owl:NamedIndividual,
+        minlibbase:ProFuncDeviceEnum ;
+    base:hasFieldName "Flow" ;
+    base:hasValueNode base:_N7fc56331f9924d19957863366c3be9f2 .
+
+minlibbase:GearWheelPump a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "GearWheelPump" ;
+    base:hasValueNode base:_Ndeb56ebf8ef64326bcce124e130debf1 .
+
+minlibbase:Generator a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "Generator" ;
+    base:hasValueNode base:_N3864d59c267147deac2d28972bc750c7 .
+
+minlibbase:GenericPE a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "GenericPE" ;
+    base:hasValueNode base:_N83bb138e1b384b4397113247809b1108 .
+
+minlibbase:Heater a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "Heater" ;
+    base:hasValueNode base:_N3e7e37065fab46c180facd2c5e829f06 .
+
+minlibbase:HorizontalMill a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "HorizontalMill" ;
+    base:hasValueNode base:_Nfbc1fb7bd92d4d59a6939e5e57aea412 .
+
+minlibbase:HotGasGenerator a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "HotGasGenerator" ;
+    base:hasValueNode base:_N72565d8634df43eebb2b6e15ed926cd3 .
+
+minlibbase:Kiln a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "Kiln" ;
+    base:hasValueNode base:_N766850aa70d6419c944d9b2c2b0663e5 .
+
+minlibbase:Level a owl:NamedIndividual,
+        minlibbase:ProFuncDeviceEnum ;
+    base:hasFieldName "Level" ;
+    base:hasValueNode base:_Ndbb4865f05a04644bf70144f42037187 .
+
+minlibbase:LouvreDamper a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "LouvreDamper" ;
+    base:hasValueNode base:_N5570f05628b9474e97806bdbb9c29a28 .
+
+<https://abb.com/MinLib/BaseModel/MLB:AI> a owl:NamedIndividual,
+        minlibbase:ModeEnum ;
+    base:hasFieldName "MLB:AI" ;
+    base:hasValueNode base:_Nfd83e40f02814adcba1f59d7f4e1849f .
+
+<https://abb.com/MinLib/BaseModel/MLB:AlPr_AlarmHigh> a owl:NamedIndividual,
+        minlibbase:IndBehaviorEnum ;
+    base:hasFieldName "MLB:AlPr_AlarmHigh" ;
+    base:hasValueNode base:_N16ee169fd4294520a09c936f0a2d22b3 .
+
+<https://abb.com/MinLib/BaseModel/MLB:AlPr_AlarmHighHigh> a owl:NamedIndividual,
+        minlibbase:IndBehaviorEnum ;
+    base:hasFieldName "MLB:AlPr_AlarmHighHigh" ;
+    base:hasValueNode base:_N7629305be0c3493fa64402845e673c47 .
+
+<https://abb.com/MinLib/BaseModel/MLB:AlPr_AlarmLow> a owl:NamedIndividual,
+        minlibbase:IndBehaviorEnum ;
+    base:hasFieldName "MLB:AlPr_AlarmLow" ;
+    base:hasValueNode base:_N49c0ff9c30624492979158deacecd723 .
+
+<https://abb.com/MinLib/BaseModel/MLB:AlPr_AlarmMedium> a owl:NamedIndividual,
+        minlibbase:IndBehaviorEnum ;
+    base:hasFieldName "MLB:AlPr_AlarmMedium" ;
+    base:hasValueNode base:_Nc67fbff76496472ab97120a4d1198e22 .
+
+<https://abb.com/MinLib/BaseModel/MLB:AlPr_Warning> a owl:NamedIndividual,
+        minlibbase:IndBehaviorEnum ;
+    base:hasFieldName "MLB:AlPr_Warning" ;
+    base:hasValueNode base:_Nd32813311b5e49b98468011c62b2f69a .
+
+<https://abb.com/MinLib/BaseModel/MLB:ApplyAllConfiguredInterlocks> a owl:NamedIndividual,
+        minlibbase:signalErrorBehaviorEnum ;
+    base:hasFieldName "MLB:ApplyAllConfiguredInterlocks" ;
+    base:hasValueNode base:_Nd95c7dfdff0143e38e12f3831dcf87d2 .
+
+<https://abb.com/MinLib/BaseModel/MLB:Auto> a owl:NamedIndividual,
+        minlibbase:ModeEnum ;
+    base:hasFieldName "MLB:Auto" ;
+    base:hasValueNode base:_N33940e15262848bdb2f2f180ba581690 .
+
+<https://abb.com/MinLib/BaseModel/MLB:Central> a owl:NamedIndividual,
+        minlibbase:PointOfControlEnum ;
+    base:hasFieldName "MLB:Central" ;
+    base:hasValueNode base:_Nee042c52d0cb43e091f40e55a849efa5 .
+
+<https://abb.com/MinLib/BaseModel/MLB:Close> a owl:NamedIndividual,
+        minlibbase:ActionEnum ;
+    base:hasFieldName "MLB:Close" ;
+    base:hasValueNode base:_N46ad68950c4d40ffb9d79cf553d0fc9a .
+
+<https://abb.com/MinLib/BaseModel/MLB:DirFBX> a owl:NamedIndividual,
+        minlibbase:DirectionEnum ;
+    base:hasFieldName "MLB:DirFBX" ;
+    base:hasValueNode base:_N8176b15ab0e84da9934613461697aa36 .
+
+<https://abb.com/MinLib/BaseModel/MLB:DirFBXFast> a owl:NamedIndividual,
+        minlibbase:DirectionEnum ;
+    base:hasFieldName "MLB:DirFBXFast" ;
+    base:hasValueNode base:_N4c3954b6aa3f4c71836efa98ea5f7370 .
+
+<https://abb.com/MinLib/BaseModel/MLB:DirFBXFastnoAck> a owl:NamedIndividual,
+        minlibbase:DirectionEnum ;
+    base:hasFieldName "MLB:DirFBXFastnoAck" ;
+    base:hasValueNode base:_Nd4385665969e4c849cfd406536dc7059 .
+
+<https://abb.com/MinLib/BaseModel/MLB:DirFBXY> a owl:NamedIndividual,
+        minlibbase:DirectionEnum ;
+    base:hasFieldName "MLB:DirFBXY" ;
+    base:hasValueNode base:_N6dcc22a4119b4702adb824a86e2bbcb7 .
+
+<https://abb.com/MinLib/BaseModel/MLB:DirFBXYFast> a owl:NamedIndividual,
+        minlibbase:DirectionEnum ;
+    base:hasFieldName "MLB:DirFBXYFast" ;
+    base:hasValueNode base:_N904f17b181a74220a0309b0e7fc11449 .
+
+<https://abb.com/MinLib/BaseModel/MLB:DirFBXYFastnoAck> a owl:NamedIndividual,
+        minlibbase:DirectionEnum ;
+    base:hasFieldName "MLB:DirFBXYFastnoAck" ;
+    base:hasValueNode base:_N14f6b31e1c1b4518859abfce43f0b0a6 .
+
+<https://abb.com/MinLib/BaseModel/MLB:DirFBXYnoAck> a owl:NamedIndividual,
+        minlibbase:DirectionEnum ;
+    base:hasFieldName "MLB:DirFBXYnoAck" ;
+    base:hasValueNode base:_N692c4743149a4ed5a99cff3292bf02d3 .
+
+<https://abb.com/MinLib/BaseModel/MLB:DirFBXnoAck> a owl:NamedIndividual,
+        minlibbase:DirectionEnum ;
+    base:hasFieldName "MLB:DirFBXnoAck" ;
+    base:hasValueNode base:_Nfbab6ffb37454fa0a1baeb877f6276f6 .
+
+<https://abb.com/MinLib/BaseModel/MLB:DirFBY> a owl:NamedIndividual,
+        minlibbase:DirectionEnum ;
+    base:hasFieldName "MLB:DirFBY" ;
+    base:hasValueNode base:_Nabdff0a7013a474584a2b1378199c696 .
+
+<https://abb.com/MinLib/BaseModel/MLB:DirFBYFast> a owl:NamedIndividual,
+        minlibbase:DirectionEnum ;
+    base:hasFieldName "MLB:DirFBYFast" ;
+    base:hasValueNode base:_Nbf160b88a916467184511e5e81af24b8 .
+
+<https://abb.com/MinLib/BaseModel/MLB:DirFBYFastnoAck> a owl:NamedIndividual,
+        minlibbase:DirectionEnum ;
+    base:hasFieldName "MLB:DirFBYFastnoAck" ;
+    base:hasValueNode base:_N36f0eb70b72c44008ec4acf40fe1703a .
+
+<https://abb.com/MinLib/BaseModel/MLB:DirFBYnoAck> a owl:NamedIndividual,
+        minlibbase:DirectionEnum ;
+    base:hasFieldName "MLB:DirFBYnoAck" ;
+    base:hasValueNode base:_N8caab6e4ba5244b6a9c20e305045b9ea .
+
+<https://abb.com/MinLib/BaseModel/MLB:DirX> a owl:NamedIndividual,
+        minlibbase:DirectionEnum ;
+    base:hasFieldName "MLB:DirX" ;
+    base:hasValueNode base:_N78a2e1316ed949ed88948611d5d1efcc .
+
+<https://abb.com/MinLib/BaseModel/MLB:DirXFast> a owl:NamedIndividual,
+        minlibbase:DirectionEnum ;
+    base:hasFieldName "MLB:DirXFast" ;
+    base:hasValueNode base:_Nd0cccbf6e841443e9e3a2815d5d48010 .
+
+<https://abb.com/MinLib/BaseModel/MLB:DirXFastnoAck> a owl:NamedIndividual,
+        minlibbase:DirectionEnum ;
+    base:hasFieldName "MLB:DirXFastnoAck" ;
+    base:hasValueNode base:_N0e41bfb3503340e3b27c95145bce57a8 .
+
+<https://abb.com/MinLib/BaseModel/MLB:DirXStart> a owl:NamedIndividual,
+        minlibbase:DirectionEnum ;
+    base:hasFieldName "MLB:DirXStart" ;
+    base:hasValueNode base:_Nc3c9166a430f4505b364abd6361e3143 .
+
+<https://abb.com/MinLib/BaseModel/MLB:DirXStartnoAck> a owl:NamedIndividual,
+        minlibbase:DirectionEnum ;
+    base:hasFieldName "MLB:DirXStartnoAck" ;
+    base:hasValueNode base:_N6bc07d8ceb7c44bd841cdab0e23130f1 .
+
+<https://abb.com/MinLib/BaseModel/MLB:DirXY> a owl:NamedIndividual,
+        minlibbase:DirectionEnum ;
+    base:hasFieldName "MLB:DirXY" ;
+    base:hasValueNode base:_N01b0c862c1404365895bef60f201f23b .
+
+<https://abb.com/MinLib/BaseModel/MLB:DirXYFast> a owl:NamedIndividual,
+        minlibbase:DirectionEnum ;
+    base:hasFieldName "MLB:DirXYFast" ;
+    base:hasValueNode base:_N903c44cfac57482fb647cbc9532dedd4 .
+
+<https://abb.com/MinLib/BaseModel/MLB:DirXYFastnoAck> a owl:NamedIndividual,
+        minlibbase:DirectionEnum ;
+    base:hasFieldName "MLB:DirXYFastnoAck" ;
+    base:hasValueNode base:_N9c4fa92108ea4b679fc09e2e55509162 .
+
+<https://abb.com/MinLib/BaseModel/MLB:DirXYStart> a owl:NamedIndividual,
+        minlibbase:DirectionEnum ;
+    base:hasFieldName "MLB:DirXYStart" ;
+    base:hasValueNode base:_N12910ff1aea741ddbbd2129597c3ac6e .
+
+<https://abb.com/MinLib/BaseModel/MLB:DirXYStartnoAck> a owl:NamedIndividual,
+        minlibbase:DirectionEnum ;
+    base:hasFieldName "MLB:DirXYStartnoAck" ;
+    base:hasValueNode base:_N0e77ff499d81481b9798178ef964a566 .
+
+<https://abb.com/MinLib/BaseModel/MLB:DirXYnoAck> a owl:NamedIndividual,
+        minlibbase:DirectionEnum ;
+    base:hasFieldName "MLB:DirXYnoAck" ;
+    base:hasValueNode base:_Nbc22289e3366416e9ae7659e9b2df8b0 .
+
+<https://abb.com/MinLib/BaseModel/MLB:DirXnoAck> a owl:NamedIndividual,
+        minlibbase:DirectionEnum ;
+    base:hasFieldName "MLB:DirXnoAck" ;
+    base:hasValueNode base:_N6b9330baa553450882e3eb972a2ed127 .
+
+<https://abb.com/MinLib/BaseModel/MLB:DirY> a owl:NamedIndividual,
+        minlibbase:DirectionEnum ;
+    base:hasFieldName "MLB:DirY" ;
+    base:hasValueNode base:_N873d363055074efeade85dea886f3438 .
+
+<https://abb.com/MinLib/BaseModel/MLB:DirYFast> a owl:NamedIndividual,
+        minlibbase:DirectionEnum ;
+    base:hasFieldName "MLB:DirYFast" ;
+    base:hasValueNode base:_N3ef352de850e47398269eeb1d97d146f .
+
+<https://abb.com/MinLib/BaseModel/MLB:DirYFastnoAck> a owl:NamedIndividual,
+        minlibbase:DirectionEnum ;
+    base:hasFieldName "MLB:DirYFastnoAck" ;
+    base:hasValueNode base:_N16eaced777584f5b9b3025db544c625f .
+
+<https://abb.com/MinLib/BaseModel/MLB:DirYStart> a owl:NamedIndividual,
+        minlibbase:DirectionEnum ;
+    base:hasFieldName "MLB:DirYStart" ;
+    base:hasValueNode base:_N3fe911110e9345c4a9625ec68c0de16f .
+
+<https://abb.com/MinLib/BaseModel/MLB:DirYStartnoAck> a owl:NamedIndividual,
+        minlibbase:DirectionEnum ;
+    base:hasFieldName "MLB:DirYStartnoAck" ;
+    base:hasValueNode base:_N17f498880ac34e36a302fa198d7228ce .
+
+<https://abb.com/MinLib/BaseModel/MLB:DirYnoAck> a owl:NamedIndividual,
+        minlibbase:DirectionEnum ;
+    base:hasFieldName "MLB:DirYnoAck" ;
+    base:hasValueNode base:_Nff38a41f8d004fdab45b02711a3081d1 .
+
+<https://abb.com/MinLib/BaseModel/MLB:Event> a owl:NamedIndividual,
+        minlibbase:IndBehaviorEnum ;
+    base:hasFieldName "MLB:Event" ;
+    base:hasValueNode base:_N519f16f688f541d3a166972b684420e8 .
+
+<https://abb.com/MinLib/BaseModel/MLB:External_1> a owl:NamedIndividual,
+        minlibbase:ModeSetPointEnum ;
+    base:hasFieldName "MLB:External_1" ;
+    base:hasValueNode base:_N496d7ab1e9ed4ad7a3df3fc4d97c70cc .
+
+<https://abb.com/MinLib/BaseModel/MLB:External_2> a owl:NamedIndividual,
+        minlibbase:ModeSetPointEnum ;
+    base:hasFieldName "MLB:External_2" ;
+    base:hasValueNode base:_N71384106aa3b4c85939a721b4d601c75 .
+
+<https://abb.com/MinLib/BaseModel/MLB:External_3> a owl:NamedIndividual,
+        minlibbase:ModeSetPointEnum ;
+    base:hasFieldName "MLB:External_3" ;
+    base:hasValueNode base:_N3ad28c2545df4f9084693dc3d9a8e4e2 .
+
+<https://abb.com/MinLib/BaseModel/MLB:FreezToValue> a owl:NamedIndividual,
+        minlibbase:signalErrorBehaviorEnum ;
+    base:hasFieldName "MLB:FreezToValue" ;
+    base:hasValueNode base:_N5d1233251a7045fab149a0b99cfcc221 .
+
+<https://abb.com/MinLib/BaseModel/MLB:IAProcess> a owl:NamedIndividual,
+        minlibbase:BooleanInterlockEnum ;
+    base:hasFieldName "MLB:IAProcess" ;
+    base:hasValueNode base:_Nbf6f256a87e546acbe0babf247791dd6 .
+
+<https://abb.com/MinLib/BaseModel/MLB:IBEquipment> a owl:NamedIndividual,
+        minlibbase:BooleanInterlockEnum ;
+    base:hasFieldName "MLB:IBEquipment" ;
+    base:hasValueNode base:_N64fa5863bcd14d07b0cebf3f0295b493 .
+
+<https://abb.com/MinLib/BaseModel/MLB:ICSafety> a owl:NamedIndividual,
+        minlibbase:BooleanInterlockEnum ;
+    base:hasFieldName "MLB:ICSafety" ;
+    base:hasValueNode base:_Nfd891d03305b41729c7c258f5cff539a .
+
+<https://abb.com/MinLib/BaseModel/MLB:Internal> a owl:NamedIndividual,
+        minlibbase:ModeSetPointEnum ;
+    base:hasFieldName "MLB:Internal" ;
+    base:hasValueNode base:_N5d3c6209d9f44146819258427ab1d7a1 .
+
+<https://abb.com/MinLib/BaseModel/MLB:Local> a owl:NamedIndividual,
+        minlibbase:PointOfControlEnum ;
+    base:hasFieldName "MLB:Local" ;
+    base:hasValueNode base:_N85562a57811847368605feda3c520d84 .
+
+<https://abb.com/MinLib/BaseModel/MLB:Maintenace> a owl:NamedIndividual,
+        minlibbase:ModeEnum ;
+    base:hasFieldName "MLB:Maintenace" ;
+    base:hasValueNode base:_N54888b0ea25944a2a2fc87051f916015 .
+
+<https://abb.com/MinLib/BaseModel/MLB:Manual> a owl:NamedIndividual,
+        minlibbase:ModeEnum ;
+    base:hasFieldName "MLB:Manual" ;
+    base:hasValueNode base:_N0e0ec466ceb74d68a6e65f1a7f692972 .
+
+<https://abb.com/MinLib/BaseModel/MLB:NoAE> a owl:NamedIndividual,
+        minlibbase:IndBehaviorEnum ;
+    base:hasFieldName "MLB:NoAE" ;
+    base:hasValueNode base:_Nb39735acf58c42039efe461cd4f4235f .
+
+<https://abb.com/MinLib/BaseModel/MLB:NoErrCtrlBehavior> a owl:NamedIndividual,
+        minlibbase:signalErrorBehaviorEnum ;
+    base:hasFieldName "MLB:NoErrCtrlBehavior" ;
+    base:hasValueNode base:_N9c0ccc30e1b54961912dee32e3cabfd6 .
+
+<https://abb.com/MinLib/BaseModel/MLB:NoPCCInterlock> a owl:NamedIndividual,
+        minlibbase:PCCInterlockEnum ;
+    base:hasFieldName "MLB:NoPCCInterlock" ;
+    base:hasValueNode base:_Nb45b5fb30fea4cd593a1a5dd215b7598 .
+
+<https://abb.com/MinLib/BaseModel/MLB:Open> a owl:NamedIndividual,
+        minlibbase:ActionEnum ;
+    base:hasFieldName "MLB:Open" ;
+    base:hasValueNode base:_N3d2cd8cd9d36457d9dd772e72c5d2fae .
+
+<https://abb.com/MinLib/BaseModel/MLB:PCCAutoStart> a owl:NamedIndividual,
+        minlibbase:PCCInterlockEnum ;
+    base:hasFieldName "MLB:PCCAutoStart" ;
+    base:hasValueNode base:_N970c5ea71af142a8a598a64bd72428e8 .
+
+<https://abb.com/MinLib/BaseModel/MLB:PCCIAProcess> a owl:NamedIndividual,
+        minlibbase:PCCInterlockEnum ;
+    base:hasFieldName "MLB:PCCIAProcess" ;
+    base:hasValueNode base:_N7bc7daf247ff442c9c1652f2fbffde73 .
+
+<https://abb.com/MinLib/BaseModel/MLB:PCCIBEquipment> a owl:NamedIndividual,
+        minlibbase:PCCInterlockEnum ;
+    base:hasFieldName "MLB:PCCIBEquipment" ;
+    base:hasValueNode base:_Na2e30d8ba17b4b6ab24aa94fdac026e5 .
+
+<https://abb.com/MinLib/BaseModel/MLB:PCCIBEquipment_RFS> a owl:NamedIndividual,
+        minlibbase:PCCInterlockEnum ;
+    base:hasFieldName "MLB:PCCIBEquipment_RFS" ;
+    base:hasValueNode base:_N43bd9382105c4562bd10d8acf051b0ad .
+
+<https://abb.com/MinLib/BaseModel/MLB:PCCICSafety> a owl:NamedIndividual,
+        minlibbase:PCCInterlockEnum ;
+    base:hasFieldName "MLB:PCCICSafety" ;
+    base:hasValueNode base:_N57f10bf9ceb74047bab54d886430083a .
+
+<https://abb.com/MinLib/BaseModel/MLB:PCCICSafety_RFS> a owl:NamedIndividual,
+        minlibbase:PCCInterlockEnum ;
+    base:hasFieldName "MLB:PCCICSafety_RFS" ;
+    base:hasValueNode base:_N736acd6094464acaa62b21b582c364f2 .
+
+<https://abb.com/MinLib/BaseModel/MLB:PCCPrevDrive> a owl:NamedIndividual,
+        minlibbase:PCCInterlockEnum ;
+    base:hasFieldName "MLB:PCCPrevDrive" ;
+    base:hasValueNode base:_N76ec6084c2464546ad92ed57b7244ec1 .
+
+<https://abb.com/MinLib/BaseModel/MLB:PreRFs> a owl:NamedIndividual,
+        minlibbase:preBinStatusEnum ;
+    base:hasFieldName "MLB:PreRFs" ;
+    base:hasValueNode base:_Ndda1fdadf8264f20a5f535b5dcff2057 .
+
+<https://abb.com/MinLib/BaseModel/MLB:PreSel> a owl:NamedIndividual,
+        minlibbase:preBinStatusEnum ;
+    base:hasFieldName "MLB:PreSel" ;
+    base:hasValueNode base:_N5b6e4cd115db40579ef5338c9d9a40d7 .
+
+<https://abb.com/MinLib/BaseModel/MLB:PreSelStdBy> a owl:NamedIndividual,
+        minlibbase:preBinStatusEnum ;
+    base:hasFieldName "MLB:PreSelStdBy" ;
+    base:hasValueNode base:_N430e28023e874839b602c3906bcbeb04 .
+
+<https://abb.com/MinLib/BaseModel/MLB:PreValid> a owl:NamedIndividual,
+        minlibbase:preBinStatusEnum ;
+    base:hasFieldName "MLB:PreValid" ;
+    base:hasValueNode base:_N3f3945707eac42b9afee63da340c1724 .
+
+<https://abb.com/MinLib/BaseModel/MLB:Sequence> a owl:NamedIndividual,
+        minlibbase:PointOfControlEnum ;
+    base:hasFieldName "MLB:Sequence" ;
+    base:hasValueNode base:_N7936db92377c423a9109d881b26116dc .
+
+<https://abb.com/MinLib/BaseModel/MLB:Start> a owl:NamedIndividual,
+        minlibbase:ActionEnum ;
+    base:hasFieldName "MLB:Start" ;
+    base:hasValueNode base:_N8a6dfbd393654f228c690e457aadecb8 .
+
+<https://abb.com/MinLib/BaseModel/MLB:Stop> a owl:NamedIndividual,
+        minlibbase:ActionEnum ;
+    base:hasFieldName "MLB:Stop" ;
+    base:hasValueNode base:_Ncaa68322a04f4026974c5dc57dea0def .
+
+<https://abb.com/MinLib/BaseModel/MLB:Undefined> a owl:NamedIndividual,
+        minlibbase:ActionEnum,
+        minlibbase:BooleanInterlockEnum,
+        minlibbase:DirectionEnum,
+        minlibbase:IndBehaviorEnum,
+        minlibbase:MinLibGeneralEnum,
+        minlibbase:ModeEnum,
+        minlibbase:ModeSetPointEnum,
+        minlibbase:PCCInterlockEnum,
+        minlibbase:PointOfControlEnum,
+        minlibbase:preBinStatusEnum,
+        minlibbase:signalErrorBehaviorEnum ;
+    base:hasFieldName "MLB:Undefined" ;
+    base:hasValueNode base:_N0d8d3bc5b5bc41408403cb6bbe1a1149,
+        base:_N24a3489629a34fbcb180a460a6c77e62,
+        base:_N3844c7c2cfa9459481701c8f335708b0,
+        base:_N49d6ada909e04cdda8f6e2cb24062035,
+        base:_N4cbbb8a4295b4fa48d050da7c8bbb53a,
+        base:_N74def085bdf24914b2dd3bac3ce815a4,
+        base:_N80a78b24f42f41a6a02c4a87119b94b0,
+        base:_N9ff7ff1d4b6d4a14b9231e2cea4fa27b,
+        base:_Na8a43711db7c4bb9a99691feb6b0d35e,
+        base:_Na985012a48604fada089ca1c44de6588,
+        base:_Nb0211ba890d548f18319a78178381020 .
+
+minlibbase:MagneticSeparator a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "MagneticSeparator" ;
+    base:hasValueNode base:_Ne18e266cf24c48ee84b97cd7971cfee6 .
+
+minlibbase:Mixer a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "Mixer" ;
+    base:hasValueNode base:_Nf3fcd47393f84c8297d73012845b5607 .
+
+minlibbase:Motor a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "Motor" ;
+    base:hasValueNode base:_Nb894a28871db4b339084b5e220509d7e .
+
+minlibbase:Pelletizer a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "Pelletizer" ;
+    base:hasValueNode base:_N5e91ccf204354d0cb0276e2986c8a9e9 .
+
+minlibbase:Pile a owl:NamedIndividual,
+        minlibbase:EquipmentEnum ;
+    base:hasFieldName "Pile" ;
+    base:hasValueNode base:_N22260bf0e2084eb6b2058e1cf841f35c .
+
+minlibbase:Pipe a owl:NamedIndividual,
+        minlibbase:EquipmentEnum ;
+    base:hasFieldName "Pipe" ;
+    base:hasValueNode base:_Nfcab98ff6620426795cd166ff9ffac3c .
+
+minlibbase:PoCircuitBreaker a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "PoCircuitBreaker" ;
+    base:hasValueNode base:_N81a1a6aef03f44e98f42e87ce74c2491 .
+
+minlibbase:PoDisconnector a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "PoDisconnector" ;
+    base:hasValueNode base:_Naf5f18155bb141c7a1e2f30c100b955e .
+
+minlibbase:Pressure a owl:NamedIndividual,
+        minlibbase:ProFuncDeviceEnum ;
+    base:hasFieldName "Pressure" ;
+    base:hasValueNode base:_Ne2056b8ccdbf41b5b18bb08a37ecd493 .
+
+minlibbase:PropRoller a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "PropRoller" ;
+    base:hasValueNode base:_N3ee66cfb859244729d20d1f63f4a2a3e,
+        base:_N965f6ecd0cdc4c1da4335cddfb2bf10f .
+
+minlibbase:Pump a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "Pump" ;
+    base:hasValueNode base:_N2b737867de104612985d428c49c59e3f .
+
+minlibbase:PumpCentrifugal a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "PumpCentrifugal" ;
+    base:hasValueNode base:_N3da9538596ba4e92b376940331162387 .
+
+minlibbase:RollerPress a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "RollerPress" ;
+    base:hasValueNode base:_Nef94d81ed08c44a195dc15edb1075b8e .
+
+minlibbase:RotaryFeeder a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "RotaryFeeder" ;
+    base:hasValueNode base:_Nbb73636fbb1d4686951ebad376fbd27b .
+
+minlibbase:Screen a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "Screen" ;
+    base:hasValueNode base:_N829a4b3ee3824ef88f6225de3185bb36 .
+
+minlibbase:Shut a owl:NamedIndividual,
+        minlibbase:EquipmentEnum ;
+    base:hasFieldName "Shut" ;
+    base:hasValueNode base:_N8d200e188f624fc68cc99997b5e29b82 .
+
+minlibbase:Silo a owl:NamedIndividual,
+        minlibbase:EquipmentEnum ;
+    base:hasFieldName "Silo" ;
+    base:hasValueNode base:_N0879613ce0374cd7850132effeb38a6e .
+
+minlibbase:SrewConveyor a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "SrewConveyor" ;
+    base:hasValueNode base:_N5b4f06fce0a74b73b26c9f3727ac3447 .
+
+minlibbase:Switch a owl:NamedIndividual,
+        minlibbase:ProFuncDeviceEnum ;
+    base:hasFieldName "Switch" ;
+    base:hasValueNode base:_N017f3028ed7c491ca8aeb6b587228f6e .
+
+minlibbase:Symbolic a owl:NamedIndividual,
+        minlibbase:ProFuncDeviceEnum ;
+    base:hasFieldName "Symbolic" ;
+    base:hasValueNode base:_N53ebf13d094d44f19255707a35e36e04 .
+
+minlibbase:SymbolicPE a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "SymbolicPE" ;
+    base:hasValueNode base:_Nd614cc7a76a448298bf6a666aba960aa .
+
+minlibbase:Tank a owl:NamedIndividual,
+        minlibbase:EquipmentEnum ;
+    base:hasFieldName "Tank" ;
+    base:hasValueNode base:_Nadd9d2222c0f49f991ddca76cb08ef5e .
+
+minlibbase:Temperature a owl:NamedIndividual,
+        minlibbase:ProFuncDeviceEnum ;
+    base:hasFieldName "Temperature" ;
+    base:hasValueNode base:_N092b8e7fc86d48ba8e092bbae746b28e .
+
+minlibbase:Undefined a owl:NamedIndividual,
+        minlibbase:EquipmentEnum,
+        minlibbase:ProFuncDeviceEnum,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "Undefined" ;
+    base:hasValueNode base:_N761e5ae56e934d37b8359083f00e067f,
+        base:_N7ddc1e466ab343db9d6c4e5ee406125d,
+        base:_Nf6730651a3c543b19ac2c5f722be8372 .
+
+minlibbase:Valve a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "Valve" ;
+    base:hasValueNode base:_N1bd2c0c059494509beabb1e7baf1f3ff .
+
+minlibbase:Valve3Ways a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "Valve3Ways" ;
+    base:hasValueNode base:_N008d1661ffe1486ca5a897066ce74977 .
+
+minlibbase:ValveAuto a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "ValveAuto" ;
+    base:hasValueNode base:_N4270ccc25b104ec8844aa7449b05b3bd .
+
+minlibbase:ValveAutoLevel a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "ValveAutoLevel" ;
+    base:hasValueNode base:_Nb38b3fddc38b4b2b94ff2d8b7a51e0ae .
+
+minlibbase:ValveLevel a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "ValveLevel" ;
+    base:hasValueNode base:_N02731ee1e8bb49299171e6661c2e2164 .
+
+minlibbase:ValveMan a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "ValveMan" ;
+    base:hasValueNode base:_N8fb3ae8a50684f95b3d1cc0cb7541cb6 .
+
+minlibbase:ValveManLevel a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "ValveManLevel" ;
+    base:hasValueNode base:_N3aa2ac2c9c30455b8d001203cd116e04 .
+
+minlibbase:VerticalMill a owl:NamedIndividual,
+        minlibbase:ProFuncEquipmentEnum ;
+    base:hasFieldName "VerticalMill" ;
+    base:hasValueNode base:_Nbe8fc453a7774715b170c50f15d622d3 .
+
+minlibbase:hasMinLib.BaseModel rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+minlibbase:hasNotRdyOn rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+minlibbase:hasRdyRef rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+minlibbase:hasStartTransition rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+minlibbase:nodei1000 a opcua:DataTypeNodeClass ;
+    opcua:HasProperty minlibbase:nodei1001 ;
+    opcua:hasEnumStrings minlibbase:nodei1001 ;
+    base:definesType minlibbase:PointOfControlEnum ;
+    base:hasBrowseName "PointOfControlEnum" ;
+    base:hasBrowseNameNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasDisplayName "PointOfControlEnum" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1000" .
+
+minlibbase:nodei1002 a opcua:DataTypeNodeClass ;
+    opcua:HasProperty minlibbase:nodei1003 ;
+    opcua:hasEnumStrings minlibbase:nodei1003 ;
+    base:definesType minlibbase:ModeEnum ;
+    base:hasBrowseName "ModeEnum" ;
+    base:hasBrowseNameNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasDisplayName "ModeEnum" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1002" .
+
+minlibbase:nodei1064 a opcua:ObjectTypeNodeClass ;
+    opcua:HasComponent minlibbase:nodei1065,
+        minlibbase:nodei1067,
+        minlibbase:nodei1069 ;
+    minlibbase:hasNotRdyOn minlibbase:nodei1065 ;
+    minlibbase:hasRdyRef minlibbase:nodei1067 ;
+    minlibbase:hasStartTransition minlibbase:nodei1069 ;
+    base:definesType minlibbase:MinLibStateMachineType ;
+    base:hasBrowseName "MinLibStateMachineType" ;
+    base:hasBrowseNameNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasDescription "A finite state machine for a general System" ;
+    base:hasDisplayName "MinLibStateMachineType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1064" .
+
+minlibbase:nodei1073 a opcua:ReferenceTypeNodeClass ;
+    base:definesType minlibbase:isControlling ;
+    base:hasBrowseName "isControlling" ;
+    base:hasBrowseNameNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasDescription "Reference: Describe dependencies between MinLib objects which have a controlling character" ;
+    base:hasDisplayName "isControlling" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1073" .
+
+minlibbase:nodei1092 a opcua:ReferenceTypeNodeClass ;
+    base:definesType minlibbase:MinLibNonHierarchicalReferences ;
+    base:hasBrowseName "MinLibNonHierarchicalReferences" ;
+    base:hasBrowseNameNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasDescription "Reference: MinLib abstract Type for Non-Hierarchical" ;
+    base:hasDisplayName "MinLibNonHierarchicalReferences" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1092" .
+
+minlibbase:nodei1093 a opcua:ReferenceTypeNodeClass ;
+    base:definesType minlibbase:isThresholdReference ;
+    base:hasBrowseName "isThresholdReference" ;
+    base:hasBrowseNameNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasDescription "Reference: input to PCCThreshold" ;
+    base:hasDisplayName "isThresholdReference" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1093" .
+
+minlibbase:nodei1094 a opcua:ReferenceTypeNodeClass ;
+    base:definesType minlibbase:isBoolInterlockedBy ;
+    base:hasBrowseName "isBoolInterlockedBy" ;
+    base:hasBrowseNameNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasDescription "Reference: Describe dependencies between MinLib objects GlueLogic interlocking" ;
+    base:hasDisplayName "isBoolInterlockedBy" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1094" .
+
+minlibbase:nodei1104 a opcua:DataTypeNodeClass ;
+    opcua:HasProperty minlibbase:nodei1105 ;
+    opcua:hasEnumStrings minlibbase:nodei1105 ;
+    base:definesType minlibbase:ActionEnum ;
+    base:hasBrowseName "ActionEnum" ;
+    base:hasBrowseNameNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasDisplayName "ActionEnum" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1104" .
+
+minlibbase:nodei1106 a opcua:DataTypeNodeClass ;
+    opcua:HasProperty minlibbase:nodei1107 ;
+    opcua:hasEnumValues minlibbase:nodei1107 ;
+    base:definesType minlibbase:ModeSetPointEnum ;
+    base:hasBrowseName "ModeSetPointEnum" ;
+    base:hasBrowseNameNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasDisplayName "ModeSetPointEnum" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1106" .
+
+minlibbase:nodei1108 a opcua:DataTypeNodeClass ;
+    opcua:HasProperty minlibbase:nodei1109 ;
+    opcua:hasEnumStrings minlibbase:nodei1109 ;
+    base:definesType minlibbase:preBinStatusEnum ;
+    base:hasBrowseName "preBinStatusEnum" ;
+    base:hasBrowseNameNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasDisplayName "preBinStatusEnum" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1108" .
+
+minlibbase:nodei1110 a opcua:DataTypeNodeClass ;
+    opcua:HasProperty minlibbase:nodei1111 ;
+    opcua:hasEnumStrings minlibbase:nodei1111 ;
+    base:definesType minlibbase:signalErrorBehaviorEnum ;
+    base:hasBrowseName "signalErrorBehaviorEnum" ;
+    base:hasBrowseNameNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasDisplayName "signalErrorBehaviorEnum" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1110" .
+
+minlibbase:nodei1112 a opcua:DataTypeNodeClass ;
+    opcua:HasProperty minlibbase:nodei1113 ;
+    opcua:hasEnumStrings minlibbase:nodei1113 ;
+    base:definesType minlibbase:IndBehaviorEnum ;
+    base:hasBrowseName "IndBehaviorEnum" ;
+    base:hasBrowseNameNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasDisplayName "IndBehaviorEnum" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1112" .
+
+minlibbase:nodei1114 a opcua:DataTypeNodeClass ;
+    opcua:HasProperty minlibbase:nodei1115 ;
+    opcua:hasEnumStrings minlibbase:nodei1115 ;
+    base:definesType minlibbase:PCCInterlockEnum ;
+    base:hasBrowseName "PCCInterlockEnum" ;
+    base:hasBrowseNameNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasDisplayName "PCCInterlockEnum" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1114" .
+
+minlibbase:nodei1116 a opcua:DataTypeNodeClass ;
+    opcua:HasProperty minlibbase:nodei1117 ;
+    opcua:hasEnumStrings minlibbase:nodei1117 ;
+    base:definesType minlibbase:BooleanInterlockEnum ;
+    base:hasBrowseName "BooleanInterlockEnum" ;
+    base:hasBrowseNameNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasDisplayName "BooleanInterlockEnum" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1116" .
+
+minlibbase:nodei1118 a opcua:DataTypeNodeClass ;
+    opcua:HasProperty minlibbase:nodei1119 ;
+    opcua:hasEnumValues minlibbase:nodei1119 ;
+    base:definesType minlibbase:DirectionEnum ;
+    base:hasBrowseName "DirectionEnum" ;
+    base:hasBrowseNameNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasDisplayName "DirectionEnum" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1118" .
+
+minlibbase:nodei1122 a opcua:ReferenceTypeNodeClass ;
+    base:definesType minlibbase:isBoolControlling ;
+    base:hasBrowseName "isBoolControlling" ;
+    base:hasBrowseNameNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasDescription "Reference: Describe dependencies between MinLib objects which have a controlling character by a Boolean interface" ;
+    base:hasDisplayName "isBoolControlling" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1122" .
+
+minlibbase:nodei1123 a opcua:ReferenceTypeNodeClass ;
+    base:definesType minlibbase:isGCCControlling ;
+    base:hasBrowseName "isGCCControlling" ;
+    base:hasBrowseNameNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasDescription "Reference: Describe dependencies between MinLib objects which have a controlling character by the group control connection" ;
+    base:hasDisplayName "isGCCControlling" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1123" .
+
+minlibbase:nodei1124 a opcua:ReferenceTypeNodeClass ;
+    base:definesType minlibbase:isLoopControlling ;
+    base:hasBrowseName "isLoopControlling" ;
+    base:hasBrowseNameNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasDescription "Reference: Describe loop control references between a MinLib objects and a controller" ;
+    base:hasDisplayName "isLoopControlling" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1124" .
+
+minlibbase:nodei1125 a opcua:ReferenceTypeNodeClass ;
+    base:definesType minlibbase:isLCCControlling ;
+    base:hasBrowseName "isLCCControlling" ;
+    base:hasBrowseNameNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasDescription "Reference: Describe loop control references between a MinLib objects and a controller" ;
+    base:hasDisplayName "isLCCControlling" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1125" .
+
+minlibbase:nodei1126 a opcua:ReferenceTypeNodeClass ;
+    base:definesType minlibbase:isLCCProvidingSP ;
+    base:hasBrowseName "isLCCProvidingSP" ;
+    base:hasBrowseNameNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasDescription "Reference: Describe loop control references between a MinLib objects and a controller" ;
+    base:hasDisplayName "isLCCProvidingSP" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1126" .
+
+minlibbase:nodei1127 a opcua:ReferenceTypeNodeClass ;
+    base:definesType minlibbase:isGlueLogicControlling ;
+    base:hasBrowseName "isGlueLogicControlling" ;
+    base:hasBrowseNameNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasDescription "Reference: Describe loop control references between a MinLib objects and a controller by Glue Logic" ;
+    base:hasDisplayName "isGlueLogicControlling" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1127" .
+
+minlibbase:nodei1128 a opcua:ReferenceTypeNodeClass ;
+    base:definesType minlibbase:isGlueLogicProvidingSP ;
+    base:hasBrowseName "isGlueLogicProvidingSP" ;
+    base:hasBrowseNameNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasDescription "Reference: Describe loop control references between a MinLib objects and a controller" ;
+    base:hasDisplayName "isGlueLogicProvidingSP" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1128" .
+
+minlibbase:nodei1129 a opcua:DataTypeNodeClass ;
+    opcua:HasProperty minlibbase:nodei1130 ;
+    opcua:hasEnumStrings minlibbase:nodei1130 ;
+    base:definesType minlibbase:MinLibGeneralEnum ;
+    base:hasBrowseName "MinLibGeneralEnum" ;
+    base:hasBrowseNameNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasDisplayName "MinLibGeneralEnum" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1129" .
+
+minlibbase:nodei1131 a opcua:DataTypeNodeClass ;
+    opcua:HasProperty minlibbase:nodei1132 ;
+    opcua:hasEnumValues minlibbase:nodei1132 ;
+    base:definesType minlibbase:ProFuncDeviceEnum ;
+    base:hasBrowseName "ProFuncDeviceEnum" ;
+    base:hasBrowseNameNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasDisplayName "ProFuncDeviceEnum" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1131" .
+
+minlibbase:nodei1133 a opcua:DataTypeNodeClass ;
+    opcua:HasProperty minlibbase:nodei1134 ;
+    opcua:hasEnumValues minlibbase:nodei1134 ;
+    base:definesType minlibbase:EquipmentEnum ;
+    base:hasBrowseName "EquipmentEnum" ;
+    base:hasBrowseNameNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasDisplayName "EquipmentEnum" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1133" .
+
+minlibbase:nodei1135 a opcua:DataTypeNodeClass ;
+    opcua:HasProperty minlibbase:nodei1136 ;
+    opcua:hasEnumValues minlibbase:nodei1136 ;
+    base:definesType minlibbase:ProFuncEquipmentEnum ;
+    base:hasBrowseName "ProFuncEquipmentEnum" ;
+    base:hasBrowseNameNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasDisplayName "ProFuncEquipmentEnum" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1135" .
+
+minlibbase:nodei1137 a opcua:ReferenceTypeNodeClass ;
+    base:definesType minlibbase:hasHierarchicalAssociation ;
+    base:hasBrowseName "hasHierarchicalAssociation" ;
+    base:hasBrowseNameNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasDescription "Reference: Describe a general Hierarchical reference betweeen two control objects" ;
+    base:hasDisplayName "hasHierarchicalAssociation" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1137" ;
+    base:isSymmetric "true" .
+
+minlibbase:nodei1138 a opcua:ReferenceTypeNodeClass ;
+    base:definesType minlibbase:hasNonHierarchicalAssociation ;
+    base:hasBrowseName "hasNonHierarchicalAssociation" ;
+    base:hasBrowseNameNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasDescription "Reference: Describe a general Nonhierarchical reference betweeen two control objects" ;
+    base:hasDisplayName "hasNonHierarchicalAssociation" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1138" ;
+    base:isSymmetric "true" .
+
+minlibbase:nodei173 a opcua:ReferenceTypeNodeClass ;
+    base:definesType minlibbase:MinLibHierarchicalReferences ;
+    base:hasBrowseName "MinLibHierarchicalReferences" ;
+    base:hasBrowseNameNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasDescription "Reference: MinLib abstract Type for Hierarchical" ;
+    base:hasDisplayName "MinLibHierarchicalReferences" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "173" .
+
+minlibbase:nodei174 a opcua:ReferenceTypeNodeClass ;
+    base:definesType minlibbase:isPCCInterlockedBy ;
+    base:hasBrowseName "isPCCInterlockedBy" ;
+    base:hasBrowseNameNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasDescription "Reference: Describe dependencies between MinLib objects PCC interlocking" ;
+    base:hasDisplayName "isPCCInterlockedBy" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "174" .
+
+minlibbase:MinLibStateMachineType a owl:Class ;
+    rdfs:subClassOf opcua:FiniteStateMachineType .
+
+minlibbase:hasHierarchicalAssociation a owl:ObjectProperty ;
+    rdfs:subPropertyOf minlibbase:MinLibHierarchicalReferences .
+
+minlibbase:hasNonHierarchicalAssociation a owl:ObjectProperty ;
+    rdfs:subPropertyOf minlibbase:MinLibNonHierarchicalReferences .
+
+minlibbase:isBoolControlling a owl:ObjectProperty ;
+    rdfs:subPropertyOf minlibbase:isControlling .
+
+minlibbase:isBoolInterlockedBy a owl:ObjectProperty ;
+    rdfs:subPropertyOf minlibbase:MinLibHierarchicalReferences .
+
+minlibbase:isGCCControlling a owl:ObjectProperty ;
+    rdfs:subPropertyOf minlibbase:isControlling .
+
+minlibbase:isGlueLogicProvidingSP a owl:ObjectProperty ;
+    rdfs:subPropertyOf minlibbase:isGlueLogicControlling .
+
+minlibbase:isLCCProvidingSP a owl:ObjectProperty ;
+    rdfs:subPropertyOf minlibbase:isLCCControlling .
+
+minlibbase:isThresholdReference a owl:ObjectProperty ;
+    rdfs:subPropertyOf minlibbase:isPCCInterlockedBy .
+
+base:_N008d1661ffe1486ca5a897066ce74977 a base:ValueNode ;
+    base:hasEnumValue 22 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_N017f3028ed7c491ca8aeb6b587228f6e a base:ValueNode ;
+    base:hasEnumValue 11 ;
+    base:hasValueClass minlibbase:ProFuncDeviceEnum .
+
+base:_N01b0c862c1404365895bef60f201f23b a base:ValueNode ;
+    base:hasEnumValue 5 ;
+    base:hasValueClass minlibbase:DirectionEnum .
+
+base:_N02731ee1e8bb49299171e6661c2e2164 a base:ValueNode ;
+    base:hasEnumValue 24 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_N061be48370874006947ce3e62b4668f1 a base:ValueNode ;
+    base:hasEnumValue 13 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_N0879613ce0374cd7850132effeb38a6e a base:ValueNode ;
+    base:hasEnumValue 12 ;
+    base:hasValueClass minlibbase:EquipmentEnum .
+
+base:_N092b8e7fc86d48ba8e092bbae746b28e a base:ValueNode ;
+    base:hasEnumValue 20 ;
+    base:hasValueClass minlibbase:ProFuncDeviceEnum .
+
+base:_N0d8d3bc5b5bc41408403cb6bbe1a1149 a base:ValueNode ;
+    base:hasEnumValue 0 ;
+    base:hasValueClass minlibbase:signalErrorBehaviorEnum .
+
+base:_N0e0ec466ceb74d68a6e65f1a7f692972 a base:ValueNode ;
+    base:hasEnumValue 1 ;
+    base:hasValueClass minlibbase:ModeEnum .
+
+base:_N0e41bfb3503340e3b27c95145bce57a8 a base:ValueNode ;
+    base:hasEnumValue 193 ;
+    base:hasValueClass minlibbase:DirectionEnum .
+
+base:_N0e77ff499d81481b9798178ef964a566 a base:ValueNode ;
+    base:hasEnumValue 134 ;
+    base:hasValueClass minlibbase:DirectionEnum .
+
+base:_N12910ff1aea741ddbbd2129597c3ac6e a base:ValueNode ;
+    base:hasEnumValue 6 ;
+    base:hasValueClass minlibbase:DirectionEnum .
+
+base:_N14f6b31e1c1b4518859abfce43f0b0a6 a base:ValueNode ;
+    base:hasEnumValue 229 ;
+    base:hasValueClass minlibbase:DirectionEnum .
+
+base:_N16eaced777584f5b9b3025db544c625f a base:ValueNode ;
+    base:hasEnumValue 195 ;
+    base:hasValueClass minlibbase:DirectionEnum .
+
+base:_N16ee169fd4294520a09c936f0a2d22b3 a base:ValueNode ;
+    base:hasEnumValue 6 ;
+    base:hasValueClass minlibbase:IndBehaviorEnum .
+
+base:_N175c7b672b274a8499a455040cccfea6 a base:ValueNode ;
+    base:hasEnumValue 11 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_N176c043a23844bcebfc80dd8fe973011 a base:ValueNode ;
+    base:hasEnumValue 19 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_N17f498880ac34e36a302fa198d7228ce a base:ValueNode ;
+    base:hasEnumValue 132 ;
+    base:hasValueClass minlibbase:DirectionEnum .
+
+base:_N18ac230bf3474aaa931aaa4769641775 a base:ValueNode ;
+    base:hasEnumValue 45 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_N1bd2c0c059494509beabb1e7baf1f3ff a base:ValueNode ;
+    base:hasEnumValue 6 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_N21b88ae60948465986452c3fa0a25adb a base:ValueNode ;
+    base:hasEnumValue 17 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_N22260bf0e2084eb6b2058e1cf841f35c a base:ValueNode ;
+    base:hasEnumValue 14 ;
+    base:hasValueClass minlibbase:EquipmentEnum .
+
+base:_N24a3489629a34fbcb180a460a6c77e62 a base:ValueNode ;
+    base:hasEnumValue 0 ;
+    base:hasValueClass minlibbase:DirectionEnum .
+
+base:_N2b737867de104612985d428c49c59e3f a base:ValueNode ;
+    base:hasEnumValue 2 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_N33940e15262848bdb2f2f180ba581690 a base:ValueNode ;
+    base:hasEnumValue 2 ;
+    base:hasValueClass minlibbase:ModeEnum .
+
+base:_N36f0eb70b72c44008ec4acf40fe1703a a base:ValueNode ;
+    base:hasEnumValue 227 ;
+    base:hasValueClass minlibbase:DirectionEnum .
+
+base:_N3730095a63874b9296c8d6eea25e3825 a base:ValueNode ;
+    base:hasEnumValue 23 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_N3844c7c2cfa9459481701c8f335708b0 a base:ValueNode ;
+    base:hasEnumValue 0 ;
+    base:hasValueClass minlibbase:ModeEnum .
+
+base:_N3864d59c267147deac2d28972bc750c7 a base:ValueNode ;
+    base:hasEnumValue 9 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_N3aa2ac2c9c30455b8d001203cd116e04 a base:ValueNode ;
+    base:hasEnumValue 25 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_N3ad28c2545df4f9084693dc3d9a8e4e2 a base:ValueNode ;
+    base:hasEnumValue 3 ;
+    base:hasValueClass minlibbase:ModeSetPointEnum .
+
+base:_N3d2cd8cd9d36457d9dd772e72c5d2fae a base:ValueNode ;
+    base:hasEnumValue 4 ;
+    base:hasValueClass minlibbase:ActionEnum .
+
+base:_N3da9538596ba4e92b376940331162387 a base:ValueNode ;
+    base:hasEnumValue 43 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_N3e7e37065fab46c180facd2c5e829f06 a base:ValueNode ;
+    base:hasEnumValue 10 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_N3ee66cfb859244729d20d1f63f4a2a3e a base:ValueNode ;
+    base:hasEnumValue 27 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_N3ef352de850e47398269eeb1d97d146f a base:ValueNode ;
+    base:hasEnumValue 67 ;
+    base:hasValueClass minlibbase:DirectionEnum .
+
+base:_N3f3945707eac42b9afee63da340c1724 a base:ValueNode ;
+    base:hasEnumValue 2 ;
+    base:hasValueClass minlibbase:preBinStatusEnum .
+
+base:_N3fe911110e9345c4a9625ec68c0de16f a base:ValueNode ;
+    base:hasEnumValue 4 ;
+    base:hasValueClass minlibbase:DirectionEnum .
+
+base:_N4270ccc25b104ec8844aa7449b05b3bd a base:ValueNode ;
+    base:hasEnumValue 8 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_N430e28023e874839b602c3906bcbeb04 a base:ValueNode ;
+    base:hasEnumValue 4 ;
+    base:hasValueClass minlibbase:preBinStatusEnum .
+
+base:_N43bd9382105c4562bd10d8acf051b0ad a base:ValueNode ;
+    base:hasEnumValue 7 ;
+    base:hasValueClass minlibbase:PCCInterlockEnum .
+
+base:_N46ad68950c4d40ffb9d79cf553d0fc9a a base:ValueNode ;
+    base:hasEnumValue 3 ;
+    base:hasValueClass minlibbase:ActionEnum .
+
+base:_N496d7ab1e9ed4ad7a3df3fc4d97c70cc a base:ValueNode ;
+    base:hasEnumValue 1 ;
+    base:hasValueClass minlibbase:ModeSetPointEnum .
+
+base:_N49c0ff9c30624492979158deacecd723 a base:ValueNode ;
+    base:hasEnumValue 4 ;
+    base:hasValueClass minlibbase:IndBehaviorEnum .
+
+base:_N49d6ada909e04cdda8f6e2cb24062035 a base:ValueNode ;
+    base:hasEnumValue 0 ;
+    base:hasValueClass minlibbase:ActionEnum .
+
+base:_N4c3954b6aa3f4c71836efa98ea5f7370 a base:ValueNode ;
+    base:hasEnumValue 97 ;
+    base:hasValueClass minlibbase:DirectionEnum .
+
+base:_N4cbbb8a4295b4fa48d050da7c8bbb53a a base:ValueNode ;
+    base:hasEnumValue 0 ;
+    base:hasValueClass minlibbase:PointOfControlEnum .
+
+base:_N4cc6ae5152be4a41bb5831a65d2e9abb a base:ValueNode ;
+    base:hasEnumValue 2 ;
+    base:hasValueClass minlibbase:ProFuncDeviceEnum .
+
+base:_N519f16f688f541d3a166972b684420e8 a base:ValueNode ;
+    base:hasEnumValue 2 ;
+    base:hasValueClass minlibbase:IndBehaviorEnum .
+
+base:_N53ebf13d094d44f19255707a35e36e04 a base:ValueNode ;
+    base:hasEnumValue 99 ;
+    base:hasValueClass minlibbase:ProFuncDeviceEnum .
+
+base:_N54888b0ea25944a2a2fc87051f916015 a base:ValueNode ;
+    base:hasEnumValue 3 ;
+    base:hasValueClass minlibbase:ModeEnum .
+
+base:_N5570f05628b9474e97806bdbb9c29a28 a base:ValueNode ;
+    base:hasEnumValue 16 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_N57f10bf9ceb74047bab54d886430083a a base:ValueNode ;
+    base:hasEnumValue 6 ;
+    base:hasValueClass minlibbase:PCCInterlockEnum .
+
+base:_N5b4f06fce0a74b73b26c9f3727ac3447 a base:ValueNode ;
+    base:hasEnumValue 48 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_N5b6e4cd115db40579ef5338c9d9a40d7 a base:ValueNode ;
+    base:hasEnumValue 1 ;
+    base:hasValueClass minlibbase:preBinStatusEnum .
+
+base:_N5d1233251a7045fab149a0b99cfcc221 a base:ValueNode ;
+    base:hasEnumValue 2 ;
+    base:hasValueClass minlibbase:signalErrorBehaviorEnum .
+
+base:_N5d3c6209d9f44146819258427ab1d7a1 a base:ValueNode ;
+    base:hasEnumValue 1 ;
+    base:hasValueClass minlibbase:ModeSetPointEnum .
+
+base:_N5e91ccf204354d0cb0276e2986c8a9e9 a base:ValueNode ;
+    base:hasEnumValue 38 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_N64fa5863bcd14d07b0cebf3f0295b493 a base:ValueNode ;
+    base:hasEnumValue 2 ;
+    base:hasValueClass minlibbase:BooleanInterlockEnum .
+
+base:_N692c4743149a4ed5a99cff3292bf02d3 a base:ValueNode ;
+    base:hasEnumValue 165 ;
+    base:hasValueClass minlibbase:DirectionEnum .
+
+base:_N6b9330baa553450882e3eb972a2ed127 a base:ValueNode ;
+    base:hasEnumValue 129 ;
+    base:hasValueClass minlibbase:DirectionEnum .
+
+base:_N6bc07d8ceb7c44bd841cdab0e23130f1 a base:ValueNode ;
+    base:hasEnumValue 130 ;
+    base:hasValueClass minlibbase:DirectionEnum .
+
+base:_N6cbdbc7bd790487dbd61096677257e00 a base:ValueNode ;
+    base:hasEnumValue 31 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_N6dcc22a4119b4702adb824a86e2bbcb7 a base:ValueNode ;
+    base:hasEnumValue 37 ;
+    base:hasValueClass minlibbase:DirectionEnum .
+
+base:_N71384106aa3b4c85939a721b4d601c75 a base:ValueNode ;
+    base:hasEnumValue 2 ;
+    base:hasValueClass minlibbase:ModeSetPointEnum .
+
+base:_N72565d8634df43eebb2b6e15ed926cd3 a base:ValueNode ;
+    base:hasEnumValue 41 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_N736acd6094464acaa62b21b582c364f2 a base:ValueNode ;
+    base:hasEnumValue 8 ;
+    base:hasValueClass minlibbase:PCCInterlockEnum .
+
+base:_N74def085bdf24914b2dd3bac3ce815a4 a base:ValueNode ;
+    base:hasEnumValue 0 ;
+    base:hasValueClass minlibbase:PCCInterlockEnum .
+
+base:_N761e5ae56e934d37b8359083f00e067f a base:ValueNode ;
+    base:hasEnumValue 0 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_N7629305be0c3493fa64402845e673c47 a base:ValueNode ;
+    base:hasEnumValue 7 ;
+    base:hasValueClass minlibbase:IndBehaviorEnum .
+
+base:_N766850aa70d6419c944d9b2c2b0663e5 a base:ValueNode ;
+    base:hasEnumValue 37 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_N76ec6084c2464546ad92ed57b7244ec1 a base:ValueNode ;
+    base:hasEnumValue 2 ;
+    base:hasValueClass minlibbase:PCCInterlockEnum .
+
+base:_N78a2e1316ed949ed88948611d5d1efcc a base:ValueNode ;
+    base:hasEnumValue 1 ;
+    base:hasValueClass minlibbase:DirectionEnum .
+
+base:_N7936db92377c423a9109d881b26116dc a base:ValueNode ;
+    base:hasEnumValue 3 ;
+    base:hasValueClass minlibbase:PointOfControlEnum .
+
+base:_N7bc7daf247ff442c9c1652f2fbffde73 a base:ValueNode ;
+    base:hasEnumValue 4 ;
+    base:hasValueClass minlibbase:PCCInterlockEnum .
+
+base:_N7ddc1e466ab343db9d6c4e5ee406125d a base:ValueNode ;
+    base:hasEnumValue 0 ;
+    base:hasValueClass minlibbase:ProFuncDeviceEnum .
+
+base:_N7fc56331f9924d19957863366c3be9f2 a base:ValueNode ;
+    base:hasEnumValue 23 ;
+    base:hasValueClass minlibbase:ProFuncDeviceEnum .
+
+base:_N80a78b24f42f41a6a02c4a87119b94b0 a base:ValueNode ;
+    base:hasEnumValue 0 ;
+    base:hasValueClass minlibbase:IndBehaviorEnum .
+
+base:_N80b5aec4b0c641f1a10a87302e112786 a base:ValueNode ;
+    base:hasEnumValue 46 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_N8176b15ab0e84da9934613461697aa36 a base:ValueNode ;
+    base:hasEnumValue 33 ;
+    base:hasValueClass minlibbase:DirectionEnum .
+
+base:_N81a1a6aef03f44e98f42e87ce74c2491 a base:ValueNode ;
+    base:hasEnumValue 28 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_N829a4b3ee3824ef88f6225de3185bb36 a base:ValueNode ;
+    base:hasEnumValue 47 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_N83bb138e1b384b4397113247809b1108 a base:ValueNode ;
+    base:hasEnumValue 90 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_N85562a57811847368605feda3c520d84 a base:ValueNode ;
+    base:hasEnumValue 2 ;
+    base:hasValueClass minlibbase:PointOfControlEnum .
+
+base:_N873d363055074efeade85dea886f3438 a base:ValueNode ;
+    base:hasEnumValue 3 ;
+    base:hasValueClass minlibbase:DirectionEnum .
+
+base:_N8a6dfbd393654f228c690e457aadecb8 a base:ValueNode ;
+    base:hasEnumValue 1 ;
+    base:hasValueClass minlibbase:ActionEnum .
+
+base:_N8caab6e4ba5244b6a9c20e305045b9ea a base:ValueNode ;
+    base:hasEnumValue 163 ;
+    base:hasValueClass minlibbase:DirectionEnum .
+
+base:_N8d200e188f624fc68cc99997b5e29b82 a base:ValueNode ;
+    base:hasEnumValue 11 ;
+    base:hasValueClass minlibbase:EquipmentEnum .
+
+base:_N8fb3ae8a50684f95b3d1cc0cb7541cb6 a base:ValueNode ;
+    base:hasEnumValue 7 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_N903c44cfac57482fb647cbc9532dedd4 a base:ValueNode ;
+    base:hasEnumValue 69 ;
+    base:hasValueClass minlibbase:DirectionEnum .
+
+base:_N904f17b181a74220a0309b0e7fc11449 a base:ValueNode ;
+    base:hasEnumValue 101 ;
+    base:hasValueClass minlibbase:DirectionEnum .
+
+base:_N91dd171f3a164d3b928bbd9106e4ac12 a base:ValueNode ;
+    base:hasEnumValue 34 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_N95130460382c40dc9f8810fafd347bfe a base:ValueNode ;
+    base:hasEnumValue 14 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_N965f6ecd0cdc4c1da4335cddfb2bf10f a base:ValueNode ;
+    base:hasEnumValue 18 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_N970c5ea71af142a8a598a64bd72428e8 a base:ValueNode ;
+    base:hasEnumValue 3 ;
+    base:hasValueClass minlibbase:PCCInterlockEnum .
+
+base:_N98b73925776e4de8a7b3189ae426467e a base:ValueNode ;
+    base:hasEnumValue 15 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_N9c0ccc30e1b54961912dee32e3cabfd6 a base:ValueNode ;
+    base:hasEnumValue 1 ;
+    base:hasValueClass minlibbase:signalErrorBehaviorEnum .
+
+base:_N9c4fa92108ea4b679fc09e2e55509162 a base:ValueNode ;
+    base:hasEnumValue 197 ;
+    base:hasValueClass minlibbase:DirectionEnum .
+
+base:_N9ff7ff1d4b6d4a14b9231e2cea4fa27b a base:ValueNode ;
+    base:hasEnumValue 0 ;
+    base:hasValueClass minlibbase:ModeSetPointEnum .
+
+base:_Na2e30d8ba17b4b6ab24aa94fdac026e5 a base:ValueNode ;
+    base:hasEnumValue 5 ;
+    base:hasValueClass minlibbase:PCCInterlockEnum .
+
+base:_Na8a43711db7c4bb9a99691feb6b0d35e a base:ValueNode ;
+    base:hasEnumValue 0 ;
+    base:hasValueClass minlibbase:MinLibGeneralEnum .
+
+base:_Na985012a48604fada089ca1c44de6588 a base:ValueNode ;
+    base:hasEnumValue 0 ;
+    base:hasValueClass minlibbase:BooleanInterlockEnum .
+
+base:_Na9eeea0688ac4f6bb28f7ad8255edb4f a base:ValueNode ;
+    base:hasEnumValue 3 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_Nabdff0a7013a474584a2b1378199c696 a base:ValueNode ;
+    base:hasEnumValue 35 ;
+    base:hasValueClass minlibbase:DirectionEnum .
+
+base:_Nadd9d2222c0f49f991ddca76cb08ef5e a base:ValueNode ;
+    base:hasEnumValue 13 ;
+    base:hasValueClass minlibbase:EquipmentEnum .
+
+base:_Nae77160d51bc449d92357d2152693ffa a base:ValueNode ;
+    base:hasEnumValue 35 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_Naf5f18155bb141c7a1e2f30c100b955e a base:ValueNode ;
+    base:hasEnumValue 29 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_Nb0211ba890d548f18319a78178381020 a base:ValueNode ;
+    base:hasEnumValue 0 ;
+    base:hasValueClass minlibbase:preBinStatusEnum .
+
+base:_Nb38b3fddc38b4b2b94ff2d8b7a51e0ae a base:ValueNode ;
+    base:hasEnumValue 26 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_Nb39735acf58c42039efe461cd4f4235f a base:ValueNode ;
+    base:hasEnumValue 1 ;
+    base:hasValueClass minlibbase:IndBehaviorEnum .
+
+base:_Nb45b5fb30fea4cd593a1a5dd215b7598 a base:ValueNode ;
+    base:hasEnumValue 1 ;
+    base:hasValueClass minlibbase:PCCInterlockEnum .
+
+base:_Nb538926db01a49248703fb986fcbff74 a base:ValueNode ;
+    base:hasEnumValue 34 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_Nb894a28871db4b339084b5e220509d7e a base:ValueNode ;
+    base:hasEnumValue 1 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_Nbb73636fbb1d4686951ebad376fbd27b a base:ValueNode ;
+    base:hasEnumValue 4 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_Nbc22289e3366416e9ae7659e9b2df8b0 a base:ValueNode ;
+    base:hasEnumValue 133 ;
+    base:hasValueClass minlibbase:DirectionEnum .
+
+base:_Nbe8fc453a7774715b170c50f15d622d3 a base:ValueNode ;
+    base:hasEnumValue 36 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_Nbf160b88a916467184511e5e81af24b8 a base:ValueNode ;
+    base:hasEnumValue 99 ;
+    base:hasValueClass minlibbase:DirectionEnum .
+
+base:_Nbf6f256a87e546acbe0babf247791dd6 a base:ValueNode ;
+    base:hasEnumValue 1 ;
+    base:hasValueClass minlibbase:BooleanInterlockEnum .
+
+base:_Nc3c9166a430f4505b364abd6361e3143 a base:ValueNode ;
+    base:hasEnumValue 2 ;
+    base:hasValueClass minlibbase:DirectionEnum .
+
+base:_Nc442bcf8f3884cb88f1047733c1b0877 a base:ValueNode ;
+    base:hasEnumValue 51 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_Nc67fbff76496472ab97120a4d1198e22 a base:ValueNode ;
+    base:hasEnumValue 5 ;
+    base:hasValueClass minlibbase:IndBehaviorEnum .
+
+base:_Ncaa68322a04f4026974c5dc57dea0def a base:ValueNode ;
+    base:hasEnumValue 2 ;
+    base:hasValueClass minlibbase:ActionEnum .
+
+base:_Nd0cccbf6e841443e9e3a2815d5d48010 a base:ValueNode ;
+    base:hasEnumValue 65 ;
+    base:hasValueClass minlibbase:DirectionEnum .
+
+base:_Nd134f2df781d4127a76f9d1c671ef6ab a base:ValueNode ;
+    base:hasEnumValue 39 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_Nd2e8345ac9ce4e0b9619deb2213d14eb a base:ValueNode ;
+    base:hasEnumValue 10 ;
+    base:hasValueClass minlibbase:ProFuncDeviceEnum .
+
+base:_Nd32813311b5e49b98468011c62b2f69a a base:ValueNode ;
+    base:hasEnumValue 3 ;
+    base:hasValueClass minlibbase:IndBehaviorEnum .
+
+base:_Nd4385665969e4c849cfd406536dc7059 a base:ValueNode ;
+    base:hasEnumValue 225 ;
+    base:hasValueClass minlibbase:DirectionEnum .
+
+base:_Nd537316ecca443b2bd9498233c018653 a base:ValueNode ;
+    base:hasEnumValue 42 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_Nd614cc7a76a448298bf6a666aba960aa a base:ValueNode ;
+    base:hasEnumValue 91 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_Nd95c7dfdff0143e38e12f3831dcf87d2 a base:ValueNode ;
+    base:hasEnumValue 3 ;
+    base:hasValueClass minlibbase:signalErrorBehaviorEnum .
+
+base:_Ndb675ea8a1ac47bba4f54698911b0477 a base:ValueNode ;
+    base:hasEnumValue 49 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_Ndbb4865f05a04644bf70144f42037187 a base:ValueNode ;
+    base:hasEnumValue 21 ;
+    base:hasValueClass minlibbase:ProFuncDeviceEnum .
+
+base:_Ndda1fdadf8264f20a5f535b5dcff2057 a base:ValueNode ;
+    base:hasEnumValue 3 ;
+    base:hasValueClass minlibbase:preBinStatusEnum .
+
+base:_Ndeb56ebf8ef64326bcce124e130debf1 a base:ValueNode ;
+    base:hasEnumValue 5 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_Ne18e266cf24c48ee84b97cd7971cfee6 a base:ValueNode ;
+    base:hasEnumValue 40 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_Ne2056b8ccdbf41b5b18bb08a37ecd493 a base:ValueNode ;
+    base:hasEnumValue 22 ;
+    base:hasValueClass minlibbase:ProFuncDeviceEnum .
+
+base:_Ne3d71f93d7eb4fefa555a6e5affd000f a base:ValueNode ;
+    base:hasEnumValue 20 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_Nee042c52d0cb43e091f40e55a849efa5 a base:ValueNode ;
+    base:hasEnumValue 1 ;
+    base:hasValueClass minlibbase:PointOfControlEnum .
+
+base:_Nef94d81ed08c44a195dc15edb1075b8e a base:ValueNode ;
+    base:hasEnumValue 32 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_Nf0d3cb65632b46edaf993ff3bf825e3a a base:ValueNode ;
+    base:hasEnumValue 21 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_Nf3fcd47393f84c8297d73012845b5607 a base:ValueNode ;
+    base:hasEnumValue 30 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_Nf6412996d86847bea512984233e9c8bf a base:ValueNode ;
+    base:hasEnumValue 50 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_Nf6730651a3c543b19ac2c5f722be8372 a base:ValueNode ;
+    base:hasEnumValue 0 ;
+    base:hasValueClass minlibbase:EquipmentEnum .
+
+base:_Nfa5f5bb970fb444cad22f9d9393a46af a base:ValueNode ;
+    base:hasEnumValue 44 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_Nfbab6ffb37454fa0a1baeb877f6276f6 a base:ValueNode ;
+    base:hasEnumValue 161 ;
+    base:hasValueClass minlibbase:DirectionEnum .
+
+base:_Nfbc1fb7bd92d4d59a6939e5e57aea412 a base:ValueNode ;
+    base:hasEnumValue 33 ;
+    base:hasValueClass minlibbase:ProFuncEquipmentEnum .
+
+base:_Nfcab98ff6620426795cd166ff9ffac3c a base:ValueNode ;
+    base:hasEnumValue 10 ;
+    base:hasValueClass minlibbase:EquipmentEnum .
+
+base:_Nfd83e40f02814adcba1f59d7f4e1849f a base:ValueNode ;
+    base:hasEnumValue 4 ;
+    base:hasValueClass minlibbase:ModeEnum .
+
+base:_Nfd891d03305b41729c7c258f5cff539a a base:ValueNode ;
+    base:hasEnumValue 3 ;
+    base:hasValueClass minlibbase:BooleanInterlockEnum .
+
+base:_Nff38a41f8d004fdab45b02711a3081d1 a base:ValueNode ;
+    base:hasEnumValue 131 ;
+    base:hasValueClass minlibbase:DirectionEnum .
+
+minlibbase:isGlueLogicControlling a owl:ObjectProperty ;
+    rdfs:subPropertyOf minlibbase:isLoopControlling .
+
+minlibbase:isLCCControlling a owl:ObjectProperty ;
+    rdfs:subPropertyOf minlibbase:isLoopControlling .
+
+minlibbase:isPCCInterlockedBy a owl:ObjectProperty ;
+    rdfs:subPropertyOf minlibbase:MinLibHierarchicalReferences .
+
+minlibbase:nodei1001 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasArrayDimensions ( 4 ) ;
+    base:hasBrowseName "EnumStrings" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDisplayName "EnumStrings" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1001" ;
+    base:hasValueList ( "MLB:Undefined" "MLB:Central" "MLB:Local" "MLB:Sequence" ) ;
+    base:hasValueRank 1 .
+
+minlibbase:nodei1003 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasArrayDimensions ( 5 ) ;
+    base:hasBrowseName "EnumStrings" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDisplayName "EnumStrings" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1003" ;
+    base:hasValueList ( "MLB:Undefined" "MLB:Manual" "MLB:Auto" "MLB:Maintenace" "MLB:AI" ) ;
+    base:hasValueRank 1 .
+
+minlibbase:nodei1066 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "StateNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "StateNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1066" .
+
+minlibbase:nodei1068 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "StateNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "StateNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1068" .
+
+minlibbase:nodei1069 a opcua:ObjectNodeClass ;
+    opcua:FromState minlibbase:nodei1065 ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    opcua:HasProperty minlibbase:nodei1070 ;
+    opcua:ToState minlibbase:nodei1067 ;
+    opcua:hasTransitionNumber minlibbase:nodei1070 ;
+    base:hasBrowseName "StartTransition" ;
+    base:hasBrowseNameNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasDescription "Transition from stopped to running." ;
+    base:hasDisplayName "StartTransition" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1069" ;
+    base:instanceOf opcua:TransitionType .
+
+minlibbase:nodei1070 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "TransitionNumber" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:UInt32 ;
+    base:hasDisplayName "TransitionNumber" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1070" .
+
+minlibbase:nodei1084 a opcua:DataTypeDictionaryType,
+        opcua:VariableNodeClass ;
+    opcua:HasProperty minlibbase:nodei1086,
+        minlibbase:nodei1087 ;
+    opcua:hasDeprecated minlibbase:nodei1087 ;
+    opcua:hasNamespaceUri minlibbase:nodei1086 ;
+    base:hasBrowseName "MinLib.BaseModel" ;
+    base:hasBrowseNameNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasDatatype opcua:ByteString ;
+    base:hasDisplayName "MinLib.BaseModel" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1084" ;
+    base:hasSymbolicName "MinLibBaseModel_BinarySchema" ;
+    base:hasValue "PG9wYzpUeXBlRGljdGlvbmFyeQ0KICB4bWxuczpvcGM9Imh0dHA6Ly9vcGNmb3VuZGF0aW9uLm9yZy9CaW5hcnlTY2hlbWEvIg0KICB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIg0KICB4bWxuczp1YT0iaHR0cDovL29wY2ZvdW5kYXRpb24ub3JnL1VBLyINCiAgeG1sbnM6dG5zPSJodHRwczovL2FiYi5jb20vTWluTGliL0Jhc2VNb2RlbC8iDQogIERlZmF1bHRCeXRlT3JkZXI9IkxpdHRsZUVuZGlhbiINCiAgVGFyZ2V0TmFtZXNwYWNlPSJodHRwczovL2FiYi5jb20vTWluTGliL0Jhc2VNb2RlbC8iDQo+DQogIDxvcGM6SW1wb3J0IE5hbWVzcGFjZT0iaHR0cDovL29wY2ZvdW5kYXRpb24ub3JnL1VBLyIgTG9jYXRpb249Ik9wYy5VYS5CaW5hcnlTY2hlbWEuYnNkIi8+DQoNCiAgPG9wYzpFbnVtZXJhdGVkVHlwZSBOYW1lPSJNaW5MaWJHZW5lcmFsRW51bSIgTGVuZ3RoSW5CaXRzPSIzMiI+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTUxCOlVuZGVmaW5lZCIgVmFsdWU9IjAiIC8+DQogIDwvb3BjOkVudW1lcmF0ZWRUeXBlPg0KDQogIDxvcGM6RW51bWVyYXRlZFR5cGUgTmFtZT0iUG9pbnRPZkNvbnRyb2xFbnVtIiBMZW5ndGhJbkJpdHM9IjMyIj4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNTEI6VW5kZWZpbmVkIiBWYWx1ZT0iMCIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNTEI6VW5kZWZpbmVkIiBWYWx1ZT0iMCIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNTEI6Q2VudHJhbCIgVmFsdWU9IjEiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTUxCOkxvY2FsIiBWYWx1ZT0iMiIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNTEI6U2VxdWVuY2UiIFZhbHVlPSIzIiAvPg0KICA8L29wYzpFbnVtZXJhdGVkVHlwZT4NCg0KICA8b3BjOkVudW1lcmF0ZWRUeXBlIE5hbWU9Ik1vZGVFbnVtIiBMZW5ndGhJbkJpdHM9IjMyIj4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNTEI6VW5kZWZpbmVkIiBWYWx1ZT0iMCIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNTEI6VW5kZWZpbmVkIiBWYWx1ZT0iMCIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNTEI6TWFudWFsIiBWYWx1ZT0iMSIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNTEI6QXV0byIgVmFsdWU9IjIiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTUxCOk1haW50ZW5hY2UiIFZhbHVlPSIzIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik1MQjpBSSIgVmFsdWU9IjQiIC8+DQogIDwvb3BjOkVudW1lcmF0ZWRUeXBlPg0KDQogIDxvcGM6RW51bWVyYXRlZFR5cGUgTmFtZT0iQWN0aW9uRW51bSIgTGVuZ3RoSW5CaXRzPSIzMiI+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTUxCOlVuZGVmaW5lZCIgVmFsdWU9IjAiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTUxCOlVuZGVmaW5lZCIgVmFsdWU9IjAiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTUxCOlN0YXJ0IiBWYWx1ZT0iMSIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNTEI6U3RvcCIgVmFsdWU9IjIiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTUxCOkNsb3NlIiBWYWx1ZT0iMyIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNTEI6T3BlbiIgVmFsdWU9IjQiIC8+DQogIDwvb3BjOkVudW1lcmF0ZWRUeXBlPg0KDQogIDxvcGM6RW51bWVyYXRlZFR5cGUgTmFtZT0iTW9kZVNldFBvaW50RW51bSIgTGVuZ3RoSW5CaXRzPSIzMiI+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTUxCOlVuZGVmaW5lZCIgVmFsdWU9IjAiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTUxCOlVuZGVmaW5lZCIgVmFsdWU9IjAiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTUxCOkludGVybmFsIiBWYWx1ZT0iMSIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNTEI6RXh0ZXJuYWxfMSIgVmFsdWU9IjEiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTUxCOkV4dGVybmFsXzIiIFZhbHVlPSIyIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik1MQjpFeHRlcm5hbF8zIiBWYWx1ZT0iMyIgLz4NCiAgPC9vcGM6RW51bWVyYXRlZFR5cGU+DQoNCiAgPG9wYzpFbnVtZXJhdGVkVHlwZSBOYW1lPSJwcmVCaW5TdGF0dXNFbnVtIiBMZW5ndGhJbkJpdHM9IjMyIj4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNTEI6VW5kZWZpbmVkIiBWYWx1ZT0iMCIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNTEI6VW5kZWZpbmVkIiBWYWx1ZT0iMCIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNTEI6UHJlU2VsIiBWYWx1ZT0iMSIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNTEI6UHJlVmFsaWQiIFZhbHVlPSIyIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik1MQjpQcmVSRnMiIFZhbHVlPSIzIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik1MQjpQcmVTZWxTdGRCeSIgVmFsdWU9IjQiIC8+DQogIDwvb3BjOkVudW1lcmF0ZWRUeXBlPg0KDQogIDxvcGM6RW51bWVyYXRlZFR5cGUgTmFtZT0ic2lnbmFsRXJyb3JCZWhhdmlvckVudW0iIExlbmd0aEluQml0cz0iMzIiPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik1MQjpVbmRlZmluZWQiIFZhbHVlPSIwIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik1MQjpVbmRlZmluZWQiIFZhbHVlPSIwIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik1MQjpOb0VyckN0cmxCZWhhdmlvciIgVmFsdWU9IjEiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTUxCOkZyZWV6VG9WYWx1ZSIgVmFsdWU9IjIiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTUxCOkFwcGx5QWxsQ29uZmlndXJlZEludGVybG9ja3MiIFZhbHVlPSIzIiAvPg0KICA8L29wYzpFbnVtZXJhdGVkVHlwZT4NCg0KICA8b3BjOkVudW1lcmF0ZWRUeXBlIE5hbWU9IkluZEJlaGF2aW9yRW51bSIgTGVuZ3RoSW5CaXRzPSIzMiI+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTUxCOlVuZGVmaW5lZCIgVmFsdWU9IjAiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTUxCOlVuZGVmaW5lZCIgVmFsdWU9IjAiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTUxCOk5vQUUiIFZhbHVlPSIxIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik1MQjpFdmVudCIgVmFsdWU9IjIiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTUxCOkFsUHJfV2FybmluZyIgVmFsdWU9IjMiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTUxCOkFsUHJfQWxhcm1Mb3ciIFZhbHVlPSI0IiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik1MQjpBbFByX0FsYXJtTWVkaXVtIiBWYWx1ZT0iNSIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNTEI6QWxQcl9BbGFybUhpZ2giIFZhbHVlPSI2IiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik1MQjpBbFByX0FsYXJtSGlnaEhpZ2giIFZhbHVlPSI3IiAvPg0KICA8L29wYzpFbnVtZXJhdGVkVHlwZT4NCg0KICA8b3BjOkVudW1lcmF0ZWRUeXBlIE5hbWU9IlBDQ0ludGVybG9ja0VudW0iIExlbmd0aEluQml0cz0iMzIiPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik1MQjpVbmRlZmluZWQiIFZhbHVlPSIwIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik1MQjpVbmRlZmluZWQiIFZhbHVlPSIwIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik1MQjpOb1BDQ0ludGVybG9jayIgVmFsdWU9IjEiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTUxCOlBDQ1ByZXZEcml2ZSIgVmFsdWU9IjIiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTUxCOlBDQ0F1dG9TdGFydCIgVmFsdWU9IjMiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTUxCOlBDQ0lBUHJvY2VzcyIgVmFsdWU9IjQiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTUxCOlBDQ0lCRXF1aXBtZW50IiBWYWx1ZT0iNSIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNTEI6UENDSUNTYWZldHkiIFZhbHVlPSI2IiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik1MQjpQQ0NJQkVxdWlwbWVudF9SRlMiIFZhbHVlPSI3IiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik1MQjpQQ0NJQ1NhZmV0eV9SRlMiIFZhbHVlPSI4IiAvPg0KICA8L29wYzpFbnVtZXJhdGVkVHlwZT4NCg0KICA8b3BjOkVudW1lcmF0ZWRUeXBlIE5hbWU9IkJvb2xlYW5JbnRlcmxvY2tFbnVtIiBMZW5ndGhJbkJpdHM9IjMyIj4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNTEI6VW5kZWZpbmVkIiBWYWx1ZT0iMCIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNTEI6VW5kZWZpbmVkIiBWYWx1ZT0iMCIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNTEI6SUFQcm9jZXNzIiBWYWx1ZT0iMSIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNTEI6SUJFcXVpcG1lbnQiIFZhbHVlPSIyIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik1MQjpJQ1NhZmV0eSIgVmFsdWU9IjMiIC8+DQogIDwvb3BjOkVudW1lcmF0ZWRUeXBlPg0KDQogIDxvcGM6RW51bWVyYXRlZFR5cGUgTmFtZT0iRGlyZWN0aW9uRW51bSIgTGVuZ3RoSW5CaXRzPSIzMiI+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTUxCOlVuZGVmaW5lZCIgVmFsdWU9IjAiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTUxCOlVuZGVmaW5lZCIgVmFsdWU9IjAiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTUxCOkRpclgiIFZhbHVlPSIxIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik1MQjpEaXJYU3RhcnQiIFZhbHVlPSIyIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik1MQjpEaXJZIiBWYWx1ZT0iMyIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNTEI6RGlyWVN0YXJ0IiBWYWx1ZT0iNCIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNTEI6RGlyWFkiIFZhbHVlPSI1IiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik1MQjpEaXJYWVN0YXJ0IiBWYWx1ZT0iNiIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNTEI6RGlyRkJYIiBWYWx1ZT0iMzMiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTUxCOkRpckZCWSIgVmFsdWU9IjM1IiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik1MQjpEaXJGQlhZIiBWYWx1ZT0iMzciIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTUxCOkRpclhGYXN0IiBWYWx1ZT0iNjUiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTUxCOkRpcllGYXN0IiBWYWx1ZT0iNjciIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTUxCOkRpclhZRmFzdCIgVmFsdWU9IjY5IiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik1MQjpEaXJGQlhGYXN0IiBWYWx1ZT0iOTciIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTUxCOkRpckZCWUZhc3QiIFZhbHVlPSI5OSIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNTEI6RGlyRkJYWUZhc3QiIFZhbHVlPSIxMDEiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTUxCOkRpclhub0FjayIgVmFsdWU9IjEyOSIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNTEI6RGlyWW5vQWNrIiBWYWx1ZT0iMTMxIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik1MQjpEaXJYWW5vQWNrIiBWYWx1ZT0iMTMzIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik1MQjpEaXJYU3RhcnRub0FjayIgVmFsdWU9IjEzMCIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNTEI6RGlyWVN0YXJ0bm9BY2siIFZhbHVlPSIxMzIiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTUxCOkRpclhZU3RhcnRub0FjayIgVmFsdWU9IjEzNCIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNTEI6RGlyRkJYbm9BY2siIFZhbHVlPSIxNjEiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTUxCOkRpckZCWW5vQWNrIiBWYWx1ZT0iMTYzIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik1MQjpEaXJGQlhZbm9BY2siIFZhbHVlPSIxNjUiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTUxCOkRpclhGYXN0bm9BY2siIFZhbHVlPSIxOTMiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTUxCOkRpcllGYXN0bm9BY2siIFZhbHVlPSIxOTUiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTUxCOkRpclhZRmFzdG5vQWNrIiBWYWx1ZT0iMTk3IiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik1MQjpEaXJGQlhGYXN0bm9BY2siIFZhbHVlPSIyMjUiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTUxCOkRpckZCWUZhc3Rub0FjayIgVmFsdWU9IjIyNyIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNTEI6RGlyRkJYWUZhc3Rub0FjayIgVmFsdWU9IjIyOSIgLz4NCiAgPC9vcGM6RW51bWVyYXRlZFR5cGU+DQoNCiAgPG9wYzpFbnVtZXJhdGVkVHlwZSBOYW1lPSJQcm9GdW5jRGV2aWNlRW51bSIgTGVuZ3RoSW5CaXRzPSIzMiI+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTUxCOlVuZGVmaW5lZCIgVmFsdWU9IjAiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iVW5kZWZpbmVkIiBWYWx1ZT0iMCIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJBbGFybVRleHQiIFZhbHVlPSIyIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkJ1dHRvbiIgVmFsdWU9IjEwIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlN3aXRjaCIgVmFsdWU9IjExIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlRlbXBlcmF0dXJlIiBWYWx1ZT0iMjAiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTGV2ZWwiIFZhbHVlPSIyMSIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJQcmVzc3VyZSIgVmFsdWU9IjIyIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkZsb3ciIFZhbHVlPSIyMyIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJTeW1ib2xpYyIgVmFsdWU9Ijk5IiAvPg0KICA8L29wYzpFbnVtZXJhdGVkVHlwZT4NCg0KICA8b3BjOkVudW1lcmF0ZWRUeXBlIE5hbWU9IkVxdWlwbWVudEVudW0iIExlbmd0aEluQml0cz0iMzIiPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik1MQjpVbmRlZmluZWQiIFZhbHVlPSIwIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlVuZGVmaW5lZCIgVmFsdWU9IjAiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iUGlwZSIgVmFsdWU9IjEwIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlNodXQiIFZhbHVlPSIxMSIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJTaWxvIiBWYWx1ZT0iMTIiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iVGFuayIgVmFsdWU9IjEzIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlBpbGUiIFZhbHVlPSIxNCIgLz4NCiAgPC9vcGM6RW51bWVyYXRlZFR5cGU+DQoNCiAgPG9wYzpFbnVtZXJhdGVkVHlwZSBOYW1lPSJQcm9GdW5jRXF1aXBtZW50RW51bSIgTGVuZ3RoSW5CaXRzPSIzMiI+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTUxCOlVuZGVmaW5lZCIgVmFsdWU9IjAiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iVW5kZWZpbmVkIiBWYWx1ZT0iMCIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNb3RvciIgVmFsdWU9IjEiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iUHVtcCIgVmFsdWU9IjIiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iRmFuIiBWYWx1ZT0iMyIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJSb3RhcnlGZWVkZXIiIFZhbHVlPSI0IiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkdlYXJXaGVlbFB1bXAiIFZhbHVlPSI1IiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlZhbHZlIiBWYWx1ZT0iNiIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJWYWx2ZU1hbiIgVmFsdWU9IjciIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iVmFsdmVBdXRvIiBWYWx1ZT0iOCIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJHZW5lcmF0b3IiIFZhbHVlPSI5IiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkhlYXRlciIgVmFsdWU9IjEwIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkJ1Y2tldEVsZXZhdG9yIiBWYWx1ZT0iMTEiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iRWxlY3RyaWMiIFZhbHVlPSIxMyIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJBaXJTbGlkZU91dGxldCIgVmFsdWU9IjE0IiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkRpdmVydGVyIiBWYWx1ZT0iMTUiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTG91dnJlRGFtcGVyIiBWYWx1ZT0iMTYiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iQWlyU2xpZGUiIFZhbHVlPSIxNyIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJQcm9wUm9sbGVyIiBWYWx1ZT0iMTgiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iRGFtcGVyIiBWYWx1ZT0iMTkiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iQWlyU2xpZGVTaHV0IiBWYWx1ZT0iMjAiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iRGl2ZXJ0ZXIzV2F5cyIgVmFsdWU9IjIxIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlZhbHZlM1dheXMiIFZhbHVlPSIyMiIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJEYW1wZXJTdGF0ZSIgVmFsdWU9IjIzIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlZhbHZlTGV2ZWwiIFZhbHVlPSIyNCIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJWYWx2ZU1hbkxldmVsIiBWYWx1ZT0iMjUiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iVmFsdmVBdXRvTGV2ZWwiIFZhbHVlPSIyNiIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJQcm9wUm9sbGVyIiBWYWx1ZT0iMjciIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iUG9DaXJjdWl0QnJlYWtlciIgVmFsdWU9IjI4IiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlBvRGlzY29ubmVjdG9yIiBWYWx1ZT0iMjkiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iQWdpdGF0b3IiIFZhbHVlPSIzNCIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNaXhlciIgVmFsdWU9IjMwIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkN5Y2xvbmUiIFZhbHVlPSIzMSIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJSb2xsZXJQcmVzcyIgVmFsdWU9IjMyIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ikhvcml6b250YWxNaWxsIiBWYWx1ZT0iMzMiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iQWlyU2VwYXJhdG9yIiBWYWx1ZT0iMzQiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iQ29uZVNjcmVlbiIgVmFsdWU9IjM1IiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlZlcnRpY2FsTWlsbCIgVmFsdWU9IjM2IiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IktpbG4iIFZhbHVlPSIzNyIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJQZWxsZXRpemVyIiBWYWx1ZT0iMzgiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iQ3J1c2hlciIgVmFsdWU9IjM5IiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik1hZ25ldGljU2VwYXJhdG9yIiBWYWx1ZT0iNDAiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iSG90R2FzR2VuZXJhdG9yIiBWYWx1ZT0iNDEiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iQ29tcHJlc3NvciIgVmFsdWU9IjQyIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlB1bXBDZW50cmlmdWdhbCIgVmFsdWU9IjQzIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkVsZXZhdG9yIiBWYWx1ZT0iNDQiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iRWxlY3Ryb3N0YXRpY1ByZWNpcGl0YXRvciIgVmFsdWU9IjQ1IiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkR1c3RDb2xsZWN0b3IiIFZhbHVlPSI0NiIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJTY3JlZW4iIFZhbHVlPSI0NyIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJTcmV3Q29udmV5b3IiIFZhbHVlPSI0OCIgLz4NCiAgICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJCZWx0V2VpZ2h0IiBWYWx1ZT0iNDkiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iQnVsa0xvYWRlciIgVmFsdWU9IjUwIiAvPg0KICAgIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkNvbnZleW9yIiBWYWx1ZT0iNTEiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iR2VuZXJpY1BFIiBWYWx1ZT0iOTAiIC8+DQogICAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iU3ltYm9saWNQRSIgVmFsdWU9IjkxIiAvPg0KICA8L29wYzpFbnVtZXJhdGVkVHlwZT4NCg0KPC9vcGM6VHlwZURpY3Rpb25hcnk+" .
+
+minlibbase:nodei1086 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "NamespaceUri" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "NamespaceUri" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1086" ;
+    base:hasValue "https://abb.com/MinLib/BaseModel/" .
+
+minlibbase:nodei1087 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "Deprecated" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Boolean ;
+    base:hasDisplayName "Deprecated" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1087" ;
+    base:hasValue true .
+
+minlibbase:nodei1088 a opcua:DataTypeDictionaryType,
+        opcua:VariableNodeClass ;
+    opcua:HasProperty minlibbase:nodei1090,
+        minlibbase:nodei1091 ;
+    opcua:hasDeprecated minlibbase:nodei1091 ;
+    opcua:hasNamespaceUri minlibbase:nodei1090 ;
+    base:hasBrowseName "MinLib.BaseModel" ;
+    base:hasBrowseNameNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasDatatype opcua:ByteString ;
+    base:hasDisplayName "MinLib.BaseModel" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1088" ;
+    base:hasSymbolicName "MinLibBaseModel_XmlSchema" ;
+    base:hasValue "PHhzOnNjaGVtYQ0KICB4bWxuczp4cz0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiDQogIHhtbG5zOnVhPSJodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvMjAwOC8wMi9UeXBlcy54c2QiDQogIHhtbG5zOnRucz0iaHR0cHM6Ly9hYmIuY29tL01pbkxpYi9NTEIvVHlwZXMueHNkIg0KICB0YXJnZXROYW1lc3BhY2U9Imh0dHBzOi8vYWJiLmNvbS9NaW5MaWIvTUxCL1R5cGVzLnhzZCINCiAgZWxlbWVudEZvcm1EZWZhdWx0PSJxdWFsaWZpZWQiDQo+DQogIDx4czphbm5vdGF0aW9uPg0KICAgIDx4czphcHBpbmZvPg0KICAgICAgPHVhOk1vZGVsIE1vZGVsVXJpPSJodHRwczovL2FiYi5jb20vTWluTGliL0Jhc2VNb2RlbC8iIFZlcnNpb249IjAuMDUuMDQiIFB1YmxpY2F0aW9uRGF0ZT0iMjAyNi0xMC0yMlQwMDowMDowMFoiIC8+DQogICAgPC94czphcHBpbmZvPg0KICA8L3hzOmFubm90YXRpb24+DQogIA0KICA8eHM6aW1wb3J0IG5hbWVzcGFjZT0iaHR0cDovL29wY2ZvdW5kYXRpb24ub3JnL1VBLzIwMDgvMDIvVHlwZXMueHNkIiAvPg0KDQogIDx4czpzaW1wbGVUeXBlICBuYW1lPSJNaW5MaWJHZW5lcmFsRW51bSI+DQogICAgPHhzOnJlc3RyaWN0aW9uIGJhc2U9InhzOnN0cmluZyI+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ik1MQjpVbmRlZmluZWRfMCIgLz4NCiAgICA8L3hzOnJlc3RyaWN0aW9uPg0KICA8L3hzOnNpbXBsZVR5cGU+DQogIDx4czplbGVtZW50IG5hbWU9Ik1pbkxpYkdlbmVyYWxFbnVtIiB0eXBlPSJ0bnM6TWluTGliR2VuZXJhbEVudW0iIC8+DQoNCiAgPHhzOmNvbXBsZXhUeXBlIG5hbWU9Ikxpc3RPZk1pbkxpYkdlbmVyYWxFbnVtIj4NCiAgICA8eHM6c2VxdWVuY2U+DQogICAgICA8eHM6ZWxlbWVudCBuYW1lPSJNaW5MaWJHZW5lcmFsRW51bSIgdHlwZT0idG5zOk1pbkxpYkdlbmVyYWxFbnVtIiBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0idW5ib3VuZGVkIiAvPg0KICAgIDwveHM6c2VxdWVuY2U+DQogIDwveHM6Y29tcGxleFR5cGU+DQogIDx4czplbGVtZW50IG5hbWU9Ikxpc3RPZk1pbkxpYkdlbmVyYWxFbnVtIiB0eXBlPSJ0bnM6TGlzdE9mTWluTGliR2VuZXJhbEVudW0iIG5pbGxhYmxlPSJ0cnVlIj48L3hzOmVsZW1lbnQ+DQoNCiAgPHhzOnNpbXBsZVR5cGUgIG5hbWU9IlBvaW50T2ZDb250cm9sRW51bSI+DQogICAgPHhzOnJlc3RyaWN0aW9uIGJhc2U9InhzOnN0cmluZyI+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ik1MQjpVbmRlZmluZWRfMCIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iTUxCOkNlbnRyYWxfMSIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iTUxCOkxvY2FsXzIiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ik1MQjpTZXF1ZW5jZV8zIiAvPg0KICAgIDwveHM6cmVzdHJpY3Rpb24+DQogIDwveHM6c2ltcGxlVHlwZT4NCiAgPHhzOmVsZW1lbnQgbmFtZT0iUG9pbnRPZkNvbnRyb2xFbnVtIiB0eXBlPSJ0bnM6UG9pbnRPZkNvbnRyb2xFbnVtIiAvPg0KDQogIDx4czpjb21wbGV4VHlwZSBuYW1lPSJMaXN0T2ZQb2ludE9mQ29udHJvbEVudW0iPg0KICAgIDx4czpzZXF1ZW5jZT4NCiAgICAgIDx4czplbGVtZW50IG5hbWU9IlBvaW50T2ZDb250cm9sRW51bSIgdHlwZT0idG5zOlBvaW50T2ZDb250cm9sRW51bSIgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9InVuYm91bmRlZCIgLz4NCiAgICA8L3hzOnNlcXVlbmNlPg0KICA8L3hzOmNvbXBsZXhUeXBlPg0KICA8eHM6ZWxlbWVudCBuYW1lPSJMaXN0T2ZQb2ludE9mQ29udHJvbEVudW0iIHR5cGU9InRuczpMaXN0T2ZQb2ludE9mQ29udHJvbEVudW0iIG5pbGxhYmxlPSJ0cnVlIj48L3hzOmVsZW1lbnQ+DQoNCiAgPHhzOnNpbXBsZVR5cGUgIG5hbWU9Ik1vZGVFbnVtIj4NCiAgICA8eHM6cmVzdHJpY3Rpb24gYmFzZT0ieHM6c3RyaW5nIj4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iTUxCOlVuZGVmaW5lZF8wIiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJNTEI6TWFudWFsXzEiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ik1MQjpBdXRvXzIiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ik1MQjpNYWludGVuYWNlXzMiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ik1MQjpBSV80IiAvPg0KICAgIDwveHM6cmVzdHJpY3Rpb24+DQogIDwveHM6c2ltcGxlVHlwZT4NCiAgPHhzOmVsZW1lbnQgbmFtZT0iTW9kZUVudW0iIHR5cGU9InRuczpNb2RlRW51bSIgLz4NCg0KICA8eHM6Y29tcGxleFR5cGUgbmFtZT0iTGlzdE9mTW9kZUVudW0iPg0KICAgIDx4czpzZXF1ZW5jZT4NCiAgICAgIDx4czplbGVtZW50IG5hbWU9Ik1vZGVFbnVtIiB0eXBlPSJ0bnM6TW9kZUVudW0iIG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSJ1bmJvdW5kZWQiIC8+DQogICAgPC94czpzZXF1ZW5jZT4NCiAgPC94czpjb21wbGV4VHlwZT4NCiAgPHhzOmVsZW1lbnQgbmFtZT0iTGlzdE9mTW9kZUVudW0iIHR5cGU9InRuczpMaXN0T2ZNb2RlRW51bSIgbmlsbGFibGU9InRydWUiPjwveHM6ZWxlbWVudD4NCg0KICA8eHM6c2ltcGxlVHlwZSAgbmFtZT0iQWN0aW9uRW51bSI+DQogICAgPHhzOnJlc3RyaWN0aW9uIGJhc2U9InhzOnN0cmluZyI+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ik1MQjpVbmRlZmluZWRfMCIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iTUxCOlN0YXJ0XzEiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ik1MQjpTdG9wXzIiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ik1MQjpDbG9zZV8zIiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJNTEI6T3Blbl80IiAvPg0KICAgIDwveHM6cmVzdHJpY3Rpb24+DQogIDwveHM6c2ltcGxlVHlwZT4NCiAgPHhzOmVsZW1lbnQgbmFtZT0iQWN0aW9uRW51bSIgdHlwZT0idG5zOkFjdGlvbkVudW0iIC8+DQoNCiAgPHhzOmNvbXBsZXhUeXBlIG5hbWU9Ikxpc3RPZkFjdGlvbkVudW0iPg0KICAgIDx4czpzZXF1ZW5jZT4NCiAgICAgIDx4czplbGVtZW50IG5hbWU9IkFjdGlvbkVudW0iIHR5cGU9InRuczpBY3Rpb25FbnVtIiBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0idW5ib3VuZGVkIiAvPg0KICAgIDwveHM6c2VxdWVuY2U+DQogIDwveHM6Y29tcGxleFR5cGU+DQogIDx4czplbGVtZW50IG5hbWU9Ikxpc3RPZkFjdGlvbkVudW0iIHR5cGU9InRuczpMaXN0T2ZBY3Rpb25FbnVtIiBuaWxsYWJsZT0idHJ1ZSI+PC94czplbGVtZW50Pg0KDQogIDx4czpzaW1wbGVUeXBlICBuYW1lPSJNb2RlU2V0UG9pbnRFbnVtIj4NCiAgICA8eHM6cmVzdHJpY3Rpb24gYmFzZT0ieHM6c3RyaW5nIj4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iTUxCOlVuZGVmaW5lZF8wIiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJNTEI6SW50ZXJuYWxfMSIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iTUxCOkV4dGVybmFsXzFfMSIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iTUxCOkV4dGVybmFsXzJfMiIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iTUxCOkV4dGVybmFsXzNfMyIgLz4NCiAgICA8L3hzOnJlc3RyaWN0aW9uPg0KICA8L3hzOnNpbXBsZVR5cGU+DQogIDx4czplbGVtZW50IG5hbWU9Ik1vZGVTZXRQb2ludEVudW0iIHR5cGU9InRuczpNb2RlU2V0UG9pbnRFbnVtIiAvPg0KDQogIDx4czpjb21wbGV4VHlwZSBuYW1lPSJMaXN0T2ZNb2RlU2V0UG9pbnRFbnVtIj4NCiAgICA8eHM6c2VxdWVuY2U+DQogICAgICA8eHM6ZWxlbWVudCBuYW1lPSJNb2RlU2V0UG9pbnRFbnVtIiB0eXBlPSJ0bnM6TW9kZVNldFBvaW50RW51bSIgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9InVuYm91bmRlZCIgLz4NCiAgICA8L3hzOnNlcXVlbmNlPg0KICA8L3hzOmNvbXBsZXhUeXBlPg0KICA8eHM6ZWxlbWVudCBuYW1lPSJMaXN0T2ZNb2RlU2V0UG9pbnRFbnVtIiB0eXBlPSJ0bnM6TGlzdE9mTW9kZVNldFBvaW50RW51bSIgbmlsbGFibGU9InRydWUiPjwveHM6ZWxlbWVudD4NCg0KICA8eHM6c2ltcGxlVHlwZSAgbmFtZT0icHJlQmluU3RhdHVzRW51bSI+DQogICAgPHhzOnJlc3RyaWN0aW9uIGJhc2U9InhzOnN0cmluZyI+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ik1MQjpVbmRlZmluZWRfMCIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iTUxCOlByZVNlbF8xIiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJNTEI6UHJlVmFsaWRfMiIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iTUxCOlByZVJGc18zIiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJNTEI6UHJlU2VsU3RkQnlfNCIgLz4NCiAgICA8L3hzOnJlc3RyaWN0aW9uPg0KICA8L3hzOnNpbXBsZVR5cGU+DQogIDx4czplbGVtZW50IG5hbWU9InByZUJpblN0YXR1c0VudW0iIHR5cGU9InRuczpwcmVCaW5TdGF0dXNFbnVtIiAvPg0KDQogIDx4czpjb21wbGV4VHlwZSBuYW1lPSJMaXN0T2ZwcmVCaW5TdGF0dXNFbnVtIj4NCiAgICA8eHM6c2VxdWVuY2U+DQogICAgICA8eHM6ZWxlbWVudCBuYW1lPSJwcmVCaW5TdGF0dXNFbnVtIiB0eXBlPSJ0bnM6cHJlQmluU3RhdHVzRW51bSIgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9InVuYm91bmRlZCIgLz4NCiAgICA8L3hzOnNlcXVlbmNlPg0KICA8L3hzOmNvbXBsZXhUeXBlPg0KICA8eHM6ZWxlbWVudCBuYW1lPSJMaXN0T2ZwcmVCaW5TdGF0dXNFbnVtIiB0eXBlPSJ0bnM6TGlzdE9mcHJlQmluU3RhdHVzRW51bSIgbmlsbGFibGU9InRydWUiPjwveHM6ZWxlbWVudD4NCg0KICA8eHM6c2ltcGxlVHlwZSAgbmFtZT0ic2lnbmFsRXJyb3JCZWhhdmlvckVudW0iPg0KICAgIDx4czpyZXN0cmljdGlvbiBiYXNlPSJ4czpzdHJpbmciPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJNTEI6VW5kZWZpbmVkXzAiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ik1MQjpOb0VyckN0cmxCZWhhdmlvcl8xIiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJNTEI6RnJlZXpUb1ZhbHVlXzIiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ik1MQjpBcHBseUFsbENvbmZpZ3VyZWRJbnRlcmxvY2tzXzMiIC8+DQogICAgPC94czpyZXN0cmljdGlvbj4NCiAgPC94czpzaW1wbGVUeXBlPg0KICA8eHM6ZWxlbWVudCBuYW1lPSJzaWduYWxFcnJvckJlaGF2aW9yRW51bSIgdHlwZT0idG5zOnNpZ25hbEVycm9yQmVoYXZpb3JFbnVtIiAvPg0KDQogIDx4czpjb21wbGV4VHlwZSBuYW1lPSJMaXN0T2ZzaWduYWxFcnJvckJlaGF2aW9yRW51bSI+DQogICAgPHhzOnNlcXVlbmNlPg0KICAgICAgPHhzOmVsZW1lbnQgbmFtZT0ic2lnbmFsRXJyb3JCZWhhdmlvckVudW0iIHR5cGU9InRuczpzaWduYWxFcnJvckJlaGF2aW9yRW51bSIgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9InVuYm91bmRlZCIgLz4NCiAgICA8L3hzOnNlcXVlbmNlPg0KICA8L3hzOmNvbXBsZXhUeXBlPg0KICA8eHM6ZWxlbWVudCBuYW1lPSJMaXN0T2ZzaWduYWxFcnJvckJlaGF2aW9yRW51bSIgdHlwZT0idG5zOkxpc3RPZnNpZ25hbEVycm9yQmVoYXZpb3JFbnVtIiBuaWxsYWJsZT0idHJ1ZSI+PC94czplbGVtZW50Pg0KDQogIDx4czpzaW1wbGVUeXBlICBuYW1lPSJJbmRCZWhhdmlvckVudW0iPg0KICAgIDx4czpyZXN0cmljdGlvbiBiYXNlPSJ4czpzdHJpbmciPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJNTEI6VW5kZWZpbmVkXzAiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ik1MQjpOb0FFXzEiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ik1MQjpFdmVudF8yIiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJNTEI6QWxQcl9XYXJuaW5nXzMiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ik1MQjpBbFByX0FsYXJtTG93XzQiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ik1MQjpBbFByX0FsYXJtTWVkaXVtXzUiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ik1MQjpBbFByX0FsYXJtSGlnaF82IiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJNTEI6QWxQcl9BbGFybUhpZ2hIaWdoXzciIC8+DQogICAgPC94czpyZXN0cmljdGlvbj4NCiAgPC94czpzaW1wbGVUeXBlPg0KICA8eHM6ZWxlbWVudCBuYW1lPSJJbmRCZWhhdmlvckVudW0iIHR5cGU9InRuczpJbmRCZWhhdmlvckVudW0iIC8+DQoNCiAgPHhzOmNvbXBsZXhUeXBlIG5hbWU9Ikxpc3RPZkluZEJlaGF2aW9yRW51bSI+DQogICAgPHhzOnNlcXVlbmNlPg0KICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iSW5kQmVoYXZpb3JFbnVtIiB0eXBlPSJ0bnM6SW5kQmVoYXZpb3JFbnVtIiBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0idW5ib3VuZGVkIiAvPg0KICAgIDwveHM6c2VxdWVuY2U+DQogIDwveHM6Y29tcGxleFR5cGU+DQogIDx4czplbGVtZW50IG5hbWU9Ikxpc3RPZkluZEJlaGF2aW9yRW51bSIgdHlwZT0idG5zOkxpc3RPZkluZEJlaGF2aW9yRW51bSIgbmlsbGFibGU9InRydWUiPjwveHM6ZWxlbWVudD4NCg0KICA8eHM6c2ltcGxlVHlwZSAgbmFtZT0iUENDSW50ZXJsb2NrRW51bSI+DQogICAgPHhzOnJlc3RyaWN0aW9uIGJhc2U9InhzOnN0cmluZyI+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ik1MQjpVbmRlZmluZWRfMCIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iTUxCOk5vUENDSW50ZXJsb2NrXzEiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ik1MQjpQQ0NQcmV2RHJpdmVfMiIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iTUxCOlBDQ0F1dG9TdGFydF8zIiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJNTEI6UENDSUFQcm9jZXNzXzQiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ik1MQjpQQ0NJQkVxdWlwbWVudF81IiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJNTEI6UENDSUNTYWZldHlfNiIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iTUxCOlBDQ0lCRXF1aXBtZW50X1JGU183IiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJNTEI6UENDSUNTYWZldHlfUkZTXzgiIC8+DQogICAgPC94czpyZXN0cmljdGlvbj4NCiAgPC94czpzaW1wbGVUeXBlPg0KICA8eHM6ZWxlbWVudCBuYW1lPSJQQ0NJbnRlcmxvY2tFbnVtIiB0eXBlPSJ0bnM6UENDSW50ZXJsb2NrRW51bSIgLz4NCg0KICA8eHM6Y29tcGxleFR5cGUgbmFtZT0iTGlzdE9mUENDSW50ZXJsb2NrRW51bSI+DQogICAgPHhzOnNlcXVlbmNlPg0KICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iUENDSW50ZXJsb2NrRW51bSIgdHlwZT0idG5zOlBDQ0ludGVybG9ja0VudW0iIG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSJ1bmJvdW5kZWQiIC8+DQogICAgPC94czpzZXF1ZW5jZT4NCiAgPC94czpjb21wbGV4VHlwZT4NCiAgPHhzOmVsZW1lbnQgbmFtZT0iTGlzdE9mUENDSW50ZXJsb2NrRW51bSIgdHlwZT0idG5zOkxpc3RPZlBDQ0ludGVybG9ja0VudW0iIG5pbGxhYmxlPSJ0cnVlIj48L3hzOmVsZW1lbnQ+DQoNCiAgPHhzOnNpbXBsZVR5cGUgIG5hbWU9IkJvb2xlYW5JbnRlcmxvY2tFbnVtIj4NCiAgICA8eHM6cmVzdHJpY3Rpb24gYmFzZT0ieHM6c3RyaW5nIj4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iTUxCOlVuZGVmaW5lZF8wIiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJNTEI6SUFQcm9jZXNzXzEiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ik1MQjpJQkVxdWlwbWVudF8yIiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJNTEI6SUNTYWZldHlfMyIgLz4NCiAgICA8L3hzOnJlc3RyaWN0aW9uPg0KICA8L3hzOnNpbXBsZVR5cGU+DQogIDx4czplbGVtZW50IG5hbWU9IkJvb2xlYW5JbnRlcmxvY2tFbnVtIiB0eXBlPSJ0bnM6Qm9vbGVhbkludGVybG9ja0VudW0iIC8+DQoNCiAgPHhzOmNvbXBsZXhUeXBlIG5hbWU9Ikxpc3RPZkJvb2xlYW5JbnRlcmxvY2tFbnVtIj4NCiAgICA8eHM6c2VxdWVuY2U+DQogICAgICA8eHM6ZWxlbWVudCBuYW1lPSJCb29sZWFuSW50ZXJsb2NrRW51bSIgdHlwZT0idG5zOkJvb2xlYW5JbnRlcmxvY2tFbnVtIiBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0idW5ib3VuZGVkIiAvPg0KICAgIDwveHM6c2VxdWVuY2U+DQogIDwveHM6Y29tcGxleFR5cGU+DQogIDx4czplbGVtZW50IG5hbWU9Ikxpc3RPZkJvb2xlYW5JbnRlcmxvY2tFbnVtIiB0eXBlPSJ0bnM6TGlzdE9mQm9vbGVhbkludGVybG9ja0VudW0iIG5pbGxhYmxlPSJ0cnVlIj48L3hzOmVsZW1lbnQ+DQoNCiAgPHhzOnNpbXBsZVR5cGUgIG5hbWU9IkRpcmVjdGlvbkVudW0iPg0KICAgIDx4czpyZXN0cmljdGlvbiBiYXNlPSJ4czpzdHJpbmciPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJNTEI6VW5kZWZpbmVkXzAiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ik1MQjpEaXJYXzEiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ik1MQjpEaXJYU3RhcnRfMiIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iTUxCOkRpcllfMyIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iTUxCOkRpcllTdGFydF80IiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJNTEI6RGlyWFlfNSIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iTUxCOkRpclhZU3RhcnRfNiIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iTUxCOkRpckZCWF8zMyIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iTUxCOkRpckZCWV8zNSIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iTUxCOkRpckZCWFlfMzciIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ik1MQjpEaXJYRmFzdF82NSIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iTUxCOkRpcllGYXN0XzY3IiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJNTEI6RGlyWFlGYXN0XzY5IiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJNTEI6RGlyRkJYRmFzdF85NyIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iTUxCOkRpckZCWUZhc3RfOTkiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ik1MQjpEaXJGQlhZRmFzdF8xMDEiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ik1MQjpEaXJYbm9BY2tfMTI5IiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJNTEI6RGlyWW5vQWNrXzEzMSIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iTUxCOkRpclhZbm9BY2tfMTMzIiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJNTEI6RGlyWFN0YXJ0bm9BY2tfMTMwIiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJNTEI6RGlyWVN0YXJ0bm9BY2tfMTMyIiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJNTEI6RGlyWFlTdGFydG5vQWNrXzEzNCIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iTUxCOkRpckZCWG5vQWNrXzE2MSIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iTUxCOkRpckZCWW5vQWNrXzE2MyIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iTUxCOkRpckZCWFlub0Fja18xNjUiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ik1MQjpEaXJYRmFzdG5vQWNrXzE5MyIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iTUxCOkRpcllGYXN0bm9BY2tfMTk1IiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJNTEI6RGlyWFlGYXN0bm9BY2tfMTk3IiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJNTEI6RGlyRkJYRmFzdG5vQWNrXzIyNSIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iTUxCOkRpckZCWUZhc3Rub0Fja18yMjciIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ik1MQjpEaXJGQlhZRmFzdG5vQWNrXzIyOSIgLz4NCiAgICA8L3hzOnJlc3RyaWN0aW9uPg0KICA8L3hzOnNpbXBsZVR5cGU+DQogIDx4czplbGVtZW50IG5hbWU9IkRpcmVjdGlvbkVudW0iIHR5cGU9InRuczpEaXJlY3Rpb25FbnVtIiAvPg0KDQogIDx4czpjb21wbGV4VHlwZSBuYW1lPSJMaXN0T2ZEaXJlY3Rpb25FbnVtIj4NCiAgICA8eHM6c2VxdWVuY2U+DQogICAgICA8eHM6ZWxlbWVudCBuYW1lPSJEaXJlY3Rpb25FbnVtIiB0eXBlPSJ0bnM6RGlyZWN0aW9uRW51bSIgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9InVuYm91bmRlZCIgLz4NCiAgICA8L3hzOnNlcXVlbmNlPg0KICA8L3hzOmNvbXBsZXhUeXBlPg0KICA8eHM6ZWxlbWVudCBuYW1lPSJMaXN0T2ZEaXJlY3Rpb25FbnVtIiB0eXBlPSJ0bnM6TGlzdE9mRGlyZWN0aW9uRW51bSIgbmlsbGFibGU9InRydWUiPjwveHM6ZWxlbWVudD4NCg0KICA8eHM6c2ltcGxlVHlwZSAgbmFtZT0iUHJvRnVuY0RldmljZUVudW0iPg0KICAgIDx4czpyZXN0cmljdGlvbiBiYXNlPSJ4czpzdHJpbmciPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJVbmRlZmluZWRfMCIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iQWxhcm1UZXh0XzIiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IkJ1dHRvbl8xMCIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iU3dpdGNoXzExIiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJUZW1wZXJhdHVyZV8yMCIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iTGV2ZWxfMjEiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IlByZXNzdXJlXzIyIiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJGbG93XzIzIiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJTeW1ib2xpY185OSIgLz4NCiAgICA8L3hzOnJlc3RyaWN0aW9uPg0KICA8L3hzOnNpbXBsZVR5cGU+DQogIDx4czplbGVtZW50IG5hbWU9IlByb0Z1bmNEZXZpY2VFbnVtIiB0eXBlPSJ0bnM6UHJvRnVuY0RldmljZUVudW0iIC8+DQoNCiAgPHhzOmNvbXBsZXhUeXBlIG5hbWU9Ikxpc3RPZlByb0Z1bmNEZXZpY2VFbnVtIj4NCiAgICA8eHM6c2VxdWVuY2U+DQogICAgICA8eHM6ZWxlbWVudCBuYW1lPSJQcm9GdW5jRGV2aWNlRW51bSIgdHlwZT0idG5zOlByb0Z1bmNEZXZpY2VFbnVtIiBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0idW5ib3VuZGVkIiAvPg0KICAgIDwveHM6c2VxdWVuY2U+DQogIDwveHM6Y29tcGxleFR5cGU+DQogIDx4czplbGVtZW50IG5hbWU9Ikxpc3RPZlByb0Z1bmNEZXZpY2VFbnVtIiB0eXBlPSJ0bnM6TGlzdE9mUHJvRnVuY0RldmljZUVudW0iIG5pbGxhYmxlPSJ0cnVlIj48L3hzOmVsZW1lbnQ+DQoNCiAgPHhzOnNpbXBsZVR5cGUgIG5hbWU9IkVxdWlwbWVudEVudW0iPg0KICAgIDx4czpyZXN0cmljdGlvbiBiYXNlPSJ4czpzdHJpbmciPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJVbmRlZmluZWRfMCIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iUGlwZV8xMCIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iU2h1dF8xMSIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iU2lsb18xMiIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iVGFua18xMyIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iUGlsZV8xNCIgLz4NCiAgICA8L3hzOnJlc3RyaWN0aW9uPg0KICA8L3hzOnNpbXBsZVR5cGU+DQogIDx4czplbGVtZW50IG5hbWU9IkVxdWlwbWVudEVudW0iIHR5cGU9InRuczpFcXVpcG1lbnRFbnVtIiAvPg0KDQogIDx4czpjb21wbGV4VHlwZSBuYW1lPSJMaXN0T2ZFcXVpcG1lbnRFbnVtIj4NCiAgICA8eHM6c2VxdWVuY2U+DQogICAgICA8eHM6ZWxlbWVudCBuYW1lPSJFcXVpcG1lbnRFbnVtIiB0eXBlPSJ0bnM6RXF1aXBtZW50RW51bSIgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9InVuYm91bmRlZCIgLz4NCiAgICA8L3hzOnNlcXVlbmNlPg0KICA8L3hzOmNvbXBsZXhUeXBlPg0KICA8eHM6ZWxlbWVudCBuYW1lPSJMaXN0T2ZFcXVpcG1lbnRFbnVtIiB0eXBlPSJ0bnM6TGlzdE9mRXF1aXBtZW50RW51bSIgbmlsbGFibGU9InRydWUiPjwveHM6ZWxlbWVudD4NCg0KICA8eHM6c2ltcGxlVHlwZSAgbmFtZT0iUHJvRnVuY0VxdWlwbWVudEVudW0iPg0KICAgIDx4czpyZXN0cmljdGlvbiBiYXNlPSJ4czpzdHJpbmciPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJVbmRlZmluZWRfMCIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iTW90b3JfMSIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iUHVtcF8yIiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJGYW5fMyIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iUm90YXJ5RmVlZGVyXzQiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IkdlYXJXaGVlbFB1bXBfNSIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iVmFsdmVfNiIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iVmFsdmVNYW5fNyIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iVmFsdmVBdXRvXzgiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IkdlbmVyYXRvcl85IiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJIZWF0ZXJfMTAiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IkJ1Y2tldEVsZXZhdG9yXzExIiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJFbGVjdHJpY18xMyIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iQWlyU2xpZGVPdXRsZXRfMTQiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IkRpdmVydGVyXzE1IiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJMb3V2cmVEYW1wZXJfMTYiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IkFpclNsaWRlXzE3IiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJQcm9wUm9sbGVyXzE4IiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJEYW1wZXJfMTkiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IkFpclNsaWRlU2h1dF8yMCIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iRGl2ZXJ0ZXIzV2F5c18yMSIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iVmFsdmUzV2F5c18yMiIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iRGFtcGVyU3RhdGVfMjMiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IlZhbHZlTGV2ZWxfMjQiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IlZhbHZlTWFuTGV2ZWxfMjUiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IlZhbHZlQXV0b0xldmVsXzI2IiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJQcm9wUm9sbGVyXzI3IiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJQb0NpcmN1aXRCcmVha2VyXzI4IiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJQb0Rpc2Nvbm5lY3Rvcl8yOSIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iQWdpdGF0b3JfMzQiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ik1peGVyXzMwIiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJDeWNsb25lXzMxIiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJSb2xsZXJQcmVzc18zMiIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iSG9yaXpvbnRhbE1pbGxfMzMiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IkFpclNlcGFyYXRvcl8zNCIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iQ29uZVNjcmVlbl8zNSIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iVmVydGljYWxNaWxsXzM2IiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJLaWxuXzM3IiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJQZWxsZXRpemVyXzM4IiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJDcnVzaGVyXzM5IiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJNYWduZXRpY1NlcGFyYXRvcl80MCIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iSG90R2FzR2VuZXJhdG9yXzQxIiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJDb21wcmVzc29yXzQyIiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJQdW1wQ2VudHJpZnVnYWxfNDMiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IkVsZXZhdG9yXzQ0IiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJFbGVjdHJvc3RhdGljUHJlY2lwaXRhdG9yXzQ1IiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJEdXN0Q29sbGVjdG9yXzQ2IiAvPg0KICAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJTY3JlZW5fNDciIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IlNyZXdDb252ZXlvcl80OCIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iQmVsdFdlaWdodF80OSIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iQnVsa0xvYWRlcl81MCIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iQ29udmV5b3JfNTEiIC8+DQogICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IkdlbmVyaWNQRV85MCIgLz4NCiAgICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iU3ltYm9saWNQRV85MSIgLz4NCiAgICA8L3hzOnJlc3RyaWN0aW9uPg0KICA8L3hzOnNpbXBsZVR5cGU+DQogIDx4czplbGVtZW50IG5hbWU9IlByb0Z1bmNFcXVpcG1lbnRFbnVtIiB0eXBlPSJ0bnM6UHJvRnVuY0VxdWlwbWVudEVudW0iIC8+DQoNCiAgPHhzOmNvbXBsZXhUeXBlIG5hbWU9Ikxpc3RPZlByb0Z1bmNFcXVpcG1lbnRFbnVtIj4NCiAgICA8eHM6c2VxdWVuY2U+DQogICAgICA8eHM6ZWxlbWVudCBuYW1lPSJQcm9GdW5jRXF1aXBtZW50RW51bSIgdHlwZT0idG5zOlByb0Z1bmNFcXVpcG1lbnRFbnVtIiBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0idW5ib3VuZGVkIiAvPg0KICAgIDwveHM6c2VxdWVuY2U+DQogIDwveHM6Y29tcGxleFR5cGU+DQogIDx4czplbGVtZW50IG5hbWU9Ikxpc3RPZlByb0Z1bmNFcXVpcG1lbnRFbnVtIiB0eXBlPSJ0bnM6TGlzdE9mUHJvRnVuY0VxdWlwbWVudEVudW0iIG5pbGxhYmxlPSJ0cnVlIj48L3hzOmVsZW1lbnQ+DQoNCjwveHM6c2NoZW1hPg==" .
+
+minlibbase:nodei1090 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "NamespaceUri" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDisplayName "NamespaceUri" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1090" ;
+    base:hasValue "https://abb.com/MinLib/MLB/Types.xsd" .
+
+minlibbase:nodei1091 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasBrowseName "Deprecated" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Boolean ;
+    base:hasDisplayName "Deprecated" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1091" ;
+    base:hasValue true .
+
+minlibbase:nodei1105 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasArrayDimensions ( 5 ) ;
+    base:hasBrowseName "EnumStrings" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDisplayName "EnumStrings" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1105" ;
+    base:hasValueList ( "MLB:Undefined" "MLB:Start" "MLB:Stop" "MLB:Close" "MLB:Open" ) ;
+    base:hasValueRank 1 .
+
+minlibbase:nodei1107 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasArrayDimensions ( 5 ) ;
+    base:hasBrowseName "EnumValues" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:EnumValueType ;
+    base:hasDisplayName "EnumValues" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1107" ;
+    base:hasValueList ( "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 0, \"xsd:DisplayName\": {\"xsd:Text\": \"MLB:Undefined\"}, \"xsd:Description\": {\"xsd:Text\": \"Enumeration: SetPoint Undefined.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 1, \"xsd:DisplayName\": {\"xsd:Text\": \"MLB:Internal\"}, \"xsd:Description\": {\"xsd:Text\": \"Enumeration: SetPoint Manual\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 1, \"xsd:DisplayName\": {\"xsd:Text\": \"MLB:External_1\"}, \"xsd:Description\": {\"xsd:Text\": \"Enumeration: SetPoint External 1\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 2, \"xsd:DisplayName\": {\"xsd:Text\": \"MLB:External_2\"}, \"xsd:Description\": {\"xsd:Text\": \"Enumeration: SetPoint External 2\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 3, \"xsd:DisplayName\": {\"xsd:Text\": \"MLB:External_3\"}, \"xsd:Description\": {\"xsd:Text\": \"Enumeration: SetPoint External 3\"}}}}"^^rdf:JSON ) ;
+    base:hasValueRank 1 .
+
+minlibbase:nodei1109 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasArrayDimensions ( 5 ) ;
+    base:hasBrowseName "EnumStrings" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDisplayName "EnumStrings" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1109" ;
+    base:hasValueList ( "MLB:Undefined" "MLB:PreSel" "MLB:PreValid" "MLB:PreRFs" "MLB:PreSelStdBy" ) ;
+    base:hasValueRank 1 .
+
+minlibbase:nodei1111 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasArrayDimensions ( 4 ) ;
+    base:hasBrowseName "EnumStrings" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDisplayName "EnumStrings" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1111" ;
+    base:hasValueList ( "MLB:Undefined" "MLB:NoErrCtrlBehavior" "MLB:FreezToValue" "MLB:ApplyAllConfiguredInterlocks" ) ;
+    base:hasValueRank 1 .
+
+minlibbase:nodei1113 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasArrayDimensions ( 8 ) ;
+    base:hasBrowseName "EnumStrings" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDisplayName "EnumStrings" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1113" ;
+    base:hasValueList ( "MLB:Undefined" "MLB:NoAE" "MLB:Event" "MLB:AlPr_Warning" "MLB:AlPr_AlarmLow" "MLB:AlPr_AlarmMedium" "MLB:AlPr_AlarmHigh" "MLB:AlPr_AlarmHighHigh" ) ;
+    base:hasValueRank 1 .
+
+minlibbase:nodei1115 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasArrayDimensions ( 9 ) ;
+    base:hasBrowseName "EnumStrings" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDisplayName "EnumStrings" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1115" ;
+    base:hasValueList ( "MLB:Undefined" "MLB:NoPCCInterlock" "MLB:PCCPrevDrive" "MLB:PCCAutoStart" "MLB:PCCIAProcess" "MLB:PCCIBEquipment" "MLB:PCCICSafety" "MLB:PCCIBEquipment_RFS" "MLB:PCCICSafety_RFS" ) ;
+    base:hasValueRank 1 .
+
+minlibbase:nodei1117 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasArrayDimensions ( 4 ) ;
+    base:hasBrowseName "EnumStrings" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDisplayName "EnumStrings" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1117" ;
+    base:hasValueList ( "MLB:Undefined" "MLB:IAProcess" "MLB:IBEquipment" "MLB:ICSafety" ) ;
+    base:hasValueRank 1 .
+
+minlibbase:nodei1119 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasArrayDimensions ( 31 ) ;
+    base:hasBrowseName "EnumValues" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:EnumValueType ;
+    base:hasDisplayName "EnumValues" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1119" ;
+    base:hasValueList ( "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 0, \"xsd:DisplayName\": {\"xsd:Text\": \"MLB:Undefined\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Undefined.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 1, \"xsd:DisplayName\": {\"xsd:Text\": \"MLB:DirX\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Direction X.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 2, \"xsd:DisplayName\": {\"xsd:Text\": \"MLB:DirXStart\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Direction X Start.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 3, \"xsd:DisplayName\": {\"xsd:Text\": \"MLB:DirY\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Direction Y.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 4, \"xsd:DisplayName\": {\"xsd:Text\": \"MLB:DirYStart\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Direction Y Start.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 5, \"xsd:DisplayName\": {\"xsd:Text\": \"MLB:DirXY\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Direction X Y.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 6, \"xsd:DisplayName\": {\"xsd:Text\": \"MLB:DirXYStart\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Direction X Y Start.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 33, \"xsd:DisplayName\": {\"xsd:Text\": \"MLB:DirFBX\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Direction Feedback X.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 35, \"xsd:DisplayName\": {\"xsd:Text\": \"MLB:DirFBY\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Direction Feedback Y.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 37, \"xsd:DisplayName\": {\"xsd:Text\": \"MLB:DirFBXY\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Direction Feedback X Y.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 65, \"xsd:DisplayName\": {\"xsd:Text\": \"MLB:DirXFast\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Direction X Fast.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 67, \"xsd:DisplayName\": {\"xsd:Text\": \"MLB:DirYFast\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Direction Y Fast.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 69, \"xsd:DisplayName\": {\"xsd:Text\": \"MLB:DirXYFast\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Direction X Y Fast.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 97, \"xsd:DisplayName\": {\"xsd:Text\": \"MLB:DirFBXFast\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Direction Feedback X Fast.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 99, \"xsd:DisplayName\": {\"xsd:Text\": \"MLB:DirFBYFast\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Direction Feedback Y Fast.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 101, \"xsd:DisplayName\": {\"xsd:Text\": \"MLB:DirFBXYFast\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Direction Feedback X Y Fast.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 129, \"xsd:DisplayName\": {\"xsd:Text\": \"MLB:DirXnoAck\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Direction X No Acknowledge.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 131, \"xsd:DisplayName\": {\"xsd:Text\": \"MLB:DirYnoAck\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Direction Y No Acknowledge.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 133, \"xsd:DisplayName\": {\"xsd:Text\": \"MLB:DirXYnoAck\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Direction X Y No Acknowledge.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 130, \"xsd:DisplayName\": {\"xsd:Text\": \"MLB:DirXStartnoAck\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Direction X Start No Acknowledge.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 132, \"xsd:DisplayName\": {\"xsd:Text\": \"MLB:DirYStartnoAck\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Direction Y Start No Acknowledge.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 134, \"xsd:DisplayName\": {\"xsd:Text\": \"MLB:DirXYStartnoAck\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Direction X Y Start No Acknowledge.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 161, \"xsd:DisplayName\": {\"xsd:Text\": \"MLB:DirFBXnoAck\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Direction Feedback X No Acknowledge.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 163, \"xsd:DisplayName\": {\"xsd:Text\": \"MLB:DirFBYnoAck\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Direction Feedback Y No Acknowledge.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 165, \"xsd:DisplayName\": {\"xsd:Text\": \"MLB:DirFBXYnoAck\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Direction Feedback X Y No Acknowledge.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 193, \"xsd:DisplayName\": {\"xsd:Text\": \"MLB:DirXFastnoAck\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Direction X Fast No Acknowledge.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 195, \"xsd:DisplayName\": {\"xsd:Text\": \"MLB:DirYFastnoAck\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Direction Y Fast No Acknowledge.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 197, \"xsd:DisplayName\": {\"xsd:Text\": \"MLB:DirXYFastnoAck\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Direction X Y Fast No Acknowledge.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 225, \"xsd:DisplayName\": {\"xsd:Text\": \"MLB:DirFBXFastnoAck\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Direction Feedback X Fast No Acknowledge.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 227, \"xsd:DisplayName\": {\"xsd:Text\": \"MLB:DirFBYFastnoAck\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Direction Feedback Y Fast No Acknowledge.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 229, \"xsd:DisplayName\": {\"xsd:Text\": \"MLB:DirFBXYFastnoAck\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Direction Feedback X Y Fast No Acknowledge.\"}}}}"^^rdf:JSON ) ;
+    base:hasValueRank 1 .
+
+minlibbase:nodei1130 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasArrayDimensions ( 1 ) ;
+    base:hasBrowseName "EnumStrings" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:LocalizedText ;
+    base:hasDisplayName "EnumStrings" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1130" ;
+    base:hasValueList ( "MLB:Undefined" ) ;
+    base:hasValueRank 1 .
+
+minlibbase:nodei1132 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasArrayDimensions ( 9 ) ;
+    base:hasBrowseName "EnumValues" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:EnumValueType ;
+    base:hasDisplayName "EnumValues" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1132" ;
+    base:hasValueList ( "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 0, \"xsd:DisplayName\": {\"xsd:Text\": \"Undefined\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Undefined.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 2, \"xsd:DisplayName\": {\"xsd:Text\": \"AlarmText\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Alarm Text.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 10, \"xsd:DisplayName\": {\"xsd:Text\": \"Button\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Button.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 11, \"xsd:DisplayName\": {\"xsd:Text\": \"Switch\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Switch.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 20, \"xsd:DisplayName\": {\"xsd:Text\": \"Temperature\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Temperature.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 21, \"xsd:DisplayName\": {\"xsd:Text\": \"Level\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Level.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 22, \"xsd:DisplayName\": {\"xsd:Text\": \"Pressure\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Pressure.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 23, \"xsd:DisplayName\": {\"xsd:Text\": \"Flow\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Flow.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 99, \"xsd:DisplayName\": {\"xsd:Text\": \"Symbolic\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Symbolic Signal.\"}}}}"^^rdf:JSON ) ;
+    base:hasValueRank 1 .
+
+minlibbase:nodei1134 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasArrayDimensions ( 6 ) ;
+    base:hasBrowseName "EnumValues" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:EnumValueType ;
+    base:hasDisplayName "EnumValues" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1134" ;
+    base:hasValueList ( "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 0, \"xsd:DisplayName\": {\"xsd:Text\": \"Undefined\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Undefined.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 10, \"xsd:DisplayName\": {\"xsd:Text\": \"Pipe\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Pipe.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 11, \"xsd:DisplayName\": {\"xsd:Text\": \"Shut\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Shut.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 12, \"xsd:DisplayName\": {\"xsd:Text\": \"Silo\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Silo.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 13, \"xsd:DisplayName\": {\"xsd:Text\": \"Tank\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Tank.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 14, \"xsd:DisplayName\": {\"xsd:Text\": \"Pile\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Pile.\"}}}}"^^rdf:JSON ) ;
+    base:hasValueRank 1 .
+
+minlibbase:nodei1136 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    base:hasArrayDimensions ( 54 ) ;
+    base:hasBrowseName "EnumValues" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:EnumValueType ;
+    base:hasDisplayName "EnumValues" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1136" ;
+    base:hasValueList ( "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 0, \"xsd:DisplayName\": {\"xsd:Text\": \"Undefined\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Undefined.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 1, \"xsd:DisplayName\": {\"xsd:Text\": \"Motor\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Motor.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 2, \"xsd:DisplayName\": {\"xsd:Text\": \"Pump\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Pump.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 3, \"xsd:DisplayName\": {\"xsd:Text\": \"Fan\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Fan.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 4, \"xsd:DisplayName\": {\"xsd:Text\": \"RotaryFeeder\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Rotary Feeder.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 5, \"xsd:DisplayName\": {\"xsd:Text\": \"GearWheelPump\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Gear Wheel Pump.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 6, \"xsd:DisplayName\": {\"xsd:Text\": \"Valve\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Valve.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 7, \"xsd:DisplayName\": {\"xsd:Text\": \"ValveMan\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Manual Valve.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 8, \"xsd:DisplayName\": {\"xsd:Text\": \"ValveAuto\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Automatic Valve.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 9, \"xsd:DisplayName\": {\"xsd:Text\": \"Generator\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Generator.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 10, \"xsd:DisplayName\": {\"xsd:Text\": \"Heater\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Heater.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 11, \"xsd:DisplayName\": {\"xsd:Text\": \"BucketElevator\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Bucket Elevator.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 13, \"xsd:DisplayName\": {\"xsd:Text\": \"Electric\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Electrical Equipment.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 14, \"xsd:DisplayName\": {\"xsd:Text\": \"AirSlideOutlet\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Air Slide Outlet.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 15, \"xsd:DisplayName\": {\"xsd:Text\": \"Diverter\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Diverter.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 16, \"xsd:DisplayName\": {\"xsd:Text\": \"LouvreDamper\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Louvre Damper.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 17, \"xsd:DisplayName\": {\"xsd:Text\": \"AirSlide\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Air Slide.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 18, \"xsd:DisplayName\": {\"xsd:Text\": \"PropRoller\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Supporting Roller.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 19, \"xsd:DisplayName\": {\"xsd:Text\": \"Damper\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Damper.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 20, \"xsd:DisplayName\": {\"xsd:Text\": \"AirSlideShut\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Air Slide Shut-Off.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 21, \"xsd:DisplayName\": {\"xsd:Text\": \"Diverter3Ways\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Three-Way Diverter.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 22, \"xsd:DisplayName\": {\"xsd:Text\": \"Valve3Ways\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Three-Way Valve.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 23, \"xsd:DisplayName\": {\"xsd:Text\": \"DamperState\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: State Damper.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 24, \"xsd:DisplayName\": {\"xsd:Text\": \"ValveLevel\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Level Control Valve.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 25, \"xsd:DisplayName\": {\"xsd:Text\": \"ValveManLevel\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Manual Level Control Valve.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 26, \"xsd:DisplayName\": {\"xsd:Text\": \"ValveAutoLevel\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Automatic Level Control Valve.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 27, \"xsd:DisplayName\": {\"xsd:Text\": \"PropRoller\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Supporting Roller.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 28, \"xsd:DisplayName\": {\"xsd:Text\": \"PoCircuitBreaker\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Circuit Breaker.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 29, \"xsd:DisplayName\": {\"xsd:Text\": \"PoDisconnector\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Electrical Disconnector.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 34, \"xsd:DisplayName\": {\"xsd:Text\": \"Agitator\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Agitator.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 30, \"xsd:DisplayName\": {\"xsd:Text\": \"Mixer\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Mixer.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 31, \"xsd:DisplayName\": {\"xsd:Text\": \"Cyclone\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Cyclone.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 32, \"xsd:DisplayName\": {\"xsd:Text\": \"RollerPress\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Roller Press.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 33, \"xsd:DisplayName\": {\"xsd:Text\": \"HorizontalMill\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Horizontal Mill.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 34, \"xsd:DisplayName\": {\"xsd:Text\": \"AirSeparator\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Air Separator.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 35, \"xsd:DisplayName\": {\"xsd:Text\": \"ConeScreen\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Cone Screen.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 36, \"xsd:DisplayName\": {\"xsd:Text\": \"VerticalMill\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Vertical Mill.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 37, \"xsd:DisplayName\": {\"xsd:Text\": \"Kiln\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Kiln.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 38, \"xsd:DisplayName\": {\"xsd:Text\": \"Pelletizer\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Pelletizer.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 39, \"xsd:DisplayName\": {\"xsd:Text\": \"Crusher\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Crusher.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 40, \"xsd:DisplayName\": {\"xsd:Text\": \"MagneticSeparator\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Magnetic Separator.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 41, \"xsd:DisplayName\": {\"xsd:Text\": \"HotGasGenerator\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Hot Gas Generator.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 42, \"xsd:DisplayName\": {\"xsd:Text\": \"Compressor\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Compressor.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 43, \"xsd:DisplayName\": {\"xsd:Text\": \"PumpCentrifugal\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Centrifugal Pump.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 44, \"xsd:DisplayName\": {\"xsd:Text\": \"Elevator\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Elevator.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 45, \"xsd:DisplayName\": {\"xsd:Text\": \"ElectrostaticPrecipitator\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Electrostatic Precipitator.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 46, \"xsd:DisplayName\": {\"xsd:Text\": \"DustCollector\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Dust Collector.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 47, \"xsd:DisplayName\": {\"xsd:Text\": \"Screen\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Screen.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 48, \"xsd:DisplayName\": {\"xsd:Text\": \"SrewConveyor\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Screw Conveyor.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 49, \"xsd:DisplayName\": {\"xsd:Text\": \"BeltWeight\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Belt Weigher.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 50, \"xsd:DisplayName\": {\"xsd:Text\": \"BulkLoader\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Bulk Loader.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 51, \"xsd:DisplayName\": {\"xsd:Text\": \"Conveyor\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Belt, Scrap etc Conveyor.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 90, \"xsd:DisplayName\": {\"xsd:Text\": \"GenericPE\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Generic Process Element.\"}}}}"^^rdf:JSON "{\"xsd:TypeId\": {\"xsd:Identifier\": \"i=7616\"}, \"xsd:Body\": {\"xsd:EnumValueType\": {\"xsd:Value\": 91, \"xsd:DisplayName\": {\"xsd:Text\": \"SymbolicPE\"}, \"xsd:Description\": {\"xsd:Text\": \"Enum: Symbolic Process Element.\"}}}}"^^rdf:JSON ) ;
+    base:hasValueRank 1 .
+
+minlibbase:MinLibNonHierarchicalReferences a owl:ObjectProperty ;
+    rdfs:subPropertyOf opcua:NonHierarchicalReferences ;
+    base:isAbstract "true" .
+
+minlibbase:isControlling a owl:ObjectProperty ;
+    rdfs:subPropertyOf minlibbase:MinLibHierarchicalReferences ;
+    base:isAbstract "true" .
+
+minlibbase:isLoopControlling a owl:ObjectProperty ;
+    rdfs:subPropertyOf minlibbase:MinLibNonHierarchicalReferences ;
+    base:isAbstract "true" .
+
+minlibbase:nodei1065 a opcua:ObjectNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    opcua:HasProperty minlibbase:nodei1066 ;
+    opcua:hasStateNumber minlibbase:nodei1066 ;
+    base:hasBrowseName "NotRdyOn" ;
+    base:hasBrowseNameNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasDescription "The motor is off and not ready to start" ;
+    base:hasDisplayName "NotRdyOn" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1065" ;
+    base:instanceOf opcua:InitialStateType .
+
+minlibbase:nodei1067 a opcua:ObjectNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    opcua:HasProperty minlibbase:nodei1068 ;
+    opcua:hasStateNumber minlibbase:nodei1068 ;
+    base:hasBrowseName "RdyRef" ;
+    base:hasBrowseNameNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasDescription "The motor is running" ;
+    base:hasDisplayName "RdyRef" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibbase:MINLIBBASENamespace ;
+    base:hasNodeId "1067" ;
+    base:instanceOf opcua:StateType .
+
+minlibbase:MinLibHierarchicalReferences a owl:ObjectProperty ;
+    rdfs:subPropertyOf opcua:HierarchicalReferences ;
+    base:isAbstract "true" .
+
+minlibbase:BooleanInterlockEnum a owl:Class ;
+    rdfs:subClassOf minlibbase:MinLibGeneralEnum .
+
+minlibbase:PointOfControlEnum a owl:Class ;
+    rdfs:subClassOf minlibbase:MinLibGeneralEnum .
+
+minlibbase:signalErrorBehaviorEnum a owl:Class ;
+    rdfs:subClassOf minlibbase:MinLibGeneralEnum .
+
+minlibbase:ActionEnum a owl:Class ;
+    rdfs:subClassOf minlibbase:MinLibGeneralEnum .
+
+minlibbase:ModeEnum a owl:Class ;
+    rdfs:subClassOf minlibbase:MinLibGeneralEnum .
+
+minlibbase:ModeSetPointEnum a owl:Class ;
+    rdfs:subClassOf minlibbase:MinLibGeneralEnum .
+
+minlibbase:preBinStatusEnum a owl:Class ;
+    rdfs:subClassOf minlibbase:MinLibGeneralEnum .
+
+minlibbase:EquipmentEnum a owl:Class ;
+    rdfs:subClassOf minlibbase:MinLibGeneralEnum .
+
+minlibbase:MinLibGeneralEnum a owl:Class ;
+    rdfs:subClassOf opcua:Enumeration .
+
+minlibbase:IndBehaviorEnum a owl:Class ;
+    rdfs:subClassOf minlibbase:MinLibGeneralEnum .
+
+minlibbase:PCCInterlockEnum a owl:Class ;
+    rdfs:subClassOf minlibbase:MinLibGeneralEnum .
+
+minlibbase:ProFuncDeviceEnum a owl:Class ;
+    rdfs:subClassOf minlibbase:MinLibGeneralEnum .
+
+minlibbase:DirectionEnum a owl:Class ;
+    rdfs:subClassOf minlibbase:MinLibGeneralEnum .
+
+minlibbase:MINLIBBASENamespace a base:Namespace ;
+    base:hasPrefix "minlibbase" ;
+    base:hasUri "https://abb.com/MinLib/BaseModel/" .
+
+minlibbase:ProFuncEquipmentEnum a owl:Class ;
+    rdfs:subClassOf minlibbase:MinLibGeneralEnum .
+

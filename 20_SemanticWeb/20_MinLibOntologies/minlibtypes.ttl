@@ -1,0 +1,897 @@
+@prefix base: <https://industryfusion.github.io/contexts/ontology/v0/base/> .
+@prefix devices: <http://opcfoundation.org/UA/DI/> .
+@prefix minlibbase: <https://abb.com/MinLib/BaseModel/> .
+@prefix minlibtypes: <http://abb.com/MinLib/Types/> .
+@prefix opcua: <http://opcfoundation.org/UA/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix padim: <http://opcfoundation.org/UA/PADIM/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+minlibtypes: a owl:Ontology ;
+    owl:imports <file:///home/ch-admin-min/DigitalTwin/semantic-model/opcua/core.ttl>,
+        <file:///home/ch-admin-min/DigitalTwin/semantic-model/opcua/devices.ttl>,
+        <file:///home/ch-admin-min/DigitalTwin/semantic-model/opcua/machinery.ttl>,
+        <file:///home/ch-admin-min/DigitalTwin/semantic-model/opcua/machinery_processvalues.ttl>,
+        <file:///home/ch-admin-min/DigitalTwin/semantic-model/opcua/minlibbase.ttl>,
+        <file:///home/ch-admin-min/DigitalTwin/semantic-model/opcua/padim.ttl>,
+        <https://industryfusion.github.io/contexts/staging/ontology/v0.1/base.ttl> ;
+    owl:versionInfo 1e-01 .
+
+minlibtypes:nodei1014 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:MinLibType ;
+    base:hasBrowseName "MinLibType" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib Abstract base type for all MinLib Objects that are not a subtype of a Companion Specification" ;
+    base:hasDisplayName "MinLibType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1014" ;
+    base:hasSymbolicName "minlibtype" .
+
+minlibtypes:nodei1015 a opcua:ObjectTypeNodeClass ;
+    opcua:HasComponent minlibtypes:nodei1011 ;
+    opcua:HasProperty minlibtypes:nodei1006,
+        minlibtypes:nodei1008,
+        minlibtypes:nodei1010 ;
+    opcua:hasActualValue minlibtypes:nodei1011 ;
+    opcua:hasConditionText minlibtypes:nodei1008 ;
+    opcua:hasDelay minlibtypes:nodei1010 ;
+    opcua:hasIndBehaviorEnum minlibtypes:nodei1006 ;
+    base:definesType minlibtypes:MLLevelCondType ;
+    base:hasBrowseName "MLLevelCondType" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib Type for the Level Condition" ;
+    base:hasDisplayName "MLLevelCondType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1015" ;
+    base:hasSymbolicName "mllevelcondtype" .
+
+minlibtypes:nodei1016 a opcua:ObjectTypeNodeClass ;
+    opcua:HasProperty minlibtypes:nodei1006,
+        minlibtypes:nodei1008,
+        minlibtypes:nodei1010 ;
+    opcua:hasConditionText minlibtypes:nodei1008 ;
+    opcua:hasDelay minlibtypes:nodei1010 ;
+    opcua:hasIndBehaviorEnum minlibtypes:nodei1006 ;
+    base:definesType minlibtypes:MLBinaryCondType ;
+    base:hasBrowseName "MLBinaryCondType" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib Type for the Binary Condition" ;
+    base:hasDisplayName "MLBinaryCondType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1016" ;
+    base:hasSymbolicName "mlbinarycondtype" .
+
+minlibtypes:nodei1017 a opcua:ObjectTypeNodeClass ;
+    opcua:HasProperty minlibtypes:nodei1002,
+        minlibtypes:nodei1007,
+        minlibtypes:nodei1008,
+        minlibtypes:nodei1009 ;
+    opcua:hasConditionText minlibtypes:nodei1008 ;
+    opcua:hasIntlkStartInhibit minlibtypes:nodei1009 ;
+    opcua:hasProFuncDeviceEnum minlibtypes:nodei1002 ;
+    opcua:hasSignalErrorBehaviorEnum minlibtypes:nodei1007 ;
+    base:definesType minlibtypes:GenericAnalogType ;
+    base:hasBrowseName "GenericAnalogType" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib Abstract Analog Signal type for all MinLib Object" ;
+    base:hasDisplayName "Generic Analog Type" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1017" ;
+    base:hasSymbolicName "generic_analog_type" .
+
+minlibtypes:nodei1018 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:AnalogInputType ;
+    base:hasBrowseName "AnalogInputType" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib Input Analog Signal" ;
+    base:hasDisplayName "Analog Input Type" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1018" ;
+    base:hasSymbolicName "analog_input_type" .
+
+minlibtypes:nodei1019 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:AnalogOutputType ;
+    base:hasBrowseName "AnalogOutputType" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib Output Analog Signal" ;
+    base:hasDisplayName "Analog Output Type" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1019" ;
+    base:hasSymbolicName "analog_output_type" .
+
+minlibtypes:nodei1020 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:AnalogCalcInputType ;
+    base:hasBrowseName "AnalogCalcInputType" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib Calculcated Input Analog Signal" ;
+    base:hasDisplayName "Analog Calc Input Type" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1020" ;
+    base:hasSymbolicName "analog_calc_input_type" .
+
+minlibtypes:nodei1021 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:AnalogCalcOutputType ;
+    base:hasBrowseName "AnalogCalcOutputType" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib Calculated Output Analog Signal" ;
+    base:hasDisplayName "Analog Calc Output Type" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1021" ;
+    base:hasSymbolicName "analog_calc_output_type" .
+
+minlibtypes:nodei1022 a opcua:ObjectTypeNodeClass ;
+    opcua:HasProperty minlibtypes:nodei1002,
+        minlibtypes:nodei1006,
+        minlibtypes:nodei1008 ;
+    opcua:hasConditionText minlibtypes:nodei1008 ;
+    opcua:hasIndBehaviorEnum minlibtypes:nodei1006 ;
+    opcua:hasProFuncDeviceEnum minlibtypes:nodei1002 ;
+    base:definesType minlibtypes:GenericDigitalType ;
+    base:hasBrowseName "GenericDigitalType" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib Abstract Digital Signal type" ;
+    base:hasDisplayName "Generic Digital Type" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1022" ;
+    base:hasSymbolicName "generic_digital_type" .
+
+minlibtypes:nodei1023 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:MLDISType ;
+    base:hasBrowseName "MLDISType" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib Input Digital Signal" ;
+    base:hasDisplayName "MLDISType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1023" ;
+    base:hasSymbolicName "mldistype" .
+
+minlibtypes:nodei1024 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:MLDOSType ;
+    base:hasBrowseName "MLDOSType" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib Output Digital Signal" ;
+    base:hasDisplayName "MLDOSType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1024" ;
+    base:hasSymbolicName "mldostype" .
+
+minlibtypes:nodei1025 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:MLDICType ;
+    base:hasBrowseName "MLDICType" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib Calculated Input Digital Signal" ;
+    base:hasDisplayName "MLDICType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1025" ;
+    base:hasSymbolicName "mldictype" .
+
+minlibtypes:nodei1026 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:MLDOCType ;
+    base:hasBrowseName "MLDOCType" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib Calculated Output Digital Signal" ;
+    base:hasDisplayName "MLDOCType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1026" ;
+    base:hasSymbolicName "mldoctype" .
+
+minlibtypes:nodei1027 a opcua:ObjectTypeNodeClass ;
+    opcua:HasProperty minlibtypes:nodei1001,
+        minlibtypes:nodei1005 ;
+    opcua:hasModeEnum minlibtypes:nodei1005 ;
+    opcua:hasProFuncEquipmentEnum minlibtypes:nodei1001 ;
+    base:definesType minlibtypes:MLConsumerType ;
+    base:hasBrowseName "MLConsumerType" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib Generic Consumer Element Type" ;
+    base:hasDisplayName "MLConsumerType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1027" ;
+    base:hasSymbolicName "mlconsumertype" .
+
+minlibtypes:nodei1028 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:MLMOT1Type ;
+    base:hasBrowseName "MLMOT1Type" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib Direct Online Motor Type" ;
+    base:hasDisplayName "MLMOT1Type" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1028" ;
+    base:hasSymbolicName "mlmot1type" .
+
+minlibtypes:nodei1029 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:MLMOT2Type ;
+    base:hasBrowseName "MLMOT2Type" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib Direct Online Motor two directions Type" ;
+    base:hasDisplayName "MLMOT2Type" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1029" ;
+    base:hasSymbolicName "mlmot2type" .
+
+minlibtypes:nodei1030 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:MLMOT1_VVVFType ;
+    base:hasBrowseName "MLMOT1_VVVFType" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib Direct Online Motor Variable Frequency Type" ;
+    base:hasDisplayName "MLMOT1_VVVFType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1030" ;
+    base:hasSymbolicName "mlmot1_vvvftype" .
+
+minlibtypes:nodei1031 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:MLMOT2_VVVFType ;
+    base:hasBrowseName "MLMOT2_VVVFType" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib Direct Online Motor Variable Frequency Type" ;
+    base:hasDisplayName "MLMOT2_VVVFType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1031" ;
+    base:hasSymbolicName "mlmot2_vvvftype" .
+
+minlibtypes:nodei1032 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:MLMOTPType ;
+    base:hasBrowseName "MLMOTPType" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib Damper / Actuator controller with feedback" ;
+    base:hasDisplayName "MLMOTPType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1032" ;
+    base:hasSymbolicName "mlmotptype" .
+
+minlibtypes:nodei1033 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:MLVLV1Type ;
+    base:hasBrowseName "MLVLV1Type" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib Valve Type" ;
+    base:hasDisplayName "MLVLV1Type" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1033" ;
+    base:hasSymbolicName "mlvlv1type" .
+
+minlibtypes:nodei1034 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:MLVLV1NOType ;
+    base:hasBrowseName "MLVLV1NOType" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib Valve normally open Type" ;
+    base:hasDisplayName "MLVLV1NOType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1034" ;
+    base:hasSymbolicName "mlvlv1notype" .
+
+minlibtypes:nodei1035 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:MLActuatorType ;
+    base:hasBrowseName "MLActuatorType" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib Actuator Type" ;
+    base:hasDisplayName "MLActuatorType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1035" ;
+    base:hasSymbolicName "mlactuatortype" .
+
+minlibtypes:nodei1036 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:MLMOT1_UMC100Type ;
+    base:hasBrowseName "MLMOT1_UMC100Type" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "Consumer MOT1 VVVF Type for UMC100" ;
+    base:hasDisplayName "MLMOT1_UMC100Type" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1036" ;
+    base:hasSymbolicName "mlmot1_umc100type" .
+
+minlibtypes:nodei1037 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:MLMOT2_UMC100Type ;
+    base:hasBrowseName "MLMOT2_UMC100Type" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "Consumer MOT2 VVVF Type for UMC100" ;
+    base:hasDisplayName "MLMOT2_UMC100Type" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1037" ;
+    base:hasSymbolicName "mlmot2_umc100type" .
+
+minlibtypes:nodei1038 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:MLMOTP_UMC100Type ;
+    base:hasBrowseName "MLMOTP_UMC100Type" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "Consumer MOTP Type for UMC100" ;
+    base:hasDisplayName "MLMOTP_UMC100Type" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1038" ;
+    base:hasSymbolicName "mlmotp_umc100type" .
+
+minlibtypes:nodei1039 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:MLMOT1_VVVF_ACS8x0Type ;
+    base:hasBrowseName "MLMOT1_VVVF_ACS8x0Type" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "Consumer MOT1 VVVF Type for ACS8x0" ;
+    base:hasDisplayName "MLMOT1_VVVF_ACS8x0Type" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1039" ;
+    base:hasSymbolicName "mlmot1_vvvf_acs8x0type" .
+
+minlibtypes:nodei1040 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:MLMOT2_VVVF_ACS8x0Type ;
+    base:hasBrowseName "MLMOT2_VVVF_ACS8x0Type" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "Consumer MOT2 VVVF Type for ACS8x0" ;
+    base:hasDisplayName "MLMOT2_VVVF_ACS8x0Type" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1040" ;
+    base:hasSymbolicName "mlmot2_vvvf_acs8x0type" .
+
+minlibtypes:nodei1041 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:MLSequenceType ;
+    base:hasBrowseName "MLSequenceType" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib Generic Sequencer Type" ;
+    base:hasDisplayName "MLSequenceType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1041" ;
+    base:hasSymbolicName "mlsequencetype" .
+
+minlibtypes:nodei1042 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:MLGroupType ;
+    base:hasBrowseName "MLGroupType" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib Group Type" ;
+    base:hasDisplayName "MLGroupType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1042" ;
+    base:hasSymbolicName "mlgrouptype" .
+
+minlibtypes:nodei1043 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:MLGrpCycleCtrlType ;
+    base:hasBrowseName "MLGrpCycleCtrlType" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib Group Cycle control type" ;
+    base:hasDisplayName "MLGrpCycleCtrlType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1043" ;
+    base:hasSymbolicName "mlgrpcyclectrltype" .
+
+minlibtypes:nodei1044 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:MLSubGroupType ;
+    base:hasBrowseName "MLSubGroupType" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib Sub Group Type" ;
+    base:hasDisplayName "MLSubGroupType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1044" ;
+    base:hasSymbolicName "mlsubgrouptype" .
+
+minlibtypes:nodei1045 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:MLDriveGroupType ;
+    base:hasBrowseName "MLDriveGroupType" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib Drive Group Type" ;
+    base:hasDisplayName "MLDriveGroupType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1045" ;
+    base:hasSymbolicName "mldrivegrouptype" .
+
+minlibtypes:nodei1046 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:MLGenLoopCtrType ;
+    base:hasBrowseName "MLGenLoopCtrType" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib Generic Loop Control Type" ;
+    base:hasDisplayName "MLGenLoopCtrType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1046" ;
+    base:hasSymbolicName "mlgenloopctrtype" .
+
+minlibtypes:nodei1047 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:MLPIDAdvCtrlType ;
+    base:hasBrowseName "MLPIDAdvCtrlType" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib Advanced Control Type" ;
+    base:hasDisplayName "MLPIDAdvCtrlType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1047" ;
+    base:hasSymbolicName "mlpidadvctrltype" .
+
+minlibtypes:nodei1048 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:MLPIDctrlType ;
+    base:hasBrowseName "MLPIDctrlType" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib PID Control Type" ;
+    base:hasDisplayName "MLPIDctrlType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1048" ;
+    base:hasSymbolicName "mlpidctrltype" .
+
+minlibtypes:nodei1049 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:MLRatioCtrlType ;
+    base:hasBrowseName "MLRatioCtrlType" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib Ratio Control Type" ;
+    base:hasDisplayName "MLRatioCtrlType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1049" ;
+    base:hasSymbolicName "mlratioctrltype" .
+
+minlibtypes:nodei1050 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:MLSplitRangeType ;
+    base:hasBrowseName "MLSplitRangeType" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib Split Range Type" ;
+    base:hasDisplayName "MLSplitRangeType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1050" ;
+    base:hasSymbolicName "mlsplitrangetype" .
+
+minlibtypes:nodei1051 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:MLLCCDemux4Type ;
+    base:hasBrowseName "MLLCCDemux4Type" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib Demultiplexer 4 Type" ;
+    base:hasDisplayName "MLLCCDemux4Type" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1051" ;
+    base:hasSymbolicName "mllccdemux4type" .
+
+minlibtypes:nodei1052 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:MLLCMux4Type ;
+    base:hasBrowseName "MLLCMux4Type" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib Multiplexer 4 Type" ;
+    base:hasDisplayName "MLLCMux4Type" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1052" ;
+    base:hasSymbolicName "mllcmux4type" .
+
+minlibtypes:nodei1053 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:MLRecipeCtrlType ;
+    base:hasBrowseName "MLRecipeCtrlType" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib Recipe Control Type" ;
+    base:hasDisplayName "MLRecipeCtrlType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1053" ;
+    base:hasSymbolicName "mlrecipectrltype" .
+
+minlibtypes:nodei1054 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:MLGenCtrlType ;
+    base:hasBrowseName "MLGenCtrlType" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib Generic Control Element Type" ;
+    base:hasDisplayName "MLGenCtrlType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1054" ;
+    base:hasSymbolicName "mlgenctrltype" .
+
+minlibtypes:nodei1055 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:MLThresholdAndType ;
+    base:hasBrowseName "MLThresholdAndType" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib Threshold And Ctrl Element Type" ;
+    base:hasDisplayName "MLThresholdAndType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1055" ;
+    base:hasSymbolicName "mlthresholdandtype" .
+
+minlibtypes:nodei1056 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:MLPCC_n003Type ;
+    base:hasBrowseName "MLPCC_n003Type" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib PCC_n003 Ctrl Element Type" ;
+    base:hasDisplayName "MLPCC_n003Type" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1056" ;
+    base:hasSymbolicName "mlpcc_n003type" .
+
+minlibtypes:nodei1057 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:MLPCC_IntlkType ;
+    base:hasBrowseName "MLPCC_IntlkType" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib PCC_Intlk Ctrl Element Type" ;
+    base:hasDisplayName "MLPCC_IntlkType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1057" ;
+    base:hasSymbolicName "mlpcc_intlktype" .
+
+minlibtypes:nodei1058 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:MLGroupStepType ;
+    base:hasBrowseName "MLGroupStepType" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib Group Step Ctrl Element Type" ;
+    base:hasDisplayName "MLGroupStepType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1058" ;
+    base:hasSymbolicName "mlgroupsteptype" .
+
+minlibtypes:nodei1059 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:MLAddOnElementType ;
+    base:hasBrowseName "MLAddOnElementType" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib Generic AddOn Element Type" ;
+    base:hasDisplayName "MLAddOnElementType" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1059" ;
+    base:hasSymbolicName "mladdonelementtype" .
+
+minlibtypes:nodei1060 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:MLAndGate3Type ;
+    base:hasBrowseName "MLAndGate3Type" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib And Gate 3 Ctrl Element Type" ;
+    base:hasDisplayName "MLAndGate3Type" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1060" ;
+    base:hasSymbolicName "mlandgate3type" .
+
+minlibtypes:nodei1061 a opcua:ObjectTypeNodeClass ;
+    base:definesType minlibtypes:MLRateOfChangeCondition ;
+    base:hasBrowseName "MLRateOfChangeCondition" ;
+    base:hasBrowseNameNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasDescription "MinLib Rate Of Change Condition Ctrl Element Type" ;
+    base:hasDisplayName "MLRateOfChangeCondition" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1061" ;
+    base:hasSymbolicName "mlrateofchangecondition" .
+
+opcua:hasActualValue rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+opcua:hasConditionText rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+opcua:hasDelay rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+opcua:hasIndBehaviorEnum rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+opcua:hasIntlkStartInhibit rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+opcua:hasModeEnum rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+opcua:hasProFuncDeviceEnum rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+opcua:hasProFuncEquipmentEnum rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+opcua:hasSignalErrorBehaviorEnum rdfs:subPropertyOf base:SemanticBridgeReferenceType .
+
+minlibtypes:AnalogCalcInputType a owl:Class ;
+    rdfs:subClassOf minlibtypes:GenericAnalogType .
+
+minlibtypes:AnalogCalcOutputType a owl:Class ;
+    rdfs:subClassOf minlibtypes:GenericAnalogType .
+
+minlibtypes:AnalogInputType a owl:Class ;
+    rdfs:subClassOf minlibtypes:GenericAnalogType .
+
+minlibtypes:AnalogOutputType a owl:Class ;
+    rdfs:subClassOf minlibtypes:GenericAnalogType .
+
+minlibtypes:MLActuatorType a owl:Class ;
+    rdfs:subClassOf minlibtypes:MLConsumerType .
+
+minlibtypes:MLAndGate3Type a owl:Class ;
+    rdfs:subClassOf minlibtypes:MLAddOnElementType .
+
+minlibtypes:MLBinaryCondType a owl:Class ;
+    rdfs:subClassOf minlibtypes:MinLibType .
+
+minlibtypes:MLDICType a owl:Class ;
+    rdfs:subClassOf minlibtypes:GenericDigitalType .
+
+minlibtypes:MLDISType a owl:Class ;
+    rdfs:subClassOf minlibtypes:GenericDigitalType .
+
+minlibtypes:MLDOCType a owl:Class ;
+    rdfs:subClassOf minlibtypes:GenericDigitalType .
+
+minlibtypes:MLDOSType a owl:Class ;
+    rdfs:subClassOf minlibtypes:GenericDigitalType .
+
+minlibtypes:MLDriveGroupType a owl:Class ;
+    rdfs:subClassOf minlibtypes:MLSequenceType .
+
+minlibtypes:MLGroupStepType a owl:Class ;
+    rdfs:subClassOf minlibtypes:MLGenCtrlType .
+
+minlibtypes:MLGroupType a owl:Class ;
+    rdfs:subClassOf minlibtypes:MLSequenceType .
+
+minlibtypes:MLGrpCycleCtrlType a owl:Class ;
+    rdfs:subClassOf minlibtypes:MLSequenceType .
+
+minlibtypes:MLLCCDemux4Type a owl:Class ;
+    rdfs:subClassOf minlibtypes:MLGenLoopCtrType .
+
+minlibtypes:MLLCMux4Type a owl:Class ;
+    rdfs:subClassOf minlibtypes:MLGenLoopCtrType .
+
+minlibtypes:MLLevelCondType a owl:Class ;
+    rdfs:subClassOf minlibtypes:MinLibType .
+
+minlibtypes:MLMOT1Type a owl:Class ;
+    rdfs:subClassOf minlibtypes:MLConsumerType .
+
+minlibtypes:MLMOT1_UMC100Type a owl:Class ;
+    rdfs:subClassOf minlibtypes:MLConsumerType .
+
+minlibtypes:MLMOT1_VVVFType a owl:Class ;
+    rdfs:subClassOf minlibtypes:MLConsumerType .
+
+minlibtypes:MLMOT1_VVVF_ACS8x0Type a owl:Class ;
+    rdfs:subClassOf minlibtypes:MLConsumerType .
+
+minlibtypes:MLMOT2Type a owl:Class ;
+    rdfs:subClassOf minlibtypes:MLConsumerType .
+
+minlibtypes:MLMOT2_UMC100Type a owl:Class ;
+    rdfs:subClassOf minlibtypes:MLConsumerType .
+
+minlibtypes:MLMOT2_VVVFType a owl:Class ;
+    rdfs:subClassOf minlibtypes:MLConsumerType .
+
+minlibtypes:MLMOT2_VVVF_ACS8x0Type a owl:Class ;
+    rdfs:subClassOf minlibtypes:MLConsumerType .
+
+minlibtypes:MLMOTPType a owl:Class ;
+    rdfs:subClassOf minlibtypes:MLConsumerType .
+
+minlibtypes:MLMOTP_UMC100Type a owl:Class ;
+    rdfs:subClassOf minlibtypes:MLConsumerType .
+
+minlibtypes:MLPCC_IntlkType a owl:Class ;
+    rdfs:subClassOf minlibtypes:MLGenCtrlType .
+
+minlibtypes:MLPCC_n003Type a owl:Class ;
+    rdfs:subClassOf minlibtypes:MLGenCtrlType .
+
+minlibtypes:MLPIDAdvCtrlType a owl:Class ;
+    rdfs:subClassOf minlibtypes:MLGenLoopCtrType .
+
+minlibtypes:MLPIDctrlType a owl:Class ;
+    rdfs:subClassOf minlibtypes:MLGenLoopCtrType .
+
+minlibtypes:MLRateOfChangeCondition a owl:Class ;
+    rdfs:subClassOf minlibtypes:MLAddOnElementType .
+
+minlibtypes:MLRatioCtrlType a owl:Class ;
+    rdfs:subClassOf minlibtypes:MLGenLoopCtrType .
+
+minlibtypes:MLRecipeCtrlType a owl:Class ;
+    rdfs:subClassOf minlibtypes:MLGenLoopCtrType .
+
+minlibtypes:MLSplitRangeType a owl:Class ;
+    rdfs:subClassOf minlibtypes:MLGenLoopCtrType .
+
+minlibtypes:MLSubGroupType a owl:Class ;
+    rdfs:subClassOf minlibtypes:MLSequenceType .
+
+minlibtypes:MLThresholdAndType a owl:Class ;
+    rdfs:subClassOf minlibtypes:MLGenCtrlType .
+
+minlibtypes:MLVLV1NOType a owl:Class ;
+    rdfs:subClassOf minlibtypes:MLConsumerType .
+
+minlibtypes:MLVLV1Type a owl:Class ;
+    rdfs:subClassOf minlibtypes:MLConsumerType .
+
+minlibtypes:nodei1001 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "ProFuncEquipmentEnum" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype minlibbase:ProFuncEquipmentEnum ;
+    base:hasDescription "Normalized Equipment Process Function" ;
+    base:hasDisplayName "ProFuncEquipmentEnum" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1001" ;
+    base:hasSymbolicName "profuncequipmentenum" .
+
+minlibtypes:nodei1005 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "ModeEnum" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype minlibbase:ModeEnum ;
+    base:hasDescription "Normalized Mode" ;
+    base:hasDisplayName "ModeEnum" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1005" ;
+    base:hasSymbolicName "modeenum" .
+
+minlibtypes:nodei1007 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "SignalErrorBehaviorEnum" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype minlibbase:signalErrorBehaviorEnum ;
+    base:hasDescription "Signal error behavior" ;
+    base:hasDisplayName "SignalErrorBehaviorEnum" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1007" ;
+    base:hasSymbolicName "signalerrorbehaviorenum" .
+
+minlibtypes:nodei1009 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "IntlkStartInhibit" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Duration ;
+    base:hasDescription "Interlock start inhibit duration in milliseconds" ;
+    base:hasDisplayName "IntlkStartInhibit" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1009" ;
+    base:hasSymbolicName "intlkstartinhibit" .
+
+minlibtypes:nodei1011 a padim:AnalogSignalVariableType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    opcua:HasProperty minlibtypes:nodei1012,
+        minlibtypes:nodei1013 ;
+    opcua:hasEURange minlibtypes:nodei1013 ;
+    opcua:hasEngineeringUnits minlibtypes:nodei1012 ;
+    base:hasBrowseName "ActualValue" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Double ;
+    base:hasDisplayName "ActualValue" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1011" .
+
+minlibtypes:nodei1012 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "EngineeringUnits" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:EUInformation ;
+    base:hasDisplayName "EngineeringUnits" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1012" ;
+    base:hasSymbolicName "engineeringunits" .
+
+minlibtypes:nodei1013 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "EURange" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Range ;
+    base:hasDisplayName "EURange" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1013" ;
+    base:hasSymbolicName "eurange" .
+
+minlibtypes:MLAddOnElementType a owl:Class ;
+    rdfs:subClassOf minlibtypes:MinLibType ;
+    base:isAbstract "true" .
+
+minlibtypes:nodei1002 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "ProFuncDeviceEnum" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype minlibbase:ProFuncDeviceEnum ;
+    base:hasDescription "Normalized Device Process Function" ;
+    base:hasDisplayName "ProFuncDeviceEnum" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1002" ;
+    base:hasSymbolicName "profuncdeviceenum" .
+
+minlibtypes:nodei1010 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "Delay" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:Duration ;
+    base:hasDescription "Delay duration in milliseconds" ;
+    base:hasDisplayName "Delay" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1010" ;
+    base:hasSymbolicName "delay" .
+
+minlibtypes:GenericAnalogType a owl:Class ;
+    rdfs:subClassOf padim:AnalogSignalType ;
+    base:isAbstract "true" .
+
+minlibtypes:GenericDigitalType a owl:Class ;
+    rdfs:subClassOf padim:DiscreteSignalType ;
+    base:isAbstract "true" .
+
+minlibtypes:MLGenCtrlType a owl:Class ;
+    rdfs:subClassOf minlibtypes:MinLibType ;
+    base:isAbstract "true" .
+
+minlibtypes:MLSequenceType a owl:Class ;
+    rdfs:subClassOf minlibtypes:MinLibType ;
+    base:isAbstract "true" .
+
+minlibtypes:nodei1006 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "IndBehaviorEnum" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype minlibbase:IndBehaviorEnum ;
+    base:hasDescription "PCO Indication Behavior" ;
+    base:hasDisplayName "IndBehaviorEnum" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1006" ;
+    base:hasSymbolicName "indbehaviorenum" .
+
+minlibtypes:MinLibType a owl:Class ;
+    rdfs:subClassOf opcua:BaseObjectType ;
+    base:isAbstract "true" .
+
+minlibtypes:MLGenLoopCtrType a owl:Class ;
+    rdfs:subClassOf minlibtypes:MinLibType ;
+    base:isAbstract "true" .
+
+minlibtypes:nodei1008 a opcua:PropertyType,
+        opcua:VariableNodeClass ;
+    opcua:HasModellingRule opcua:nodei78 ;
+    base:hasBrowseName "ConditionText" ;
+    base:hasBrowseNameNamespace opcua:OPCUANamespace ;
+    base:hasDatatype opcua:String ;
+    base:hasDescription "Condition text" ;
+    base:hasDisplayName "ConditionText" ;
+    base:hasIdentifierType base:numericID ;
+    base:hasNamespace minlibtypes:MINLIBTYPESNamespace ;
+    base:hasNodeId "1008" ;
+    base:hasSymbolicName "conditiontext" .
+
+minlibtypes:MLConsumerType a owl:Class ;
+    rdfs:subClassOf devices:TopologyElementType ;
+    base:isAbstract "true" .
+
+minlibtypes:MINLIBTYPESNamespace a base:Namespace ;
+    base:hasPrefix "minlibtypes" ;
+    base:hasUri "http://abb.com/MinLib/Types/" .
+
